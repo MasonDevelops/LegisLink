@@ -11,7 +11,7 @@ import SwiftUI
 struct town_squareApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
