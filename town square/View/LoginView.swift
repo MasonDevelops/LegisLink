@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import Auth0
 
-struct MainView: View {
+struct LoginView: View {
     @State var user: User?
 
     var body: some View {
@@ -20,12 +20,20 @@ struct MainView: View {
                 Button("Logout", action: self.logout)
             }
         } else {
-            Button("Login", action: self.login)
+            VStack {
+                Text("Welcome to Town Square. \("\n") Please select the button below to continue.").multilineTextAlignment(.center).padding(5)
+                Spacer()
+                Button(action: self.login) {
+                    Text("Login & Register")
+                }.buttonStyle(.borderedProminent)
+                Spacer()
+            }
+            
         }
     }
 }
 
-extension MainView {
+extension LoginView {
     func login() {
         Auth0
             .webAuth()
@@ -50,6 +58,10 @@ extension MainView {
                     print("Failed with: \(error)")
                 }
             }
+    }
+    
+    func register() {
+        print("REGISTER")
     }
 }
 

@@ -14,7 +14,7 @@
 		0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F0E9A1C2A0B698500E27010 /* .gitignore */; };
 		0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50916D2A1082AD008AE977 /* Auth0 */; };
 		0F5091722A1083A9008AE977 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5091712A1083A9008AE977 /* Auth0.plist */; };
-		0F5091742A108652008AE977 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091732A108652008AE977 /* Login.swift */; };
+		0F5091742A108652008AE977 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091732A108652008AE977 /* LoginView.swift */; };
 		0F5091762A108692008AE977 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091752A108692008AE977 /* User.swift */; };
 		0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091772A1086C0008AE977 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 		0F0E9A1C2A0B698500E27010 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0F50916B2A108247008AE977 /* town-square-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "town-square-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0F5091712A1083A9008AE977 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
-		0F5091732A108652008AE977 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		0F5091732A108652008AE977 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0F5091752A108692008AE977 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0F5091772A1086C0008AE977 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +97,7 @@
 		0F5091692A10802B008AE977 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0F5091732A108652008AE977 /* Login.swift */,
+				0F5091732A108652008AE977 /* LoginView.swift */,
 				0F5091772A1086C0008AE977 /* ProfileView.swift */,
 			);
 			path = View;
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5091762A108692008AE977 /* User.swift in Sources */,
-				0F5091742A108652008AE977 /* Login.swift in Sources */,
+				0F5091742A108652008AE977 /* LoginView.swift in Sources */,
 				0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */,
 				0F0E9A112A0B65E200E27010 /* ContentView.swift in Sources */,
 				0F0E9A0F2A0B65E200E27010 /* town_squareApp.swift in Sources */,
