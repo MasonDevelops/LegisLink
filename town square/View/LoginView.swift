@@ -16,7 +16,7 @@ struct LoginView: View {
     var body: some View {
         if let user = self.user {
             VStack {
-                ProfileView(user: user)
+                ContentView(user: user)
                 Button("Logout", action: self.logout)
             }
         } else {
