@@ -17,7 +17,7 @@ struct LoginView: View {
         if let user = self.user {
             VStack {
                 ContentView(user: user)
-                //Button("Logout", action: self.logout)
+                Button("Logout", action: self.logout)
             }
         } else {
             VStack {
