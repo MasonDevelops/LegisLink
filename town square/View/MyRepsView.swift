@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 struct MyRepsView: View {
+    @ObservedObject private var senatorsvm = SenatorsViewModel()
     let user: User
     var body: some View {
         VStack {
@@ -18,6 +19,8 @@ struct MyRepsView: View {
                 .foregroundColor(.accentColor)
             Text("MY REPS VIEW")
             Text(user.address)
+            Text(senatorsvm.senatorOne.name)
+            Text(senatorsvm.senatorTwo.name)
         }
         .padding()
     }
