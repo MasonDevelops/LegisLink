@@ -41,7 +41,10 @@ class SenatorsViewModel: ObservableObject {
         getSenators()
     }
      func getSenators() {
-        guard let url = URL(string: "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyCgO3NR9RI4fH1WVUwZYhYqVf5rRY_q33k&address=1263%20Pacific%20Ave.%20Kansas%20City%20KS&includedOffices=true&levels=country&roles=legislatorUpperBody") else { return }
+        var gapiKey = ProcessInfo.processInfo.environment["Google_API_Key"]
+         print(gapiKey!)
+         
+        guard let url = URL(string: "https://www.googleapis.com/civicinfo/v2/representatives?key=\(gapiKey!)&address=1263%20Pacific%20Ave.%20Kansas%20City%20KS&includedOffices=true&levels=country&roles=legislatorUpperBody") else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else {return}
             let senators = try? JSONDecoder().decode(Senators.self, from: data)
