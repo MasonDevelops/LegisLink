@@ -16,25 +16,10 @@ import Foundation
 struct Senators: Codable {
     let normalizedInput: NormalizedInput
     let kind: String
-    let divisions: Divisions
     let offices: [Office]
     let officials: [Official]
 }
 
-// MARK: - Divisions
-struct Divisions: Codable {
-    let ocdDivisionCountryUsStateKs: OcdDivisionCountryUsStateKs
-
-    enum CodingKeys: String, CodingKey {
-        case ocdDivisionCountryUsStateKs = "ocd-division/country:us/state:ks"
-    }
-}
-
-// MARK: - OcdDivisionCountryUsStateKs
-struct OcdDivisionCountryUsStateKs: Codable {
-    let name: String
-    let officeIndices: [Int]
-}
 
 // MARK: - NormalizedInput
 struct NormalizedInput: Codable {

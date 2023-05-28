@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     let user: User
     var body: some View {
-        TabView{
+        TabView {
             LegisView(user: user).tabItem {
                 Image(systemName: "house")
                 Text("Legislation")
