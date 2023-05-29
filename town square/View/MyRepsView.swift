@@ -9,14 +9,17 @@ import Foundation
 
 import SwiftUI
 
+import UIKit
+
 struct MyRepsView: View {
     @State var user: User
-    @ObservedObject private var senatorsvm: SenatorsViewModel
+    @ObservedObject private var repsvm: MyRepsViewModel
     
     init(user: User) {
             self.user = user
-            self.senatorsvm = SenatorsViewModel(user: user)
+            self.repsvm = MyRepsViewModel(user: user)
         }
+
     
     var body: some View {
         VStack {
@@ -25,8 +28,11 @@ struct MyRepsView: View {
                 .foregroundColor(.accentColor)
             Text("MY REPS VIEW")
             Text(user.returnFullAddress())
-            Text(senatorsvm.senatorOne.name)
-            Text(senatorsvm.senatorTwo.name)
+            Text(repsvm.senatorOne.name)
+            Text(repsvm.senatorTwo.name)
+            Text(repsvm.representative.name)
+            
+            
         }
         .padding()
     }

@@ -1,5 +1,5 @@
 //
-//  Senator.swift
+//  Reps.swift
 //  town square
 //
 //  Created by Mason Cochran on 5/25/23.
@@ -10,10 +10,9 @@ import Foundation
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let senators = try? JSONDecoder().decode(Senators.self, from: jsonData)
 
-// MARK: - Senators
-struct Senators: Codable {
+// MARK: - Reps
+struct Reps: Codable {
     let normalizedInput: NormalizedInput
     let kind: String
     let offices: [Office]
