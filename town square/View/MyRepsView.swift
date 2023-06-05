@@ -14,6 +14,7 @@ import UIKit
 struct MyRepsView: View {
     @State var user: User
     @ObservedObject private var repsvm: MyRepsViewModel
+   
     
     init(user: User) {
             self.user = user
@@ -23,18 +24,30 @@ struct MyRepsView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("MY REPS VIEW")
-            Text(user.returnFullAddress())
-            Text(repsvm.senatorOne.name)
-            Text(repsvm.senatorTwo.name)
-            Text(repsvm.representative.name)
-            
-            
+            NavigationStack {
+                List {
+                    Section("Your Senators") {
+                        NavigationLink(repsvm.senatorOne.name, value: repsvm.senatorOne)
+                        NavigationLink(repsvm.senatorTwo.name, value: repsvm.senatorTwo)
+
+                    }
+                    
+                    
+                    
+                    
+                    
+                    Section("Your Representative") {
+                        NavigationLink(repsvm.representative.name, value: repsvm.representative)
+                    }
+                }.navigationDestination(for: Official.self) { lawmaker in
+                    returnLawmakerView(lawmaker)
+                    
+                }
+            }
         }
-        .padding()
+    }
+    func returnLawmakerView(_ official: Official) -> AnyView {
+        return AnyView(IndividualRepView(user: user, official: official))
     }
 }
 

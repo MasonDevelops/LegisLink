@@ -17,9 +17,9 @@
 		0F5091742A108652008AE977 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091732A108652008AE977 /* LoginView.swift */; };
 		0F5091762A108692008AE977 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091752A108692008AE977 /* User.swift */; };
 		0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091772A1086C0008AE977 /* ProfileView.swift */; };
-		0F61E8F12A2523DB00EA59C8 /* MyRepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61E8F02A2523DA00EA59C8 /* MyRepsViewController.swift */; };
 		0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DECE2A1FC80800CDD786 /* Reps.swift */; };
 		0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */; };
+		0FEF0EB62A2BA4DD009064E7 /* IndividualRepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */; };
 		0FF9FE032A1A933C00189618 /* LegisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE022A1A933C00189618 /* LegisView.swift */; };
 		0FF9FE052A1A948C00189618 /* MyRepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE042A1A948C00189618 /* MyRepsView.swift */; };
 		0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE062A1A949A00189618 /* SettingsView.swift */; };
@@ -38,9 +38,9 @@
 		0F5091732A108652008AE977 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0F5091752A108692008AE977 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0F5091772A1086C0008AE977 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		0F61E8F02A2523DA00EA59C8 /* MyRepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsViewController.swift; sourceTree = "<group>"; };
 		0F91DECE2A1FC80800CDD786 /* Reps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reps.swift; sourceTree = "<group>"; };
 		0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsViewModel.swift; sourceTree = "<group>"; };
+		0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualRepView.swift; sourceTree = "<group>"; };
 		0FF9FE022A1A933C00189618 /* LegisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegisView.swift; sourceTree = "<group>"; };
 		0FF9FE042A1A948C00189618 /* MyRepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsView.swift; sourceTree = "<group>"; };
 		0FF9FE062A1A949A00189618 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -118,6 +118,7 @@
 				0FF9FE042A1A948C00189618 /* MyRepsView.swift */,
 				0FF9FE062A1A949A00189618 /* SettingsView.swift */,
 				0FF9FE082A1A94DC00189618 /* MyProfileView.swift */,
+				0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */,
-				0F61E8F02A2523DA00EA59C8 /* MyRepsViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -213,8 +213,8 @@
 				0FF9FE092A1A94DC00189618 /* MyProfileView.swift in Sources */,
 				0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */,
 				0F5091762A108692008AE977 /* User.swift in Sources */,
-				0F61E8F12A2523DB00EA59C8 /* MyRepsViewController.swift in Sources */,
 				0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */,
+				0FEF0EB62A2BA4DD009064E7 /* IndividualRepView.swift in Sources */,
 				0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */,
 				0FF9FE032A1A933C00189618 /* LegisView.swift in Sources */,
 				0F5091742A108652008AE977 /* LoginView.swift in Sources */,

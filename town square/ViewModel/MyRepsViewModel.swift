@@ -58,6 +58,7 @@ class MyRepsViewModel: ObservableObject {
         self.user = user
         getReps()
     }
+    
      func getReps() {
         let gapiKey = ProcessInfo.processInfo.environment["Google_API_Key"]
         let fullAddress = user.returnFullAddress()
@@ -67,13 +68,24 @@ class MyRepsViewModel: ObservableObject {
             guard let data = data else {return}
             do {
                 let lawmakers = try JSONDecoder().decode(Reps.self, from: data)
-                let senatorOne = lawmakers.officials[0]
-                let senatorTwo = lawmakers.officials[1]
-                let representative = lawmakers.officials[2]
-                self.senatorOne = senatorOne
-                self.senatorTwo = senatorTwo
-                self.representative = representative
-
+                
+                self.senatorOne = lawmakers.officials[0]
+                
+                if (self.senatorOne.photoURL == nil) {
+                    self.senatorOne.photoURL = "photoURL"
+                }
+                
+                self.senatorTwo = lawmakers.officials[1]
+                
+                if (self.senatorTwo.photoURL == nil) {
+                    self.senatorTwo.photoURL = "photoURL"
+                }
+                
+                self.representative = lawmakers.officials[2]
+                
+                if (self.representative.photoURL == nil) {
+                    self.representative.photoURL = "photoURL"
+                }
             } catch {
                 print("Unexpected error: \(error).")
             }

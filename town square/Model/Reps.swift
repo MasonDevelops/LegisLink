@@ -39,13 +39,23 @@ struct Office: Codable {
 }
 
 // MARK: - Official
-struct Official: Codable {
+struct Official: Codable, Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(name)
+        }
+    
+    static func == (lhs: Official, rhs: Official) -> Bool {
+        return lhs.name == rhs.name && lhs.name == rhs.name
+
+    }
+    
     let name: String
     let address: [NormalizedInput]
     let party: String
     let phones: [String]
     let urls: [String]
-    let photoURL: String?
+    var photoURL: String?
     let channels: [Channel]
     let geocodingSummaries: [GeocodingSummary]
 
