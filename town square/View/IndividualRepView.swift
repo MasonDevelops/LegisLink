@@ -6,9 +6,6 @@
 //
 
 
-//Text("\(idnum)")
-
-
 import Foundation
 
 import SwiftUI
@@ -16,27 +13,54 @@ import SwiftUI
 struct IndividualRepView: View {
     let user: User
     let official: Official
+    var partyAbbrev: String
     var body: some View {
-        VStack {
-            Text(official.name)
-            Text(official.party)
-            Text("\(official.address[0].line1)" as String)
-            Text("\(official.address[0].city)" as String)
-            Text("\(official.address[0].state)" as String)
-            Text("\(official.address[0].zip)" as String)
-            Text("\(official.phones[0])")
-            Text("\(official.urls[0])")
-            Text("\(official.urls[1])")
+        
+        
+        
+        
+        Section {
+            if (official.photoURL == "photoURL"){
+                Image("default_lawmaker_img")
+                    .resizable()
+                    .frame(width:100, height: 100)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.blue, lineWidth: 2))
+            }
+            else {
+                AsyncImage(url: URL(string: official.photoURL!))
+            }
+            
+            Text("\(official.name) \(partyAbbrev)").font(.headline)
+            Spacer()
+                    
         }
-        VStack {
-            Text(official.photoURL!)
-            Text("\(official.channels[0].id)" as String)
-            Text("\(official.channels[0].type)" as String)
-            Text("\(official.channels[1].id)" as String)
-            Text("\(official.channels[1].type)" as String)
+        List {
+            Section ("Basic Contact Information") {
+                VStack (alignment: .leading) {
+                    Text("Washington DC Address: \(official.address[0].line1) \(official.address[0].city) \(official.address[0].state) \(official.address[0].zip)" as String)
+                    Text("Phone Number: \(official.phones[0])")
 
+                }
+            }
+            
+            Section ("Social Media") {
+                VStack (alignment: .leading) {
+                    Text("\(official.channels[1].type): @\(official.channels[1].id)")
+                    Text("\(official.channels[0].type): @\(official.channels[0].id)")
+                }
+            }
+            
+            Section ("Websites") {
+                let linkOne = official.urls[0]
+                let linkTwo = official.urls[1]
+                VStack (alignment: .leading) {
+                    Link("\(official.urls[0])", destination: URL(string: linkOne)!)
+                    Divider()
+                    Link("\(official.urls[1])", destination: URL(string: linkTwo)!)
+                }
+            }
         }
-
     }
 }
 

@@ -47,7 +47,22 @@ struct MyRepsView: View {
         }
     }
     func returnLawmakerView(_ official: Official) -> AnyView {
-        return AnyView(IndividualRepView(user: user, official: official))
+        var partyAbbrev = ""
+
+        if (official.party == "Democratic Party"){
+            partyAbbrev = "(D)"
+        }
+        
+        else if (official.party == "Republican Party"){
+            partyAbbrev = "(R)"
+        }
+        else if (official.party == "Unaffiliated"){
+            partyAbbrev = "(I)"
+        }
+        else {
+            partyAbbrev = official.party
+        }
+        return AnyView(IndividualRepView(user: user, official: official, partyAbbrev: partyAbbrev))
     }
 }
 
