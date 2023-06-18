@@ -36,6 +36,7 @@ struct IndividualRepView: View {
                     
         }
         List {
+            //Wanna make the address prettier someday :)
             Section ("Basic Contact Information") {
                 VStack (alignment: .leading) {
                     Text("Washington DC Address: \(official.address[0].line1) \(official.address[0].city) \(official.address[0].state) \(official.address[0].zip)" as String)
@@ -58,6 +59,13 @@ struct IndividualRepView: View {
                     Link("\(official.urls[0])", destination: URL(string: linkOne)!)
                     Divider()
                     Link("\(official.urls[1])", destination: URL(string: linkTwo)!)
+                }
+            }
+            Section ("Top Contributors") {
+                VStack (alignment: .leading) {
+                    Text("\(official.contributors![0].attributes.orgName) Amount: \(official.contributors![0].attributes.total)" as String)
+                    Text("\(official.contributors![1].attributes.orgName) Amount:\(official.contributors![1].attributes.total)" as String)
+                    Text("\(official.contributors![2].attributes.orgName)Amount:\(official.contributors![2].attributes.total)" as String)
                 }
             }
         }

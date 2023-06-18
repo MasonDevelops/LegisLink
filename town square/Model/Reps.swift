@@ -50,19 +50,22 @@ struct Official: Codable, Hashable {
 
     }
     
-    let name: String
+    var name: String
     let address: [NormalizedInput]
     let party: String
     let phones: [String]
     let urls: [String]
     var photoURL: String?
     let channels: [Channel]
-    let geocodingSummaries: [GeocodingSummary]
+    var crpCandidateID: String?
+    var contributors: [Contributor]?
 
     enum CodingKeys: String, CodingKey {
         case name, address, party, phones, urls
         case photoURL = "photoUrl"
-        case channels, geocodingSummaries
+        case channels
+        case crpCandidateID
+        case contributors
     }
 }
 
@@ -72,19 +75,7 @@ struct Channel: Codable {
 }
 
 // MARK: - GeocodingSummary
-struct GeocodingSummary: Codable {
-    let queryString: String
-    let featureID: FeatureID
-    let featureType: String
-    let positionPrecisionMeters: Double
-    let addressUnderstood: Bool
 
-    enum CodingKeys: String, CodingKey {
-        case queryString
-        case featureID = "featureId"
-        case featureType, positionPrecisionMeters, addressUnderstood
-    }
-}
 
 // MARK: - FeatureID
 struct FeatureID: Codable {
