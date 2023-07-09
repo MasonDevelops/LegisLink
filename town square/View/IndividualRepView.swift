@@ -55,10 +55,14 @@ struct IndividualRepView: View {
             Section ("Websites") {
                 let linkOne = official.urls[0]
                 let linkTwo = official.urls[1]
+
                 VStack (alignment: .leading) {
-                    Link("\(official.urls[0])", destination: URL(string: linkOne)!)
+                    let initLinkOne = "[\(official.urls[0])](\(linkOne))"
+                    Text(.init(initLinkOne))
                     Divider()
-                    Link("\(official.urls[1])", destination: URL(string: linkTwo)!)
+                    let initLinkTwo = "[\(official.urls[1])](\(linkTwo))"
+                    Text(.init(initLinkTwo))
+
                 }
             }
             Section ("Top Contributors") {

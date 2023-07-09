@@ -10,6 +10,7 @@ import Foundation
 
 
 import Fuse
+import Yams
 
 
 class MyRepsViewModel: ObservableObject {
@@ -27,7 +28,7 @@ class MyRepsViewModel: ObservableObject {
             type: "type",
             id: "id"
          )],
-         crpCandidateID: "crpCandidateID",
+         ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
          contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))])
     
     
@@ -42,7 +43,7 @@ class MyRepsViewModel: ObservableObject {
             type: "type",
             id: "id"
          )],
-         crpCandidateID: "crpCandidateID",
+         ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
          contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))])
     
     @Published var representative = Official(name: "null", address: [NormalizedInput(
@@ -56,7 +57,7 @@ class MyRepsViewModel: ObservableObject {
             type: "type",
             id: "id"
          )],
-         crpCandidateID: "crpCandidateID",
+         ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
          contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))])
     
     init(user: User){
@@ -97,8 +98,9 @@ class MyRepsViewModel: ObservableObject {
             }
             
             DispatchQueue.main.async { [self] in
-                bundleCID()
+                bundleOpenStatesData()
                 getTopSixContributorInfo()
+               
                 
                 
             }
@@ -106,47 +108,114 @@ class MyRepsViewModel: ObservableObject {
         .resume()
     }
     
-    func readCRPCandidateJSON() -> Data? {
+    
+    func fetchOpenStatesOfficialData() -> [CandidateYAML] {
+        let fm = FileManager.default
+        let path = "/Users/mcmacbookair/Desktop/us/legislature/"
+        var membersOfCongress = [CandidateYAML]()
+
+        
+
         do {
-            if let filePath = Bundle.main.path(forResource: "117_congress_master_list", ofType: "json") {
-                let fileUrl = URL(fileURLWithPath: filePath)
-                let data = try Data(contentsOf: fileUrl)
-                return data
+            let items = try fm.contentsOfDirectory(atPath: path)
+
+            for item in items {
+                let filePath = path + item
+                let contents = try String(contentsOfFile: filePath)
+                let decoder = YAMLDecoder()
+                let decoded = try decoder.decode(CandidateYAML.self, from: contents)
+                membersOfCongress.append(decoded)
             }
         } catch {
-            print("error: \(error)")
+            print("Error info: \(error)")
         }
-        return nil
+        
+        return membersOfCongress
     }
     
-    func parseCRPCandidateJSON(jsonData: Data) -> [CRPCandidateElement]? {
-        do {
-            let decodedData = try JSONDecoder().decode([CRPCandidateElement].self, from: jsonData)
-            return decodedData
-        } catch {
-            print("error: \(error)")
-        }
-        return nil
-    }
     
-    func bundleCID() {
-        if let candidateData = readCRPCandidateJSON() {
-            if let candidates = parseCRPCandidateJSON(jsonData: candidateData) {
-                let cIDCollection = fuzzySearch(candidates: candidates)
-                senatorOne.crpCandidateID = cIDCollection[0]
-                senatorTwo.crpCandidateID = cIDCollection[1]
-                representative.crpCandidateID = cIDCollection[2]
+    func bundleOpenStatesData() {
+        let candidates = fetchOpenStatesOfficialData()
+        let ocdIDCollection = fuzzySearch(candidates: candidates)
+        senatorOne.ocdID = ocdIDCollection[0]
+        senatorTwo.ocdID = ocdIDCollection[1]
+        representative.ocdID = ocdIDCollection[2]
+
+        for candidate in candidates {
+            if senatorOne.ocdID == candidate.id {
+                for other_id in candidate.otherIdentifiers {
+                    if other_id.scheme == "bioguide" {
+                        senatorOne.bioguideID = other_id.identifier
+                    } else if other_id.scheme == "govtrack" {
+                        senatorOne.govtrackID = other_id.identifier
+                    } else if other_id.scheme == "opensecrets" {
+                        senatorOne.opensecretsID = other_id.identifier
+                    } else if other_id.scheme == "votesmart" {
+                        senatorOne.votesmartID = other_id.identifier
+                    } else if other_id.scheme == "fec" {
+                        senatorOne.fecID = other_id.identifier
+                    } else if other_id.scheme == "wikidata" {
+                        senatorOne.wikidataID = other_id.identifier
+                    } else {
+                        continue
+                    }
+                }
+            }
+        }
+        for candidate in candidates {
+            if senatorTwo.ocdID == candidate.id {
+                for other_id in candidate.otherIdentifiers {
+                    if other_id.scheme == "bioguide" {
+                        senatorTwo.bioguideID = other_id.identifier
+                    } else if other_id.scheme == "govtrack" {
+                        senatorTwo.govtrackID = other_id.identifier
+                    } else if other_id.scheme == "opensecrets" {
+                        senatorTwo.opensecretsID = other_id.identifier
+                    } else if other_id.scheme == "votesmart" {
+                        senatorTwo.votesmartID = other_id.identifier
+                    } else if other_id.scheme == "fec" {
+                        senatorTwo.fecID = other_id.identifier
+                    } else if other_id.scheme == "wikidata" {
+                        senatorTwo.wikidataID = other_id.identifier
+                    } else {
+                        continue
+                    }
+                    
+                }
+            }
+        }
+        for candidate in candidates {
+            if representative.ocdID == candidate.id {
+                for other_id in candidate.otherIdentifiers {
+                    if other_id.scheme == "bioguide" {
+                        representative.bioguideID = other_id.identifier
+                    } else if other_id.scheme == "govtrack" {
+                        representative.govtrackID = other_id.identifier
+                    } else if other_id.scheme == "opensecrets" {
+                        representative.opensecretsID = other_id.identifier
+                    } else if other_id.scheme == "votesmart" {
+                        representative.votesmartID = other_id.identifier
+                    } else if other_id.scheme == "fec" {
+                        representative.fecID = other_id.identifier
+                    } else if other_id.scheme == "wikidata" {
+                        representative.wikidataID = other_id.identifier
+                    } else {
+                        continue
+                    }
+                    
+                }
             }
         }
     }
     
-    func fuzzySearch(candidates: [CRPCandidateElement]) -> [String] {
+    
+    func fuzzySearch(candidates: [CandidateYAML]) -> [String] {
         var currentLawmakers = [Official]()
         currentLawmakers.append(self.senatorOne)
         currentLawmakers.append(self.senatorTwo)
         currentLawmakers.append(self.representative)
         
-        var cIDArray = [String]()
+        var ocdIDArray = [String]()
         
         var best_score = 150.0
         var best_match_id = ""
@@ -159,26 +228,26 @@ class MyRepsViewModel: ObservableObject {
             lawmaker.name.removeAll(where: { removeCharacters.contains($0)})
             let lawmakerPattern = fuse.createPattern(from: lawmaker.name)
             candidates.forEach {
-                let result = fuse.search(lawmakerPattern, in: $0.crpName)
+                let result = fuse.search(lawmakerPattern, in: $0.name)
                 if (result?.score != nil){
                     if (result!.score < best_score){
                         best_score = result!.score
-                        best_match_id = $0.cid
+                        best_match_id = $0.id
                     }
                 }
                 
             }
-            cIDArray.append(best_match_id)
+            ocdIDArray.append(best_match_id)
         }
-        return cIDArray
+        return ocdIDArray
     }
     
     
     
     func getTopSixContributorInfo() {
         let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
-        
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.crpCandidateID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
+
+        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
             URLSession.shared.dataTask(with: url) { (data, _, _) in
                 guard let data = data else {return}
                 do {
@@ -189,7 +258,7 @@ class MyRepsViewModel: ObservableObject {
                 }
             }
             .resume()
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.crpCandidateID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
+        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
             URLSession.shared.dataTask(with: url) { (data, _, _) in
                 guard let data = data else {return}
                 do {
@@ -200,7 +269,7 @@ class MyRepsViewModel: ObservableObject {
                 }
             }
             .resume()
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.crpCandidateID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
+        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
             URLSession.shared.dataTask(with: url) { (data, _, _) in
                 guard let data = data else {return}
                 do {
