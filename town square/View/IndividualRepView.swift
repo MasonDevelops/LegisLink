@@ -72,6 +72,9 @@ struct IndividualRepView: View {
                     Text("\(official.contributors![2].attributes.orgName)Amount:\(official.contributors![2].attributes.total)" as String)
                 }
             }
+            NavigationLink(destination: RepCommitteeView(user:user, official: official)) {
+                Text("\(official.name)'s Committees")
+            }
         }
     }
 }

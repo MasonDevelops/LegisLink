@@ -29,8 +29,8 @@ class MyRepsViewModel: ObservableObject {
             id: "id"
          )],
          ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
-         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))])
-    
+         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))],
+         committees: ["committees"])
     
     @Published var senatorTwo = Official(name: "null", address: [NormalizedInput(
         
@@ -44,7 +44,8 @@ class MyRepsViewModel: ObservableObject {
             id: "id"
          )],
          ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
-         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))])
+         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))],
+         committees: ["committees"])
     
     @Published var representative = Official(name: "null", address: [NormalizedInput(
         
@@ -58,7 +59,8 @@ class MyRepsViewModel: ObservableObject {
             id: "id"
          )],
          ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
-         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))])
+         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))],
+         committees: ["committees"])
     
     init(user: User){
         self.user = user
@@ -100,7 +102,8 @@ class MyRepsViewModel: ObservableObject {
             DispatchQueue.main.async { [self] in
                 bundleOpenStatesData()
                 getTopSixContributorInfo()
-               
+                parseSenateCommitteeLists()
+                
                 
                 
             }
@@ -113,12 +116,12 @@ class MyRepsViewModel: ObservableObject {
         let fm = FileManager.default
         let path = "/Users/mcmacbookair/Desktop/us/legislature/"
         var membersOfCongress = [CandidateYAML]()
-
         
-
+        
+        
         do {
             let items = try fm.contentsOfDirectory(atPath: path)
-
+            
             for item in items {
                 let filePath = path + item
                 let contents = try String(contentsOfFile: filePath)
@@ -140,7 +143,7 @@ class MyRepsViewModel: ObservableObject {
         senatorOne.ocdID = ocdIDCollection[0]
         senatorTwo.ocdID = ocdIDCollection[1]
         representative.ocdID = ocdIDCollection[2]
-
+        
         for candidate in candidates {
             if senatorOne.ocdID == candidate.id {
                 for other_id in candidate.otherIdentifiers {
@@ -246,39 +249,87 @@ class MyRepsViewModel: ObservableObject {
     
     func getTopSixContributorInfo() {
         let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
-
+        
         guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                    self.senatorOne.contributors = contributors!.response.contributors.contributor
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
+                self.senatorOne.contributors = contributors!.response.contributors.contributor
+            } catch {
+                print("Unexpected error: \(error).")
             }
-            .resume()
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                    self.senatorTwo.contributors = contributors!.response.contributors.contributor
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
-            }
-            .resume()
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                    self.representative.contributors = contributors!.response.contributors.contributor
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
-            }
-            .resume()
         }
+        .resume()
+        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
+                self.senatorTwo.contributors = contributors!.response.contributors.contributor
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }
+        .resume()
+        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
+                self.representative.contributors = contributors!.response.contributors.contributor
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }
+        .resume()
+    }
+    
+    func getSenateCommittees(currentPage: Int, completion: @escaping (CommitteeList?) -> Void) {
+        let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
+        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey!)&page=\(currentPage)&per_page=20")
+        else { return }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let senateCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
+                completion(senateCommitteeList)
+                
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }.resume()
+    }
+    
+    
+    func parseSenateCommitteeLists() {
+        let group = DispatchGroup()
+        var currentPage = 1
+        var maxPage = 2
+        
+        while currentPage <= maxPage {
+            group.enter()
+            getSenateCommittees(currentPage: currentPage) { [self] (currList) in
+                for results in currList!.results {
+                    for memberships in results.memberships {
+                        if (self.senatorOne.ocdID == memberships.person.id) {
+                            self.senatorOne.committees?.append(results.name) ?? (self.senatorOne.committees = [results.name])
+                        }
+                        if (self.senatorTwo.ocdID == memberships.person.id) {
+                            self.senatorTwo.committees?.append(results.name) ?? (self.senatorTwo.committees = [results.name])
+                        }
+                        
+                    }
+                }
+                currentPage = currentPage + 1
+                group.leave()
+            }
+            group.wait()
+        }
+        group.notify(queue: DispatchQueue.main) {
+            print("Senate committees found")
+            print(self.senatorOne.committees!)
+            print(self.senatorTwo.committees!)
+        }
+    }
 }
