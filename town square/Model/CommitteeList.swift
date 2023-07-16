@@ -69,7 +69,7 @@ struct Membership: Codable {
 struct Person: Codable {
     let id, name: String
     let party: CommitteeMemberParty
-    let currentRole: CurrentRole
+    let currentRole: CurrentRole?
 
     enum CodingKeys: String, CodingKey {
         case id, name, party

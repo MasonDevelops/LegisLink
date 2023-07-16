@@ -103,6 +103,7 @@ class MyRepsViewModel: ObservableObject {
                 bundleOpenStatesData()
                 getTopSixContributorInfo()
                 parseSenateCommitteeLists()
+                parseHouseCommitteeLists()
                 
                 
                 
@@ -285,6 +286,23 @@ class MyRepsViewModel: ObservableObject {
         .resume()
     }
     
+    func getMaxSenateCommitteePages(completion: @escaping (Int) -> Void) {
+        let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
+        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey!)&page=1&per_page=20")
+        else { return }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let senateCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
+                let maxPage = senateCommitteeList.pagination.maxPage
+                return completion(maxPage)
+                
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }.resume()
+    }
+    
     func getSenateCommittees(currentPage: Int, completion: @escaping (CommitteeList?) -> Void) {
         let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
         guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey!)&page=\(currentPage)&per_page=20")
@@ -304,9 +322,20 @@ class MyRepsViewModel: ObservableObject {
     
     func parseSenateCommitteeLists() {
         let group = DispatchGroup()
+        let maxPageGroup = DispatchGroup()
         var currentPage = 1
-        var maxPage = 2
+        var maxPage = 0
         
+        maxPageGroup.enter()
+        getMaxSenateCommitteePages { maxPageCallVal in
+            maxPage = maxPageCallVal
+            maxPageGroup.leave()
+        }
+        
+        maxPageGroup.wait()
+        maxPageGroup.notify(queue: DispatchQueue.main) {
+            print("Maximum page for Senate Committee API Call complete. Value is \(maxPage)")
+        }
         while currentPage <= maxPage {
             group.enter()
             getSenateCommittees(currentPage: currentPage) { [self] (currList) in
@@ -328,8 +357,81 @@ class MyRepsViewModel: ObservableObject {
         }
         group.notify(queue: DispatchQueue.main) {
             print("Senate committees found")
-            print(self.senatorOne.committees!)
-            print(self.senatorTwo.committees!)
+        }
+    }
+    
+    func getMaxHouseCommitteePages(completion: @escaping (Int) -> Void) {
+        let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
+        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=lower&include=memberships&apikey=\(openStatesAPIKey!)&page=1&per_page=20")
+        else { return }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let houseCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
+                let maxPage = houseCommitteeList.pagination.maxPage
+                return completion(maxPage)
+                
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }.resume()
+    }
+    
+    
+    
+    
+    
+    func getHouseCommittees(currentPage: Int, completion: @escaping (CommitteeList?) -> Void) {
+        let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
+        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=lower&include=memberships&apikey=\(openStatesAPIKey!)&page=\(currentPage)&per_page=20")
+        else { return }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let houseCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
+                completion(houseCommitteeList)
+                
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }.resume()
+    }
+    
+    
+    
+    func parseHouseCommitteeLists() {
+        let group = DispatchGroup()
+        let maxPageGroup = DispatchGroup()
+        var currentPage = 1
+        var maxPage = 2
+        
+        maxPageGroup.enter()
+        getMaxHouseCommitteePages { maxPageCallVal in
+            maxPage = maxPageCallVal
+            maxPageGroup.leave()
+        }
+        
+        maxPageGroup.wait()
+        maxPageGroup.notify(queue: DispatchQueue.main) {
+            print("Maximum page for House Committee API Call complete. Value is \(maxPage)")
+        }
+        while currentPage <= maxPage {
+            group.enter()
+            getHouseCommittees(currentPage: currentPage) { [self] (currList) in
+                for results in currList!.results {
+                    for memberships in results.memberships {
+                        if (self.representative.ocdID == memberships.person.id) {
+                            self.representative.committees?.append(results.name) ?? (self.representative.committees = [results.name])
+                        }
+                    }
+                }
+                currentPage = currentPage + 1
+                group.leave()
+            }
+            group.wait()
+        }
+        group.notify(queue: DispatchQueue.main) {
+            print("House committees found")
         }
     }
 }
