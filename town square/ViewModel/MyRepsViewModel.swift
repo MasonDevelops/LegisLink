@@ -27,10 +27,8 @@ class MyRepsViewModel: ObservableObject {
          party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
             type: "type",
             id: "id"
-         )],
-         ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
-         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))],
-         committees: ["committees"])
+         )])
+         
     
     @Published var senatorTwo = Official(name: "null", address: [NormalizedInput(
         
@@ -42,10 +40,7 @@ class MyRepsViewModel: ObservableObject {
          party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
             type: "type",
             id: "id"
-         )],
-         ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
-         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))],
-         committees: ["committees"])
+         )])
     
     @Published var representative = Official(name: "null", address: [NormalizedInput(
         
@@ -57,22 +52,54 @@ class MyRepsViewModel: ObservableObject {
          party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
             type: "type",
             id: "id"
-         )],
-         ocdID: "ocdID", bioguideID: "bioguideID", govtrackID: "govtrackID", wikidataID: "wikidataID", votesmartID: "votesmartID", fecID: "fecID",
-         contributors: [Contributor(attributes: ContributorAttributes(orgName: "orgName", total: "total", pacs: "pacs", indivs: "indivs"))],
-         committees: ["committees"])
+         )])
     
     init(user: User){
         self.user = user
-        getReps()
+        let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
+        getReps(googleCivicInfoURL: googleCivicInfoURL)
+        bundleOpenStatesData()
+        let openSecretsAPIURls = getOpenSecretsAPIURLs()
+        getTopSixContributorInfo(openSecretsURLs: openSecretsAPIURls)
+        parseSenateCommitteeLists()
+        parseHouseCommitteeLists()
         
     }
     
-    func getReps() {
-        let gapiKey = ProcessInfo.processInfo.environment["Google_API_Key"]
+    func getGoogleCivicInformationAPIURL() -> String {
+        let googleCivicInformationAPIKey = ProcessInfo.processInfo.environment["Google_API_Key"]
         let fullAddress = user.returnFullAddress()
         let fullAddressEncoded = fullAddress.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        guard let url = URL(string: "https://www.googleapis.com/civicinfo/v2/representatives?key=\(gapiKey!)&address=\(fullAddressEncoded!)&includedOffices=true&levels=country&roles=legislatorUpperBody&roles=legislatorLowerBody") else { return }
+        let url = "https://www.googleapis.com/civicinfo/v2/representatives?key=\(googleCivicInformationAPIKey!)&address=\(fullAddressEncoded!)&includedOffices=true&levels=country&roles=legislatorUpperBody&roles=legislatorLowerBody"
+        
+        
+        
+        return url
+    }
+    
+    func getOpenSecretsAPIURLs() -> [String] {
+        let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
+        
+        var openSecretsURLs = [String]()
+        
+        let senatorOneURL = "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json"
+        
+        let senatorTwoURL = "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json"
+        
+        let repURL = "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json"
+        
+        openSecretsURLs.append(senatorOneURL)
+        openSecretsURLs.append(senatorTwoURL)
+        openSecretsURLs.append(repURL)
+
+        
+        return openSecretsURLs
+    }
+    
+    func getReps(googleCivicInfoURL: String) {        
+        guard let url = URL(string: googleCivicInfoURL) else { return }
+        
+        
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else {return}
             do {
@@ -97,16 +124,6 @@ class MyRepsViewModel: ObservableObject {
                 }
             } catch {
                 print("Unexpected error: \(error).")
-            }
-            
-            DispatchQueue.main.async { [self] in
-                bundleOpenStatesData()
-                getTopSixContributorInfo()
-                parseSenateCommitteeLists()
-                parseHouseCommitteeLists()
-                
-                
-                
             }
         }
         .resume()
@@ -248,42 +265,29 @@ class MyRepsViewModel: ObservableObject {
     
     
     
-    func getTopSixContributorInfo() {
-        let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
+    func getTopSixContributorInfo(openSecretsURLs: [String]) {
         
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                self.senatorOne.contributors = contributors!.response.contributors.contributor
-            } catch {
-                print("Unexpected error: \(error).")
+        
+        for currentURL in openSecretsURLs {
+            guard let url = URL(string: currentURL) else { return }
+            URLSession.shared.dataTask(with: url) { (data, _, _) in
+                guard let data = data else {return}
+                do {
+                    let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
+                    if self.senatorOne.contributors == nil {
+                        self.senatorOne.contributors = contributors!.response.contributors.contributor
+                    } else if self.senatorTwo.contributors == nil {
+                        self.senatorTwo.contributors = contributors!.response.contributors.contributor
+                    } else if self.representative.contributors == nil {
+                        self.representative.contributors = contributors!.response.contributors.contributor
+                    }
+                } catch {
+                    print("Unexpected error: \(error).")
+                }
             }
+            .resume()
+            
         }
-        .resume()
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                self.senatorTwo.contributors = contributors!.response.contributors.contributor
-            } catch {
-                print("Unexpected error: \(error).")
-            }
-        }
-        .resume()
-        guard let url = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json") else { return }
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                self.representative.contributors = contributors!.response.contributors.contributor
-            } catch {
-                print("Unexpected error: \(error).")
-            }
-        }
-        .resume()
     }
     
     func getMaxSenateCommitteePages(completion: @escaping (Int) -> Void) {
