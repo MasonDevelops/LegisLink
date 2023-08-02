@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "90B8BD58-9B3B-42E5-9890-2D1F78206D0A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:town square.xcodeproj",
+        "identifier" : "0F14FD562A7A339600F91EF4",
+        "name" : "FindYourRepTests"
+      }
+    }
+  ],
+  "version" : 1
+}
