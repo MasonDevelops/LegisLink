@@ -14,11 +14,15 @@ import UIKit
 struct MyRepsView: View {
     @State var user: User
     @ObservedObject private var repsvm: MyRepsViewModel
+    
+    let googleCivicService = GoogleCivicInfoService()
+    let openStatesService = OpenStatesService()
+    let openSecretsService = OpenSecretsService()
    
     
     init(user: User) {
             self.user = user
-            self.repsvm = MyRepsViewModel(user: user)
+            self.repsvm = MyRepsViewModel(user: user, googleCivicInfoService: googleCivicService, openSecretsService: openSecretsService, openStatesService: openStatesService)
         }
 
     

@@ -17,6 +17,10 @@ class MyRepsViewModel: ObservableObject {
     
     private var user: User
     
+    private let googleCivicInfoService: GoogleCivicInfoServiceProtocol
+    private let openSecretsService: OpenSecretsServiceProtocol
+    private let openStatesService: OpenStatesServiceProtocol
+    
     @Published var senatorOne = Official(name: "null", address: [NormalizedInput(
         
         line1: "String",
@@ -54,107 +58,96 @@ class MyRepsViewModel: ObservableObject {
             id: "id"
          )])
     
-    init(user: User){
+    init(user: User, googleCivicInfoService: GoogleCivicInfoServiceProtocol,
+         openSecretsService: OpenSecretsServiceProtocol,
+         openStatesService: OpenStatesServiceProtocol){
         self.user = user
-        let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
-        getReps(googleCivicInfoURL: googleCivicInfoURL)
-        bundleOpenStatesData()
-        let openSecretsAPIURls = getOpenSecretsAPIURLs()
-        getTopSixContributorInfo(openSecretsURLs: openSecretsAPIURls)
-        parseSenateCommitteeLists()
-        parseHouseCommitteeLists()
-        
-    }
-    
-    func getGoogleCivicInformationAPIURL() -> URL {
+        self.googleCivicInfoService = googleCivicInfoService
+        self.openSecretsService = openSecretsService
+        self.openStatesService = openStatesService
         
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            let bundle = Bundle(for: MyRepsViewModel.self)
-            let path = bundle.path(forResource: "successful-google-civic-info-api-response", ofType: "json")
-            let url = URL(fileURLWithPath: path!)
-
-            
-            return url
+            let testURL = URL(string: "https://www.example.com")
+            var testURLs = [URL]()
+            testURLs.append(testURL!)
+            testURLs.append(testURL!)
+            testURLs.append(testURL!)
+            getRepsFromGoogleCivicAPIService(googleCivicInfoURL: testURL!)
+            bundleOpenStatesData()
+            getTopSixContributorInfo(openSecretsURLs: testURLs)
+            parseSenateCommitteeLists()
+            parseHouseCommitteeLists()
         } else {
-            let googleCivicInformationAPIKey = ProcessInfo.processInfo.environment["Google_API_Key"]
-            let fullAddress = user.returnFullAddress()
-            let fullAddressEncoded = fullAddress.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-            let urlPath = "https://www.googleapis.com/civicinfo/v2/representatives?key=\(googleCivicInformationAPIKey!)&address=\(fullAddressEncoded!)&includedOffices=true&levels=country&roles=legislatorUpperBody&roles=legislatorLowerBody"
-            
-            let url = URL(string: urlPath)
-
-
-
-            return url!
+            let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
+            getRepsFromGoogleCivicAPIService(googleCivicInfoURL: googleCivicInfoURL)
+            bundleOpenStatesData()
+            let openSecretsAPIURls = getOpenSecretsAPIURLs()
+            getTopSixContributorInfo(openSecretsURLs: openSecretsAPIURls)
+            parseSenateCommitteeLists()
+            parseHouseCommitteeLists()
         }
+    }
+    
+
+    
+    func getGoogleCivicInformationAPIURL() -> URL {
+        let googleCivicInformationAPIKey = ProcessInfo.processInfo.environment["Google_API_Key"]
+        let fullAddress = user.returnFullAddress()
+        let fullAddressEncoded = fullAddress.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let urlPath = "https://www.googleapis.com/civicinfo/v2/representatives?key=\(googleCivicInformationAPIKey!)&address=\(fullAddressEncoded!)&includedOffices=true&levels=country&roles=legislatorUpperBody&roles=legislatorLowerBody"
+        
+        let url = URL(string: urlPath)
+
+        return url!
     }
     
     func getOpenSecretsAPIURLs() -> [URL] {
         
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            
-            let bundle = Bundle(for: MyRepsViewModel.self)
-            var testOpenSecretsURLs = [URL]()
-            
-            for currentResponse in 1...3 {
-                let path = bundle.path(forResource: "successful-open-secrets-api-response-\(currentResponse)", ofType: "json")
-                let url = URL(fileURLWithPath: path!)
-                testOpenSecretsURLs.append(url)
-            }
-            
-            return testOpenSecretsURLs
-        } else {
-            
-            let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
-            
-            var openSecretsURLs = [URL]()
-            
-            let senatorOneURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
-            
-            let senatorTwoURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
-            
-            let repURL = URL (string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
-            
-            openSecretsURLs.append(senatorOneURL!)
-            openSecretsURLs.append(senatorTwoURL!)
-            openSecretsURLs.append(repURL!)
+        
+        let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
+        
+        var openSecretsURLs = [URL]()
+        
+        let senatorOneURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
+        
+        let senatorTwoURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
+        
+        let repURL = URL (string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
+        
+        openSecretsURLs.append(senatorOneURL!)
+        openSecretsURLs.append(senatorTwoURL!)
+        openSecretsURLs.append(repURL!)
 
+        
+        return openSecretsURLs
             
-            return openSecretsURLs
-            
-        }
     }
     
-    func getReps(googleCivicInfoURL: URL) {
-        let url = googleCivicInfoURL
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let lawmakers = try JSONDecoder().decode(Reps.self, from: data)
-                
-                self.senatorOne = lawmakers.officials[0]
-                
-                if (self.senatorOne.photoURL == nil) {
-                    self.senatorOne.photoURL = "photoURL"
+    func getRepsFromGoogleCivicAPIService(googleCivicInfoURL: URL) {
+        googleCivicInfoService.getReps(from: googleCivicInfoURL) { [weak self] result in
+                    switch result {
+                    case .success(let lawmakers):
+                        self!.senatorOne = lawmakers.officials[0]
+
+                        if (self!.senatorOne.photoURL == nil) {
+                            self!.senatorOne.photoURL = "photoURL"
+                        }
+
+                        self!.senatorTwo = lawmakers.officials[1]
+
+                        if (self!.senatorTwo.photoURL == nil) {
+                            self!.senatorTwo.photoURL = "photoURL"
+                        }
+
+                        self!.representative = lawmakers.officials[2]
+
+                        if (self!.representative.photoURL == nil) {
+                            self!.representative.photoURL = "photoURL"
+                        }
+                    case .failure(let error):
+                        print("Unexpected error: \(error).")
+                    }
                 }
-                
-                self.senatorTwo = lawmakers.officials[1]
-                
-                if (self.senatorTwo.photoURL == nil) {
-                    self.senatorTwo.photoURL = "photoURL"
-                }
-                
-                self.representative = lawmakers.officials[2]
-                
-                if (self.representative.photoURL == nil) {
-                    self.representative.photoURL = "photoURL"
-                }
-            } catch {
-                print("Unexpected error: \(error).")
-            }
-        }
-        .resume()
     }
     
     
@@ -187,16 +180,11 @@ class MyRepsViewModel: ObservableObject {
         
         let candidates = fetchOpenStatesOfficialData()
         
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            senatorOne.ocdID = "ocd-person/00c39487-8eec-5494-af5e-96e9b025a39b"
-            senatorTwo.ocdID = "ocd-person/09a67947-f66a-55ac-b4ba-5c656ad7f67d"
-            representative.ocdID = "ocd-person/b4bfc55d-3cdd-5a6e-accf-912a2b2d28b8"
-        } else {
-            let ocdIDCollection = fuzzySearch(candidates: candidates)
-            senatorOne.ocdID = ocdIDCollection[0]
-            senatorTwo.ocdID = ocdIDCollection[1]
-            representative.ocdID = ocdIDCollection[2]
-        }
+        let ocdIDCollection = fuzzySearch(candidates: candidates)
+        senatorOne.ocdID = ocdIDCollection[0]
+        senatorTwo.ocdID = ocdIDCollection[1]
+        representative.ocdID = ocdIDCollection[2]
+
         
         for candidate in candidates {
             if senatorOne.ocdID == candidate.id {
@@ -302,86 +290,21 @@ class MyRepsViewModel: ObservableObject {
     
     
     func getTopSixContributorInfo(openSecretsURLs: [URL]) {
-        
         for currentURL in openSecretsURLs {
-            URLSession.shared.dataTask(with: currentURL) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let contributors = try? JSONDecoder().decode(Contributors.self, from: data)
-                    if self.senatorOne.contributors == nil {
-                        self.senatorOne.contributors = contributors!.response.contributors.contributor
-                    } else if self.senatorTwo.contributors == nil {
-                        self.senatorTwo.contributors = contributors!.response.contributors.contributor
-                    } else if self.representative.contributors == nil {
-                        self.representative.contributors = contributors!.response.contributors.contributor
-                    }
-                } catch {
+            openSecretsService.getTopContributors(from: currentURL) { [weak self] result in
+                switch result {
+                case .success(let contributors):
+                   if self!.senatorOne.contributors == nil {
+                       self!.senatorOne.contributors = contributors.response.contributors.contributor
+                   } else if self!.senatorTwo.contributors == nil {
+                       self!.senatorTwo.contributors = contributors.response.contributors.contributor
+                   } else if self!.representative.contributors == nil {
+                       self!.representative.contributors = contributors.response.contributors.contributor
+                   }
+                case .failure(let error):
                     print("Unexpected error: \(error).")
                 }
             }
-            .resume()
-            
-        }
-    }
-    
-    func getMaxSenateCommitteePages(completion: @escaping (Int) -> Void) {
-        
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            
-            return completion(2)
-        }
-        
-        
-        let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
-        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey!)&page=1&per_page=20")
-        else { return }
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let senateCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
-                let maxPage = senateCommitteeList.pagination.maxPage
-                return completion(maxPage)
-                
-            } catch {
-                print("Unexpected error: \(error).")
-            }
-        }.resume()
-    }
-    
-    func getSenateCommittees(currentPage: Int, completion: @escaping (CommitteeList?) -> Void) {
-                
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            
-            let bundle = Bundle(for: MyRepsViewModel.self)
-            let path = bundle.path(forResource: "successful-open-states-upper-house-committee-request-page-\(currentPage)", ofType: "json")
-            let url = URL(fileURLWithPath: path!)
-            
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let senateCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
-                    completion(senateCommitteeList)
-                    
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
-            }.resume()
-            
-        } else {
-            let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
-            guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey!)&page=\(currentPage)&per_page=20")
-            else { return }
-            
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let senateCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
-                    completion(senateCommitteeList)
-                    
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
-            }.resume()
         }
     }
     
@@ -393,7 +316,7 @@ class MyRepsViewModel: ObservableObject {
         var maxPage = 0
         
         maxPageGroup.enter()
-        getMaxSenateCommitteePages { maxPageCallVal in
+        openStatesService.getMaxCommitteePages(from: "upper") { maxPageCallVal in
             maxPage = maxPageCallVal
             maxPageGroup.leave()
         }
@@ -401,20 +324,26 @@ class MyRepsViewModel: ObservableObject {
         maxPageGroup.wait()
         maxPageGroup.notify(queue: DispatchQueue.main) {
         }
+        
         while currentPage <= maxPage {
             group.enter()
-            getSenateCommittees(currentPage: currentPage) { [self] (currList) in
-                for results in currList!.results {
-                    for memberships in results.memberships {
-                        if (self.senatorOne.ocdID == memberships.person.id) {
-                            self.senatorOne.committees?.append(results.name) ?? (self.senatorOne.committees = [results.name])
+            openStatesService.getSenateCommitteeData(from: currentPage) { [weak self] result in
+                switch result {
+                case .success(let committeeListResults):
+                    for committeeListResult in committeeListResults.results {
+                        for memberships in committeeListResult.memberships {
+                            if (self!.senatorOne.ocdID == memberships.person.id) {
+                                self!.senatorOne.committees?.append(committeeListResult.name) ?? (self!.senatorOne.committees = [committeeListResult.name])
+                            }
+                            if (self!.senatorTwo.ocdID == memberships.person.id) {
+                                self!.senatorTwo.committees?.append(committeeListResult.name) ?? (self!.senatorTwo.committees = [committeeListResult.name])
+                            }
                         }
-                        if (self.senatorTwo.ocdID == memberships.person.id) {
-                            self.senatorTwo.committees?.append(results.name) ?? (self.senatorTwo.committees = [results.name])
-                        }
-                        
                     }
+                case .failure(let error):
+                    print("Unexpected error: \(error).")
                 }
+                
                 currentPage = currentPage + 1
                 group.leave()
             }
@@ -424,69 +353,6 @@ class MyRepsViewModel: ObservableObject {
         }
     }
     
-    func getMaxHouseCommitteePages(completion: @escaping (Int) -> Void) {
-        
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            
-            return completion(2)
-        }
-        
-        let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
-        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=lower&include=memberships&apikey=\(openStatesAPIKey!)&page=1&per_page=20")
-        else { return }
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let houseCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
-                let maxPage = houseCommitteeList.pagination.maxPage
-                return completion(maxPage)
-                
-            } catch {
-                print("Unexpected error: \(error).")
-            }
-        }.resume()
-    }
-    
-    
-    
-    
-    
-    func getHouseCommittees(currentPage: Int, completion: @escaping (CommitteeList?) -> Void) {
-        
-        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-            
-            let bundle = Bundle(for: MyRepsViewModel.self)
-            let path = bundle.path(forResource: "successful-open-states-lower-house-committee-request-page-\(currentPage)", ofType: "json")
-            let url = URL(fileURLWithPath: path!)
-            
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let houseCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
-                    completion(houseCommitteeList)
-                    
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
-            }.resume()
-            
-        } else {
-            let openStatesAPIKey = ProcessInfo.processInfo.environment["OpenStates_API_Key"]
-            guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=lower&include=memberships&apikey=\(openStatesAPIKey!)&page=\(currentPage)&per_page=20")
-            else { return }
-            
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                guard let data = data else {return}
-                do {
-                    let houseCommitteeList = try JSONDecoder().decode(CommitteeList.self, from: data)
-                    completion(houseCommitteeList)
-                    
-                } catch {
-                    print("Unexpected error: \(error).")
-                }
-            }.resume()
-        }
-    }
     
     
     
@@ -497,7 +363,7 @@ class MyRepsViewModel: ObservableObject {
         var maxPage = 2
         
         maxPageGroup.enter()
-        getMaxHouseCommitteePages { maxPageCallVal in
+        openStatesService.getMaxCommitteePages(from: "lower") { maxPageCallVal in
             maxPage = maxPageCallVal
             maxPageGroup.leave()
         }
@@ -507,13 +373,18 @@ class MyRepsViewModel: ObservableObject {
         }
         while currentPage <= maxPage {
             group.enter()
-            getHouseCommittees(currentPage: currentPage) { [self] (currList) in
-                for results in currList!.results {
-                    for memberships in results.memberships {
-                        if (self.representative.ocdID == memberships.person.id) {
-                            self.representative.committees?.append(results.name) ?? (self.representative.committees = [results.name])
+            openStatesService.getHouseCommitteeData(from: currentPage) { [weak self] result in
+                switch result {
+                case .success(let committeeListResults):
+                    for committeeListResult in committeeListResults.results {
+                        for memberships in committeeListResult.memberships {
+                            if (self!.representative.ocdID == memberships.person.id) {
+                                self!.representative.committees?.append(committeeListResult.name) ?? (self!.representative.committees = [committeeListResult.name])
+                            }
                         }
                     }
+                case .failure(let error):
+                    print("Unexpected error: \(error).")
                 }
                 currentPage = currentPage + 1
                 group.leave()
