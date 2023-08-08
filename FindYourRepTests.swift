@@ -26,7 +26,7 @@ final class FindYourRepTests: XCTestCase {
         mockOpenSecretsService = MockOpenSecretsService()
 
         
-        testUser = User(id: "test_user_0", email: "test_email@email.com", picture: "photoURL", street_address: "1263 Pacific Avenue", city: "Kansas City", state: "KS", zip_code: "66102")
+        testUser = User(id: "test_user_0", email: "test_user123@email.com", picture: "photoURL", street_address: "1263 Pacific Avenue", city: "Kansas City", state: "KS", zip_code: "66102")
     
         sutRepsVM = MyRepsViewModel(user: testUser, googleCivicInfoService: mockGoogleService, openSecretsService: mockOpenSecretsService, openStatesService: mockOpenStatesService)
     }
