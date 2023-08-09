@@ -73,7 +73,7 @@ struct IndividualRepView: View {
                 }
             }
             NavigationLink(destination: RepCommitteeView(user:user, official: official)) {
-                Text("\(official.name)'s Committees")
+                Text("Committees")
             }
         }
     }

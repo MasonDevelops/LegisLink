@@ -15,10 +15,12 @@ struct RepCommitteeView: View {
     let official: Official
     var body: some View {
         VStack {
-            Section("Committee Memberships") {
+            Section("\(official.name)'s Committee Memberships") {
                 List {
-                    ForEach(official.committees!, id: \.self) { committee in
-                        Text(committee)
+                    ForEach(Array(official.committees!.keys), id: \.self) { key in
+                        Section(header: Text(key)) {
+                            Text("Rank: \(official.committees![key]!)")
+                        }
                     }
                 }
             }

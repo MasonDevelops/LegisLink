@@ -65,7 +65,7 @@ struct Official: Codable, Hashable {
     var fecID: String?
     var opensecretsID: String?
     var contributors: [Contributor]?
-    var committees: [String]?
+    var committees: [String: String]?
 
     enum CodingKeys: String, CodingKey {
         case name, address, party, phones, urls

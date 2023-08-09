@@ -330,13 +330,21 @@ class MyRepsViewModel: ObservableObject {
             openStatesService.getSenateCommitteeData(from: currentPage) { [weak self] result in
                 switch result {
                 case .success(let committeeListResults):
+                    if self!.senatorOne.committees == nil {
+                        self!.senatorOne.committees = [:]
+                    }
+                    
+                    if self!.senatorTwo.committees == nil {
+                        self!.senatorTwo.committees = [:]
+                    }
+                    
                     for committeeListResult in committeeListResults.results {
                         for memberships in committeeListResult.memberships {
                             if (self!.senatorOne.ocdID == memberships.person.id) {
-                                self!.senatorOne.committees?.append(committeeListResult.name) ?? (self!.senatorOne.committees = [committeeListResult.name])
+                                self!.senatorOne.committees![committeeListResult.name] = memberships.role.rawValue
                             }
                             if (self!.senatorTwo.ocdID == memberships.person.id) {
-                                self!.senatorTwo.committees?.append(committeeListResult.name) ?? (self!.senatorTwo.committees = [committeeListResult.name])
+                                self!.senatorTwo.committees![committeeListResult.name] = memberships.role.rawValue
                             }
                         }
                     }
@@ -376,10 +384,15 @@ class MyRepsViewModel: ObservableObject {
             openStatesService.getHouseCommitteeData(from: currentPage) { [weak self] result in
                 switch result {
                 case .success(let committeeListResults):
+                    
+                    if self!.representative.committees == nil {
+                        self!.representative.committees = [:]
+                    }
+                    
                     for committeeListResult in committeeListResults.results {
                         for memberships in committeeListResult.memberships {
                             if (self!.representative.ocdID == memberships.person.id) {
-                                self!.representative.committees?.append(committeeListResult.name) ?? (self!.representative.committees = [committeeListResult.name])
+                                self!.representative.committees![committeeListResult.name] = memberships.role.rawValue
                             }
                         }
                     }

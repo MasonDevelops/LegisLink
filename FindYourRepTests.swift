@@ -64,18 +64,18 @@ final class FindYourRepTests: XCTestCase {
     
     func testSuccessfulOpenStatesAPIRequest() throws {
 
-        XCTAssertEqual(sutRepsVM!.senatorOne.committees![0], "Senate Committee on Appropriations")
-        XCTAssertEqual(sutRepsVM!.senatorOne.committees![1], "Senate Committee on Commerce, Science, and Transportation")
-        XCTAssertEqual(sutRepsVM!.senatorOne.committees![2], "Senate Committee on Veterans' Affairs")
-        XCTAssertEqual(sutRepsVM!.senatorOne.committees![3], "Senate Select Committee on Intelligence")
+        XCTAssertEqual(sutRepsVM!.senatorOne.committees!["Senate Committee on Appropriations"], "Member")
+        XCTAssertEqual(sutRepsVM!.senatorOne.committees!["Senate Committee on Commerce, Science, and Transportation"], "Member")
+        XCTAssertEqual(sutRepsVM!.senatorOne.committees!["Senate Committee on Veterans' Affairs"], "Ranking Member")
+        XCTAssertEqual(sutRepsVM!.senatorOne.committees!["Senate Select Committee on Intelligence"], "Member")
 
-        XCTAssertEqual(sutRepsVM!.senatorTwo.committees![0], "Senate Committee on Agriculture, Nutrition, and Forestry")
-        XCTAssertEqual(sutRepsVM!.senatorTwo.committees![1], "Senate Committee on Health, Education, Labor, and Pensions")
-        XCTAssertEqual(sutRepsVM!.senatorTwo.committees![2], "Senate Committee on Homeland Security and Governmental Affairs")
-        XCTAssertEqual(sutRepsVM!.senatorTwo.committees![3], "Senate Committee on the Budget")
+        XCTAssertEqual(sutRepsVM!.senatorTwo.committees!["Senate Committee on Agriculture, Nutrition, and Forestry"], "Member")
+        XCTAssertEqual(sutRepsVM!.senatorTwo.committees!["Senate Committee on Health, Education, Labor, and Pensions"], "Member")
+        XCTAssertEqual(sutRepsVM!.senatorTwo.committees!["Senate Committee on Homeland Security and Governmental Affairs"], "Member")
+        XCTAssertEqual(sutRepsVM!.senatorTwo.committees!["Senate Committee on the Budget"], "Member")
 
-        XCTAssertEqual(sutRepsVM!.representative.committees![0], "House Committee on Appropriations")
-        XCTAssertEqual(sutRepsVM!.representative.committees![1], "House Committee on Oversight and Reform")
+        XCTAssertEqual(sutRepsVM!.representative.committees!["House Committee on Appropriations"], "Member")
+        XCTAssertEqual(sutRepsVM!.representative.committees!["House Committee on Oversight and Reform"], "Member")
 
  
         
