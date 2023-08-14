@@ -153,16 +153,19 @@ class MyRepsViewModel: ObservableObject {
     
     func fetchOpenStatesOfficialData() -> [CandidateYAML] {
         let fm = FileManager.default
-        let path = "/Users/mcmacbookair/Desktop/us/legislature/"
+        
+        let folderPath = Bundle.main.resourcePath?.appending("/US Congress Directory/")
+
+        
         var membersOfCongress = [CandidateYAML]()
         
         
         
         do {
-            let items = try fm.contentsOfDirectory(atPath: path)
+            let items = try fm.contentsOfDirectory(atPath: folderPath!)
             
             for item in items {
-                let filePath = path + item
+                let filePath = folderPath! + item
                 let contents = try String(contentsOfFile: filePath)
                 let decoder = YAMLDecoder()
                 let decoded = try decoder.decode(CandidateYAML.self, from: contents)

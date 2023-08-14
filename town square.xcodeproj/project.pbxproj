@@ -30,9 +30,9 @@
 		0F723D9E2A7ECCDD001DE7BD /* MockOpenSecretsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D9D2A7ECCDD001DE7BD /* MockOpenSecretsService.swift */; };
 		0F723DA02A7ECE42001DE7BD /* successful-google-civic-info-api-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F723D9F2A7ECE42001DE7BD /* successful-google-civic-info-api-response.json */; };
 		0F723DA12A7ECFD9001DE7BD /* FindYourRepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14FD592A7A339600F91EF4 /* FindYourRepTests.swift */; };
-		0F796A952A4D120C00080BB6 /* us in Resources */ = {isa = PBXBuildFile; fileRef = 0F796A942A4D120C00080BB6 /* us */; };
 		0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DECE2A1FC80800CDD786 /* Reps.swift */; };
 		0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */; };
+		0FA3BFFF2A8A839700A0027A /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3BFFE2A8A839700A0027A /* US Congress Directory */; };
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
 		0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */; };
 		0FECB58C2A7C06D400FED68A /* successful-open-secrets-api-response-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */; };
@@ -95,9 +95,9 @@
 		0F723D9A2A7ECB6E001DE7BD /* MockOpenStatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOpenStatesService.swift; sourceTree = "<group>"; };
 		0F723D9D2A7ECCDD001DE7BD /* MockOpenSecretsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOpenSecretsService.swift; sourceTree = "<group>"; };
 		0F723D9F2A7ECE42001DE7BD /* successful-google-civic-info-api-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-google-civic-info-api-response.json"; sourceTree = "<group>"; };
-		0F796A942A4D120C00080BB6 /* us */ = {isa = PBXFileReference; lastKnownFileType = folder; name = us; path = ../../../us; sourceTree = "<group>"; };
 		0F91DECE2A1FC80800CDD786 /* Reps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reps.swift; sourceTree = "<group>"; };
 		0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsViewModel.swift; sourceTree = "<group>"; };
+		0FA3BFFE2A8A839700A0027A /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "US Congress Directory"; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
 		0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitteeList.swift; sourceTree = "<group>"; };
 		0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-secrets-api-response-1.json"; sourceTree = "<group>"; };
@@ -160,7 +160,6 @@
 				0F0E9A0D2A0B65E200E27010 /* town square */,
 				0F14FD582A7A339600F91EF4 /* FindYourRepTests */,
 				0F14FD592A7A339600F91EF4 /* FindYourRepTests.swift */,
-				0F16DE882A7C8E9A008471E2 /* FindYourRepUITests */,
 				0F0E9A0C2A0B65E200E27010 /* Products */,
 				0E02881F55588905F5BF3808 /* Pods */,
 				104A3DB7F006FB38DBFAEFC9 /* Frameworks */,
@@ -180,13 +179,13 @@
 		0F0E9A0D2A0B65E200E27010 /* town square */ = {
 			isa = PBXGroup;
 			children = (
+				0FA3BFFE2A8A839700A0027A /* US Congress Directory */,
 				0F723D8F2A7D64A4001DE7BD /* Services */,
 				0F50916A2A10803A008AE977 /* ViewModel */,
 				0F5091692A10802B008AE977 /* View */,
 				0F5091682A10801E008AE977 /* Model */,
 				0F0E9A0E2A0B65E200E27010 /* town_squareApp.swift */,
 				0F0E9A102A0B65E200E27010 /* ContentView.swift */,
-				0F796A942A4D120C00080BB6 /* us */,
 				0F0E9A122A0B65E500E27010 /* Assets.xcassets */,
 				0F0E9A142A0B65E500E27010 /* Preview Content */,
 				0F0E9A1C2A0B698500E27010 /* .gitignore */,
@@ -205,6 +204,7 @@
 		0F14FD582A7A339600F91EF4 /* FindYourRepTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F16DE882A7C8E9A008471E2 /* FindYourRepUITests */,
 				0F723D992A7EC5F0001DE7BD /* JSON Responses */,
 				0F723D982A7EC593001DE7BD /* Mock Services */,
 			);
@@ -411,7 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F796A952A4D120C00080BB6 /* us in Resources */,
+				0FA3BFFF2A8A839700A0027A /* US Congress Directory in Resources */,
 				0F0E9A162A0B65E500E27010 /* Preview Assets.xcassets in Resources */,
 				0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */,
 				0F0E9A132A0B65E500E27010 /* Assets.xcassets in Resources */,
