@@ -74,7 +74,7 @@ class MyRepsViewModel: ObservableObject {
             testURLs.append(testURL!)
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: testURL!)
             bundleOpenStatesData()
-            getTopSixContributorInfo(openSecretsURLs: testURLs)
+            getTopContributorInfo(openSecretsURLs: testURLs)
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
         } else {
@@ -82,7 +82,7 @@ class MyRepsViewModel: ObservableObject {
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: googleCivicInfoURL)
             bundleOpenStatesData()
             let openSecretsAPIURls = getOpenSecretsAPIURLs()
-            getTopSixContributorInfo(openSecretsURLs: openSecretsAPIURls)
+            getTopContributorInfo(openSecretsURLs: openSecretsAPIURls)
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
         }
@@ -114,10 +114,9 @@ class MyRepsViewModel: ObservableObject {
         
         let repURL = URL (string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
         
+        openSecretsURLs.append(repURL!)
         openSecretsURLs.append(senatorOneURL!)
         openSecretsURLs.append(senatorTwoURL!)
-        openSecretsURLs.append(repURL!)
-
         
         return openSecretsURLs
             
@@ -292,16 +291,16 @@ class MyRepsViewModel: ObservableObject {
     
     
     
-    func getTopSixContributorInfo(openSecretsURLs: [URL]) {
+    func getTopContributorInfo(openSecretsURLs: [URL]) {
         for currentURL in openSecretsURLs {
             openSecretsService.getTopContributors(from: currentURL) { [weak self] result in
                 switch result {
                 case .success(let contributors):
-                   if self!.senatorOne.contributors == nil {
+                    if self!.senatorOne.opensecretsID == contributors.response.contributors.attributes.cid {
                        self!.senatorOne.contributors = contributors.response.contributors.contributor
-                   } else if self!.senatorTwo.contributors == nil {
+                   } else if self!.senatorTwo.opensecretsID == contributors.response.contributors.attributes.cid {
                        self!.senatorTwo.contributors = contributors.response.contributors.contributor
-                   } else if self!.representative.contributors == nil {
+                   } else if self!.representative.opensecretsID == contributors.response.contributors.attributes.cid {
                        self!.representative.contributors = contributors.response.contributors.contributor
                    }
                 case .failure(let error):

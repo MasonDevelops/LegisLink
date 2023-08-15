@@ -159,7 +159,6 @@
 				0F50916B2A108247008AE977 /* town-square-Info.plist */,
 				0F0E9A0D2A0B65E200E27010 /* town square */,
 				0F14FD582A7A339600F91EF4 /* FindYourRepTests */,
-				0F14FD592A7A339600F91EF4 /* FindYourRepTests.swift */,
 				0F0E9A0C2A0B65E200E27010 /* Products */,
 				0E02881F55588905F5BF3808 /* Pods */,
 				104A3DB7F006FB38DBFAEFC9 /* Frameworks */,
@@ -204,6 +203,7 @@
 		0F14FD582A7A339600F91EF4 /* FindYourRepTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F14FD592A7A339600F91EF4 /* FindYourRepTests.swift */,
 				0F16DE882A7C8E9A008471E2 /* FindYourRepUITests */,
 				0F723D992A7EC5F0001DE7BD /* JSON Responses */,
 				0F723D982A7EC593001DE7BD /* Mock Services */,

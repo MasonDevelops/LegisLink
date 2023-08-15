@@ -17,7 +17,7 @@ import Foundation
 
 // MARK: - Contributors
 struct Contributors: Codable {
-    let response: Response
+    var response: Response
 
     enum CodingKeys: String, CodingKey {
         case response = "response"
@@ -26,7 +26,7 @@ struct Contributors: Codable {
 
 // MARK: - Response
 struct Response: Codable {
-    let contributors: ContributorsClass
+    var contributors: ContributorsClass
 
     enum CodingKeys: String, CodingKey {
         case contributors = "contributors"
@@ -36,7 +36,7 @@ struct Response: Codable {
 // MARK: - ContributorsClass
 struct ContributorsClass: Codable {
     let attributes: ContributorsAttributes
-    let contributor: [Contributor]
+    var contributor: [Contributor]
 
     enum CodingKeys: String, CodingKey {
         case attributes = "@attributes"
@@ -64,8 +64,17 @@ struct ContributorsAttributes: Codable {
 }
 
 // MARK: - Contributor
-struct Contributor: Codable {
-    let attributes: ContributorAttributes
+struct Contributor: Codable, Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(attributes)
+        }
+    
+    static func == (lhs: Contributor, rhs: Contributor) -> Bool {
+        return lhs.attributes == rhs.attributes && lhs.attributes == rhs.attributes
+    }
+    
+    var attributes: ContributorAttributes
 
     enum CodingKeys: String, CodingKey {
         case attributes = "@attributes"
@@ -73,9 +82,9 @@ struct Contributor: Codable {
 }
 
 // MARK: - ContributorAttributes
-struct ContributorAttributes: Codable {
+struct ContributorAttributes: Codable, Equatable, Hashable {
     let orgName: String
-    let total: String
+    var total: String
     let pacs: String
     let indivs: String
 
