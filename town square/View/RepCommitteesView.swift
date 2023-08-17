@@ -10,7 +10,7 @@ import Foundation
 
 import SwiftUI
 
-struct RepCommitteeView: View {
+struct RepCommitteesView: View {
     let user: User
     let official: Official
     var body: some View {

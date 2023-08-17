@@ -14,7 +14,8 @@
 		0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F0E9A1C2A0B698500E27010 /* .gitignore */; };
 		0F16DE8A2A7C8E9A008471E2 /* FindYourRepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16DE892A7C8E9A008471E2 /* FindYourRepUITests.swift */; };
 		0F16DE8C2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16DE8B2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift */; };
-		0F473A322A5E3952002DA520 /* RepCommitteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F473A312A5E3951002DA520 /* RepCommitteeView.swift */; };
+		0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */; };
+		0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F473A312A5E3951002DA520 /* RepCommitteesView.swift */; };
 		0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50916D2A1082AD008AE977 /* Auth0 */; };
 		0F5091722A1083A9008AE977 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5091712A1083A9008AE977 /* Auth0.plist */; };
 		0F5091742A108652008AE977 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091732A108652008AE977 /* LoginView.swift */; };
@@ -80,7 +81,8 @@
 		0F16DE872A7C8E9A008471E2 /* FindYourRepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindYourRepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F16DE892A7C8E9A008471E2 /* FindYourRepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepUITests.swift; sourceTree = "<group>"; };
 		0F16DE8B2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0F473A312A5E3951002DA520 /* RepCommitteeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteeView.swift; sourceTree = "<group>"; };
+		0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsView.swift; sourceTree = "<group>"; };
+		0F473A312A5E3951002DA520 /* RepCommitteesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteesView.swift; sourceTree = "<group>"; };
 		0F50916B2A108247008AE977 /* town-square-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "town-square-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0F5091712A1083A9008AE977 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		0F5091732A108652008AE977 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -243,7 +245,8 @@
 				0FF9FE062A1A949A00189618 /* SettingsView.swift */,
 				0FF9FE082A1A94DC00189618 /* MyProfileView.swift */,
 				0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */,
-				0F473A312A5E3951002DA520 /* RepCommitteeView.swift */,
+				0F473A312A5E3951002DA520 /* RepCommitteesView.swift */,
+				0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,8 +504,9 @@
 				0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */,
 				0FF9FE032A1A933C00189618 /* LegisView.swift in Sources */,
 				0F5091742A108652008AE977 /* LoginView.swift in Sources */,
-				0F473A322A5E3952002DA520 /* RepCommitteeView.swift in Sources */,
+				0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */,
 				0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */,
+				0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */,
 				0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */,
 				0F0E9A112A0B65E200E27010 /* ContentView.swift in Sources */,
 				0F0E9A0F2A0B65E200E27010 /* town_squareApp.swift in Sources */,

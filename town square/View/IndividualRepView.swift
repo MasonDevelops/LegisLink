@@ -65,14 +65,10 @@ struct IndividualRepView: View {
 
                 }
             }
-            Section ("Top Contributors") {
-                VStack (alignment: .leading) {
-                    ForEach(official.contributors!, id: \.self) { contributor in
-                        Text("\(contributor.attributes.orgName): \(contributor.attributes.total)" as String)
-                    }
-                }
+            NavigationLink(destination: RepContributorsView(user:user, official: official)) {
+                Text("Top Contributors")
             }
-            NavigationLink(destination: RepCommitteeView(user:user, official: official)) {
+            NavigationLink(destination: RepCommitteesView(user:user, official: official)) {
                 Text("Committees")
             }
         }

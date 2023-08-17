@@ -11,13 +11,14 @@ import Foundation
 
 protocol OpenSecretsServiceProtocol {
     func getTopContributors(from url: URL, completion: @escaping (Swift.Result<Contributors, Error>) -> Void)
+    func formatStringValuesToUSDCurrency(contributors: inout Contributors) -> Contributors
 }
 
 
 
 class OpenSecretsService: OpenSecretsServiceProtocol {
     func getTopContributors(from url: URL, completion: @escaping (Swift.Result<Contributors, Error>) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
+        URLSession.shared.dataTask(with: url) { [self] (data, _, error) in
             if let error = error {
                 completion(.failure(error))
                 return
@@ -30,20 +31,7 @@ class OpenSecretsService: OpenSecretsServiceProtocol {
 
             do {
                 var contributors = try JSONDecoder().decode(Contributors.self, from: data)
-                
-                let formatter = NumberFormatter()
-
-                for index in contributors.response.contributors.contributor.indices {
-                    formatter.numberStyle = .currency
-                    
-                    var doubleVersion = Double(contributors.response.contributors.contributor[index].attributes.total)
-                    
-                    let formattedValue = formatter.string(for: doubleVersion)
-                    
-                    
-                    contributors.response.contributors.contributor[index].attributes.total = formattedValue!
-                }
-                
+                contributors = formatStringValuesToUSDCurrency(contributors: &contributors)
                 completion(.success(contributors))
             } catch {
                 completion(.failure(error))
@@ -52,7 +40,20 @@ class OpenSecretsService: OpenSecretsServiceProtocol {
         .resume()
     }
     
-    
-    
+    func formatStringValuesToUSDCurrency(contributors: inout Contributors) -> Contributors {
+        let formatter = NumberFormatter()
+
+        for index in contributors.response.contributors.contributor.indices {
+            formatter.numberStyle = .currency
+            
+            var doubleVersion = Double(contributors.response.contributors.contributor[index].attributes.total)
+            
+            let formattedValue = formatter.string(for: doubleVersion)
+            
+            
+            contributors.response.contributors.contributor[index].attributes.total = formattedValue!
+        }
+        return contributors
+    }
 }
 
