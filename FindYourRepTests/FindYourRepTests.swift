@@ -14,6 +14,7 @@ final class FindYourRepTests: XCTestCase {
     var mockGoogleService: MockGoogleCivicInfoService!
     var mockOpenStatesService: MockOpenStatesService!
     var mockOpenSecretsService: MockOpenSecretsService!
+    var mockCongressGovService: MockCongressGovService!
     
     var testUser: User!
     
@@ -24,17 +25,19 @@ final class FindYourRepTests: XCTestCase {
         mockGoogleService = MockGoogleCivicInfoService()
         mockOpenStatesService = MockOpenStatesService()
         mockOpenSecretsService = MockOpenSecretsService()
+        mockCongressGovService = MockCongressGovService()
 
         
         testUser = User(id: "test_user_0", email: "test_user123@email.com", picture: "photoURL", street_address: "1263 Pacific Avenue", city: "Kansas City", state: "KS", zip_code: "66102")
     
-        sutRepsVM = MyRepsViewModel(user: testUser, googleCivicInfoService: mockGoogleService, openSecretsService: mockOpenSecretsService, openStatesService: mockOpenStatesService)
+        sutRepsVM = MyRepsViewModel(user: testUser, googleCivicInfoService: mockGoogleService, openSecretsService: mockOpenSecretsService, openStatesService: mockOpenStatesService, congressGovService: mockCongressGovService)
     }
 
     override func tearDownWithError() throws {
         mockGoogleService = nil
         mockOpenStatesService = nil
         mockOpenSecretsService = nil
+        mockCongressGovService = nil
         testUser = nil
         sutRepsVM = nil
     }

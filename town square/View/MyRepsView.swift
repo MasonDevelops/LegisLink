@@ -15,14 +15,15 @@ struct MyRepsView: View {
     @State var user: User
     @ObservedObject private var repsvm: MyRepsViewModel
     
-    let googleCivicService = GoogleCivicInfoService()
+    let googleCivicInfoService = GoogleCivicInfoService()
     let openStatesService = OpenStatesService()
     let openSecretsService = OpenSecretsService()
+    let congressGovService = CongressGovService()
    
     
     init(user: User) {
             self.user = user
-            self.repsvm = MyRepsViewModel(user: user, googleCivicInfoService: googleCivicService, openSecretsService: openSecretsService, openStatesService: openStatesService)
+            self.repsvm = MyRepsViewModel(user: user, googleCivicInfoService: googleCivicInfoService, openSecretsService: openSecretsService, openStatesService: openStatesService, congressGovService: congressGovService)
         }
 
     

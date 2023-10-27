@@ -15,6 +15,9 @@
 		0F16DE8A2A7C8E9A008471E2 /* FindYourRepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16DE892A7C8E9A008471E2 /* FindYourRepUITests.swift */; };
 		0F16DE8C2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16DE8B2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift */; };
 		0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */; };
+		0F32CB9F2A8E810B0000E46A /* RepSponsoredLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */; };
+		0F32CBA12A8E84540000E46A /* SponsoredLegislationPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */; };
+		0F32CBA32A8E84B90000E46A /* CongressGov API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CBA22A8E84B90000E46A /* CongressGov API Service.swift */; };
 		0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F473A312A5E3951002DA520 /* RepCommitteesView.swift */; };
 		0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50916D2A1082AD008AE977 /* Auth0 */; };
 		0F5091722A1083A9008AE977 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5091712A1083A9008AE977 /* Auth0.plist */; };
@@ -34,6 +37,7 @@
 		0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DECE2A1FC80800CDD786 /* Reps.swift */; };
 		0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */; };
 		0FA3BFFF2A8A839700A0027A /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3BFFE2A8A839700A0027A /* US Congress Directory */; };
+		0FA5B3202AE4A565009E41CA /* MockCongressGovService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */; };
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
 		0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */; };
 		0FECB58C2A7C06D400FED68A /* successful-open-secrets-api-response-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */; };
@@ -82,6 +86,9 @@
 		0F16DE892A7C8E9A008471E2 /* FindYourRepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepUITests.swift; sourceTree = "<group>"; };
 		0F16DE8B2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsView.swift; sourceTree = "<group>"; };
+		0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepSponsoredLegislationView.swift; sourceTree = "<group>"; };
+		0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegislationPackage.swift; sourceTree = "<group>"; };
+		0F32CBA22A8E84B90000E46A /* CongressGov API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CongressGov API Service.swift"; sourceTree = "<group>"; };
 		0F473A312A5E3951002DA520 /* RepCommitteesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteesView.swift; sourceTree = "<group>"; };
 		0F50916B2A108247008AE977 /* town-square-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "town-square-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0F5091712A1083A9008AE977 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 		0F91DECE2A1FC80800CDD786 /* Reps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reps.swift; sourceTree = "<group>"; };
 		0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsViewModel.swift; sourceTree = "<group>"; };
 		0FA3BFFE2A8A839700A0027A /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "US Congress Directory"; sourceTree = "<group>"; };
+		0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCongressGovService.swift; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
 		0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitteeList.swift; sourceTree = "<group>"; };
 		0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-secrets-api-response-1.json"; sourceTree = "<group>"; };
@@ -231,6 +239,7 @@
 				0F6811C82A339233009CDF19 /* Contributors.swift */,
 				0F57B0A42A59E48F00F906C1 /* CandidateYAML.swift */,
 				0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */,
+				0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +256,7 @@
 				0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */,
 				0F473A312A5E3951002DA520 /* RepCommitteesView.swift */,
 				0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */,
+				0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 				0F723D902A7D64DC001DE7BD /* Google Civic Information API Service.swift */,
 				0F723D922A7D6A37001DE7BD /* OpenSecrets API Service.swift */,
 				0F723D942A7D6DAE001DE7BD /* OpenStates API Service.swift */,
+				0F32CBA22A8E84B90000E46A /* CongressGov API Service.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -275,6 +286,7 @@
 				0F723D9A2A7ECB6E001DE7BD /* MockOpenStatesService.swift */,
 				0F723D962A7EC58C001DE7BD /* MockGoogleCivicInfoService.swift */,
 				0F723D9D2A7ECCDD001DE7BD /* MockOpenSecretsService.swift */,
+				0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */,
 			);
 			path = "Mock Services";
 			sourceTree = "<group>";
@@ -498,6 +510,7 @@
 				0FF9FE092A1A94DC00189618 /* MyProfileView.swift in Sources */,
 				0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */,
 				0F5091762A108692008AE977 /* User.swift in Sources */,
+				0F32CBA12A8E84540000E46A /* SponsoredLegislationPackage.swift in Sources */,
 				0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */,
 				0F57B0A52A59E49000F906C1 /* CandidateYAML.swift in Sources */,
 				0FEF0EB62A2BA4DD009064E7 /* IndividualRepView.swift in Sources */,
@@ -509,7 +522,9 @@
 				0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */,
 				0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */,
 				0F0E9A112A0B65E200E27010 /* ContentView.swift in Sources */,
+				0F32CB9F2A8E810B0000E46A /* RepSponsoredLegislationView.swift in Sources */,
 				0F0E9A0F2A0B65E200E27010 /* town_squareApp.swift in Sources */,
+				0F32CBA32A8E84B90000E46A /* CongressGov API Service.swift in Sources */,
 				0F723D952A7D6DAE001DE7BD /* OpenStates API Service.swift in Sources */,
 				0F6811C92A339233009CDF19 /* Contributors.swift in Sources */,
 				0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */,
@@ -523,6 +538,7 @@
 			files = (
 				0F723D9E2A7ECCDD001DE7BD /* MockOpenSecretsService.swift in Sources */,
 				0F723D972A7EC58C001DE7BD /* MockGoogleCivicInfoService.swift in Sources */,
+				0FA5B3202AE4A565009E41CA /* MockCongressGovService.swift in Sources */,
 				0F723D9B2A7ECB6E001DE7BD /* MockOpenStatesService.swift in Sources */,
 				0F723DA12A7ECFD9001DE7BD /* FindYourRepTests.swift in Sources */,
 			);

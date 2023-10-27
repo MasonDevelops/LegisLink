@@ -71,6 +71,9 @@ struct IndividualRepView: View {
             NavigationLink(destination: RepCommitteesView(user:user, official: official)) {
                 Text("Committees")
             }
+            NavigationLink(destination: RepSponsoredLegislationView(user:user, official: official)) {
+                Text("Sponsored Legislation")
+            }
         }
     }
 }

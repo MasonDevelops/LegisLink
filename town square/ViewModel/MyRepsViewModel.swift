@@ -20,6 +20,7 @@ class MyRepsViewModel: ObservableObject {
     private let googleCivicInfoService: GoogleCivicInfoServiceProtocol
     private let openSecretsService: OpenSecretsServiceProtocol
     private let openStatesService: OpenStatesServiceProtocol
+    private let congressGovService: CongressGovServiceProtocol
     
     @Published var senatorOne = Official(name: "null", address: [NormalizedInput(
         
@@ -60,11 +61,12 @@ class MyRepsViewModel: ObservableObject {
     
     init(user: User, googleCivicInfoService: GoogleCivicInfoServiceProtocol,
          openSecretsService: OpenSecretsServiceProtocol,
-         openStatesService: OpenStatesServiceProtocol){
+         openStatesService: OpenStatesServiceProtocol, congressGovService: CongressGovServiceProtocol){
         self.user = user
         self.googleCivicInfoService = googleCivicInfoService
         self.openSecretsService = openSecretsService
         self.openStatesService = openStatesService
+        self.congressGovService = congressGovService
         
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
             let testURL = URL(string: "https://www.example.com")
@@ -85,8 +87,15 @@ class MyRepsViewModel: ObservableObject {
             getTopContributorInfo(openSecretsURLs: openSecretsAPIURls)
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
+            
+            
+            
+            fetchRepresentativeSponsoredLegislation()
+            fetchSenatorOneSponsoredLegislation()
+            
         }
     }
+
     
 
     
@@ -407,6 +416,134 @@ class MyRepsViewModel: ObservableObject {
             group.wait()
         }
         group.notify(queue: DispatchQueue.main) {
+        }
+    }
+    
+    func fetchRepresentativeSponsoredLegislation() {
+        let repMaxPageGroup = DispatchGroup()
+        let repSecondaryGroup = DispatchGroup()
+
+        var repMaxPage = 0
+        
+        repMaxPageGroup.enter()
+        congressGovService.getMaxPagination(bioGuideID: self.representative.bioguideID!) { maxPage in
+            repMaxPage = maxPage
+            repMaxPageGroup.leave()
+        }
+        repMaxPageGroup.wait()
+        repMaxPageGroup.notify(queue: DispatchQueue.main) {
+        }
+        
+        //if maxPage <= 250, do a singular call to retrieve legislation
+        
+        if (repMaxPage <= 250) {
+            let url = congressGovService.createSponsoredLegislationURL(bioGuideID: self.representative.bioguideID!, pageOffset: 0)
+            congressGovService.getSponsoredLegislationPackage(from: url) { result in
+                switch result {
+                case .success(let sponsoredLegislationPackage):
+                    self.representative.sponsoredLegislation = sponsoredLegislationPackage.sponsoredLegislation
+                case .failure(let error):
+                    print("Unexpected error: \(error).")
+                }
+            }
+        } else {
+            let numOfRequests = (repMaxPage / 250) + 1
+            var currentRequest = 0
+            var sponsoredLegislationArray = [SponsoredLegislation]()
+            
+            while currentRequest < numOfRequests {
+                
+                repSecondaryGroup.enter()
+                
+                let url = congressGovService.createSponsoredLegislationURL(bioGuideID: self.representative.bioguideID!, pageOffset: currentRequest)
+                
+                congressGovService.getSponsoredLegislationPackage(from: url) { result in
+                    switch result {
+                    case .success(let sponsoredLegislationPackage):
+                        sponsoredLegislationArray.append(contentsOf: sponsoredLegislationPackage.sponsoredLegislation)
+                    case .failure(let error):
+                        print("Unexpected error: \(error).")
+                    }
+                    currentRequest += 1
+                    if(sponsoredLegislationArray.count > repMaxPage) {
+                        var sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...repMaxPage - 1])
+                        self.representative.sponsoredLegislation = sponsoredLegisArraySlice
+                        print(self.representative.sponsoredLegislation)
+                    }
+                    repSecondaryGroup.leave()
+                    
+                }
+                repSecondaryGroup.wait()
+                
+
+                
+            }
+            repSecondaryGroup.notify(queue: DispatchQueue.main) {
+                
+            }
+                        
+        }
+        
+    }
+    func fetchSenatorOneSponsoredLegislation() {
+        let senOneMaxPageGroup = DispatchGroup()
+        let senOneSecondaryGroup = DispatchGroup()
+        var senOneMaxPage = 0
+        
+        senOneMaxPageGroup.enter()
+        congressGovService.getMaxPagination(bioGuideID: self.senatorOne.bioguideID!) { maxPage in
+            senOneMaxPage = maxPage
+            senOneMaxPageGroup.leave()
+        }
+        senOneMaxPageGroup.wait()
+        senOneMaxPageGroup.notify(queue: DispatchQueue.main) {
+        }
+        
+        //if maxPage <= 250, do a singular call to retrieve legislation
+        
+        if (senOneMaxPage <= 250) {
+            let url = congressGovService.createSponsoredLegislationURL(bioGuideID: self.representative.bioguideID!, pageOffset: 0)
+            congressGovService.getSponsoredLegislationPackage(from: url) { result in
+                switch result {
+                case .success(let sponsoredLegislationPackage):
+                    self.representative.sponsoredLegislation = sponsoredLegislationPackage.sponsoredLegislation
+                case .failure(let error):
+                    print("Unexpected error: \(error).")
+                }
+            }
+        } else {
+            let numOfRequests = (senOneMaxPage / 250) + 1
+            var currentRequest = 0
+            var sponsoredLegislationArray = [SponsoredLegislation]()
+            
+            while currentRequest < numOfRequests {
+                senOneSecondaryGroup.enter()
+                
+                let url = congressGovService.createSponsoredLegislationURL(bioGuideID: self.senatorOne.bioguideID!, pageOffset: currentRequest)
+                
+                
+                congressGovService.getSponsoredLegislationPackage(from: url) { result in
+                    switch result {
+                    case .success(let sponsoredLegislationPackage):
+                        sponsoredLegislationArray += sponsoredLegislationPackage.sponsoredLegislation
+                        
+                    case .failure(let error):
+                        print("Unexpected error: \(error).")
+                    }
+                    currentRequest = currentRequest + 1
+                    if (sponsoredLegislationArray.count > senOneMaxPage) {
+                        //let lastIndex = senOneMaxPage - sponsoredLegislationArray.count
+                        var sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...senOneMaxPage - 1])
+                        self.senatorOne.sponsoredLegislation = sponsoredLegisArraySlice
+                        print(self.senatorOne.sponsoredLegislation)
+                    }
+                    senOneSecondaryGroup.leave()
+                }
+                senOneSecondaryGroup.wait()
+                
+            }
+            senOneSecondaryGroup.notify(queue: DispatchQueue.main) {
+            }
         }
     }
 }
