@@ -14,6 +14,7 @@
 		0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F0E9A1C2A0B698500E27010 /* .gitignore */; };
 		0F16DE8A2A7C8E9A008471E2 /* FindYourRepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16DE892A7C8E9A008471E2 /* FindYourRepUITests.swift */; };
 		0F16DE8C2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16DE8B2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift */; };
+		0F2421FF2B111BEE00C2DA85 /* HealthSponsoredLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2421FE2B111BEE00C2DA85 /* HealthSponsoredLegislationView.swift */; };
 		0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */; };
 		0F32CB9F2A8E810B0000E46A /* RepSponsoredLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */; };
 		0F32CBA12A8E84540000E46A /* SponsoredLegislationPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */; };
@@ -27,7 +28,7 @@
 		0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091772A1086C0008AE977 /* ProfileView.swift */; };
 		0F57B0A52A59E49000F906C1 /* CandidateYAML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B0A42A59E48F00F906C1 /* CandidateYAML.swift */; };
 		0F6811C92A339233009CDF19 /* Contributors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6811C82A339233009CDF19 /* Contributors.swift */; };
-		0F6B8DEC2B0EF7CF0038B162 /* SponsoredTaxationLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B8DEB2B0EF7CF0038B162 /* SponsoredTaxationLegislationView.swift */; };
+		0F6B8DEC2B0EF7CF0038B162 /* TaxationSponsoredLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B8DEB2B0EF7CF0038B162 /* TaxationSponsoredLegislationView.swift */; };
 		0F723D912A7D64DC001DE7BD /* Google Civic Information API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D902A7D64DC001DE7BD /* Google Civic Information API Service.swift */; };
 		0F723D932A7D6A37001DE7BD /* OpenSecrets API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D922A7D6A37001DE7BD /* OpenSecrets API Service.swift */; };
 		0F723D952A7D6DAE001DE7BD /* OpenStates API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D942A7D6DAE001DE7BD /* OpenStates API Service.swift */; };
@@ -90,6 +91,7 @@
 		0F16DE872A7C8E9A008471E2 /* FindYourRepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindYourRepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F16DE892A7C8E9A008471E2 /* FindYourRepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepUITests.swift; sourceTree = "<group>"; };
 		0F16DE8B2A7C8E9A008471E2 /* FindYourRepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F2421FE2B111BEE00C2DA85 /* HealthSponsoredLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSponsoredLegislationView.swift; sourceTree = "<group>"; };
 		0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsView.swift; sourceTree = "<group>"; };
 		0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepSponsoredLegislationView.swift; sourceTree = "<group>"; };
 		0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegislationPackage.swift; sourceTree = "<group>"; };
@@ -103,7 +105,7 @@
 		0F5091772A1086C0008AE977 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0F57B0A42A59E48F00F906C1 /* CandidateYAML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateYAML.swift; sourceTree = "<group>"; };
 		0F6811C82A339233009CDF19 /* Contributors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributors.swift; sourceTree = "<group>"; };
-		0F6B8DEB2B0EF7CF0038B162 /* SponsoredTaxationLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredTaxationLegislationView.swift; sourceTree = "<group>"; };
+		0F6B8DEB2B0EF7CF0038B162 /* TaxationSponsoredLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxationSponsoredLegislationView.swift; sourceTree = "<group>"; };
 		0F723D902A7D64DC001DE7BD /* Google Civic Information API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google Civic Information API Service.swift"; sourceTree = "<group>"; };
 		0F723D922A7D6A37001DE7BD /* OpenSecrets API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenSecrets API Service.swift"; sourceTree = "<group>"; };
 		0F723D942A7D6DAE001DE7BD /* OpenStates API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenStates API Service.swift"; sourceTree = "<group>"; };
@@ -271,7 +273,8 @@
 				0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */,
 				0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */,
 				0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */,
-				0F6B8DEB2B0EF7CF0038B162 /* SponsoredTaxationLegislationView.swift */,
+				0F6B8DEB2B0EF7CF0038B162 /* TaxationSponsoredLegislationView.swift */,
+				0F2421FE2B111BEE00C2DA85 /* HealthSponsoredLegislationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -544,8 +547,9 @@
 				0F0E9A0F2A0B65E200E27010 /* town_squareApp.swift in Sources */,
 				0F32CBA32A8E84B90000E46A /* CongressGov API Service.swift in Sources */,
 				0F723D952A7D6DAE001DE7BD /* OpenStates API Service.swift in Sources */,
-				0F6B8DEC2B0EF7CF0038B162 /* SponsoredTaxationLegislationView.swift in Sources */,
+				0F6B8DEC2B0EF7CF0038B162 /* TaxationSponsoredLegislationView.swift in Sources */,
 				0F4A600C2B0B0698001DD179 /* SponsoredLegisListByTermView.swift in Sources */,
+				0F2421FF2B111BEE00C2DA85 /* HealthSponsoredLegislationView.swift in Sources */,
 				0F6811C92A339233009CDF19 /* Contributors.swift in Sources */,
 				0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */,
 				0F723D912A7D64DC001DE7BD /* Google Civic Information API Service.swift in Sources */,

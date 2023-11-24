@@ -17,7 +17,11 @@ struct SponsoredLegisListByTermView: View {
                 Text("Below are the different policy areas for congressional legislation for the \(congress.description)!")
                 Section("POLICY AREAS") {
                     if (official.taxationSponsoredLegislation!.count > 0) {
-                        NavigationLink("Taxation", destination: SponsoredTaxationLegislationView(user:user, official: official, congress: congress))
+                        NavigationLink("Taxation", destination: TaxationSponsoredLegislationView(user:user, official: official, congress: congress))
+                    }
+                    
+                    if (official.healthSponsoredLegislation!.count > 0) {
+                        NavigationLink("Health", destination: HealthSponsoredLegislationView(user:user, official: official, congress: congress))
                     }
                 }
             }

@@ -96,6 +96,7 @@ class MyRepsViewModel: ObservableObject {
             fetchSenatorTwoSponsoredLegislation()
             
             sortTaxationLegislationForAllReps()
+            sortHealthLegislationForAllReps()
             
             
             attachCongressionalTermsInOffice()
@@ -713,6 +714,70 @@ class MyRepsViewModel: ObservableObject {
         }
 
     }
+    
+    
+    func sortHealthLegislationForAllReps() {
+        self.senatorOne.healthSponsoredLegislation = []
+        self.senatorTwo.healthSponsoredLegislation = []
+        self.representative.healthSponsoredLegislation = []
+
+        
+        
+        for legis in self.senatorOne.sponsoredLegislation! {
+            if (legis.policyArea?.name == "Health" && !self.senatorOne.healthSponsoredLegislation!.contains(legis)) {
+                self.senatorOne.healthSponsoredLegislation?.append(legis)
+            }
+        }
+        
+        
+        
+        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
+            if (legisSenatorTwo.policyArea?.name == "Health" && !self.senatorTwo.healthSponsoredLegislation!.contains(legisSenatorTwo)) {
+                self.senatorTwo.healthSponsoredLegislation?.append(legisSenatorTwo)
+            }
+        }
+        
+        for legisRep in self.representative.sponsoredLegislation! {
+            if (legisRep.policyArea?.name == "Health" && !self.representative.healthSponsoredLegislation!.contains(legisRep)) {
+                self.representative.healthSponsoredLegislation?.append(legisRep)
+            }
+        }
+
+    }
+    
+    /*
+     Health[26,236]
+     Government Operations and Politics[24,314]
+     Armed Forces and National Security[21,983]
+     Congress[20,127]
+     International Affairs[18,867]
+     Public Lands and Natural Resources[16,155]
+     Foreign Trade and International Finance[15,991]
+     Crime and Law Enforcement[13,786]
+     Transportation and Public Works[12,216]
+     Education[10,651]
+     Social Welfare[9,971]
+     Energy[8,828]
+     Agriculture and Food[8,605]
+     Labor and Employment[8,214]
+     Finance and Financial Sector[8,164]
+     Commerce[7,883]
+     Environmental Protection[7,798]
+     Economics and Public Finance[7,371]
+     Immigration[5,629]
+     Science, Technology, Communications[5,610]
+     Housing and Community Development[4,084]
+     Law[3,961]
+     Water Resources Development[3,469]
+     Native Americans[3,371]
+     Civil Rights and Liberties, Minority Issues[3,336]
+     Emergency Management[2,950]
+     Families[2,014]
+     Animals[1,807]
+     Arts, Culture, Religion[1,768]
+     Sports and Recreation[1,673]
+     Social Sciences and History[500]
+*/
     
     
 }
