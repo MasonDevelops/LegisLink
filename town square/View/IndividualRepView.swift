@@ -72,7 +72,7 @@ struct IndividualRepView: View {
                 Text("Committees")
             }
             NavigationLink(destination: RepSponsoredLegislationView(user:user, official: official)) {
-                Text("Sponsored Legislation")
+                Text("Sponsored Legislation per Term in Congress")
             }
         }
     }

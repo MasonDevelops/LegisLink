@@ -32,7 +32,7 @@ class MyRepsViewModel: ObservableObject {
          party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
             type: "type",
             id: "id"
-         )])
+         )], termsServedInCongress: [Term(chamber: "term", congress: 1, district: 1, endYear: 2050, memberType: "memberType", startYear: 2020, stateCode: "stateCode", stateName: "stateName")])
          
     
     @Published var senatorTwo = Official(name: "null", address: [NormalizedInput(
@@ -45,7 +45,7 @@ class MyRepsViewModel: ObservableObject {
          party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
             type: "type",
             id: "id"
-         )])
+         )], termsServedInCongress: [Term(chamber: "term", congress: 1, district: 1, endYear: 2050, memberType: "memberType", startYear: 2020, stateCode: "stateCode", stateName: "stateName")])
     
     @Published var representative = Official(name: "null", address: [NormalizedInput(
         
@@ -57,7 +57,8 @@ class MyRepsViewModel: ObservableObject {
          party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
             type: "type",
             id: "id"
-         )])
+         )], termsServedInCongress: [Term(chamber: "term", congress: 1, district: 1, endYear: 2050, memberType: "memberType", startYear: 2020, stateCode: "stateCode", stateName: "stateName")])
+    
     
     init(user: User, googleCivicInfoService: GoogleCivicInfoServiceProtocol,
          openSecretsService: OpenSecretsServiceProtocol,
@@ -92,6 +93,14 @@ class MyRepsViewModel: ObservableObject {
             
             fetchRepresentativeSponsoredLegislation()
             fetchSenatorOneSponsoredLegislation()
+            fetchSenatorTwoSponsoredLegislation()
+            
+            sortTaxationLegislationForAllReps()
+            
+            
+            attachCongressionalTermsInOffice()
+            
+
             
         }
     }
@@ -466,9 +475,8 @@ class MyRepsViewModel: ObservableObject {
                     }
                     currentRequest += 1
                     if(sponsoredLegislationArray.count > repMaxPage) {
-                        var sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...repMaxPage - 1])
+                        let sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...repMaxPage - 1])
                         self.representative.sponsoredLegislation = sponsoredLegisArraySlice
-                        print(self.representative.sponsoredLegislation)
                     }
                     repSecondaryGroup.leave()
                     
@@ -532,10 +540,8 @@ class MyRepsViewModel: ObservableObject {
                     }
                     currentRequest = currentRequest + 1
                     if (sponsoredLegislationArray.count > senOneMaxPage) {
-                        //let lastIndex = senOneMaxPage - sponsoredLegislationArray.count
-                        var sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...senOneMaxPage - 1])
+                        let sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...senOneMaxPage - 1])
                         self.senatorOne.sponsoredLegislation = sponsoredLegisArraySlice
-                        print(self.senatorOne.sponsoredLegislation)
                     }
                     senOneSecondaryGroup.leave()
                 }
@@ -546,4 +552,167 @@ class MyRepsViewModel: ObservableObject {
             }
         }
     }
+    
+    func fetchSenatorTwoSponsoredLegislation() {
+        let senTwoMaxPageGroup = DispatchGroup()
+        let senTwoSecondaryGroup = DispatchGroup()
+        var senTwoMaxPage = 0
+        
+        senTwoMaxPageGroup.enter()
+        congressGovService.getMaxPagination(bioGuideID: self.senatorOne.bioguideID!) { maxPage in
+            senTwoMaxPage = maxPage
+            senTwoMaxPageGroup.leave()
+        }
+        senTwoMaxPageGroup.wait()
+        senTwoMaxPageGroup.notify(queue: DispatchQueue.main) {
+        }
+        
+        //if maxPage <= 250, do a singular call to retrieve legislation
+        
+        if (senTwoMaxPage <= 250) {
+            let url = congressGovService.createSponsoredLegislationURL(bioGuideID: self.senatorTwo.bioguideID!, pageOffset: 0)
+            congressGovService.getSponsoredLegislationPackage(from: url) { result in
+                switch result {
+                case .success(let sponsoredLegislationPackage):
+                    self.senatorTwo.sponsoredLegislation = sponsoredLegislationPackage.sponsoredLegislation
+                case .failure(let error):
+                    print("Unexpected error: \(error).")
+                }
+            }
+        } else {
+            let numOfRequests = (senTwoMaxPage / 250) + 1
+            var currentRequest = 0
+            var sponsoredLegislationArray = [SponsoredLegislation]()
+            
+            while currentRequest < numOfRequests {
+                senTwoSecondaryGroup.enter()
+                
+                let url = congressGovService.createSponsoredLegislationURL(bioGuideID: self.senatorTwo.bioguideID!, pageOffset: currentRequest)
+                
+                
+                congressGovService.getSponsoredLegislationPackage(from: url) { result in
+                    switch result {
+                    case .success(let sponsoredLegislationPackage):
+                        sponsoredLegislationArray += sponsoredLegislationPackage.sponsoredLegislation
+                        
+                    case .failure(let error):
+                        print("Unexpected error: \(error).")
+                    }
+                    currentRequest = currentRequest + 1
+                    if (sponsoredLegislationArray.count > senTwoMaxPage) {
+                        let sponsoredLegisArraySlice = Array(sponsoredLegislationArray[0...senTwoMaxPage - 1])
+                        self.senatorTwo.sponsoredLegislation = sponsoredLegisArraySlice
+                    }
+                    senTwoSecondaryGroup.leave()
+                }
+                senTwoSecondaryGroup.wait()
+                
+            }
+            senTwoSecondaryGroup.notify(queue: DispatchQueue.main) {
+            }
+        }
+    }
+    
+    func attachCongressionalTermsInOffice() {
+        
+        let dispatchGroup = DispatchGroup()
+        
+        dispatchGroup.enter()
+        congressGovService.getTermsInCongress(bioGuideID: self.senatorOne.bioguideID!) { senOneTermInfo in
+            self.senatorOne.termsServedInCongress = senOneTermInfo
+            dispatchGroup.leave()
+        }
+        dispatchGroup.wait()
+        dispatchGroup.notify(queue: DispatchQueue.main) {}
+        
+        dispatchGroup.enter()
+        congressGovService.getTermsInCongress(bioGuideID: self.senatorTwo.bioguideID!) { senTwoTermInfo in
+            self.senatorTwo.termsServedInCongress = senTwoTermInfo
+            dispatchGroup.leave()
+
+        }
+        
+        dispatchGroup.wait()
+        dispatchGroup.notify(queue: DispatchQueue.main) {}
+        
+
+        dispatchGroup.enter()
+        congressGovService.getTermsInCongress(bioGuideID: self.representative.bioguideID!) { repTermInfo in
+            self.representative.termsServedInCongress = repTermInfo
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.wait()
+        dispatchGroup.notify(queue: DispatchQueue.main) {}
+        
+        
+        convertStartAndEndYearsToStrings()
+
+
+    }
+    
+    func convertStartAndEndYearsToStrings() {
+        for term in 0..<self.senatorOne.termsServedInCongress!.count {
+            
+            if (self.senatorOne.termsServedInCongress![term].endYear == nil) {
+                self.senatorOne.termsServedInCongress![term].endYearString = "Current Year"
+            } else {
+                self.senatorOne.termsServedInCongress![term].endYearString = String(self.senatorOne.termsServedInCongress![term].endYear ?? 0)
+            }
+            self.senatorOne.termsServedInCongress![term].startYearString = String(self.senatorOne.termsServedInCongress![term].startYear)
+        }
+        
+        
+        for senatorTwoTerm in 0..<self.senatorTwo.termsServedInCongress!.count {
+            
+            if (self.senatorTwo.termsServedInCongress![senatorTwoTerm].endYear == nil) {
+                self.senatorTwo.termsServedInCongress![senatorTwoTerm].endYearString = "Current Year"
+            } else {
+                self.senatorTwo.termsServedInCongress![senatorTwoTerm].endYearString = String(self.senatorTwo.termsServedInCongress![senatorTwoTerm].endYear ?? 0)
+            }
+            self.senatorTwo.termsServedInCongress![senatorTwoTerm].startYearString = String(self.senatorTwo.termsServedInCongress![senatorTwoTerm].startYear)
+        }
+        
+        
+        for repTerm in 0..<self.representative.termsServedInCongress!.count {
+            
+            if (self.representative.termsServedInCongress![repTerm].endYear == nil) {
+                self.representative.termsServedInCongress![repTerm].endYearString = "Current Year"
+            } else {
+                self.representative.termsServedInCongress![repTerm].endYearString = String(self.representative.termsServedInCongress![repTerm].endYear ?? 0)
+            }
+            self.representative.termsServedInCongress![repTerm].startYearString = String(self.representative.termsServedInCongress![repTerm].startYear)
+        }
+    }
+    
+    func sortTaxationLegislationForAllReps() {
+        self.senatorOne.taxationSponsoredLegislation = []
+        self.senatorTwo.taxationSponsoredLegislation = []
+        self.representative.taxationSponsoredLegislation = []
+
+        
+        
+        for legis in self.senatorOne.sponsoredLegislation! {
+            if (legis.policyArea?.name == "Taxation" && !self.senatorOne.taxationSponsoredLegislation!.contains(legis)) {
+                self.senatorOne.taxationSponsoredLegislation?.append(legis)
+            }
+        }
+        
+        
+        
+        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
+            if (legisSenatorTwo.policyArea?.name == "Taxation" && !self.senatorTwo.taxationSponsoredLegislation!.contains(legisSenatorTwo)) {
+                self.senatorTwo.taxationSponsoredLegislation?.append(legisSenatorTwo)
+            }
+        }
+        
+        for legisRep in self.representative.sponsoredLegislation! {
+            if (legisRep.policyArea?.name == "Taxation" && !self.representative.taxationSponsoredLegislation!.contains(legisRep)) {
+                self.representative.taxationSponsoredLegislation?.append(legisRep)
+            }
+        }
+
+    }
+    
+    
 }

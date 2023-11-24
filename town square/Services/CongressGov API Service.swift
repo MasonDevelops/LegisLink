@@ -14,11 +14,13 @@ protocol CongressGovServiceProtocol {
     func createSponsoredLegislationURL(bioGuideID: String, pageOffset: Int) -> URL
     func getSponsoredLegislationPackage(from url: URL, completion: @escaping (Swift.Result<SponsoredLegislationPackage, Error>) -> Void)
     func getMaxPagination(bioGuideID: String, completion: @escaping (Int) -> Void)
+    func getTermsInCongress(bioGuideID: String, completion: @escaping ([Term]) -> Void)
 }
 
 class CongressGovService: CongressGovServiceProtocol {
     
-    private var openStatesAPIKey: String {
+    
+    private var congressGovAPIKey: String {
         get {return ProcessInfo.processInfo.environment["CongressGov_API_Key"]!}
     }
     
@@ -42,7 +44,7 @@ class CongressGovService: CongressGovServiceProtocol {
     
     func createSponsoredLegislationURL(bioGuideID: String, pageOffset: Int) -> URL {
         
-        let sponsoredLegislationURL = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)/sponsored-legislation?api_key=\(openStatesAPIKey)&offset=\(pageOffset)&limit=250&format=json"
+        let sponsoredLegislationURL = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)/sponsored-legislation?api_key=\(congressGovAPIKey)&offset=\(pageOffset)&limit=250&format=json"
         )
         
         return sponsoredLegislationURL!
@@ -72,7 +74,23 @@ class CongressGovService: CongressGovServiceProtocol {
         
     }
     
-    
+    func getTermsInCongress(bioGuideID: String, completion: @escaping ([Term]) -> Void) {
+        
+        let url = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)?api_key=\(congressGovAPIKey)")
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        
+        URLSession.shared.dataTask(with: url!) { (data, _, _) in
+            guard let data = data else {return}
+            do {
+                let congressGovMemberRequest = try JSONDecoder().decode(CongressGovMemberRequest.self, from: data)
+                return completion(congressGovMemberRequest.member.terms)
+            } catch {
+                print("Unexpected error: \(error).")
+            }
+        }.resume()
+    }
 }
 
 

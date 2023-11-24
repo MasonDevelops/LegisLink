@@ -11,7 +11,7 @@ import Foundation
 // MARK: - SponsoredLegislationPackage
 struct SponsoredLegislationPackage: Codable {
     let pagination: SponsoredLegislationPackagePagination
-    let request: Request
+    let request: CongressGovRequest
     let sponsoredLegislation: [SponsoredLegislation]
 }
 
@@ -21,39 +21,10 @@ struct SponsoredLegislationPackagePagination: Codable {
     let next: String?
 }
 
-// MARK: - Request
-struct Request: Codable {
-    let bioguideID, contentType, format: String
+// MARK: - Request -> CongressGovRequest
 
-    enum CodingKeys: String, CodingKey {
-        case bioguideID = "bioguideId"
-        case contentType, format
-    }
-}
+// MARK: - SponsoredLegislation -> SponsoredLegislation
 
-// MARK: - SponsoredLegislation
-struct SponsoredLegislation: Codable, Hashable {
-    
-    func hash(into hasher: inout Hasher) {
-            hasher.combine(title)
-        }
-    
-    static func == (lhs: SponsoredLegislation, rhs: SponsoredLegislation) -> Bool {
-        return lhs.title == rhs.title && lhs.title == rhs.title
-
-    }
-    
-    
-    let congress: Int
-    let introducedDate: String
-    let latestAction: LatestAction?
-    let number: String?
-    let policyArea: PolicyArea?
-    let title: String?
-    let type: String?
-    let url: String
-    let amendmentNumber: String?
-}
 
 // MARK: - LatestAction
 struct LatestAction: Codable {

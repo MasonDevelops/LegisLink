@@ -67,6 +67,8 @@ struct Official: Codable, Hashable {
     var contributors: [Contributor]?
     var committees: [String: String]?
     var sponsoredLegislation: [SponsoredLegislation]?
+    var termsServedInCongress: [Term]?
+    var taxationSponsoredLegislation: [SponsoredLegislation]?
 
     enum CodingKeys: String, CodingKey {
         case name, address, party, phones, urls
@@ -82,6 +84,8 @@ struct Official: Codable, Hashable {
         case contributors
         case committees
         case sponsoredLegislation
+        case termsServedInCongress
+        case taxationSponsoredLegislation
     }
 }
 
