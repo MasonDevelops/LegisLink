@@ -1,0 +1,83 @@
+id: ocd-person/273dd641-da15-5fc0-bdc9-496cc9b65fbd
+name: Angus S. King, Jr.
+given_name: Angus
+family_name: King
+middle_name: S.
+gender: M
+birth_date: 1944-03-31
+image: https://theunitedstates.io/images/congress/450x550/K000383.jpg
+party:
+- start_date: '2013-01-03'
+  end_date: '2025-01-03'
+  name: Independent
+roles:
+- start_date: '2013-01-03'
+  end_date: '2019-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+- start_date: '2019-01-03'
+  end_date: '2025-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+offices:
+- classification: capitol
+  address: 133 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-5344
+- classification: district
+  address: 4 Gabriel Dr. Suite 3; Augusta, ME 04330
+  voice: 207-622-8292
+  name: 'District Office #1'
+- classification: district
+  address: 202 Harlow St. Suite 20350; Bangor, ME 04401
+  voice: 207-945-8000
+  name: 'District Office #2'
+- classification: district
+  address: 169 Academy St. Suite A; Presque Isle, ME 04769
+  voice: 207-764-5124
+  name: 'District Office #3'
+- classification: district
+  address: 227 Main Street; Biddeford, ME 04005
+  voice: 207-352-5216
+  name: 'District Office #4'
+links:
+- url: https://www.king.senate.gov
+  note: website
+- url: https://www.king.senate.gov/contact
+  note: contact form
+ids:
+  twitter: SenAngusKing
+  youtube: UCpp6lGvrmt0XU_lnD4Ak0gA
+  facebook: SenatorAngusSKingJr
+other_identifiers:
+- scheme: bioguide
+  identifier: K000383
+- scheme: thomas
+  identifier: 02185
+- scheme: lis
+  identifier: S363
+- scheme: govtrack
+  identifier: '412545'
+- scheme: cspan
+  identifier: '37413'
+- scheme: wikipedia
+  identifier: Angus King
+- scheme: opensecrets
+  identifier: N00034580
+- scheme: votesmart
+  identifier: '22381'
+- scheme: fec
+  identifier: S2ME00109
+- scheme: ballotpedia
+  identifier: Angus King
+- scheme: maplight
+  identifier: '1769'
+- scheme: icpsr
+  identifier: '41300'
+- scheme: wikidata
+  identifier: Q544464
+- scheme: google_entity_id
+  identifier: kg:/m/02hfx0
+sources:
+- url: https://theunitedstates.io/

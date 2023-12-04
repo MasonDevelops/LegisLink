@@ -1,0 +1,51 @@
+id: ocd-person/ad74f627-3223-5505-811c-599046becb2e
+name: Scott Fitzgerald
+given_name: Scott
+family_name: Fitzgerald
+middle_name: L.
+gender: M
+birth_date: 1963-11-16
+image: https://theunitedstates.io/images/congress/450x550/F000471.jpg
+party:
+- start_date: '2021-01-03'
+  end_date: '2025-01-03'
+  name: Republican
+roles:
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WI-5
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WI-5
+offices:
+- classification: capitol
+  address: 1507 Longworth House Office Building Washington DC 20515-4905
+  voice: 202-225-5101
+links:
+- url: https://fitzgerald.house.gov
+  note: website
+ids:
+  twitter: RepFitzgerald
+other_identifiers:
+- scheme: bioguide
+  identifier: F000471
+- scheme: fec
+  identifier: H0WI05113
+- scheme: opensecrets
+  identifier: N00045434
+- scheme: govtrack
+  identifier: '456855'
+- scheme: wikidata
+  identifier: Q7436650
+- scheme: wikipedia
+  identifier: Scott Fitzgerald (politician)
+- scheme: google_entity_id
+  identifier: kg:/m/03nvqsc
+- scheme: votesmart
+  identifier: '3446'
+sources:
+- url: https://theunitedstates.io/

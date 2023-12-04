@@ -1,0 +1,100 @@
+id: ocd-person/799d9723-1f90-5558-b8c6-6f293c7eaddd
+name: Suzan K. DelBene
+given_name: Suzan
+family_name: DelBene
+middle_name: K.
+gender: F
+birth_date: 1962-02-17
+image: https://theunitedstates.io/images/congress/450x550/D000617.jpg
+party:
+- start_date: '2012-11-13'
+  end_date: '2025-01-03'
+  name: Democratic
+roles:
+- start_date: '2012-11-13'
+  end_date: '2013-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+- start_date: '2013-01-03'
+  end_date: '2015-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+- start_date: '2015-01-06'
+  end_date: '2017-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WA-1
+offices:
+- classification: capitol
+  address: 2330 Rayburn House Office Building Washington DC 20515-4701
+  voice: 202-225-6311
+- classification: district
+  address: 22121 17th Ave SE Suite 220; Bothell, WA 98021
+  voice: 425-485-0085
+  fax: 425-485-0083
+  name: 'District Office #1'
+- classification: district
+  address: 204 W. Montgomery St.; Mount Vernon, WA 98273
+  voice: 360-416-7879
+  fax: 425-485-0083
+  name: 'District Office #2'
+links:
+- url: https://delbene.house.gov
+  note: website
+ids:
+  twitter: RepDelBene
+  youtube: UCd00b7TpKDZIr-Ujhaktvjg
+  facebook: RepDelBene
+other_identifiers:
+- scheme: bioguide
+  identifier: D000617
+- scheme: govtrack
+  identifier: '412505'
+- scheme: opensecrets
+  identifier: N00030693
+- scheme: votesmart
+  identifier: '126272'
+- scheme: thomas
+  identifier: 02096
+- scheme: cspan
+  identifier: '1033929'
+- scheme: wikipedia
+  identifier: Suzan DelBene
+- scheme: fec
+  identifier: H0WA08046
+- scheme: ballotpedia
+  identifier: Suzan DelBene
+- scheme: maplight
+  identifier: '1686'
+- scheme: icpsr
+  identifier: '31101'
+- scheme: house_history
+  identifier: '15032387032'
+- scheme: wikidata
+  identifier: Q2091892
+- scheme: google_entity_id
+  identifier: kg:/m/05p0dnk
+sources:
+- url: https://theunitedstates.io/
