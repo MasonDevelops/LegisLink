@@ -1,0 +1,101 @@
+id: ocd-person/5eae38e3-8420-5c09-831a-db73d9cba978
+name: Paul A. Gosar
+given_name: Paul
+family_name: Gosar
+middle_name: A.
+gender: M
+birth_date: 1958-11-22
+image: https://theunitedstates.io/images/congress/450x550/G000565.jpg
+party:
+- start_date: '2011-01-05'
+  end_date: '2025-01-03'
+  name: Republican
+roles:
+- start_date: '2011-01-05'
+  end_date: '2013-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-1
+- start_date: '2013-01-03'
+  end_date: '2015-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-4
+- start_date: '2015-01-06'
+  end_date: '2017-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-4
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-4
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-4
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-4
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AZ-9
+offices:
+- classification: capitol
+  address: 2057 Rayburn House Office Building Washington DC 20515-0309
+  voice: 202-225-2315
+- classification: district
+  address: 220 N. 4th St.; Kingman, AZ 86401
+  name: 'District Office #1'
+- classification: district
+  address: '6499 S. Kings Ranch Rd. #4; Gold Canyon, AZ 85118'
+  voice: 480-882-2697
+  name: 'District Office #2'
+- classification: district
+  address: 122 N. Cortez St. Suite 104; Prescott, AZ 86301
+  voice: 928-445-1683
+  name: 'District Office #3'
+links:
+- url: https://gosar.house.gov
+  note: website
+ids:
+  twitter: RepGosar
+  youtube: UC5orqw_9acsKWSRbrqTDXBw
+  facebook: repgosar
+other_identifiers:
+- scheme: bioguide
+  identifier: G000565
+- scheme: thomas
+  identifier: 01992
+- scheme: govtrack
+  identifier: '412397'
+- scheme: opensecrets
+  identifier: N00030771
+- scheme: votesmart
+  identifier: '123491'
+- scheme: fec
+  identifier: H0AZ01259
+- scheme: cspan
+  identifier: '62470'
+- scheme: wikipedia
+  identifier: Paul Gosar
+- scheme: house_history
+  identifier: '14283'
+- scheme: ballotpedia
+  identifier: Paul Gosar
+- scheme: maplight
+  identifier: '1411'
+- scheme: icpsr
+  identifier: '21103'
+- scheme: wikidata
+  identifier: Q2059832
+- scheme: google_entity_id
+  identifier: kg:/m/0czdqz0
+sources:
+- url: https://theunitedstates.io/

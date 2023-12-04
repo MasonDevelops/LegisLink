@@ -1,0 +1,3039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E2B9168C-CB05-4650-94CC-64B379C170F2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20C3B875-8868-4A89-866D-94E037170897"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19B46343-CA9A-4CB3-933A-210AA3ADBE00"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E222550-4210-4A5B-A5DB-ABF1898DE042"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F780010-8B21-45FF-B2F1-B66AF89AB195"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7215B9CA-D779-4CF3-97E4-DACEAF9270AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10B1DE2F-92E1-461E-B800-71A69F0EDD04"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B0C63F1-CF55-4669-A4BE-936EAA1D223C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9B0C63F1-CF55-4669-A4BE-936EAA1D223C - ef706208ed7ad662"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "9B0C63F1-CF55-4669-A4BE-936EAA1D223C - ef706208ed7ad662"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E338413-ADD9-4D32-BE08-8516F008B566"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E338413-ADD9-4D32-BE08-8516F008B566 - ef706208ed7ad62c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "437">
+               </Location>
+               <Location
+                  uuid = "2E338413-ADD9-4D32-BE08-8516F008B566 - ef706208ed7ad62c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "2E338413-ADD9-4D32-BE08-8516F008B566 - ef706208ed7ad62c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "458">
+               </Location>
+               <Location
+                  uuid = "2E338413-ADD9-4D32-BE08-8516F008B566 - ef706208ed7ad62c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "641">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8D714BF-A644-4A89-8439-550EF7EC6B1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D8D714BF-A644-4A89-8439-550EF7EC6B1A - ef706208ed7ad6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1180">
+               </Location>
+               <Location
+                  uuid = "D8D714BF-A644-4A89-8439-550EF7EC6B1A - ef706208ed7ad6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1474">
+               </Location>
+               <Location
+                  uuid = "D8D714BF-A644-4A89-8439-550EF7EC6B1A - ef706208ed7ad6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1210">
+               </Location>
+               <Location
+                  uuid = "D8D714BF-A644-4A89-8439-550EF7EC6B1A - ef706208ed7ad6ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1507">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C576414-C780-4EEC-930A-CFDEA5E58D77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C576414-C780-4EEC-930A-CFDEA5E58D77 - ef706208ed7ad60d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "726">
+               </Location>
+               <Location
+                  uuid = "6C576414-C780-4EEC-930A-CFDEA5E58D77 - ef706208ed7ad60d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+               <Location
+                  uuid = "6C576414-C780-4EEC-930A-CFDEA5E58D77 - ef706208ed7ad60d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "750">
+               </Location>
+               <Location
+                  uuid = "6C576414-C780-4EEC-930A-CFDEA5E58D77 - ef706208ed7ad60d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1047">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "530C0663-2D0B-4165-B896-F64C844A5C49"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "530C0663-2D0B-4165-B896-F64C844A5C49 - ef706208ed7ad689"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1653">
+               </Location>
+               <Location
+                  uuid = "530C0663-2D0B-4165-B896-F64C844A5C49 - ef706208ed7ad6cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1682">
+               </Location>
+               <Location
+                  uuid = "530C0663-2D0B-4165-B896-F64C844A5C49 - ef706208ed7ad6cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1979">
+               </Location>
+               <Location
+                  uuid = "530C0663-2D0B-4165-B896-F64C844A5C49 - ef706208ed7ad76a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1753">
+               </Location>
+               <Location
+                  uuid = "530C0663-2D0B-4165-B896-F64C844A5C49 - ef706208ed7ad76a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2056">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7813F4FE-F84B-4E2F-B8DB-BFE7CE30B8E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08F16692-CBF8-463F-BC39-DED66C717502"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/MyRepsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25 - fd99c1455d061906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25 - fd99c1455d061906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "558">
+               </Location>
+               <Location
+                  uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25 - fd99c1455d061ae5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25 - fd99c1455d061ae5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "558">
+               </Location>
+               <Location
+                  uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25 - fd99c1455d06189a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "B91BA4D7-73C0-4DE7-BB5E-9E7FF3235D25 - fd99c1455d06189a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "590">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97EB5238-41DB-47B1-9ABF-EF22D8A6BCD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "97EB5238-41DB-47B1-9ABF-EF22D8A6BCD2 - 202400fb9174ffe1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "207">
+               </Location>
+               <Location
+                  uuid = "97EB5238-41DB-47B1-9ABF-EF22D8A6BCD2 - 202400fb9174ffc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "283">
+               </Location>
+               <Location
+                  uuid = "97EB5238-41DB-47B1-9ABF-EF22D8A6BCD2 - 202400fb9174ffc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "302">
+               </Location>
+               <Location
+                  uuid = "97EB5238-41DB-47B1-9ABF-EF22D8A6BCD2 - 202400fb9174fe75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "383">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61E95ED5-ED36-4651-833D-DD2D041DB73F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "61E95ED5-ED36-4651-833D-DD2D041DB73F - 202400fb9174ff02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "2098">
+               </Location>
+               <Location
+                  uuid = "61E95ED5-ED36-4651-833D-DD2D041DB73F - 202400fb9174f1d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "2715">
+               </Location>
+               <Location
+                  uuid = "61E95ED5-ED36-4651-833D-DD2D041DB73F - 202400fb9174f1d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "2916">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37893056-DD4F-4819-AFF7-6724436CD137"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51FFE78E-A81D-4C9E-AEAB-29E12392106C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51FFE78E-A81D-4C9E-AEAB-29E12392106C - 202400fb9174f196"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1070">
+               </Location>
+               <Location
+                  uuid = "51FFE78E-A81D-4C9E-AEAB-29E12392106C - 202400fb9174f196"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1271">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3c70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "421">
+               </Location>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3c70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1351">
+               </Location>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "919">
+               </Location>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1870">
+               </Location>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3cf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "695">
+               </Location>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3cf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "690">
+               </Location>
+               <Location
+                  uuid = "72398C39-4DA6-4E61-A184-FC6A92B41C14 - 8d4ac50a3a5d3e22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "690">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65BC0853-6123-446A-A1A1-6E61770C4820"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "65BC0853-6123-446A-A1A1-6E61770C4820 - ef706208ed7ad7f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "3259">
+               </Location>
+               <Location
+                  uuid = "65BC0853-6123-446A-A1A1-6E61770C4820 - ef706208ed7ad7f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "3565">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C339CC7-BA9C-467F-882B-A4E90044AD3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C339CC7-BA9C-467F-882B-A4E90044AD3C - ef706208ed7ad714"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "2745">
+               </Location>
+               <Location
+                  uuid = "1C339CC7-BA9C-467F-882B-A4E90044AD3C - ef706208ed7ad714"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "3048">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B45B430E-1047-4512-9653-021BF3BD9688"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init?(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B45B430E-1047-4512-9653-021BF3BD9688 - ef706208ed7ad74b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "2243">
+               </Location>
+               <Location
+                  uuid = "B45B430E-1047-4512-9653-021BF3BD9688 - ef706208ed7ad74b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.User.init(from: Swift.String) -&gt; Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "2546">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07AC2C1B-E8A5-4569-8611-427E3A44FD7B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07AC2C1B-E8A5-4569-8611-427E3A44FD7B - 8d4ac50a3a5d3c70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "421">
+               </Location>
+               <Location
+                  uuid = "07AC2C1B-E8A5-4569-8611-427E3A44FD7B - 8d4ac50a3a5d3c70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1351">
+               </Location>
+               <Location
+                  uuid = "07AC2C1B-E8A5-4569-8611-427E3A44FD7B - 8d4ac50a3a5d3c13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "421">
+               </Location>
+               <Location
+                  uuid = "07AC2C1B-E8A5-4569-8611-427E3A44FD7B - 8d4ac50a3a5d3c13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "542">
+               </Location>
+               <Location
+                  uuid = "07AC2C1B-E8A5-4569-8611-427E3A44FD7B - 8d4ac50a3a5d3c13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "549">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "LoginView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - 508c2610e0b048ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of town_square.LoginView.user : Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - 84343aa86909b227"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.user.getter : Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "947">
+               </Location>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - f3055f7fbf99313"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.user.setter : Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "327">
+               </Location>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - dfe10186fcd9da12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.user.modify : Swift.Optional&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "746">
+               </Location>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - 9753598608c34c5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.user.modify : Swift.Optional&lt;town_square.User&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - c7b537b3578497bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.$user.getter : SwiftUI.Binding&lt;Swift.Optional&lt;town_square.User&gt;&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "975">
+               </Location>
+               <Location
+                  uuid = "C33C939C-DEEB-48CF-B2D7-7152CB32F2A1 - ffce21906e0131e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.init() -&gt; town_square.LoginView"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "90">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F6C3A67-4C5C-41BD-A715-64439F240742"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3F6C3A67-4C5C-41BD-A715-64439F240742 - 237bffa0b90862e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.body.getter : some"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "845">
+               </Location>
+               <Location
+                  uuid = "3F6C3A67-4C5C-41BD-A715-64439F240742 - 237bffa0b90862e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.LoginView.body.getter : some"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/LoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "890">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A82BD492-3745-4856-B2CB-73759952DC38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "534DB360-809E-4BC9-A708-2DAEA38EBBB5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "534DB360-809E-4BC9-A708-2DAEA38EBBB5 - 554af5ad053c1b5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in town_square.ContentView.body.getter : some"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "922">
+               </Location>
+               <Location
+                  uuid = "534DB360-809E-4BC9-A708-2DAEA38EBBB5 - b56e5febf7dc2892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Image, SwiftUI.Text)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in town_square.ContentView.body.getter : some"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/MyRepsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "MyRepsView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5 - 2701452a3bff28d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of town_square.MyRepsView.user : town_square.User"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5 - eed766b6adfecdf2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.user.getter : town_square.User"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "958">
+               </Location>
+               <Location
+                  uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5 - 392a2717bf6f2d8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.user.setter : town_square.User"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5 - 21daca1844e985f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.user.modify : town_square.User"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "757">
+               </Location>
+               <Location
+                  uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5 - 77bdff8db724778e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.user.modify : town_square.User with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "D43C7910-8AB8-44B0-A1D7-30516FBDF2A5 - 385e976559c73336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.$user.getter : SwiftUI.Binding&lt;town_square.User&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "986">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6C0EF0A-5D9E-44EF-9393-554C2A7851B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/MyRepsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "MyRepsView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "D6C0EF0A-5D9E-44EF-9393-554C2A7851B6 - 381380398da2dbe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of town_square.MyRepsView.senatorsvm : town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "D6C0EF0A-5D9E-44EF-9393-554C2A7851B6 - dca8abb8503240e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.init(user: town_square.User) -&gt; town_square.MyRepsView"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3c51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - d82ec8350c2a30c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "241">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "919">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1870">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "841">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "2122">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3cd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "2105">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3e03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  uuid = "889D29C2-7B2E-4C95-A8EE-301896F2DD4E - 8d4ac50a3a5d3e03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "2105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2AED777-87FB-41F8-BB5E-A392907741B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "senatorOne"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F163E9B4-6285-49CF-B501-02CC7BCDD23F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "senatorOne"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8484F33B-3D1B-4091-804A-56E602B709B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "senatorTwo"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03142279-2C4A-404D-B0FE-54FBCB25759A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "senatorTwo"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "206CE033-70FD-476C-9172-CE2E211D62DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "init(user:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "206CE033-70FD-476C-9172-CE2E211D62DC - b802a580c5552883"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.init() -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "3176">
+               </Location>
+               <Location
+                  uuid = "206CE033-70FD-476C-9172-CE2E211D62DC - b5cda5b241d5ae47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.__allocating_init(user: town_square.User) -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "206CE033-70FD-476C-9172-CE2E211D62DC - 917027b922126af7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.init(user: town_square.User) -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "131">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D93D2347-BDF1-46AB-8A99-6D8171E481E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "init(user:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D93D2347-BDF1-46AB-8A99-6D8171E481E0 - b802a580c55528a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.init() -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "3196">
+               </Location>
+               <Location
+                  uuid = "D93D2347-BDF1-46AB-8A99-6D8171E481E0 - 917027b922126f3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.init(user: town_square.User) -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "3336">
+               </Location>
+               <Location
+                  uuid = "D93D2347-BDF1-46AB-8A99-6D8171E481E0 - 917027b922126d68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.init(user: town_square.User) -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "4780">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2A96BCF-1FFA-412E-A74F-F50131970D6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "SenatorsViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE07E9EF-0B79-4CDA-964F-11159AB95F81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "init(user:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEF78FF2-5EC5-41BD-AE54-5C3177C49A46"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/MyRepsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "MyRepsView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D932B4EA-F3BB-4A39-A8CB-043C59237ECE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/MyRepsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(user:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB882BE6-2993-4B5F-B982-427E2E1B4783"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "812ED7CB-8BDE-4753-AA20-86F4A9AB6646"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA0F2733-5E61-4D49-9687-7578194543E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EA0F2733-5E61-4D49-9687-7578194543E4 - d82ec8350c2a33de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "783">
+               </Location>
+               <Location
+                  uuid = "EA0F2733-5E61-4D49-9687-7578194543E4 - d82ec8350c2a33de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "713">
+               </Location>
+               <Location
+                  uuid = "EA0F2733-5E61-4D49-9687-7578194543E4 - d82ec8350c2a0dac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "713">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82ED2D85-B829-409D-B8D2-FDB00CB2A272"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82ED2D85-B829-409D-B8D2-FDB00CB2A272 - d82ec8350c2a33ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "858">
+               </Location>
+               <Location
+                  uuid = "82ED2D85-B829-409D-B8D2-FDB00CB2A272 - d82ec8350c2a33ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "788">
+               </Location>
+               <Location
+                  uuid = "82ED2D85-B829-409D-B8D2-FDB00CB2A272 - d82ec8350c2a0dcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "788">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E954AEC-9708-44DE-806E-169B5E0415EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E954AEC-9708-44DE-806E-169B5E0415EC - d82ec8350c2a3318"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "930">
+               </Location>
+               <Location
+                  uuid = "5E954AEC-9708-44DE-806E-169B5E0415EC - d82ec8350c2a3318"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "860">
+               </Location>
+               <Location
+                  uuid = "5E954AEC-9708-44DE-806E-169B5E0415EC - d82ec8350c2a0d0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "939">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BE2658C-38FC-4927-B2A0-A50FAA829A78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BE2658C-38FC-4927-B2A0-A50FAA829A78 - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "989">
+               </Location>
+               <Location
+                  uuid = "4BE2658C-38FC-4927-B2A0-A50FAA829A78 - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1704">
+               </Location>
+               <Location
+                  uuid = "4BE2658C-38FC-4927-B2A0-A50FAA829A78 - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "919">
+               </Location>
+               <Location
+                  uuid = "4BE2658C-38FC-4927-B2A0-A50FAA829A78 - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1610">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C1BC384-3694-447E-9F34-17F648CE291E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C1BC384-3694-447E-9F34-17F648CE291E - d82ec8350c2a3339"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "960">
+               </Location>
+               <Location
+                  uuid = "6C1BC384-3694-447E-9F34-17F648CE291E - d82ec8350c2a3339"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "890">
+               </Location>
+               <Location
+                  uuid = "6C1BC384-3694-447E-9F34-17F648CE291E - d82ec8350c2a0d28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "969">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4AD89AF-5AB7-4421-B568-5539F8F56A1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F4AD89AF-5AB7-4421-B568-5539F8F56A1C - d82ec8350c2a3294"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1265">
+               </Location>
+               <Location
+                  uuid = "F4AD89AF-5AB7-4421-B568-5539F8F56A1C - d82ec8350c2a3294"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D73D2A6-7621-4A3F-8A24-B16BE2009BDB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getSenators()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D73D2A6-7621-4A3F-8A24-B16BE2009BDB - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "989">
+               </Location>
+               <Location
+                  uuid = "6D73D2A6-7621-4A3F-8A24-B16BE2009BDB - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1704">
+               </Location>
+               <Location
+                  uuid = "6D73D2A6-7621-4A3F-8A24-B16BE2009BDB - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "919">
+               </Location>
+               <Location
+                  uuid = "6D73D2A6-7621-4A3F-8A24-B16BE2009BDB - d82ec8350c2a337b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in town_square.SenatorsViewModel.getSenators() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1610">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D28199C4-2873-4A91-8511-3C4C619C9E5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/MyRepsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "MyRepsViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D28199C4-2873-4A91-8511-3C4C619C9E5F - eb4e5f7aedee8677"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; town_square.MyRepViewController"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "D28199C4-2873-4A91-8511-3C4C619C9E5F - 8b68891fbbaf5224"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; town_square.MyRepViewController"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "D28199C4-2873-4A91-8511-3C4C619C9E5F - 52e3674a836a6400"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;town_square.MyRepViewController&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "D28199C4-2873-4A91-8511-3C4C619C9E5F - f4c1edcffdf7e31f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;town_square.MyRepViewController&gt;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "D28199C4-2873-4A91-8511-3C4C619C9E5F - 10f6a08492983118"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepViewController.__deallocating_deinit"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "479A1E27-0272-4653-9D12-8F8F00920341"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/MyRepsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "senatorOne"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "representative"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - d83fa8d843982631"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of town_square.SenatorsViewModel.representative : town_square.Official"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - f06d79fe150c4c41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.representative.getter : town_square.Official"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "307">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - 60f9405a9c06cc4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.representative.setter : town_square.Official"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "187">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - c471c31a8bbfc7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.representative.modify : town_square.Official"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - cc9f014c480dc58e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.representative.modify : town_square.Official with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - 4bc39c4166342212"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.$representative.getter : Combine.Published&lt;town_square.Official&gt;.Publisher"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - dad180b6752daa1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.$representative.setter : Combine.Published&lt;town_square.Official&gt;.Publisher"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - 913ea9546166ab49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.$representative.modify : Combine.Published&lt;town_square.Official&gt;.Publisher"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - b443e394cb099a4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.$representative.modify : Combine.Published&lt;town_square.Official&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "2A3ECD14-E4F2-4710-BC0F-01B321276CE6 - 917027b922126f78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.SenatorsViewModel.init(user: town_square.User) -&gt; town_square.SenatorsViewModel"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/SenatorsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "3231">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27B7DEF7-E95B-4677-810B-54BCBBD68953"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/SenatorsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "representative"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C92CD9C-D784-48A1-B4D4-E95DF9B8D91E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/View/MyRepsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "returnLawmakerView(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0C92CD9C-D784-48A1-B4D4-E95DF9B8D91E - 3f246aa9ea2c437d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.returnLawmakerView(town_square.Official) -&gt; SwiftUI.AnyView"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "0C92CD9C-D784-48A1-B4D4-E95DF9B8D91E - 3f246aa9ea2c437d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsView.returnLawmakerView(town_square.Official) -&gt; SwiftUI.AnyView"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/View/MyRepsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "town square/ViewModel/MyRepsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "bundleOpenStatesData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 2cbd474b2c7bff8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleCID(senatorOneName: Swift.String) -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 2cbd474b2c7bffab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleCID(senatorOneName: Swift.String) -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710ebd16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb84f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb84f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb84f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb84f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb84f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "319">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb327"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "319">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb382"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "319">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710eb340"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "319">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710ebc0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "319">
+               </Location>
+               <Location
+                  uuid = "8198CB7A-5766-427C-90A4-B0241EAE7821 - 79c31ef0710ebc69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "town_square.MyRepsViewModel.bundleOpenStatesData() -&gt; ()"
+                  moduleName = "town square"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/town%20square/town%20square/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "319">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

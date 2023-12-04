@@ -1,0 +1,143 @@
+{
+  "normalizedInput": {
+    "line1": "1263 Pacific Avenue",
+    "city": "Kansas City",
+    "state": "KS",
+    "zip": "66102"
+  },
+  "kind": "civicinfo#representativeInfoResponse",
+  "divisions": {
+    "ocd-division/country:us/state:ks": {
+      "name": "Kansas",
+      "officeIndices": [
+        0
+      ]
+    },
+    "ocd-division/country:us/state:ks/cd:2": {
+      "name": "Kansas's 2nd congressional district",
+      "officeIndices": [
+        1
+      ]
+    }
+  },
+  "offices": [
+    {
+      "name": "U.S. Senator",
+      "divisionId": "ocd-division/country:us/state:ks",
+      "levels": [
+        "country"
+      ],
+      "roles": [
+        "legislatorUpperBody"
+      ],
+      "officialIndices": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "U.S. Representative",
+      "divisionId": "ocd-division/country:us/state:ks/cd:2",
+      "levels": [
+        "country"
+      ],
+      "roles": [
+        "legislatorLowerBody"
+      ],
+      "officialIndices": [
+        2
+      ]
+    }
+  ],
+  "officials": [
+    {
+      "name": "Jerry Moran",
+      "address": [
+        {
+          "line1": "521 Dirksen Senate Office Building",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20510"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(202) 224-6521"
+      ],
+      "urls": [
+        "https://www.moran.senate.gov/",
+        "https://en.wikipedia.org/wiki/Jerry_Moran"
+      ],
+      "photoUrl": "http://bioguide.congress.gov/bioguide/photo/M/M000934.jpg",
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "jerrymoran"
+        },
+        {
+          "type": "Twitter",
+          "id": "JerryMoran"
+        }
+      ]
+    },
+    {
+      "name": "Roger Marshall",
+      "address": [
+        {
+          "line1": "479A",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20002"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(202) 224-4774"
+      ],
+      "urls": [
+        "https://www.marshall.senate.gov/",
+        "https://en.wikipedia.org/wiki/Roger_Marshall_%28politician%29"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "RogerMarshallMD"
+        },
+        {
+          "type": "Twitter",
+          "id": "repmarshall"
+        }
+      ]
+    },
+    {
+      "name": "Jake LaTurner",
+      "address": [
+        {
+          "line1": "2441 Rayburn House Office Building",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20515"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(202) 225-6601"
+      ],
+      "urls": [
+        "https://laturner.house.gov/",
+        "https://en.wikipedia.org/wiki/Jake_LaTurner"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "CongressmanJakeLaTurner"
+        },
+        {
+          "type": "Twitter",
+          "id": "RepLaTurner"
+        }
+      ]
+    }
+  ]
+}
+

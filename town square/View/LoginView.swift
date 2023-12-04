@@ -59,10 +59,6 @@ extension LoginView {
                 }
             }
     }
-    
-    func register() {
-        print("REGISTER")
-    }
 }
 
 
