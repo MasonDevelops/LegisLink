@@ -1,0 +1,34 @@
+PODS:
+  - Auth0 (2.3.2):
+    - JWTDecode (~> 3.0)
+    - SimpleKeychain (~> 1.0)
+  - Fuse (1.4.0)
+  - JWTDecode (3.0.1)
+  - SimpleKeychain (1.0.1)
+  - Yams (5.0.6)
+
+DEPENDENCIES:
+  - Auth0 (~> 2.3)
+  - Fuse
+  - JWTDecode (~> 3.0)
+  - SimpleKeychain (~> 1.0)
+  - Yams
+
+SPEC REPOS:
+  trunk:
+    - Auth0
+    - Fuse
+    - JWTDecode
+    - SimpleKeychain
+    - Yams
+
+SPEC CHECKSUMS:
+  Auth0: 64da28fdc5cd499aa516dc4bfd0ace8efae2c1da
+  Fuse: 48eaf66d0c407c7f8b0ddb168888dc4637e87f14
+  JWTDecode: 2eed97c2fa46ccaf3049a787004eedf0be474a87
+  SimpleKeychain: 130211269f88f038d7dc5254cf0b1b9ce978c398
+  Yams: e10dae147f517ed57ecae37c5e8681bdf8fcab65
+
+PODFILE CHECKSUM: 23aed077c0fabc7064335c7c752eddf8bbd25606
+
+COCOAPODS: 1.12.1
