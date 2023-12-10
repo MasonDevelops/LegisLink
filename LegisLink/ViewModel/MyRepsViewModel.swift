@@ -21,7 +21,7 @@ class MyRepsViewModel: ObservableObject {
     private let openSecretsService: OpenSecretsServiceProtocol
     private let openStatesService: OpenStatesServiceProtocol
     private let congressGovService: CongressGovServiceProtocol
-    
+        
     @Published var senatorOne = Official(name: "null", address: [NormalizedInput(
         
         line1: "String",
@@ -69,6 +69,7 @@ class MyRepsViewModel: ObservableObject {
         self.openStatesService = openStatesService
         self.congressGovService = congressGovService
         
+        
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
             let testURL = URL(string: "https://www.example.com")
             var testURLs = [URL]()
@@ -95,12 +96,10 @@ class MyRepsViewModel: ObservableObject {
             fetchSenatorOneSponsoredLegislation()
             fetchSenatorTwoSponsoredLegislation()
             
-            sortTaxationLegislationForAllReps()
-            sortHealthLegislationForAllReps()
-            sortGovtOpsAndPoliticsLegislationForAllReps()
-            sortArmedForcesAndNatlSecurityLegislationForAllReps()
-            sortCongressLegislationForAllReps()
-            sortInternationalAffairsLegislationForAllReps()
+            bindSponsoredLegislationByPolicy()
+            
+            
+            
             
             
             attachCongressionalTermsInOffice()
@@ -690,187 +689,79 @@ class MyRepsViewModel: ObservableObject {
         }
     }
     
-    func sortTaxationLegislationForAllReps() {
-        self.senatorOne.taxationSponsoredLegislation = []
-        self.senatorTwo.taxationSponsoredLegislation = []
-        self.representative.taxationSponsoredLegislation = []
+    func bindSponsoredLegislationByPolicy() {
         
+        let sortLegislationByPolicyAreaHelper = SortLegislationByPolicyAreaHelper(senatorOne: self.senatorOne, senatorTwo: self.senatorTwo, representative: self.representative)
         
+        let tempPublicWorksLegis = sortLegislationByPolicyAreaHelper.sortTransportationAndPublicWorksLegislationForAllReps()
+        self.senatorOne.transportationAndPublicWorksLegislation = tempPublicWorksLegis[0]
+        self.senatorTwo.transportationAndPublicWorksLegislation = tempPublicWorksLegis[1]
+        self.representative.transportationAndPublicWorksLegislation = tempPublicWorksLegis[2]
         
-        for legis in self.senatorOne.sponsoredLegislation! {
-            if (legis.policyArea?.name == "Taxation" && !self.senatorOne.taxationSponsoredLegislation!.contains(legis)) {
-                self.senatorOne.taxationSponsoredLegislation?.append(legis)
-            }
-        }
+        let tempTaxationLegis = sortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps()
+        self.senatorOne.taxationSponsoredLegislation = tempTaxationLegis[0]
+        self.senatorTwo.taxationSponsoredLegislation = tempTaxationLegis[1]
+        self.representative.taxationSponsoredLegislation = tempTaxationLegis[2]
         
+        let tempHealthLegis = sortLegislationByPolicyAreaHelper.sortHealthLegislationForAllReps()
+        self.senatorOne.healthSponsoredLegislation = tempHealthLegis[0]
+        self.senatorTwo.healthSponsoredLegislation = tempHealthLegis[1]
+        self.representative.healthSponsoredLegislation = tempHealthLegis[2]
         
+        let tempGovtOpsLegis = sortLegislationByPolicyAreaHelper.sortGovtOpsAndPoliticsLegislationForAllReps()
+        self.senatorOne.govtOpsAndPoliticsLegislation = tempGovtOpsLegis[0]
+        self.senatorTwo.govtOpsAndPoliticsLegislation = tempGovtOpsLegis[1]
+        self.representative.govtOpsAndPoliticsLegislation = tempGovtOpsLegis[2]
         
-        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
-            if (legisSenatorTwo.policyArea?.name == "Taxation" && !self.senatorTwo.taxationSponsoredLegislation!.contains(legisSenatorTwo)) {
-                self.senatorTwo.taxationSponsoredLegislation?.append(legisSenatorTwo)
-            }
-        }
+        let tempArmedForcesLegis = sortLegislationByPolicyAreaHelper.sortArmedForcesAndNatlSecurityLegislationForAllReps()
+        self.senatorOne.armedForcesAndNatlSecurityLegislation = tempArmedForcesLegis[0]
+        self.senatorTwo.armedForcesAndNatlSecurityLegislation = tempArmedForcesLegis[1]
+        self.representative.armedForcesAndNatlSecurityLegislation = tempArmedForcesLegis[2]
         
-        for legisRep in self.representative.sponsoredLegislation! {
-            if (legisRep.policyArea?.name == "Taxation" && !self.representative.taxationSponsoredLegislation!.contains(legisRep)) {
-                self.representative.taxationSponsoredLegislation?.append(legisRep)
-            }
-        }
+        let tempCongressLegis = sortLegislationByPolicyAreaHelper.sortCongressLegislationForAllReps()
+        self.senatorOne.congressLegislation = tempCongressLegis[0]
+        self.senatorTwo.congressLegislation = tempCongressLegis[1]
+        self.representative.congressLegislation = tempCongressLegis[2]
+        
+        let tempInternationalAffairsLegis = sortLegislationByPolicyAreaHelper.sortInternationalAffairsLegislationForAllReps()
+        self.senatorOne.intlAffairsLegislation = tempInternationalAffairsLegis[0]
+        self.senatorTwo.intlAffairsLegislation = tempInternationalAffairsLegis[1]
+        self.representative.intlAffairsLegislation = tempInternationalAffairsLegis[2]
+        
+        let tempPublicLandsLegis = sortLegislationByPolicyAreaHelper.sortPublicLandsAndNatResourcesLegislationForAllReps()
+        self.senatorOne.publicLandsNatResourcesLegislation = tempPublicLandsLegis[0]
+        self.senatorTwo.publicLandsNatResourcesLegislation = tempPublicLandsLegis[1]
+        self.representative.publicLandsNatResourcesLegislation = tempPublicLandsLegis[2]
+        
+        let tempForeignTradeLegis = sortLegislationByPolicyAreaHelper.sortForeignTradeIntlFinanceLegislationForAllReps()
+        self.senatorOne.foreignTradeAndIntlFinanceLegislation = tempForeignTradeLegis[0]
+        self.senatorTwo.foreignTradeAndIntlFinanceLegislation = tempForeignTradeLegis[1]
+        self.representative.foreignTradeAndIntlFinanceLegislation = tempForeignTradeLegis[2]
+        
+        let tempCrimeLegis = sortLegislationByPolicyAreaHelper.sortCrimeAndLawEnforcementLegislationForAllReps()
+        self.senatorOne.crimeAndLawEnforcementLegislation = tempCrimeLegis[0]
+        self.senatorTwo.crimeAndLawEnforcementLegislation = tempCrimeLegis[1]
+        self.representative.crimeAndLawEnforcementLegislation = tempCrimeLegis[2]
+        
+        let tempEducationLegis = sortLegislationByPolicyAreaHelper.sortEducationLegislationForAllReps()
+        self.senatorOne.educationLegislation = tempEducationLegis[0]
+        self.senatorTwo.educationLegislation = tempEducationLegis[1]
+        self.representative.educationLegislation = tempEducationLegis[2]
+        
+        let tempSocialWelfareLegis = sortLegislationByPolicyAreaHelper.sortSocialWelfareLegislationForAllReps()
+        self.senatorOne.socialWelfareLegislation = tempSocialWelfareLegis[0]
+        self.senatorTwo.socialWelfareLegislation = tempSocialWelfareLegis[1]
+        self.representative.socialWelfareLegislation = tempSocialWelfareLegis[2]
+        
         
     }
-    
-    
-    func sortHealthLegislationForAllReps() {
-        self.senatorOne.healthSponsoredLegislation = []
-        self.senatorTwo.healthSponsoredLegislation = []
-        self.representative.healthSponsoredLegislation = []
-        
-        
-        
-        for legis in self.senatorOne.sponsoredLegislation! {
-            if (legis.policyArea?.name == "Health" && !self.senatorOne.healthSponsoredLegislation!.contains(legis)) {
-                self.senatorOne.healthSponsoredLegislation?.append(legis)
-            }
-        }
-        
-        
-        
-        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
-            if (legisSenatorTwo.policyArea?.name == "Health" && !self.senatorTwo.healthSponsoredLegislation!.contains(legisSenatorTwo)) {
-                self.senatorTwo.healthSponsoredLegislation?.append(legisSenatorTwo)
-            }
-        }
-        
-        for legisRep in self.representative.sponsoredLegislation! {
-            if (legisRep.policyArea?.name == "Health" && !self.representative.healthSponsoredLegislation!.contains(legisRep)) {
-                self.representative.healthSponsoredLegislation?.append(legisRep)
-            }
-        }
-        
-    }
-    
-    func sortGovtOpsAndPoliticsLegislationForAllReps() {
-        self.senatorOne.govtOpsAndPoliticsLegislation = []
-        self.senatorTwo.govtOpsAndPoliticsLegislation = []
-        self.representative.govtOpsAndPoliticsLegislation = []
-        
-        
-        
-        for legis in self.senatorOne.sponsoredLegislation! {
-            if (legis.policyArea?.name == "Government Operations and Politics" && !self.senatorOne.govtOpsAndPoliticsLegislation!.contains(legis)) {
-                self.senatorOne.govtOpsAndPoliticsLegislation?.append(legis)
-            }
-        }
-        
-        
-        
-        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
-            if (legisSenatorTwo.policyArea?.name == "Government Operations and Politics" && !self.senatorTwo.govtOpsAndPoliticsLegislation!.contains(legisSenatorTwo)) {
-                self.senatorTwo.govtOpsAndPoliticsLegislation?.append(legisSenatorTwo)
-            }
-        }
-        
-        for legisRep in self.representative.sponsoredLegislation! {
-            if (legisRep.policyArea?.name == "Government Operations and Politics" && !self.representative.govtOpsAndPoliticsLegislation!.contains(legisRep)) {
-                self.representative.govtOpsAndPoliticsLegislation?.append(legisRep)
-            }
-        }
-        
-    }
-    
-    func sortArmedForcesAndNatlSecurityLegislationForAllReps() {
-        self.senatorOne.armedForcesAndNatlSecurityLegislation = []
-        self.senatorTwo.armedForcesAndNatlSecurityLegislation = []
-        self.representative.armedForcesAndNatlSecurityLegislation = []
-        
-        
-        
-        for legis in self.senatorOne.sponsoredLegislation! {
-            if (legis.policyArea?.name == "Armed Forces and National Security" && !self.senatorOne.armedForcesAndNatlSecurityLegislation!.contains(legis)) {
-                self.senatorOne.armedForcesAndNatlSecurityLegislation?.append(legis)
-            }
-        }
-        
-        
-        
-        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
-            if (legisSenatorTwo.policyArea?.name == "Armed Forces and National Security" && !self.senatorTwo.armedForcesAndNatlSecurityLegislation!.contains(legisSenatorTwo)) {
-                self.senatorTwo.armedForcesAndNatlSecurityLegislation?.append(legisSenatorTwo)
-            }
-        }
-        
-        for legisRep in self.representative.sponsoredLegislation! {
-            if (legisRep.policyArea?.name == "Armed Forces and National Security" && !self.representative.armedForcesAndNatlSecurityLegislation!.contains(legisRep)) {
-                self.representative.armedForcesAndNatlSecurityLegislation?.append(legisRep)
-            }
-        }
-    }
-    func sortCongressLegislationForAllReps() {
-        self.senatorOne.congressLegislation = []
-        self.senatorTwo.congressLegislation = []
-        self.representative.congressLegislation = []
 
-        
-        
-        for legis in self.senatorOne.sponsoredLegislation! {
-            if (legis.policyArea?.name == "Congress" && !self.senatorOne.congressLegislation!.contains(legis)) {
-                self.senatorOne.congressLegislation?.append(legis)
-            }
-        }
-        
-        
-        
-        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
-            if (legisSenatorTwo.policyArea?.name == "Congress" && !self.senatorTwo.congressLegislation!.contains(legisSenatorTwo)) {
-                self.senatorTwo.congressLegislation?.append(legisSenatorTwo)
-            }
-        }
-        
-        for legisRep in self.representative.sponsoredLegislation! {
-            if (legisRep.policyArea?.name == "Congress" && !self.representative.congressLegislation!.contains(legisRep)) {
-                self.representative.congressLegislation?.append(legisRep)
-            }
-        }
 
-    }
-    
-    func sortInternationalAffairsLegislationForAllReps() {
-        
-        self.senatorOne.intlAffairsLegislation = []
-        self.senatorTwo.intlAffairsLegislation = []
-        self.representative.intlAffairsLegislation = []
-        
-        for legis in self.senatorOne.sponsoredLegislation! {
-            if(legis.policyArea?.name == "International Affairs" && !self.senatorOne.intlAffairsLegislation!.contains(legis)) {
-                self.senatorOne.intlAffairsLegislation?.append(legis)
-            }
-        }
-        
-        for legisSenatorTwo in self.senatorTwo.sponsoredLegislation! {
-            if (legisSenatorTwo.policyArea?.name == "International Affairs" && !self.senatorTwo.intlAffairsLegislation!.contains(legisSenatorTwo)) {
-                self.senatorTwo.intlAffairsLegislation?.append(legisSenatorTwo)
-            }
-        }
-        
-        for legisRep in self.representative.sponsoredLegislation! {
-            if (legisRep.policyArea?.name == "International Affairs" && !self.representative.intlAffairsLegislation!.contains(legisRep)) {
-                self.representative.intlAffairsLegislation?.append(legisRep)
-            }
-        }
-        
-        
-    }
     
 }
     
     
     /*
-     International Affairs[18,867]
-     Public Lands and Natural Resources[16,155]
-     Foreign Trade and International Finance[15,991]
-     Crime and Law Enforcement[13,786]
-     Transportation and Public Works[12,216]
-     Education[10,651]
      Social Welfare[9,971]
      Energy[8,828]
      Agriculture and Food[8,605]

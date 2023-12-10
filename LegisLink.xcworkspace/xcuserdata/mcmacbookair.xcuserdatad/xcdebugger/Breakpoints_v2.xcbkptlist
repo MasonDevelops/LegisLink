@@ -8525,5 +8525,418 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BAFC7D7-37FF-47AE-BB66-F46D14A0265E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/ViewModel/MyRepsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "435"
+            endingLineNumber = "435"
+            landmarkName = "fetchRepresentativeSponsoredLegislation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0474F488-157D-4697-A5DF-059526FB16E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/Services/CongressGov API Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getMaxPagination(bioGuideID:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D7BBAD5-891C-491E-ADF5-658D3B098EB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/Services/CongressGov API Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getMaxPagination(bioGuideID:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56E0D46B-DDFE-41E6-9848-3DEC7F884137"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/View/SponsoredLegisListByTermView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "56E0D46B-DDFE-41E6-9848-3DEC7F884137 - ad99407536576608"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;)&gt;, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;)&gt;, SwiftUI.EmptyView&gt;)&gt;&gt; in LegisLink.SponsoredLegisListByTermView.body.getter : some"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/View/SponsoredLegisListByTermView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "996">
+               </Location>
+               <Location
+                  uuid = "56E0D46B-DDFE-41E6-9848-3DEC7F884137 - 7ba487e3129f2244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;)&gt;, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.SponsoredLegislationByPolicyAreaView&gt;)&gt;, SwiftUI.EmptyView&gt;)&gt;&gt; in LegisLink.SponsoredLegisListByTermView.body.getter : some"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/View/SponsoredLegisListByTermView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "704">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0459E4B2-10D1-4CD6-826A-9DCBAC98FB01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0459E4B2-10D1-4CD6-826A-9DCBAC98FB01 - 28ad1e7fc623b91c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Image, SwiftUI.Text)&gt;&gt;, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;LegisLink.SponsoredLegislation&gt;, LegisLink.SponsoredLegislation, Swift.Optional&lt;SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.IndivLegislationView&gt;&gt;&gt;&gt;&gt; in LegisLink.SponsoredLegislationByPolicyAreaView.body.getter : some"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+               <Location
+                  uuid = "0459E4B2-10D1-4CD6-826A-9DCBAC98FB01 - 28ad1e7fc623b91c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Image, SwiftUI.Text)&gt;&gt;, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;LegisLink.SponsoredLegislation&gt;, LegisLink.SponsoredLegislation, Swift.Optional&lt;SwiftUI.NavigationLink&lt;SwiftUI.Text, LegisLink.IndivLegislationView&gt;&gt;&gt;&gt;&gt; in LegisLink.SponsoredLegislationByPolicyAreaView.body.getter : some"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B36C896C-2238-4BBF-98D9-ED8A5347C0BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "checkIfGivenLegislationExists()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B36C896C-2238-4BBF-98D9-ED8A5347C0BA - 54978c97082ce87d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SponsoredLegislationByPolicyAreaView.checkIfGivenLegislationExists() -&gt; Swift.Bool"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "B36C896C-2238-4BBF-98D9-ED8A5347C0BA - 54978c97082ce87d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SponsoredLegislationByPolicyAreaView.checkIfGivenLegislationExists() -&gt; Swift.Bool"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68E5EA84-73A9-45EF-A5A3-449CF13F6891"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/ViewModel/MyRepsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "init(user:googleCivicInfoService:openSecretsService:openStatesService:congressGovService:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68E5EA84-73A9-45EF-A5A3-449CF13F6891 - 805415cf1937e045"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.MyRepsViewModel.init(user: LegisLink.User, googleCivicInfoService: LegisLink.GoogleCivicInfoServiceProtocol, openSecretsService: LegisLink.OpenSecretsServiceProtocol, openStatesService: LegisLink.OpenStatesServiceProtocol, congressGovService: LegisLink.CongressGovServiceProtocol) -&gt; LegisLink.MyRepsViewModel"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "5952">
+               </Location>
+               <Location
+                  uuid = "68E5EA84-73A9-45EF-A5A3-449CF13F6891 - 805415cf1937e045"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.MyRepsViewModel.init(user: LegisLink.User, googleCivicInfoService: LegisLink.GoogleCivicInfoServiceProtocol, openSecretsService: LegisLink.OpenSecretsServiceProtocol, openStatesService: LegisLink.OpenStatesServiceProtocol, congressGovService: LegisLink.CongressGovServiceProtocol) -&gt; LegisLink.MyRepsViewModel"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "5960">
+               </Location>
+               <Location
+                  uuid = "68E5EA84-73A9-45EF-A5A3-449CF13F6891 - 805415cf1937e045"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.MyRepsViewModel.init(user: LegisLink.User, googleCivicInfoService: LegisLink.GoogleCivicInfoServiceProtocol, openSecretsService: LegisLink.OpenSecretsServiceProtocol, openStatesService: LegisLink.OpenStatesServiceProtocol, congressGovService: LegisLink.CongressGovServiceProtocol) -&gt; LegisLink.MyRepsViewModel"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/ViewModel/MyRepsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "5964">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C39DFE9C-98C5-4250-94F9-3C8AF2D3F7FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "sortTaxationLegislationForAllReps()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C39DFE9C-98C5-4250-94F9-3C8AF2D3F7FA - 4ebf96c53aec5236"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps() -&gt; ()"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "C39DFE9C-98C5-4250-94F9-3C8AF2D3F7FA - 4ebf96c53aec53b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps() -&gt; ()"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "C39DFE9C-98C5-4250-94F9-3C8AF2D3F7FA - 6acad5c4a7a0286b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps() -&gt; Swift.Array&lt;Swift.Array&lt;LegisLink.SponsoredLegislation&gt;&gt;"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B90BF956-8BDA-456A-AC34-F22F6FB93CD7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "sortTaxationLegislationForAllReps()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B90BF956-8BDA-456A-AC34-F22F6FB93CD7 - 4ebf96c53aec5255"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps() -&gt; ()"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "B90BF956-8BDA-456A-AC34-F22F6FB93CD7 - 4ebf96c53aec53d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps() -&gt; ()"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "B90BF956-8BDA-456A-AC34-F22F6FB93CD7 - 6acad5c4a7a028e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LegisLink.SortLegislationByPolicyAreaHelper.sortTaxationLegislationForAllReps() -&gt; Swift.Array&lt;Swift.Array&lt;LegisLink.SponsoredLegislation&gt;&gt;"
+                  moduleName = "LegisLink"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink/Helpers/SortLegislationByPolicyAreaHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FDC99B9-4A66-4D9C-9405-A809F3C2FF5E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/View/SponsoredLegisListByTermView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1878E7D-A47B-4F9E-89EA-608A4B8E30D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LegisLink/View/SponsoredLegislationByPolicyAreaView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "checkIfGivenLegislationExists()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
