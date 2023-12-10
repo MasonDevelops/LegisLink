@@ -80,6 +80,7 @@ struct Official: Codable, Hashable {
     var transportationAndPublicWorksLegislation: [SponsoredLegislation]?
     var educationLegislation: [SponsoredLegislation]?
     var socialWelfareLegislation: [SponsoredLegislation]?
+    var energyLegislation: [SponsoredLegislation]?
 
 
 

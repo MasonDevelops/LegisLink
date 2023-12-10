@@ -48,6 +48,8 @@ struct SponsoredLegisListByTermView: View {
                     
                     NavigationLink("Social Welfare", destination: SponsoredLegislationByPolicyAreaView(user:user, official: official, congress: congress, givenSponsoredLegislation: official.socialWelfareLegislation, givenPolicyArea: "Social Welfare"))
                     
+                    NavigationLink("Energy", destination: SponsoredLegislationByPolicyAreaView(user:user, official: official, congress: congress, givenSponsoredLegislation: official.energyLegislation, givenPolicyArea: "Energy"))
+                    
                 }
             }
         }

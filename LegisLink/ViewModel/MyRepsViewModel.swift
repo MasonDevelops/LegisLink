@@ -753,6 +753,11 @@ class MyRepsViewModel: ObservableObject {
         self.senatorTwo.socialWelfareLegislation = tempSocialWelfareLegis[1]
         self.representative.socialWelfareLegislation = tempSocialWelfareLegis[2]
         
+        let tempEnergyLegis = sortLegislationByPolicyAreaHelper.sortEnergyLegislationForAllReps()
+        self.senatorOne.energyLegislation = tempEnergyLegis[0]
+        self.senatorTwo.energyLegislation = tempEnergyLegis[1]
+        self.representative.energyLegislation = tempEnergyLegis[2]
+        
         
     }
 
@@ -762,7 +767,6 @@ class MyRepsViewModel: ObservableObject {
     
     
     /*
-     Social Welfare[9,971]
      Energy[8,828]
      Agriculture and Food[8,605]
      Labor and Employment[8,214]

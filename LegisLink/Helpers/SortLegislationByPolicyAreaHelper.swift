@@ -167,6 +167,19 @@ class SortLegislationByPolicyAreaHelper {
         return tempLegislation
     }
     
+    func sortEnergyLegislationForAllReps() -> [[SponsoredLegislation]] {
+        
+        var tempLegislation = [[SponsoredLegislation]]()
+
+        
+        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Energy"))
+        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Energy"))
+        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Energy"))
+        
+        return tempLegislation
+    }
+    
+    
     
     
     
