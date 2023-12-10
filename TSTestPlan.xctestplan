@@ -14,14 +14,14 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:town square.xcodeproj",
+        "containerPath" : "container:LegisLink.xcodeproj",
         "identifier" : "0F14FD562A7A339600F91EF4",
         "name" : "FindYourRepTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:town square.xcodeproj",
+        "containerPath" : "container:LegisLink.xcodeproj",
         "identifier" : "0F16DE862A7C8E9A008471E2",
         "name" : "FindYourRepUITests"
       }

@@ -55,6 +55,7 @@
 		0FECB59B2A7C20AA00FED68A /* successful-open-states-lower-house-committee-request-page-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB5992A7C20AA00FED68A /* successful-open-states-lower-house-committee-request-page-1.json */; };
 		0FECB59E2A7C20EC00FED68A /* successful-open-states-lower-house-committee-request-page-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB59C2A7C20EC00FED68A /* successful-open-states-lower-house-committee-request-page-2.json */; };
 		0FEF0EB62A2BA4DD009064E7 /* IndividualRepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */; };
+		0FF8EFFD2B2577FD00C07EF6 /* successful-congress-gov-response-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FF8EFFC2B2577FD00C07EF6 /* successful-congress-gov-response-1.json */; };
 		0FF9FE032A1A933C00189618 /* LegisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE022A1A933C00189618 /* LegisView.swift */; };
 		0FF9FE052A1A948C00189618 /* MyRepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE042A1A948C00189618 /* MyRepsView.swift */; };
 		0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE062A1A949A00189618 /* SettingsView.swift */; };
@@ -132,6 +133,7 @@
 		0FECB5992A7C20AA00FED68A /* successful-open-states-lower-house-committee-request-page-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-states-lower-house-committee-request-page-1.json"; sourceTree = "<group>"; };
 		0FECB59C2A7C20EC00FED68A /* successful-open-states-lower-house-committee-request-page-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-states-lower-house-committee-request-page-2.json"; sourceTree = "<group>"; };
 		0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualRepView.swift; sourceTree = "<group>"; };
+		0FF8EFFC2B2577FD00C07EF6 /* successful-congress-gov-response-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-congress-gov-response-1.json"; sourceTree = "<group>"; };
 		0FF9FE022A1A933C00189618 /* LegisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegisView.swift; sourceTree = "<group>"; };
 		0FF9FE042A1A948C00189618 /* MyRepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsView.swift; sourceTree = "<group>"; };
 		0FF9FE062A1A949A00189618 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				0FECB58D2A7C073600FED68A /* successful-open-secrets-api-response-2.json */,
 				0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */,
 				0F723D9F2A7ECE42001DE7BD /* successful-google-civic-info-api-response.json */,
+				0FF8EFFC2B2577FD00C07EF6 /* successful-congress-gov-response-1.json */,
 			);
 			path = "JSON Responses";
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF8EFFD2B2577FD00C07EF6 /* successful-congress-gov-response-1.json in Resources */,
 				0FECB5982A7C1E4400FED68A /* successful-open-states-upper-house-committee-request-page-2.json in Resources */,
 				0FECB58C2A7C06D400FED68A /* successful-open-secrets-api-response-1.json in Resources */,
 				0F723DA02A7ECE42001DE7BD /* successful-google-civic-info-api-response.json in Resources */,

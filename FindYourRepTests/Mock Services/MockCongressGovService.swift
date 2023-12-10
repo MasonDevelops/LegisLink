@@ -8,7 +8,7 @@
 import Foundation
 
 
-@testable import town_square
+@testable import LegisLink
 
 class MockCongressGovService: CongressGovServiceProtocol {
 
@@ -63,6 +63,16 @@ class MockCongressGovService: CongressGovServiceProtocol {
             }
         }
         .resume()
+        
+    }
+    
+    func getTermsInCongress(bioGuideID: String, completion: @escaping ([Term]) -> Void) {
+        
+        
+        guard let url = Bundle(for: MockGoogleCivicInfoService.self).url(forResource: "successful-congress-gov-response-1", withExtension: "json"),
+              let data = try? Data(contentsOf: url) else { return }
+        let memberReq = try? JSONDecoder().decode(CongressGovMemberRequest.self, from: data)
+        completion((memberReq?.member.terms)!)
         
     }
     

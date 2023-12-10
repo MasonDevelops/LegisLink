@@ -9,7 +9,7 @@ import Foundation
 
 
 
-@testable import town_square
+@testable import LegisLink
 
 
 class MockOpenStatesService: OpenStatesServiceProtocol {

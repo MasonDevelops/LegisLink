@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FindYourRepTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>JWTDecode (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,12 +54,17 @@
 		<key>LegisLink.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0F0E9A0A2A0B65E200E27010</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F14FD562A7A339600F91EF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
