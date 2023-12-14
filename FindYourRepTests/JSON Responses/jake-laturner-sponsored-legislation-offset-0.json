@@ -1,0 +1,237 @@
+{
+    "pagination": {
+        "count": 15
+    },
+    "request": {
+        "bioguideId": "l000266",
+        "contentType": "application/json",
+        "format": "json"
+    },
+    "sponsoredLegislation": [
+        {
+            "congress": 118,
+            "introducedDate": "2023-11-09",
+            "latestAction": {
+                "actionDate": "2023-11-09",
+                "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+            },
+            "number": "6344",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Simon Crosier Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/6344?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-10-03",
+            "latestAction": {
+                "actionDate": "2023-10-03",
+                "text": "Referred to the House Committee on Natural Resources."
+            },
+            "number": "5878",
+            "policyArea": {
+                "name": "Public Lands and Natural Resources"
+            },
+            "title": "Quindaro Townsite National Historic Landmark Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/5878?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-09-29",
+            "latestAction": {
+                "actionDate": "2023-09-29",
+                "text": "Referred to the House Committee on Foreign Affairs."
+            },
+            "number": "5847",
+            "policyArea": {
+                "name": "International Affairs"
+            },
+            "title": "International Children with Disabilities Protection Act of 2023",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/5847?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-06-05",
+            "latestAction": {
+                "actionDate": "2023-06-09",
+                "text": "Referred to the Subcommittee on Communications and Technology."
+            },
+            "number": "465",
+            "policyArea": {
+                "name": "Science, Technology, Communications"
+            },
+            "title": "Expressing support for AM radios in automobiles.",
+            "type": "HRES",
+            "url": "https://api.congress.gov/v3/bill/118/hres/465?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-04-27",
+            "latestAction": {
+                "actionDate": "2023-04-28",
+                "text": "Referred to the Subcommittee on Health."
+            },
+            "number": "2959",
+            "policyArea": {
+                "name": "Taxation"
+            },
+            "title": "Health Savings Act of 2023",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/2959?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-03-10",
+            "latestAction": {
+                "actionDate": "2023-03-17",
+                "text": "Referred to the Subcommittee on Health."
+            },
+            "number": "1551",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Jobs and Opportunities for Medicaid Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/1551?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-03-10",
+            "latestAction": {
+                "actionDate": "2023-04-05",
+                "text": "Referred to the Subcommittee on Nutrition, Foreign Agriculture, and Horticulture."
+            },
+            "number": "1550",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "Jobs and Opportunities for SNAP Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/1550?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-03-10",
+            "latestAction": {
+                "actionDate": "2023-03-10",
+                "text": "Referred to the House Committee on the Judiciary."
+            },
+            "number": "1552",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Kansas Indian Country Law Enforcement Improvement Act of 2023",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/118/hr/1552?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-12-22",
+            "latestAction": {
+                "actionDate": "2022-12-22",
+                "text": "Referred to the House Committee on the Judiciary."
+            },
+            "number": "9684",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Kansas Indian Country Law Enforcement Improvement Act of 2022",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/117/hr/9684?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-06-09",
+            "latestAction": {
+                "actionDate": "2022-06-09",
+                "text": "Referred to the House Committee on Energy and Commerce."
+            },
+            "number": "8014",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Jobs and Opportunities for Medicaid Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/117/hr/8014?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-02-28",
+            "latestAction": {
+                "actionDate": "2022-05-18",
+                "text": "Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+            },
+            "number": "6871",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "DHS Acquisition Reform Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/117/hr/6871?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-02-02",
+            "latestAction": {
+                "actionDate": "2022-02-02",
+                "text": "Referred to the House Committee on Education and Labor."
+            },
+            "number": "904",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "Commending and congratulating the Coffeyville Community College Red Ravens men's basketball team on winning the 2021 National Junior College Athletic Association Division I men's basketball championship.",
+            "type": "HRES",
+            "url": "https://api.congress.gov/v3/bill/117/hres/904?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-12-14",
+            "latestAction": {
+                "actionDate": "2022-11-01",
+                "text": "Referred to the Subcommittee on Antitrust, Commercial, and Administrative Law."
+            },
+            "number": "6271",
+            "policyArea": {
+                "name": "Taxation"
+            },
+            "title": "Health Savings Act of 2021",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/117/hr/6271?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-10-21",
+            "latestAction": {
+                "actionDate": "2021-10-22",
+                "text": "Referred to the Subcommittee on Health."
+            },
+            "number": "5656",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Simon Crosier Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/117/hr/5656?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-10-21",
+            "latestAction": {
+                "actionDate": "2022-11-01",
+                "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+            },
+            "number": "5655",
+            "policyArea": {
+                "name": "Science, Technology, Communications"
+            },
+            "title": "Kelsey Smith Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/117/hr/5655?format=json"
+        }
+    ]
+}

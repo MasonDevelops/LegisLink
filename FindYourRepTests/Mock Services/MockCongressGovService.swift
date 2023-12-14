@@ -12,67 +12,95 @@ import Foundation
 
 class MockCongressGovService: CongressGovServiceProtocol {
 
-    private var openStatesAPIKey: String {
-        get {return ProcessInfo.processInfo.environment["CongressGov_API_Key"]!}
-    }
     
     func getMaxPagination(bioGuideID: String, completion: @escaping (Int) -> Void) {
-       let url = createSponsoredLegislationURL(bioGuideID: bioGuideID, pageOffset: 0)
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else {return}
-            do {
-                let sponsoredLegislationPackage = try JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
-                let maxPagination = sponsoredLegislationPackage.pagination.count
-                return completion(maxPagination)
-                
-            } catch {
-                print("Unexpected error: \(error).")
-            }
-        }.resume()
+        if (bioGuideID == "M001198") {
+            return completion(384)
+        } else if (bioGuideID == "L000266") {
+            return completion(15)
+        } else if (bioGuideID == "M000934") {
+            return completion(643)
+        } else {
+            return completion(-1)
+        }
     }
     
     
     
     func createSponsoredLegislationURL(bioGuideID: String, pageOffset: Int) -> URL {
         
-        let sponsoredLegislationURL = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)/sponsored-legislation?api_key=\(openStatesAPIKey)&offset=\(pageOffset)&limit=250&format=json"
+        let congressGovKey = ProcessInfo.processInfo.environment["CongressGov_API_Key"]
+
+        
+        let sponsoredLegislationURL = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)/sponsored-legislation?api_key=\(congressGovKey)&offset=\(pageOffset)&limit=250&format=json"
         )
         
         return sponsoredLegislationURL!
     }
     
     func getSponsoredLegislationPackage(from url: URL, completion: @escaping (Swift.Result<SponsoredLegislationPackage, Error>) -> Void) {
+        var urlString = url.absoluteString
         
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            if let error = error {
-                completion(.failure(error))
-                return
+        if (urlString.contains("L000266")) {
+            guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "jake-laturner-sponsored-legislation-offset-0", withExtension: "json"),
+                  let data = try? Data(contentsOf: url) else { return }
+            let spkglegis = try? JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
+            completion(.success(spkglegis!))
+        }
+        
+        else if (urlString.contains("M001198")) {
+            if (urlString.contains("&offset=0")) {
+                guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "roger-marshall-sponsored-legislation-offset-0", withExtension: "json"),
+                      let data = try? Data(contentsOf: url) else { return }
+                let spkglegis = try? JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
+                completion(.success(spkglegis!))
+            } else {
+                guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "roger-marshall-sponsored-legislation-offset-250", withExtension: "json"),
+                      let data = try? Data(contentsOf: url) else { return }
+                let spkglegis = try? JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
+                completion(.success(spkglegis!))
             }
-
-            guard let data = data else {
-                completion(.failure(error!))
-                return
-            }
-
-            do {
-                let sponsoredLegislationPackage = try JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
-                return completion(.success(sponsoredLegislationPackage))
-            } catch {
-                completion(.failure(error))
+        } else {
+            if (urlString.contains("&offset=0")) {
+                guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "jerry-moran-sponsored-legislation-offset-0", withExtension: "json"),
+                      let data = try? Data(contentsOf: url) else { return }
+                let spkglegis = try? JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
+                completion(.success(spkglegis!))
+            } else if (urlString.contains("&offset=1")) {
+                guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "jerry-moran-sponsored-legislation-offset-250", withExtension: "json"),
+                      let data = try? Data(contentsOf: url) else { return }
+                let spkglegis = try? JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
+                completion(.success(spkglegis!))
+            } else {
+                guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "jerry-moran-sponsored-legislation-offset-500", withExtension: "json"),
+                      let data = try? Data(contentsOf: url) else { return }
+                let spkglegis = try? JSONDecoder().decode(SponsoredLegislationPackage.self, from: data)
+                completion(.success(spkglegis!))
             }
         }
-        .resume()
-        
     }
     
     func getTermsInCongress(bioGuideID: String, completion: @escaping ([Term]) -> Void) {
         
         
-        guard let url = Bundle(for: MockGoogleCivicInfoService.self).url(forResource: "successful-congress-gov-response-1", withExtension: "json"),
-              let data = try? Data(contentsOf: url) else { return }
-        let memberReq = try? JSONDecoder().decode(CongressGovMemberRequest.self, from: data)
-        completion((memberReq?.member.terms)!)
+        
+        if (bioGuideID == "M001198") {
+            guard let url = Bundle(for: MockGoogleCivicInfoService.self).url(forResource: "roger-marshall-successful-congress-gov-response", withExtension: "json"),
+                  let data = try? Data(contentsOf: url) else { return }
+            let memberReq = try? JSONDecoder().decode(CongressGovMemberRequest.self, from: data)
+            completion((memberReq?.member.terms)!)
+            
+        } else if (bioGuideID == "L000266") {
+            guard let url = Bundle(for: MockGoogleCivicInfoService.self).url(forResource: "jake-laturner-successful-congress-gov-response", withExtension: "json"),
+                  let data = try? Data(contentsOf: url) else { return }
+            let memberReq = try? JSONDecoder().decode(CongressGovMemberRequest.self, from: data)
+            completion((memberReq?.member.terms)!)
+        } else if (bioGuideID == "M000934") {
+            guard let url = Bundle(for: MockGoogleCivicInfoService.self).url(forResource: "jerry-moran-successful-congress-gov-response", withExtension: "json"),
+                  let data = try? Data(contentsOf: url) else { return }
+            let memberReq = try? JSONDecoder().decode(CongressGovMemberRequest.self, from: data)
+            completion((memberReq?.member.terms)!)
+        }
         
     }
     

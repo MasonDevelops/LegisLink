@@ -69,7 +69,6 @@ class MyRepsViewModel: ObservableObject {
         self.openStatesService = openStatesService
         self.congressGovService = congressGovService
         
-        
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
             let testURL = URL(string: "https://www.example.com")
             var testURLs = [URL]()
@@ -81,6 +80,17 @@ class MyRepsViewModel: ObservableObject {
             getTopContributorInfo(openSecretsURLs: testURLs)
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
+            //fetchRepresentativeSponsoredLegislation()
+            //fetchSenatorOneSponsoredLegislation()
+            //fetchSenatorTwoSponsoredLegislation()
+            
+            //bindSponsoredLegislationByPolicy()
+            
+            
+            
+            
+            
+            //attachCongressionalTermsInOffice()
         } else {
             let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: googleCivicInfoURL)
@@ -439,7 +449,7 @@ class MyRepsViewModel: ObservableObject {
         var repMaxPage = 0
         
         repMaxPageGroup.enter()
-        congressGovService.getMaxPagination(bioGuideID: self.representative.bioguideID!) { maxPage in
+        congressGovService.getMaxPagination(bioGuideID: self.representative.bioguideID!) { maxPage in // sometimes this line fails...hmm
             repMaxPage = maxPage
             repMaxPageGroup.leave()
         }
@@ -767,7 +777,6 @@ class MyRepsViewModel: ObservableObject {
     
     
     /*
-     Energy[8,828]
      Agriculture and Food[8,605]
      Labor and Employment[8,214]
      Finance and Financial Sector[8,164]

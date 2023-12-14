@@ -1,0 +1,1263 @@
+{
+    "pagination": {
+        "count": 384,
+        "prev": "https://api.congress.gov/v3/member/M001198/sponsored-legislation?offset=0&limit=250&format=json"
+    },
+    "request": {
+        "bioguideId": "m001198",
+        "contentType": "application/json",
+        "format": "json"
+    },
+    "sponsoredLegislation": [
+        {
+            "congress": 115,
+            "introducedDate": "2017-11-01",
+            "latestAction": {
+                "actionDate": "2017-11-16",
+                "text": "Referred to the Subcommittee on Conservation and Forestry."
+            },
+            "number": "4213",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "To amend the Agricultural Credit Act of 1978 to establish a program to provide advance payments under the Emergency Conservation Program for the repair or replacement of fencing.",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/115/hr/4213?format=json"
+        },
+        {
+            "congress": 115,
+            "introducedDate": "2017-11-01",
+            "latestAction": {
+                "actionDate": "2017-11-16",
+                "text": "Referred to the Subcommittee on Livestock and Foreign Agriculture."
+            },
+            "number": "4211",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "To amend the Agricultural Act of 2014 to provide to producers partial payments under the livestock indemnity program for livestock sold for salvage.",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/115/hr/4211?format=json"
+        },
+        {
+            "congress": 115,
+            "introducedDate": "2017-11-01",
+            "latestAction": {
+                "actionDate": "2017-11-16",
+                "text": "Referred to the Subcommittee on Conservation and Forestry."
+            },
+            "number": "4212",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "To amend the Agricultural Credit Act of 1978 to increase support for conservation practices under the emergency conservation program, and for other purposes.",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/115/hr/4212?format=json"
+        },
+        {
+            "congress": 115,
+            "introducedDate": "2017-10-12",
+            "latestAction": {
+                "actionDate": "2017-10-26",
+                "text": "Referred to the Subcommittee on Livestock and Foreign Agriculture."
+            },
+            "number": "4058",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "SALE Act of 2017",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/115/hr/4058?format=json"
+        },
+        {
+            "congress": 115,
+            "introducedDate": "2017-05-25",
+            "latestAction": {
+                "actionDate": "2018-01-29",
+                "text": "Placed on the Union Calendar, Calendar No. 398."
+            },
+            "number": "2711",
+            "policyArea": {
+                "name": "Education"
+            },
+            "title": "National Memorial to Fallen Educators Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/115/hr/2711?format=json"
+        },
+        {
+            "congress": 115,
+            "introducedDate": "2017-04-06",
+            "latestAction": {
+                "actionDate": "2017-04-12",
+                "text": "Referred to the Subcommittee on Military Personnel."
+            },
+            "number": "267",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Recognizing the 100th anniversary of the 1st Infantry Division.",
+            "type": "HRES",
+            "url": "https://api.congress.gov/v3/bill/115/hres/267?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-10-23",
+            "latestAction": {
+                "actionDate": "2020-10-23",
+                "text": "Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+            },
+            "number": "8677",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "HEAT Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/8677?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-07-27",
+            "latestAction": {
+                "actionDate": "2020-07-27",
+                "text": "Referred to the House Committee on Small Business."
+            },
+            "number": "7792",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Abortion Providers Loan Elimination Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/7792?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-06-04",
+            "latestAction": {
+                "actionDate": "2020-08-13",
+                "text": "Referred to the Subcommittee on Conservation and Forestry."
+            },
+            "number": "7108",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "To amend the Food Security Act of 1985 to allow for emergency use of certain land during a pandemic, and for other purposes.",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/7108?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-05-15",
+            "latestAction": {
+                "actionDate": "2020-05-15",
+                "text": "Referred to the House Committee on Energy and Commerce."
+            },
+            "number": "6910",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Emergency Room Hero and Patient Safety Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/6910?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-03-03",
+            "latestAction": {
+                "actionDate": "2020-08-13",
+                "text": "Referred to the Subcommittee on Livestock and Foreign Agriculture."
+            },
+            "number": "6067",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "SALE Act of 2020",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/6067?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-12-03",
+            "latestAction": {
+                "actionDate": "2020-01-30",
+                "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+            },
+            "number": "5289",
+            "policyArea": {
+                "name": "Taxation"
+            },
+            "title": "Home Defense and Competitive Shooting Act of 2019",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/5289?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-11-18",
+            "latestAction": {
+                "actionDate": "2019-11-18",
+                "text": "Referred to the House Committee on Science, Space, and Technology."
+            },
+            "number": "5136",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Aeronautics Innovation Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/5136?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-10-28",
+            "latestAction": {
+                "actionDate": "2019-11-14",
+                "text": "Referred to the Subcommittee on Livestock and Foreign Agriculture."
+            },
+            "number": "4881",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Real MEAT Act of 2019",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/4881?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-10-17",
+            "latestAction": {
+                "actionDate": "2019-11-08",
+                "text": "Referred to the Subcommittee on Commodity Exchanges, Energy, and Credit."
+            },
+            "number": "4726",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Certainty for End-Users Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/4726?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-06-12",
+            "latestAction": {
+                "actionDate": "2019-06-13",
+                "text": "Referred to the Subcommittee on Health."
+            },
+            "number": "3223",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Pharmacy Benefit Manager Accountability Study Act of 2019",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/3223?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-04-09",
+            "latestAction": {
+                "actionDate": "2019-04-10",
+                "text": "Referred to the Subcommittee on Health."
+            },
+            "number": "2183",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "State Flexibility and Patient Choice Act of 2019",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/2183?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-02-07",
+            "latestAction": {
+                "actionDate": "2019-11-21",
+                "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+            },
+            "number": "1088",
+            "policyArea": {
+                "name": "Public Lands and Natural Resources"
+            },
+            "title": "FIRST Act",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/1088?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-01-29",
+            "latestAction": {
+                "actionDate": "2019-01-30",
+                "text": "Referred to the Subcommittee on Military Personnel."
+            },
+            "number": "859",
+            "policyArea": {
+                "name": null
+            },
+            "title": "To authorize the honorary appointment of Robert J. Dole to the grade of colonel in the regular Army.",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/859?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-01-03",
+            "latestAction": {
+                "actionDate": "2019-01-17",
+                "text": "Received in the Senate and Read twice and referred to the Committee on Small Business and Entrepreneurship."
+            },
+            "number": "190",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Expanding Contracting Opportunities for Small Businesses Act of 2019",
+            "type": "HR",
+            "url": "https://api.congress.gov/v3/bill/116/hr/190?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-03-07",
+            "latestAction": {
+                "actionDate": "2020-12-07",
+                "actionTime": "12:58:18",
+                "text": "The title of the measure was amended. Agreed to without objection."
+            },
+            "number": "189",
+            "policyArea": {
+                "name": "International Affairs"
+            },
+            "title": "Supporting sustained United States leadership to accelerating global progress against maternal and child malnutrition and supporting United States Agency for International Development's commitment to global nutrition through its multi-sectoral nutrition strategy.",
+            "type": "HRES",
+            "url": "https://api.congress.gov/v3/bill/116/hres/189?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-02-05",
+            "latestAction": {
+                "actionDate": "2019-02-05",
+                "text": "Referred to the House Committee on Oversight and Reform."
+            },
+            "number": "101",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "Honoring the 150th anniversary of the establishment of Lindsborg, Kansas.",
+            "type": "HRES",
+            "url": "https://api.congress.gov/v3/bill/116/hres/101?format=json"
+        },
+        {
+            "amendmentNumber": "4868",
+            "congress": 117,
+            "introducedDate": "2021-12-02",
+            "latestAction": {
+                "actionDate": "2021-12-02",
+                "text": "Amendment SA 4868 not agreed to in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 476. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4868?format=json"
+        },
+        {
+            "amendmentNumber": "4845",
+            "congress": 117,
+            "introducedDate": "2021-11-29",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4845?format=json"
+        },
+        {
+            "amendmentNumber": "4746",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4746?format=json"
+        },
+        {
+            "amendmentNumber": "4758",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4758?format=json"
+        },
+        {
+            "amendmentNumber": "4750",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4750?format=json"
+        },
+        {
+            "amendmentNumber": "4749",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4749?format=json"
+        },
+        {
+            "amendmentNumber": "4748",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4748?format=json"
+        },
+        {
+            "amendmentNumber": "4747",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4747?format=json"
+        },
+        {
+            "amendmentNumber": "4751",
+            "congress": 117,
+            "introducedDate": "2021-11-17",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4751?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-07-29",
+            "latestAction": {
+                "actionDate": "2021-07-29",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "2558",
+            "policyArea": {
+                "name": "Taxation"
+            },
+            "title": "FAIR Meat Packing Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2558?format=json"
+        },
+        {
+            "amendmentNumber": "3831",
+            "congress": 117,
+            "introducedDate": "2021-09-29",
+            "latestAction": {
+                "actionDate": "2021-09-30",
+                "text": "Amendment SA 3831, under the order of 9/29/21, not having achieved 60 votes in the affirmative, was not agreed to in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 395. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3831?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-08-05",
+            "latestAction": {
+                "actionDate": "2021-08-05",
+                "text": "Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry."
+            },
+            "number": "2619",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "Exposing Agricultural Trade Suppression Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2619?format=json"
+        },
+        {
+            "amendmentNumber": "3797",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": {
+                "actionDate": "2021-08-11",
+                "text": "Amendment SA 3797 agreed to in Senate by Yea-Nay Vote. 88 - 11. Record Vote Number: 347. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3797?format=json"
+        },
+        {
+            "amendmentNumber": "3726",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3726?format=json"
+        },
+        {
+            "amendmentNumber": "3721",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3721?format=json"
+        },
+        {
+            "amendmentNumber": "3722",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3722?format=json"
+        },
+        {
+            "amendmentNumber": "3723",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3723?format=json"
+        },
+        {
+            "amendmentNumber": "3724",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3724?format=json"
+        },
+        {
+            "amendmentNumber": "3725",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3725?format=json"
+        },
+        {
+            "amendmentNumber": "3727",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3727?format=json"
+        },
+        {
+            "amendmentNumber": "3560",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3560?format=json"
+        },
+        {
+            "amendmentNumber": "3561",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3561?format=json"
+        },
+        {
+            "amendmentNumber": "3562",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3562?format=json"
+        },
+        {
+            "amendmentNumber": "3432",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3432?format=json"
+        },
+        {
+            "amendmentNumber": "3431",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3431?format=json"
+        },
+        {
+            "amendmentNumber": "3430",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3430?format=json"
+        },
+        {
+            "amendmentNumber": "3429",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3429?format=json"
+        },
+        {
+            "amendmentNumber": "3428",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3428?format=json"
+        },
+        {
+            "amendmentNumber": "3427",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3427?format=json"
+        },
+        {
+            "amendmentNumber": "3426",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3426?format=json"
+        },
+        {
+            "amendmentNumber": "3425",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3425?format=json"
+        },
+        {
+            "amendmentNumber": "3424",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3424?format=json"
+        },
+        {
+            "amendmentNumber": "3436",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3436?format=json"
+        },
+        {
+            "amendmentNumber": "3434",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3434?format=json"
+        },
+        {
+            "amendmentNumber": "3433",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3433?format=json"
+        },
+        {
+            "amendmentNumber": "3437",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3437?format=json"
+        },
+        {
+            "amendmentNumber": "3435",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3435?format=json"
+        },
+        {
+            "amendmentNumber": "3441",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3441?format=json"
+        },
+        {
+            "amendmentNumber": "3440",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3440?format=json"
+        },
+        {
+            "amendmentNumber": "3439",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3439?format=json"
+        },
+        {
+            "amendmentNumber": "3438",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3438?format=json"
+        },
+        {
+            "amendmentNumber": "3355",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3355?format=json"
+        },
+        {
+            "amendmentNumber": "3080",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3080?format=json"
+        },
+        {
+            "amendmentNumber": "2709",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2709?format=json"
+        },
+        {
+            "amendmentNumber": "2708",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2708?format=json"
+        },
+        {
+            "amendmentNumber": "2707",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2707?format=json"
+        },
+        {
+            "amendmentNumber": "2705",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2705?format=json"
+        },
+        {
+            "amendmentNumber": "2704",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2704?format=json"
+        },
+        {
+            "amendmentNumber": "2703",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2703?format=json"
+        },
+        {
+            "amendmentNumber": "2702",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2702?format=json"
+        },
+        {
+            "amendmentNumber": "2700",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2700?format=json"
+        },
+        {
+            "amendmentNumber": "2701",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2701?format=json"
+        },
+        {
+            "amendmentNumber": "2699",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2699?format=json"
+        },
+        {
+            "amendmentNumber": "2698",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2698?format=json"
+        },
+        {
+            "amendmentNumber": "2697",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2697?format=json"
+        },
+        {
+            "amendmentNumber": "2696",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2696?format=json"
+        },
+        {
+            "amendmentNumber": "2695",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2695?format=json"
+        },
+        {
+            "amendmentNumber": "2694",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2694?format=json"
+        },
+        {
+            "amendmentNumber": "2686",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2686?format=json"
+        },
+        {
+            "amendmentNumber": "2687",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2687?format=json"
+        },
+        {
+            "amendmentNumber": "2688",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2688?format=json"
+        },
+        {
+            "amendmentNumber": "2689",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2689?format=json"
+        },
+        {
+            "amendmentNumber": "2690",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2690?format=json"
+        },
+        {
+            "amendmentNumber": "2691",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2691?format=json"
+        },
+        {
+            "amendmentNumber": "2692",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2692?format=json"
+        },
+        {
+            "amendmentNumber": "2693",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2693?format=json"
+        },
+        {
+            "amendmentNumber": "2680",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2680?format=json"
+        },
+        {
+            "amendmentNumber": "2706",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2706?format=json"
+        },
+        {
+            "amendmentNumber": "2681",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2681?format=json"
+        },
+        {
+            "amendmentNumber": "2682",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2682?format=json"
+        },
+        {
+            "amendmentNumber": "2683",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2683?format=json"
+        },
+        {
+            "amendmentNumber": "2684",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2684?format=json"
+        },
+        {
+            "amendmentNumber": "2685",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2685?format=json"
+        },
+        {
+            "amendmentNumber": "2715",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2715?format=json"
+        },
+        {
+            "amendmentNumber": "2663",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2663?format=json"
+        },
+        {
+            "amendmentNumber": "2653",
+            "congress": 117,
+            "introducedDate": "2021-08-08",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2653?format=json"
+        },
+        {
+            "amendmentNumber": "2658",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2658?format=json"
+        },
+        {
+            "amendmentNumber": "2659",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2659?format=json"
+        },
+        {
+            "amendmentNumber": "2660",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2660?format=json"
+        },
+        {
+            "amendmentNumber": "2661",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2661?format=json"
+        },
+        {
+            "amendmentNumber": "2662",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2662?format=json"
+        },
+        {
+            "amendmentNumber": "2678",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2678?format=json"
+        },
+        {
+            "amendmentNumber": "2677",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2677?format=json"
+        },
+        {
+            "amendmentNumber": "2676",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2676?format=json"
+        },
+        {
+            "amendmentNumber": "2675",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2675?format=json"
+        },
+        {
+            "amendmentNumber": "2674",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2674?format=json"
+        },
+        {
+            "amendmentNumber": "2673",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2673?format=json"
+        },
+        {
+            "amendmentNumber": "2672",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2672?format=json"
+        },
+        {
+            "amendmentNumber": "2671",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2671?format=json"
+        },
+        {
+            "amendmentNumber": "2670",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2670?format=json"
+        },
+        {
+            "amendmentNumber": "2669",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2669?format=json"
+        },
+        {
+            "amendmentNumber": "2668",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2668?format=json"
+        },
+        {
+            "amendmentNumber": "2667",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2667?format=json"
+        },
+        {
+            "amendmentNumber": "2666",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2666?format=json"
+        },
+        {
+            "amendmentNumber": "2665",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2665?format=json"
+        },
+        {
+            "amendmentNumber": "2664",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2664?format=json"
+        },
+        {
+            "amendmentNumber": "2679",
+            "congress": 117,
+            "introducedDate": "2021-08-09",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2679?format=json"
+        },
+        {
+            "amendmentNumber": "2546",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2546?format=json"
+        },
+        {
+            "amendmentNumber": "2545",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2545?format=json"
+        },
+        {
+            "amendmentNumber": "2521",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2521?format=json"
+        },
+        {
+            "amendmentNumber": "2520",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2520?format=json"
+        },
+        {
+            "amendmentNumber": "2526",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2526?format=json"
+        },
+        {
+            "amendmentNumber": "2525",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2525?format=json"
+        },
+        {
+            "amendmentNumber": "2524",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2524?format=json"
+        },
+        {
+            "amendmentNumber": "2523",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2523?format=json"
+        },
+        {
+            "amendmentNumber": "2522",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2522?format=json"
+        },
+        {
+            "amendmentNumber": "2506",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2506?format=json"
+        },
+        {
+            "amendmentNumber": "2461",
+            "congress": 117,
+            "introducedDate": "2021-08-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2461?format=json"
+        },
+        {
+            "amendmentNumber": "2411",
+            "congress": 117,
+            "introducedDate": "2021-08-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2411?format=json"
+        },
+        {
+            "amendmentNumber": "2410",
+            "congress": 117,
+            "introducedDate": "2021-08-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2410?format=json"
+        },
+        {
+            "amendmentNumber": "2442",
+            "congress": 117,
+            "introducedDate": "2021-08-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2442?format=json"
+        },
+        {
+            "amendmentNumber": "2228",
+            "congress": 117,
+            "introducedDate": "2021-08-02",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2228?format=json"
+        }
+    ]
+}
