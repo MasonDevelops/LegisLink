@@ -74,6 +74,16 @@ struct Official: Codable, Hashable {
     var armedForcesAndNatlSecurityLegislation: [SponsoredLegislation]?
     var congressLegislation: [SponsoredLegislation]?
     var intlAffairsLegislation: [SponsoredLegislation]?
+    var publicLandsNatResourcesLegislation: [SponsoredLegislation]?
+    var foreignTradeAndIntlFinanceLegislation: [SponsoredLegislation]?
+    var crimeAndLawEnforcementLegislation: [SponsoredLegislation]?
+    var transportationAndPublicWorksLegislation: [SponsoredLegislation]?
+    var educationLegislation: [SponsoredLegislation]?
+    var socialWelfareLegislation: [SponsoredLegislation]?
+    var energyLegislation: [SponsoredLegislation]?
+
+
+
     
 
     enum CodingKeys: String, CodingKey {

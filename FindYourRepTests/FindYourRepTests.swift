@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import town_square
+@testable import LegisLink
 
 final class FindYourRepTests: XCTestCase {
     

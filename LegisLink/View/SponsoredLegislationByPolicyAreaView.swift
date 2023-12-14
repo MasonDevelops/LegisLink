@@ -42,8 +42,8 @@ struct SponsoredLegislationByPolicyAreaView: View {
     func checkIfGivenLegislationExists() -> Bool {
         var legisCheck = 0
         
-        for currentIndex in 0..<(givenSponsoredLegislation!.count-1) {
-            if (givenSponsoredLegislation![currentIndex].policyArea?.name == self.givenPolicyArea && givenSponsoredLegislation![currentIndex].congress == self.congress) {
+        for currentLegislation in givenSponsoredLegislation! {
+            if (currentLegislation.policyArea?.name == self.givenPolicyArea && currentLegislation.congress == self.congress) {
                 legisCheck += 1
             }
         }

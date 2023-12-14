@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct town_squareApp: App {
+struct Legis_Link: App {
     var body: some Scene {
         WindowGroup {
             LoginView()

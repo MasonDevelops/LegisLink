@@ -8,7 +8,7 @@
 import Foundation
 
 
-@testable import town_square
+@testable import LegisLink
 
 private var responseNumber = 1
 

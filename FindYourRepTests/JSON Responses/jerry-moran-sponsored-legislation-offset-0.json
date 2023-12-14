@@ -1,0 +1,2957 @@
+{
+    "pagination": {
+        "count": 643,
+        "next": "https://api.congress.gov/v3/member/M000934/sponsored-legislation?offset=250&limit=250&format=json"
+    },
+    "request": {
+        "bioguideId": "m000934",
+        "contentType": "application/json",
+        "format": "json"
+    },
+    "sponsoredLegislation": [
+        {
+            "congress": 118,
+            "introducedDate": "2023-12-12",
+            "latestAction": {
+                "actionDate": "2023-12-12",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3466",
+            "policyArea": {
+                "name": null
+            },
+            "title": "A bill to require the Secretary of Veterans Affairs and the Comptroller General of the United States to submit to Congress reports regarding security and safety at facilities of the Department of Veterans Affairs, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/3466?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-12-06",
+            "latestAction": {
+                "actionDate": "2023-12-06",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5803; text: CR S5810-5811)"
+            },
+            "number": "487",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A resolution commemorating the centennial of the American Battle Monuments Commission.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/118/sres/487?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-12-05",
+            "latestAction": {
+                "actionDate": "2023-12-05",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "3394",
+            "policyArea": {
+                "name": null
+            },
+            "title": "A bill to amend title XVIII of the Social Security Act to expand the eligibility for designation as a rural emergency hospital under the Medicare program.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/3394?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-12-21",
+            "latestAction": {
+                "actionDate": "2022-12-21",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "5347",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Asset Growth Restriction Act of 2022",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/5347?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-12-21",
+            "latestAction": {
+                "actionDate": "2022-12-21",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "5345",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Consumer Transaction Account Protection Act of 2022",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/5345?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-12-21",
+            "latestAction": {
+                "actionDate": "2022-12-21",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "5346",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Brokered Deposit Affiliate-Subsidiary Modernization Act of 2022",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/5346?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-11-15",
+            "latestAction": {
+                "actionDate": "2023-11-15",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "3319",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Expanding American Entrepreneurship Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/3319?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-11-08",
+            "latestAction": {
+                "actionDate": "2023-11-08",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3249",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to designate the outpatient clinic of the Department of Veterans Affairs in Wyandotte County, Kansas City, Kansas, as the \"Captain Elwin Shopteese VA Clinic\".",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/3249?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-30",
+            "latestAction": {
+                "actionDate": "2022-03-30",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3964",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "RESPECT Act of 2022",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3964?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-02-01",
+            "latestAction": {
+                "actionDate": "2023-02-16",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported without amendment favorably."
+            },
+            "number": "216",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "RESPECT Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/216?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-16",
+            "latestAction": {
+                "actionDate": "2022-03-16",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3854",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Elizabeth Dole Home Care Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3854?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-01-30",
+            "latestAction": {
+                "actionDate": "2023-02-16",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported with an amendment in the nature of a substitute favorably."
+            },
+            "number": "141",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Elizabeth Dole Home Care Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/141?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-11-02",
+            "latestAction": {
+                "actionDate": "2023-11-02",
+                "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+            },
+            "number": "3205",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "Federal Artificial Intelligence Risk Management Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/3205?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-10-17",
+            "latestAction": {
+                "actionDate": "2023-10-17",
+                "text": "Referred to the Committee on Health, Education, Labor, and Pensions. (text: CR S5051-5052)"
+            },
+            "number": "407",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "A resolution expressing support for the designation of October 2023 as \"National Down Syndrome Awareness Month\".",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/118/sres/407?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-10-04",
+            "latestAction": {
+                "actionDate": "2023-10-04",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "3014",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "FTC REDO Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/3014?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-09-28",
+            "latestAction": {
+                "actionDate": "2023-09-28",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "2975",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Road to Access Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/2975?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-09-27",
+            "latestAction": {
+                "actionDate": "2023-09-27",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: S4717; text: CR S4726)"
+            },
+            "number": "374",
+            "policyArea": {
+                "name": "Education"
+            },
+            "title": "A resolution designating September 2023 as \"National Student Parent Month\".",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/118/sres/374?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-09-27",
+            "latestAction": {
+                "actionDate": "2023-09-27",
+                "text": "Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry."
+            },
+            "number": "2951",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "Butcher Block Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/2951?format=json"
+        },
+        {
+            "amendmentNumber": "1272",
+            "congress": 118,
+            "introducedDate": "2023-09-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1272?format=json"
+        },
+        {
+            "amendmentNumber": "1253",
+            "congress": 118,
+            "introducedDate": "2023-09-19",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1253?format=json"
+        },
+        {
+            "amendmentNumber": "1250",
+            "congress": 118,
+            "introducedDate": "2023-09-19",
+            "latestAction": {
+                "actionDate": "2023-10-25",
+                "text": "Amendment SA 1250 agreed to in Senate by Voice Vote. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1250?format=json"
+        },
+        {
+            "amendmentNumber": "1212",
+            "congress": 118,
+            "introducedDate": "2023-09-14",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1212?format=json"
+        },
+        {
+            "amendmentNumber": "1186",
+            "congress": 118,
+            "introducedDate": "2023-09-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1186?format=json"
+        },
+        {
+            "amendmentNumber": "1160",
+            "congress": 118,
+            "introducedDate": "2023-09-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1160?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-07-27",
+            "latestAction": {
+                "actionDate": "2023-07-27",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "2642",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Financial Institutions Examination Fairness and Reform Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/2642?format=json"
+        },
+        {
+            "amendmentNumber": "1011",
+            "congress": 118,
+            "introducedDate": "2023-07-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/1011?format=json"
+        },
+        {
+            "amendmentNumber": "978",
+            "congress": 118,
+            "introducedDate": "2023-07-19",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/978?format=json"
+        },
+        {
+            "amendmentNumber": "949",
+            "congress": 118,
+            "introducedDate": "2023-07-19",
+            "latestAction": {
+                "actionDate": "2023-07-20",
+                "text": "Amendment SA 949 agreed to in Senate by Voice Vote. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/949?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-07-19",
+            "latestAction": {
+                "actionDate": "2023-07-19",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "2371",
+            "policyArea": {
+                "name": "Taxation"
+            },
+            "title": "ACRE Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/2371?format=json"
+        },
+        {
+            "amendmentNumber": "916",
+            "congress": 118,
+            "introducedDate": "2023-07-18",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/916?format=json"
+        },
+        {
+            "amendmentNumber": "802",
+            "congress": 118,
+            "introducedDate": "2023-07-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/802?format=json"
+        },
+        {
+            "amendmentNumber": "694",
+            "congress": 118,
+            "introducedDate": "2023-07-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/694?format=json"
+        },
+        {
+            "amendmentNumber": "695",
+            "congress": 118,
+            "introducedDate": "2023-07-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/695?format=json"
+        },
+        {
+            "amendmentNumber": "366",
+            "congress": 118,
+            "introducedDate": "2023-07-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/366?format=json"
+        },
+        {
+            "amendmentNumber": "368",
+            "congress": 118,
+            "introducedDate": "2023-07-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/368?format=json"
+        },
+        {
+            "amendmentNumber": "277",
+            "congress": 118,
+            "introducedDate": "2023-07-12",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/277?format=json"
+        },
+        {
+            "amendmentNumber": "276",
+            "congress": 118,
+            "introducedDate": "2023-07-12",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/118/samdt/276?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-06-22",
+            "latestAction": {
+                "actionDate": "2023-06-22",
+                "text": "Referred to the Committee on the Judiciary. (text: CR S2241)"
+            },
+            "number": "275",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "A resolution designating June as \"National Annuity Awareness Month\".",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/118/sres/275?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-06-22",
+            "latestAction": {
+                "actionDate": "2023-06-22",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "2158",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Restore VA Accountability Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/2158?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-06-22",
+            "latestAction": {
+                "actionDate": "2023-06-22",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "2141",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Increasing Access to Adviser Information Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/2141?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-06-13",
+            "latestAction": {
+                "actionDate": "2023-07-18",
+                "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3121; text: 6/13/2023 CR S2073-2074)"
+            },
+            "number": "246",
+            "policyArea": {
+                "name": "Crime and Law Enforcement"
+            },
+            "title": "A resolution honoring the men and women of the Drug Enforcement Administration on the 50th anniversary of the agency.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/118/sres/246?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-06-01",
+            "latestAction": {
+                "actionDate": "2023-06-01",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "1796",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Joint Center of Excellence for Advanced Materials and Safety Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1796?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-05-09",
+            "latestAction": {
+                "actionDate": "2023-05-09",
+                "text": "Read twice and referred to the Committee on Indian Affairs."
+            },
+            "number": "1492",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Prairie Band Potawatomi Nation Shab-eh-nay Band Reservation Settlement Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1492?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-04-27",
+            "latestAction": {
+                "actionDate": "2023-04-27",
+                "text": "Read twice and referred to the Committee on Indian Affairs."
+            },
+            "number": "1328",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Tribal Labor Sovereignty Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1328?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-04-26",
+            "latestAction": {
+                "actionDate": "2023-04-26",
+                "text": "Read twice and referred to the Committee on Energy and Natural Resources."
+            },
+            "number": "1324",
+            "policyArea": {
+                "name": "Energy"
+            },
+            "title": "Southwestern Power Administration Fund Establishment Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1324?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-04-26",
+            "latestAction": {
+                "actionDate": "2023-07-12",
+                "text": "Committee on Veterans' Affairs. Hearings held."
+            },
+            "number": "1315",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veterans' Health Empowerment, Access, Leadership, and Transparency for our Heroes (HEALTH) Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1315?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-04-25",
+            "latestAction": {
+                "actionDate": "2023-04-25",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "1266",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Love Lives On Act of 2023",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1266?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-03-30",
+            "latestAction": {
+                "actionDate": "2023-03-30",
+                "text": "Read twice and referred to the Committee on Foreign Relations."
+            },
+            "number": "1143",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "United States-Israel PTSD Collaborative Research Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1143?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-03-29",
+            "latestAction": {
+                "actionDate": "2023-07-12",
+                "text": "Committee on Veterans' Affairs. Hearings held."
+            },
+            "number": "1037",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Department of Veterans Affairs EHRM Standardization and Accountability Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/118/s/1037?format=json"
+        },
+        {
+            "congress": 118,
+            "introducedDate": "2023-02-16",
+            "latestAction": {
+                "actionDate": "2023-02-16",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S436-437; text: CR S460-461)"
+            },
+            "number": "71",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "A resolution congratulating the Kansas City Chiefs on their victory in Super Bowl LVII.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/118/sres/71?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-09-29",
+            "latestAction": {
+                "actionDate": "2022-09-29",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "5049",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Financial Institutions Examination Fairness and Reform Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/5049?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-12-15",
+            "latestAction": {
+                "actionDate": "2022-12-15",
+                "text": "Read twice and referred to the Committee on the Judiciary."
+            },
+            "number": "5287",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Startup Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/5287?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-03-01",
+            "latestAction": {
+                "actionDate": "2022-10-17",
+                "text": "Became Public Law No: 117-203."
+            },
+            "number": "516",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Advanced Air Mobility Coordination and Leadership Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/516?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-04-13",
+            "latestAction": {
+                "actionDate": "2021-11-30",
+                "text": "Became Public Law No: 117-68."
+            },
+            "number": "1095",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Colonel John M. McHugh Tuition Fairness for Survivors Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1095?format=json"
+        },
+        {
+            "amendmentNumber": "6578",
+            "congress": 117,
+            "introducedDate": "2022-12-20",
+            "latestAction": {
+                "actionDate": "2022-12-20",
+                "text": "Amendment SA 6578 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/6578?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-30",
+            "latestAction": {
+                "actionDate": "2022-12-13",
+                "text": "Committee on Banking, Housing, and Urban Affairs Subcommittee on Securities, Insurance, and Investment. Hearings held."
+            },
+            "number": "3967",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Improving Crowdfunding Opportunities Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3967?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-06-23",
+            "latestAction": {
+                "actionDate": "2022-06-23",
+                "text": "Referred to the Committee on the Judiciary. (text: CR S3167)"
+            },
+            "number": "695",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "A resolution designating June as \"National Annuity Awareness Month\".",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/695?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-07-14",
+            "latestAction": {
+                "actionDate": "2022-07-14",
+                "text": "Referred to the Committee on Agriculture, Nutrition, and Forestry. (text: CR S3310)"
+            },
+            "number": "709",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "A resolution expressing the commitment of the Senate to building on the 20 years of success of the George McGovern-Robert Dole Food for Education and Child Nutrition Program.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/709?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-06-23",
+            "latestAction": {
+                "actionDate": "2021-06-23",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "2202",
+            "policyArea": {
+                "name": "Taxation"
+            },
+            "title": "ECORA Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2202?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-04-14",
+            "latestAction": {
+                "actionDate": "2021-10-06",
+                "text": "Committee on Energy and Natural Resources Subcommittee on National Parks. Hearings held."
+            },
+            "number": "1112",
+            "policyArea": {
+                "name": "Public Lands and Natural Resources"
+            },
+            "title": "Chisholm National Historic Trail and Western National Historic Trail Designation Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1112?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-11-18",
+            "latestAction": {
+                "actionDate": "2021-11-18",
+                "text": "Read twice and referred to the Committee on Indian Affairs."
+            },
+            "number": "3242",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Prairie Band Potawatomi Nation Shab-eh-nay Band Reservation Settlement Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3242?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-12-09",
+            "latestAction": {
+                "actionDate": "2021-12-09",
+                "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+            },
+            "number": "3363",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "A bill to designate the facility of the United States Postal Service located at 135 West Wisconsin Street in Russell, Kansas, as the \"Robert J. Dole Memorial Post Office Building\".",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3363?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-03-18",
+            "latestAction": {
+                "actionDate": "2021-03-18",
+                "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+            },
+            "number": "824",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "A bill to designate the facility of the United States Postal Service located at 17 East Main Street in Herington, Kansas, as the \"Captain Emil J. Kapaun Post Office Building\".",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/824?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-09-13",
+            "latestAction": {
+                "actionDate": "2022-09-13",
+                "text": "Read twice and referred to the Committee on Indian Affairs."
+            },
+            "number": "4830",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "A bill to reaffirm actions taken by the Secretary of the Interior for the benefit of Indian Tribes, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/4830?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-09-13",
+            "latestAction": {
+                "actionDate": "2022-09-13",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "4838",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veterans Medical Mileage Adjustment Act of 2022",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/4838?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-10-27",
+            "latestAction": {
+                "actionDate": "2021-12-15",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported without amendment favorably."
+            },
+            "number": "3094",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Reaching Every Homeless Veteran Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3094?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-04-06",
+            "latestAction": {
+                "actionDate": "2022-04-06",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2016-2017; text: CR S2043)"
+            },
+            "number": "578",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "A resolution commending and congratulating the University of Kansas Jayhawks men's basketball team for winning the 2022 National Collegiate Athletic Association Basketball National Championship.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/578?format=json"
+        },
+        {
+            "amendmentNumber": "6276",
+            "congress": 117,
+            "introducedDate": "2022-09-29",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/6276?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-08-05",
+            "latestAction": {
+                "actionDate": "2021-12-15",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported without amendment favorably."
+            },
+            "number": "2644",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "GRAD VA Educational Assistance Parity Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2644?format=json"
+        },
+        {
+            "amendmentNumber": "5866",
+            "congress": 117,
+            "introducedDate": "2022-09-28",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5866?format=json"
+        },
+        {
+            "amendmentNumber": "5865",
+            "congress": 117,
+            "introducedDate": "2022-09-28",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5865?format=json"
+        },
+        {
+            "amendmentNumber": "5868",
+            "congress": 117,
+            "introducedDate": "2022-09-28",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5868?format=json"
+        },
+        {
+            "amendmentNumber": "5867",
+            "congress": 117,
+            "introducedDate": "2022-09-28",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5867?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-05-26",
+            "latestAction": {
+                "actionDate": "2021-07-28",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported without amendment favorably."
+            },
+            "number": "1863",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Guaranteeing Healthcare Access to Personnel Who Served Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1863?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": {
+                "actionDate": "2021-02-04",
+                "text": "Read twice and referred to the Committee on Foreign Relations."
+            },
+            "number": "221",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "United States-Israel PTSD Collaborative Research Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/221?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-12-02",
+            "latestAction": {
+                "actionDate": "2021-12-02",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "3311",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "FTC Integrity Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3311?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-30",
+            "latestAction": {
+                "actionDate": "2022-03-30",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "3965",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Increasing Access to Adviser Information Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3965?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-30",
+            "latestAction": {
+                "actionDate": "2022-04-05",
+                "text": "Committee on Banking, Housing, and Urban Affairs. Hearings held."
+            },
+            "number": "3966",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Facilitating Main Street Offerings Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3966?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-09-13",
+            "latestAction": {
+                "actionDate": "2021-12-15",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported without amendment favorably."
+            },
+            "number": "2720",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veterans’ Prostate Cancer Treatment and Research Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2720?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-02-25",
+            "latestAction": {
+                "actionDate": "2021-02-25",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "466",
+            "policyArea": {
+                "name": "Science, Technology, Communications"
+            },
+            "title": "Kelsey Smith Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/466?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-12-15",
+            "latestAction": {
+                "actionDate": "2021-12-15",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "3409",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "A bill to amend the Economic Growth, Regulatory Relief, and Consumer Protection Act to require the appropriate Federal banking agencies to develop a Community Bank Leverage Ratio that is between 8 percent and 8.5 percent for calendar years 2022, 2023, and 2024, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3409?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-11-18",
+            "latestAction": {
+                "actionDate": "2020-11-18",
+                "text": "Read twice and referred to the Committee on Energy and Natural Resources."
+            },
+            "number": "4905",
+            "policyArea": {
+                "name": "Public Lands and Natural Resources"
+            },
+            "title": "Chisholm National Historic Trail and Western National Historic Trail Designation Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4905?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-02-03",
+            "latestAction": {
+                "actionDate": "2022-02-03",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S527; text: CR S526)"
+            },
+            "number": "504",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "A resolution commending and congratulating the Coffeyville Community College Red Ravens men's basketball team on winning the 2021 National Junior College Athletic Association Division I men's basketball championship.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/504?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-10",
+            "latestAction": {
+                "actionDate": "2022-03-10",
+                "text": "Referred to the Committee on the Judiciary. (text: CR S1124)"
+            },
+            "number": "33",
+            "policyArea": {
+                "name": "Education"
+            },
+            "title": "A concurrent resolution commending the heroism of Olathe East High School Administrator Dr. Kaleb Stoppel and School Resource Officer Erik Clark in responding to a student armed with a firearm.",
+            "type": "SCONRES",
+            "url": "https://api.congress.gov/v3/bill/117/sconres/33?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-01",
+            "latestAction": {
+                "actionDate": "2022-07-28",
+                "text": "Committee on Energy and Natural Resources. Hearings held."
+            },
+            "number": "3719",
+            "policyArea": {
+                "name": "Energy"
+            },
+            "title": "Southwestern Power Administration Fund Establishment Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3719?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-02-12",
+            "latestAction": {
+                "actionDate": "2022-03-14",
+                "text": "Became Public Law No: 117-97."
+            },
+            "number": "321",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "\"Six Triple Eight\" Congressional Gold Medal Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/321?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-07-22",
+            "latestAction": {
+                "actionDate": "2020-07-22",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "4287",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "COVID–19 Benefits for Active Duty Servicemembers, the Reserve Components, and their Survivors Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4287?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-05-11",
+            "latestAction": {
+                "actionDate": "2020-05-11",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3678",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to amend title 38, United States Code, to provide for payment of work-study allowances during a public health emergency relating to COVID-19 and for allowances to veterans enrolled in educational institutions closed for emergency situations, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3678?format=json"
+        },
+        {
+            "amendmentNumber": "5452",
+            "congress": 117,
+            "introducedDate": "2022-08-06",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5452?format=json"
+        },
+        {
+            "amendmentNumber": "5424",
+            "congress": 117,
+            "introducedDate": "2022-08-06",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5424?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-03-31",
+            "latestAction": {
+                "actionDate": "2022-04-05",
+                "text": "Committee on Banking, Housing, and Urban Affairs. Hearings held."
+            },
+            "number": "3976",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Expanding American Entrepreneurship Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3976?format=json"
+        },
+        {
+            "amendmentNumber": "5127",
+            "congress": 117,
+            "introducedDate": "2022-06-23",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5127?format=json"
+        },
+        {
+            "amendmentNumber": "5095",
+            "congress": 117,
+            "introducedDate": "2022-06-14",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5095?format=json"
+        },
+        {
+            "amendmentNumber": "5078",
+            "congress": 117,
+            "introducedDate": "2022-06-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5078?format=json"
+        },
+        {
+            "amendmentNumber": "5079",
+            "congress": 117,
+            "introducedDate": "2022-06-13",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5079?format=json"
+        },
+        {
+            "amendmentNumber": "5063",
+            "congress": 117,
+            "introducedDate": "2022-06-07",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5063?format=json"
+        },
+        {
+            "amendmentNumber": "5064",
+            "congress": 117,
+            "introducedDate": "2022-06-07",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/5064?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-11-03",
+            "latestAction": {
+                "actionDate": "2021-11-04",
+                "actionTime": "12:28:22",
+                "text": "Held at the desk."
+            },
+            "number": "19",
+            "policyArea": {
+                "name": "Congress"
+            },
+            "title": "A concurrent resolution permitting the use of the rotunda of the Capitol for a ceremony as part of the commemoration of the 100th anniversary of the dedication of the Tomb of the Unknown Soldier.",
+            "type": "SCONRES",
+            "url": "https://api.congress.gov/v3/bill/117/sconres/19?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-12-06",
+            "latestAction": {
+                "actionDate": "2021-12-08",
+                "text": "Message on Senate action sent to the House."
+            },
+            "number": "470",
+            "policyArea": {
+                "name": "Congress"
+            },
+            "title": "A resolution relating to the death of the Honorable Robert \"Bob\" J. Dole, former United States Senator for the State of Kansas.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/470?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2022-01-10",
+            "latestAction": {
+                "actionDate": "2022-01-18",
+                "text": "Read the second time. Placed on Senate Legislative Calendar under General Orders. Calendar No. 234."
+            },
+            "number": "3454",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Tribal Labor Sovereignty Act of 2022",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3454?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-04-29",
+            "latestAction": {
+                "actionDate": "2021-04-29",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "1494",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Consumer Data Privacy and Security Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1494?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-10-01",
+            "latestAction": {
+                "actionDate": "2020-10-01",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "4792",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "RISER Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4792?format=json"
+        },
+        {
+            "congress": 114,
+            "introducedDate": "2016-07-13",
+            "latestAction": {
+                "actionDate": "2016-12-14",
+                "text": "Became Public Law No: 114-274."
+            },
+            "number": "3183",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "BOTS Act of 2016",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/114/s/3183?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-12-08",
+            "latestAction": {
+                "actionDate": "2021-12-08",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3341",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "VA Electronic Health Record Transparency Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/3341?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-09-29",
+            "latestAction": {
+                "actionDate": "2021-09-29",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6800; text: CR S6786-6787)"
+            },
+            "number": "396",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A resolution commemorating the centennial of the dedication of the Tomb of the Unknown Soldier in Arlington National Cemetery.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/396?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-09-28",
+            "latestAction": {
+                "actionDate": "2021-09-28",
+                "text": "Read twice and referred to the Committee on Indian Affairs."
+            },
+            "number": "2867",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Tribal Labor Sovereignty Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2867?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-09-26",
+            "latestAction": {
+                "actionDate": "2019-09-26",
+                "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 231."
+            },
+            "number": "2584",
+            "policyArea": {
+                "name": "Economics and Public Finance"
+            },
+            "title": "An original bill making appropriations for the Departments of Commerce and Justice, Science, and Related Agencies for the fiscal year ending September 30, 2020, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2584?format=json"
+        },
+        {
+            "amendmentNumber": "3895",
+            "congress": 117,
+            "introducedDate": "2021-10-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3895?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-06-22",
+            "latestAction": {
+                "actionDate": "2021-06-22",
+                "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+            },
+            "number": "2160",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "RECAL Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/2160?format=json"
+        },
+        {
+            "amendmentNumber": "3893",
+            "congress": 117,
+            "introducedDate": "2021-10-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3893?format=json"
+        },
+        {
+            "amendmentNumber": "3911",
+            "congress": 117,
+            "introducedDate": "2021-10-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3911?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-04-22",
+            "latestAction": {
+                "actionDate": "2021-04-22",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "1307",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Department of Veteran Affairs Provider Accountability Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1307?format=json"
+        },
+        {
+            "amendmentNumber": "4791",
+            "congress": 117,
+            "introducedDate": "2021-11-18",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/4791?format=json"
+        },
+        {
+            "amendmentNumber": "3894",
+            "congress": 117,
+            "introducedDate": "2021-10-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3894?format=json"
+        },
+        {
+            "amendmentNumber": "3910",
+            "congress": 117,
+            "introducedDate": "2021-10-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3910?format=json"
+        },
+        {
+            "amendmentNumber": "3896",
+            "congress": 117,
+            "introducedDate": "2021-10-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3896?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-05-18",
+            "latestAction": {
+                "actionDate": "2021-05-18",
+                "text": "Read twice and referred to the Committee on Energy and Natural Resources."
+            },
+            "number": "1682",
+            "policyArea": {
+                "name": "Public Lands and Natural Resources"
+            },
+            "title": "No Land Grab Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1682?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-07-23",
+            "latestAction": {
+                "actionDate": "2020-07-23",
+                "text": "Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry."
+            },
+            "number": "4298",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "RAMP–UP Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4298?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-07-20",
+            "latestAction": {
+                "actionDate": "2021-07-20",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4987; text: CR S4983)"
+            },
+            "number": "308",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "A resolution commending and congratulating the Hutchinson Community College Blue Dragons football team for winning the 2021 National Junior College Athletic Association football National Championship.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/117/sres/308?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-05-21",
+            "latestAction": {
+                "actionDate": "2020-05-21",
+                "text": "Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry."
+            },
+            "number": "3797",
+            "policyArea": {
+                "name": "Agriculture and Food"
+            },
+            "title": "Small Packer Overtime and Holiday Fee Relief for COVID–19 Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3797?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-06-27",
+            "latestAction": {
+                "actionDate": "2019-06-27",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "2022",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Paul Benne Specially Adaptive Housing Improvement Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2022?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-03-12",
+            "latestAction": {
+                "actionDate": "2020-03-12",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "3456",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Consumer Data Privacy and Security Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3456?format=json"
+        },
+        {
+            "amendmentNumber": "3795",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": {
+                "actionDate": "2021-08-11",
+                "text": "Amendment SA 3795 agreed to in Senate by Yea-Nay Vote. 76 - 23. Record Vote Number: 341. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3795?format=json"
+        },
+        {
+            "amendmentNumber": "3556",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3556?format=json"
+        },
+        {
+            "amendmentNumber": "3553",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3553?format=json"
+        },
+        {
+            "amendmentNumber": "3554",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3554?format=json"
+        },
+        {
+            "amendmentNumber": "3555",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3555?format=json"
+        },
+        {
+            "amendmentNumber": "3051",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3051?format=json"
+        },
+        {
+            "amendmentNumber": "3048",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3048?format=json"
+        },
+        {
+            "amendmentNumber": "3053",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3053?format=json"
+        },
+        {
+            "amendmentNumber": "3054",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3054?format=json"
+        },
+        {
+            "amendmentNumber": "3052",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3052?format=json"
+        },
+        {
+            "amendmentNumber": "3070",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3070?format=json"
+        },
+        {
+            "amendmentNumber": "3050",
+            "congress": 117,
+            "introducedDate": "2021-08-10",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/3050?format=json"
+        },
+        {
+            "amendmentNumber": "2591",
+            "congress": 117,
+            "introducedDate": "2021-08-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2591?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-02-25",
+            "latestAction": {
+                "actionDate": "2021-02-25",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "469",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Promoting Women in Trucking Workforce Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/469?format=json"
+        },
+        {
+            "amendmentNumber": "2451",
+            "congress": 117,
+            "introducedDate": "2021-08-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2451?format=json"
+        },
+        {
+            "amendmentNumber": "2568",
+            "congress": 117,
+            "introducedDate": "2021-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2568?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-03-22",
+            "latestAction": {
+                "actionDate": "2021-07-28",
+                "text": "Committee on Veterans' Affairs. Ordered to be reported without amendment favorably."
+            },
+            "number": "887",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "VA Supply Chain Resiliency Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/887?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-03-11",
+            "latestAction": {
+                "actionDate": "2021-03-11",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "701",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Allergy Testing Access Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/701?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-04-29",
+            "latestAction": {
+                "actionDate": "2021-04-29",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "1446",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to require the Secretary of Veterans Affairs to submit to Congress a plan for obligating and expending Coronavirus pandemic funding made available to the Department of Veterans Affairs, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/1446?format=json"
+        },
+        {
+            "amendmentNumber": "1990",
+            "congress": 117,
+            "introducedDate": "2021-05-25",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1990?format=json"
+        },
+        {
+            "amendmentNumber": "2086",
+            "congress": 117,
+            "introducedDate": "2021-05-26",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/2086?format=json"
+        },
+        {
+            "amendmentNumber": "1989",
+            "congress": 117,
+            "introducedDate": "2021-05-25",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1989?format=json"
+        },
+        {
+            "amendmentNumber": "1779",
+            "congress": 117,
+            "introducedDate": "2021-05-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1779?format=json"
+        },
+        {
+            "amendmentNumber": "1553",
+            "congress": 117,
+            "introducedDate": "2021-05-19",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1553?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-01-28",
+            "latestAction": {
+                "actionDate": "2021-01-28",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "134",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to direct the Secretary of Veterans Affairs to carry out a retraining assistance program for unemployed veterans, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/134?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-03-03",
+            "latestAction": {
+                "actionDate": "2021-03-03",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "585",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "United States Anti-Doping Agency Reauthorization Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/585?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-02-03",
+            "latestAction": {
+                "actionDate": "2020-12-18",
+                "actionTime": "14:52:46",
+                "text": "Held at the desk."
+            },
+            "number": "3248",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "United States Anti-Doping Agency Reauthorization Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3248?format=json"
+        },
+        {
+            "amendmentNumber": "1432",
+            "congress": 117,
+            "introducedDate": "2021-04-14",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1432?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-08-06",
+            "latestAction": {
+                "actionDate": "2020-12-08",
+                "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 603."
+            },
+            "number": "4511",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veteran Benefits Enhancement and Expansion Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4511?format=json"
+        },
+        {
+            "congress": 117,
+            "introducedDate": "2021-02-24",
+            "latestAction": {
+                "actionDate": "2021-02-24",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "414",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "Amateur Athletes Protection and Compensation Act of 2021",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/117/s/414?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-06-15",
+            "latestAction": {
+                "actionDate": "2020-06-15",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "3962",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Asset Growth Restriction Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3962?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-02-07",
+            "latestAction": {
+                "actionDate": "2019-12-17",
+                "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 348."
+            },
+            "number": "389",
+            "policyArea": {
+                "name": "Public Lands and Natural Resources"
+            },
+            "title": "First Infantry Recognition of Sacrifice in Theater Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/389?format=json"
+        },
+        {
+            "amendmentNumber": "1154",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": {
+                "actionDate": "2021-03-06",
+                "text": "Amendment SA 1154 not agreed to in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 107. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1154?format=json"
+        },
+        {
+            "amendmentNumber": "1342",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": {
+                "actionDate": "2021-03-06",
+                "text": "Amendment SA 1342 agreed to in Senate by Voice Vote. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1342?format=json"
+        },
+        {
+            "amendmentNumber": "1336",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1336?format=json"
+        },
+        {
+            "amendmentNumber": "1343",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1343?format=json"
+        },
+        {
+            "amendmentNumber": "1153",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1153?format=json"
+        },
+        {
+            "amendmentNumber": "1152",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1152?format=json"
+        },
+        {
+            "amendmentNumber": "1002",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1002?format=json"
+        },
+        {
+            "amendmentNumber": "1001",
+            "congress": 117,
+            "introducedDate": "2021-03-05",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/1001?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-10-21",
+            "latestAction": {
+                "actionDate": "2020-10-21",
+                "text": "Read twice and referred to the Committee on Foreign Relations."
+            },
+            "number": "4838",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "United States-Israel PTSD Collaborative Research Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4838?format=json"
+        },
+        {
+            "amendmentNumber": "340",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/340?format=json"
+        },
+        {
+            "amendmentNumber": "338",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/338?format=json"
+        },
+        {
+            "amendmentNumber": "638",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/638?format=json"
+        },
+        {
+            "amendmentNumber": "562",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/562?format=json"
+        },
+        {
+            "amendmentNumber": "563",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/563?format=json"
+        },
+        {
+            "amendmentNumber": "559",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/559?format=json"
+        },
+        {
+            "amendmentNumber": "561",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/561?format=json"
+        },
+        {
+            "amendmentNumber": "560",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/560?format=json"
+        },
+        {
+            "amendmentNumber": "822",
+            "congress": 117,
+            "introducedDate": "2021-02-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/822?format=json"
+        },
+        {
+            "amendmentNumber": "371",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/371?format=json"
+        },
+        {
+            "amendmentNumber": "374",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/374?format=json"
+        },
+        {
+            "amendmentNumber": "373",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/373?format=json"
+        },
+        {
+            "amendmentNumber": "370",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/370?format=json"
+        },
+        {
+            "amendmentNumber": "335",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/335?format=json"
+        },
+        {
+            "amendmentNumber": "341",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/341?format=json"
+        },
+        {
+            "amendmentNumber": "334",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/334?format=json"
+        },
+        {
+            "amendmentNumber": "339",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/339?format=json"
+        },
+        {
+            "amendmentNumber": "337",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/337?format=json"
+        },
+        {
+            "amendmentNumber": "336",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/336?format=json"
+        },
+        {
+            "amendmentNumber": "299",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/299?format=json"
+        },
+        {
+            "amendmentNumber": "294",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/294?format=json"
+        },
+        {
+            "amendmentNumber": "298",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/298?format=json"
+        },
+        {
+            "amendmentNumber": "300",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/300?format=json"
+        },
+        {
+            "amendmentNumber": "296",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/296?format=json"
+        },
+        {
+            "amendmentNumber": "295",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/295?format=json"
+        },
+        {
+            "amendmentNumber": "297",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/297?format=json"
+        },
+        {
+            "amendmentNumber": "293",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/293?format=json"
+        },
+        {
+            "amendmentNumber": "262",
+            "congress": 117,
+            "introducedDate": "2021-02-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/117/samdt/262?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-06-04",
+            "latestAction": {
+                "actionDate": "2020-06-04",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3899",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veterans Economic Recovery Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3899?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-06-13",
+            "latestAction": {
+                "actionDate": "2020-12-15",
+                "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 632."
+            },
+            "number": "1858",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "CPSC CIO Parity Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/1858?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-06-26",
+            "latestAction": {
+                "actionDate": "2019-06-26",
+                "text": "Read twice and referred to the Committee on Indian Affairs."
+            },
+            "number": "1977",
+            "policyArea": {
+                "name": "Native Americans"
+            },
+            "title": "Kickapoo Tribe in Kansas Water Rights Settlement Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/1977?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-11-20",
+            "latestAction": {
+                "actionDate": "2019-11-20",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "2910",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "A bill to establish aviation accession training programs for the Commissioned Officer Corps of the National Oceanic and Atmospheric Administration to prepare students for commissioned service as pilots in the Corps, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2910?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-11-14",
+            "latestAction": {
+                "actionDate": "2019-11-14",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "2858",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Promoting Women in Trucking Workforce Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2858?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-12-10",
+            "latestAction": {
+                "actionDate": "2020-12-10",
+                "text": "Read twice and referred to the Committee on Small Business and Entrepreneurship."
+            },
+            "number": "5009",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Supporting More Nonprofits Through the PPP Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/5009?format=json"
+        },
+        {
+            "congress": 115,
+            "introducedDate": "2017-12-14",
+            "latestAction": {
+                "actionDate": "2017-12-14",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "2237",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Financial Institutions Examination Fairness and Reform Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/115/s/2237?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-10-21",
+            "latestAction": {
+                "actionDate": "2019-10-21",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "2649",
+            "policyArea": {
+                "name": "Finance and Financial Sector"
+            },
+            "title": "Financial Institutions Examination Fairness and Reform Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2649?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-09-23",
+            "latestAction": {
+                "actionDate": "2020-09-23",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "4670",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "Preserving Equity on Main Street Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4670?format=json"
+        },
+        {
+            "amendmentNumber": "2715",
+            "congress": 116,
+            "introducedDate": "2020-12-17",
+            "latestAction": {
+                "actionDate": "2020-12-17",
+                "text": "Amendment SA 2715 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2715?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-02-28",
+            "latestAction": {
+                "actionDate": "2020-12-14",
+                "actionTime": "14:25:39",
+                "text": "Held at the desk."
+            },
+            "number": "633",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "\"Six Triple Eight\" Congressional Gold Medal Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/633?format=json"
+        },
+        {
+            "amendmentNumber": "2702",
+            "congress": 116,
+            "introducedDate": "2020-12-10",
+            "latestAction": {
+                "actionDate": "2020-12-10",
+                "text": "Amendment SA 2702 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2702?format=json"
+        },
+        {
+            "amendmentNumber": "2696",
+            "congress": 116,
+            "introducedDate": "2020-12-09",
+            "latestAction": {
+                "actionDate": "2020-12-09",
+                "text": "Amendment SA 2696 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2696?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-09-15",
+            "latestAction": {
+                "actionDate": "2020-09-15",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "4579",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/4579?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-07-30",
+            "latestAction": {
+                "actionDate": "2020-10-30",
+                "text": "Became Public Law No: 116-189."
+            },
+            "number": "2330",
+            "policyArea": {
+                "name": "Sports and Recreation"
+            },
+            "title": "Empowering Olympic, Paralympic, and Amateur Athletes Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2330?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-07-24",
+            "latestAction": {
+                "actionDate": "2019-07-24",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "2246",
+            "policyArea": {
+                "name": "Health"
+            },
+            "title": "Allergy Testing Access Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2246?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-12-19",
+            "latestAction": {
+                "actionDate": "2020-08-12",
+                "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 517."
+            },
+            "number": "3132",
+            "policyArea": {
+                "name": "Commerce"
+            },
+            "title": "A bill to extend the Undertaking Spam, Spyware, And Fraud Enforcement With Enforcers beyond Borders Act of 2006, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3132?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-05-13",
+            "latestAction": {
+                "actionDate": "2020-05-13",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "3705",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Private-Public Partnership to Preserve Jobs in the Aviation Manufacturing Industry Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3705?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-03-14",
+            "latestAction": {
+                "actionDate": "2019-03-14",
+                "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+            },
+            "number": "819",
+            "policyArea": {
+                "name": "Science, Technology, Communications"
+            },
+            "title": "Federal Communications Commission Reporting Modernization Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/819?format=json"
+        },
+        {
+            "amendmentNumber": "2624",
+            "congress": 116,
+            "introducedDate": "2020-08-06",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2624?format=json"
+        },
+        {
+            "amendmentNumber": "2596",
+            "congress": 116,
+            "introducedDate": "2020-08-06",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2596?format=json"
+        },
+        {
+            "amendmentNumber": "2594",
+            "congress": 116,
+            "introducedDate": "2020-08-05",
+            "latestAction": {
+                "actionDate": "2020-08-05",
+                "text": "Amendment SA 2594 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2594?format=json"
+        },
+        {
+            "amendmentNumber": "2564",
+            "congress": 116,
+            "introducedDate": "2020-08-04",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2564?format=json"
+        },
+        {
+            "amendmentNumber": "2512",
+            "congress": 116,
+            "introducedDate": "2020-08-04",
+            "latestAction": {
+                "actionDate": "2020-08-04",
+                "text": "Amendment SA 2512 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2512?format=json"
+        },
+        {
+            "amendmentNumber": "2492",
+            "congress": 116,
+            "introducedDate": "2020-07-23",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2492?format=json"
+        },
+        {
+            "amendmentNumber": "2445",
+            "congress": 116,
+            "introducedDate": "2020-07-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2445?format=json"
+        },
+        {
+            "amendmentNumber": "2450",
+            "congress": 116,
+            "introducedDate": "2020-07-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2450?format=json"
+        },
+        {
+            "amendmentNumber": "2446",
+            "congress": 116,
+            "introducedDate": "2020-07-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2446?format=json"
+        },
+        {
+            "amendmentNumber": "2447",
+            "congress": 116,
+            "introducedDate": "2020-07-20",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2447?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-12-18",
+            "latestAction": {
+                "actionDate": "2020-07-02",
+                "text": "Became Public Law No: 116-146."
+            },
+            "number": "3084",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to amend title 38, United States Code, to modify the limitation on pay for certain high-level employees and officers of the Department of Veterans Affairs.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3084?format=json"
+        },
+        {
+            "amendmentNumber": "1694",
+            "congress": 116,
+            "introducedDate": "2020-06-24",
+            "latestAction": {
+                "actionDate": "2020-07-02",
+                "text": "Amendment SA 1694 agreed to in Senate by Voice Vote. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1694?format=json"
+        },
+        {
+            "amendmentNumber": "1693",
+            "congress": 116,
+            "introducedDate": "2020-06-24",
+            "latestAction": {
+                "actionDate": "2020-07-02",
+                "text": "Amendment SA 1693 agreed to in Senate by Voice Vote. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1693?format=json"
+        },
+        {
+            "amendmentNumber": "1761",
+            "congress": 116,
+            "introducedDate": "2020-06-24",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1761?format=json"
+        },
+        {
+            "amendmentNumber": "2368",
+            "congress": 116,
+            "introducedDate": "2020-06-30",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2368?format=json"
+        },
+        {
+            "amendmentNumber": "2338",
+            "congress": 116,
+            "introducedDate": "2020-06-30",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2338?format=json"
+        },
+        {
+            "amendmentNumber": "2228",
+            "congress": 116,
+            "introducedDate": "2020-06-29",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/2228?format=json"
+        },
+        {
+            "amendmentNumber": "1760",
+            "congress": 116,
+            "introducedDate": "2020-06-24",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1760?format=json"
+        },
+        {
+            "amendmentNumber": "1695",
+            "congress": 116,
+            "introducedDate": "2020-06-24",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1695?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-03-05",
+            "latestAction": {
+                "actionDate": "2020-06-16",
+                "text": "Became Public Law No: 116-144."
+            },
+            "number": "3414",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Major Medical Facility Authorization Act of 2020",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3414?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-06-20",
+            "latestAction": {
+                "actionDate": "2019-06-20",
+                "text": "Referred to the Committee on the Judiciary. (text: CR S4179)"
+            },
+            "number": "20",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A concurrent resolution expressing the sense of Congress that the President should posthumously award the Presidential Medal of Freedom to Harry W. Colmery.",
+            "type": "SCONRES",
+            "url": "https://api.congress.gov/v3/bill/116/sconres/20?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-03-11",
+            "latestAction": {
+                "actionDate": "2020-03-11",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "3450",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to authorize the Secretary of Veterans Affairs to treat certain programs of education converted to distance learning by reason of emergencies and health-related situations in the same manner as programs of education pursued at educational institutions, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3450?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-02-05",
+            "latestAction": {
+                "actionDate": "2019-02-28",
+                "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 2/5/2019 S870)"
+            },
+            "number": "43",
+            "policyArea": {
+                "name": "Government Operations and Politics"
+            },
+            "title": "A resolution honoring the 150th anniversary of the establishment of Lindsborg, Kansas.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/116/sres/43?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-03-16",
+            "latestAction": {
+                "actionDate": "2020-03-21",
+                "text": "Became Public Law No: 116-128."
+            },
+            "number": "3503",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A bill to authorize the Secretary of Veterans Affairs to treat certain programs of education converted to distance learning by reason of emergencies and health-related situations in the same manner as programs of education pursued at educational institutions, and for other purposes.",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3503?format=json"
+        },
+        {
+            "amendmentNumber": "1579",
+            "congress": 116,
+            "introducedDate": "2020-03-26",
+            "latestAction": {
+                "actionDate": "2020-03-26",
+                "text": "Amendment SA 1579 agreed to in Senate by Unanimous Consent. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1579?format=json"
+        },
+        {
+            "amendmentNumber": "1575",
+            "congress": 116,
+            "introducedDate": "2020-03-24",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1575?format=json"
+        },
+        {
+            "amendmentNumber": "1561",
+            "congress": 116,
+            "introducedDate": "2020-03-20",
+            "latestAction": {
+                "actionDate": "2020-03-20",
+                "text": "Referred to the Committee on Finance. "
+            },
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1561?format=json"
+        },
+        {
+            "amendmentNumber": "1568",
+            "congress": 116,
+            "introducedDate": "2020-03-22",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1568?format=json"
+        },
+        {
+            "amendmentNumber": "1560",
+            "congress": 116,
+            "introducedDate": "2020-03-18",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1560?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2020-02-27",
+            "latestAction": {
+                "actionDate": "2020-02-27",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Voice Vote. (consideration: CR 1236; text: CR S1232-1233)"
+            },
+            "number": "518",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A resolution honoring the 100th anniversary of Disabled American Veterans.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/116/sres/518?format=json"
+        },
+        {
+            "amendmentNumber": "1471",
+            "congress": 116,
+            "introducedDate": "2020-03-03",
+            "latestAction": null,
+            "type": null,
+            "url": "https://api.congress.gov/v3/amendment/116/samdt/1471?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-06-13",
+            "latestAction": {
+                "actionDate": "2019-06-13",
+                "text": "Read twice and referred to the Committee on Armed Services."
+            },
+            "number": "1860",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Military Readiness and Injury Prevention Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/1860?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-02-27",
+            "latestAction": {
+                "actionDate": "2019-02-27",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "576",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Fairness for Korean DMZ Veterans Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/576?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-12-18",
+            "latestAction": {
+                "actionDate": "2019-12-18",
+                "text": "Read twice and referred to the Committee on the Judiciary."
+            },
+            "number": "3086",
+            "policyArea": {
+                "name": "Law"
+            },
+            "title": "Temporary Judgeship Conversion Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/3086?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-12-12",
+            "latestAction": {
+                "actionDate": "2019-12-12",
+                "text": "Read twice and referred to the Committee on Veterans' Affairs."
+            },
+            "number": "61",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "A joint resolution approving the request of the Secretary of Veterans Affairs for a waiver under section 1703E(f) of title 38, United States Code.",
+            "type": "SJRES",
+            "url": "https://api.congress.gov/v3/bill/116/sjres/61?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-10-22",
+            "latestAction": {
+                "actionDate": "2019-10-22",
+                "text": "Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+            },
+            "number": "2663",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Small Community Transit Improvement Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/2663?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-03-12",
+            "latestAction": {
+                "actionDate": "2019-03-12",
+                "text": "Read twice and referred to the Committee on Finance."
+            },
+            "number": "762",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "Aviation Funding Stability Act of 2019",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/116/s/762?format=json"
+        },
+        {
+            "congress": 116,
+            "introducedDate": "2019-09-17",
+            "latestAction": {
+                "actionDate": "2019-09-17",
+                "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5512; text: CR S5542)"
+            },
+            "number": "314",
+            "policyArea": {
+                "name": "Transportation and Public Works"
+            },
+            "title": "A resolution honoring the centennial of the Aerospace Industries Association.",
+            "type": "SRES",
+            "url": "https://api.congress.gov/v3/bill/116/sres/314?format=json"
+        },
+        {
+            "congress": 114,
+            "introducedDate": "2015-02-25",
+            "latestAction": {
+                "actionDate": "2015-09-16",
+                "text": "Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 114-212."
+            },
+            "number": "564",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Veterans Hearing Aid Access and Assistance Act",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/114/s/564?format=json"
+        },
+        {
+            "congress": 114,
+            "introducedDate": "2015-02-05",
+            "latestAction": {
+                "actionDate": "2015-06-03",
+                "text": "Committee on Veterans' Affairs. Hearings held. Hearings printed: S.Hrg. 114-201."
+            },
+            "number": "398",
+            "policyArea": {
+                "name": "Armed Forces and National Security"
+            },
+            "title": "Chiropractic Care Available to All Veterans Act of 2015",
+            "type": "S",
+            "url": "https://api.congress.gov/v3/bill/114/s/398?format=json"
+        }
+    ]
+}

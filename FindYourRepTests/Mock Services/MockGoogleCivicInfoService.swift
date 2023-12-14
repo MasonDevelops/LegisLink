@@ -8,7 +8,7 @@
 import Foundation
 
 
-@testable import town_square
+@testable import LegisLink
 
 class MockGoogleCivicInfoService: GoogleCivicInfoServiceProtocol {
     func getReps(from url: URL, completion: @escaping (Swift.Result<Reps, Error>) -> Void) {
