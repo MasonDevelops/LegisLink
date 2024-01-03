@@ -18,54 +18,211 @@ class MyRepsViewModel: ObservableObject {
     private var user: User
     
     private let googleCivicInfoService: GoogleCivicInfoServiceProtocol
-    private let openSecretsService: OpenSecretsServiceProtocol
     private let openStatesService: OpenStatesServiceProtocol
     private let congressGovService: CongressGovServiceProtocol
         
-    @Published var senatorOne = Official(name: "null", address: [NormalizedInput(
-        
-        line1: "String",
-        city: "City",
-        state: "State",
-        zip: "Zip")],
-                                         
-                                         party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
-                                            type: "type",
-                                            id: "id"
-                                         )], termsServedInCongress: [Term(chamber: "term", congress: 1, district: 1, endYear: 2050, memberType: "memberType", startYear: 2020, stateCode: "stateCode", stateName: "stateName")])
+    @Published var senatorOne = Official(
+        name: "Senator One",
+        address: [
+            NormalizedInput(
+                line1: "123 Main St",
+                city: "Cityville",
+                state: "CA",
+                zip: "12345"
+            )
+        ],
+        party: "Democratic",
+        phones: ["555-1234"],
+        urls: ["http://example.com"],
+        photoURL: "http://example.com/photo.jpg",
+        channels: [
+            Channel(
+                type: "type",
+                id: "id"
+            )
+        ],
+        ocdID: "ocdID123",
+        bioguideID: "B123",
+        govtrackID: "G123",
+        wikidataID: "W123",
+        votesmartID: "V123",
+        fecID: "F123",
+        opensecretsID: "O123",
+        committees: ["Committee A": "Committee B"],
+        sponsoredLegislation: [
+            SponsoredLegislation(
+                congress: 116,
+                introducedDate: "2022-01-01",
+                latestAction: LatestAction(actionDate: "2022-02-02", text: "Default Text"),
+                number: "123",
+                policyArea: PolicyArea(name: "Default Policy Area"),
+                title: "Bill A",
+                type: "Bill",
+                url: "http://example.com/billA",
+                amendmentNumber: "A456"
+            )
+        ],
+        termsServedInCongress: [
+            Term(chamber: "Senate", congress: 117, district: 1, endYear: 2026, memberType: "Senator", startYear: 2022, stateCode: "CA", stateName: "California")
+        ],
+        taxationSponsoredLegislation: nil,
+        healthSponsoredLegislation: nil,
+        govtOpsAndPoliticsLegislation: nil,
+        armedForcesAndNatlSecurityLegislation: nil,
+        congressLegislation: nil,
+        intlAffairsLegislation: nil,
+        publicLandsNatResourcesLegislation: nil,
+        foreignTradeAndIntlFinanceLegislation: nil,
+        crimeAndLawEnforcementLegislation: nil,
+        transportationAndPublicWorksLegislation: nil,
+        educationLegislation: nil,
+        socialWelfareLegislation: nil,
+        energyLegislation: nil,
+        twentyTwelveContributors: nil,
+        twentyFourTeenContributors: nil,
+        twentySixTeenContributors: nil,
+        twentyEightTeenContributors: nil,
+        twentyTwentyContributors: nil,
+        twentyTwentyTwoContributors: nil
+    )
+
     
     
-    @Published var senatorTwo = Official(name: "null", address: [NormalizedInput(
-        
-        line1: "String",
-        city: "City",
-        state: "State",
-        zip: "Zip")],
-                                         
-                                         party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
-                                            type: "type",
-                                            id: "id"
-                                         )], termsServedInCongress: [Term(chamber: "term", congress: 1, district: 1, endYear: 2050, memberType: "memberType", startYear: 2020, stateCode: "stateCode", stateName: "stateName")])
+    @Published var senatorTwo = Official(
+        name: "Senator Two",
+        address: [
+            NormalizedInput(
+                line1: "124 Main St",
+                city: "Townville",
+                state: "CA",
+                zip: "12345"
+            )
+        ],
+        party: "Democratic",
+        phones: ["555-1234"],
+        urls: ["http://example.com"],
+        photoURL: "http://example.com/photo.jpg",
+        channels: [
+            Channel(
+                type: "type",
+                id: "id"
+            )
+        ],
+        ocdID: "ocdID123",
+        bioguideID: "B123",
+        govtrackID: "G123",
+        wikidataID: "W123",
+        votesmartID: "V123",
+        fecID: "F123",
+        opensecretsID: "O123",
+        committees: ["Committee A": "Committee B"],
+        sponsoredLegislation: [
+            SponsoredLegislation(
+                congress: 200,
+                introducedDate: "2100-01-01",
+                latestAction: LatestAction(actionDate: "2102-02-02", text: "Default Text"),
+                number: "123",
+                policyArea: PolicyArea(name: "Default Policy Area"),
+                title: "Bill A",
+                type: "Bill",
+                url: "http://example.com/billA",
+                amendmentNumber: "A456"
+            )
+        ],
+        termsServedInCongress: [
+            Term(chamber: "Senate", congress: 117, district: 1, endYear: 2026, memberType: "Senator", startYear: 2022, stateCode: "CA", stateName: "California")
+        ],
+        taxationSponsoredLegislation: nil,
+        healthSponsoredLegislation: nil,
+        govtOpsAndPoliticsLegislation: nil,
+        armedForcesAndNatlSecurityLegislation: nil,
+        congressLegislation: nil,
+        intlAffairsLegislation: nil,
+        publicLandsNatResourcesLegislation: nil,
+        foreignTradeAndIntlFinanceLegislation: nil,
+        crimeAndLawEnforcementLegislation: nil,
+        transportationAndPublicWorksLegislation: nil,
+        educationLegislation: nil,
+        socialWelfareLegislation: nil,
+        energyLegislation: nil,
+        twentyTwelveContributors: nil,
+        twentyFourTeenContributors: nil,
+        twentySixTeenContributors: nil,
+        twentyEightTeenContributors: nil,
+        twentyTwentyContributors: nil,
+        twentyTwentyTwoContributors: nil
+    )
     
-    @Published var representative = Official(name: "null", address: [NormalizedInput(
-        
-        line1: "String",
-        city: "City",
-        state: "State",
-        zip: "Zip")],
-                                             
-                                             party: "party", phones: ["Phone"], urls: ["urls"], photoURL: "photoURL", channels: [Channel(
-                                                type: "type",
-                                                id: "id"
-                                             )], termsServedInCongress: [Term(chamber: "term", congress: 1, district: 1, endYear: 2050, memberType: "memberType", startYear: 2020, stateCode: "stateCode", stateName: "stateName")])
+    @Published var representative = Official(
+        name: "Representative",
+        address: [
+            NormalizedInput(
+                line1: "125 Main St",
+                city: "Cityville",
+                state: "CA",
+                zip: "12345"
+            )
+        ],
+        party: "Republican",
+        phones: ["555-1234"],
+        urls: ["http://example.com"],
+        photoURL: "http://example.com/photo.jpg",
+        channels: [
+            Channel(
+                type: "type",
+                id: "id"
+            )
+        ],
+        ocdID: "ocdID123",
+        bioguideID: "B123",
+        govtrackID: "G123",
+        wikidataID: "W123",
+        votesmartID: "V123",
+        fecID: "F123",
+        opensecretsID: "O123",
+        committees: ["Committee A": "Committee B"],
+        sponsoredLegislation: [
+            SponsoredLegislation(
+                congress: 120,
+                introducedDate: "2050-01-01",
+                latestAction: LatestAction(actionDate: "2050-02-02", text: "Default Text"),
+                number: "123",
+                policyArea: PolicyArea(name: "Default Policy Area"),
+                title: "Bill A",
+                type: "Bill",
+                url: "http://example.com/billA",
+                amendmentNumber: "A456"
+            )
+        ],
+        termsServedInCongress: [
+            Term(chamber: "House", congress: 116, district: 1, endYear: 2022, memberType: "Representative", startYear: 2018, stateCode: "CA", stateName: "California"),
+        ],
+        taxationSponsoredLegislation: nil,
+        healthSponsoredLegislation: nil,
+        govtOpsAndPoliticsLegislation: nil,
+        armedForcesAndNatlSecurityLegislation: nil,
+        congressLegislation: nil,
+        intlAffairsLegislation: nil,
+        publicLandsNatResourcesLegislation: nil,
+        foreignTradeAndIntlFinanceLegislation: nil,
+        crimeAndLawEnforcementLegislation: nil,
+        transportationAndPublicWorksLegislation: nil,
+        educationLegislation: nil,
+        socialWelfareLegislation: nil,
+        energyLegislation: nil,
+        twentyTwelveContributors: nil,
+        twentyFourTeenContributors: nil,
+        twentySixTeenContributors: nil,
+        twentyEightTeenContributors: nil,
+        twentyTwentyContributors: nil,
+        twentyTwentyTwoContributors: nil
+    )
     
     
     init(user: User, googleCivicInfoService: GoogleCivicInfoServiceProtocol,
-         openSecretsService: OpenSecretsServiceProtocol,
          openStatesService: OpenStatesServiceProtocol, congressGovService: CongressGovServiceProtocol){
         self.user = user
         self.googleCivicInfoService = googleCivicInfoService
-        self.openSecretsService = openSecretsService
         self.openStatesService = openStatesService
         self.congressGovService = congressGovService
         
@@ -77,7 +234,6 @@ class MyRepsViewModel: ObservableObject {
             testURLs.append(testURL!)
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: testURL!)
             bundleOpenStatesData()
-            getTopContributorInfo(openSecretsURLs: testURLs)
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
             //fetchRepresentativeSponsoredLegislation()
@@ -95,8 +251,6 @@ class MyRepsViewModel: ObservableObject {
             let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: googleCivicInfoURL)
             bundleOpenStatesData()
-            let openSecretsAPIURls = getOpenSecretsAPIURLs()
-            getTopContributorInfo(openSecretsURLs: openSecretsAPIURls)
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
             
@@ -131,27 +285,6 @@ class MyRepsViewModel: ObservableObject {
         let url = URL(string: urlPath)
         
         return url!
-    }
-    
-    func getOpenSecretsAPIURLs() -> [URL] {
-        
-        
-        let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
-        
-        var openSecretsURLs = [URL]()
-        
-        let senatorOneURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorOne.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
-        
-        let senatorTwoURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.senatorTwo.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
-        
-        let repURL = URL (string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.representative.opensecretsID!)&cycle=2022&apikey=\(openSecretsAPIKey!)&output=json")
-        
-        openSecretsURLs.append(repURL!)
-        openSecretsURLs.append(senatorOneURL!)
-        openSecretsURLs.append(senatorTwoURL!)
-        
-        return openSecretsURLs
-        
     }
     
     func getRepsFromGoogleCivicAPIService(googleCivicInfoURL: URL) {
@@ -323,26 +456,6 @@ class MyRepsViewModel: ObservableObject {
     
     
     
-    func getTopContributorInfo(openSecretsURLs: [URL]) {
-        for currentURL in openSecretsURLs {
-            openSecretsService.getTopContributors(from: currentURL) { [weak self] result in
-                switch result {
-                case .success(let contributors):
-                    if self!.senatorOne.opensecretsID == contributors.response.contributors.attributes.cid {
-                        self!.senatorOne.contributors = contributors.response.contributors.contributor
-                    } else if self!.senatorTwo.opensecretsID == contributors.response.contributors.attributes.cid {
-                        self!.senatorTwo.contributors = contributors.response.contributors.contributor
-                    } else if self!.representative.opensecretsID == contributors.response.contributors.attributes.cid {
-                        self!.representative.contributors = contributors.response.contributors.contributor
-                    }
-                case .failure(let error):
-                    print("Unexpected error: \(error).")
-                }
-            }
-        }
-    }
-    
-    
     func parseSenateCommitteeLists() {
         let group = DispatchGroup()
         let maxPageGroup = DispatchGroup()
@@ -394,9 +507,6 @@ class MyRepsViewModel: ObservableObject {
         group.notify(queue: DispatchQueue.main) {
         }
     }
-    
-    
-    
     
     func parseHouseCommitteeLists() {
         let group = DispatchGroup()

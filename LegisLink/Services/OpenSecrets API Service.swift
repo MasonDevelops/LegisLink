@@ -28,7 +28,7 @@ class OpenSecretsService: OpenSecretsServiceProtocol {
                 completion(.failure(error!))
                 return
             }
-
+            
             do {
                 var contributors = try JSONDecoder().decode(Contributors.self, from: data)
                 contributors = formatStringValuesToUSDCurrency(contributors: &contributors)

@@ -52,6 +52,7 @@
 		0FA3BFFF2A8A839700A0027A /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3BFFE2A8A839700A0027A /* US Congress Directory */; };
 		0FA5B3202AE4A565009E41CA /* MockCongressGovService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */; };
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
+		0FEC04FA2B410DB400DADFE0 /* RepContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */; };
 		0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */; };
 		0FECB58C2A7C06D400FED68A /* successful-open-secrets-api-response-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */; };
 		0FECB58F2A7C073600FED68A /* successful-open-secrets-api-response-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB58D2A7C073600FED68A /* successful-open-secrets-api-response-2.json */; };
@@ -128,6 +129,7 @@
 		0FA3BFFE2A8A839700A0027A /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "US Congress Directory"; sourceTree = "<group>"; };
 		0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCongressGovService.swift; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
+		0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsViewModel.swift; sourceTree = "<group>"; };
 		0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitteeList.swift; sourceTree = "<group>"; };
 		0FECB58A2A7C06D400FED68A /* successful-open-secrets-api-response-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-secrets-api-response-1.json"; sourceTree = "<group>"; };
 		0FECB58D2A7C073600FED68A /* successful-open-secrets-api-response-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-secrets-api-response-2.json"; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */,
+				0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				0F0E9A0F2A0B65E200E27010 /* Legis_Link.swift in Sources */,
 				0F32CBA32A8E84B90000E46A /* CongressGov API Service.swift in Sources */,
 				0F723D952A7D6DAE001DE7BD /* OpenStates API Service.swift in Sources */,
+				0FEC04FA2B410DB400DADFE0 /* RepContributorsViewModel.swift in Sources */,
 				0F6B8DEC2B0EF7CF0038B162 /* SponsoredLegislationByPolicyAreaView.swift in Sources */,
 				0F4A600C2B0B0698001DD179 /* SponsoredLegisListByTermView.swift in Sources */,
 				0F6811C92A339233009CDF19 /* Contributors.swift in Sources */,
