@@ -19,8 +19,27 @@ class RepContributorsViewModel: ObservableObject {
         self.user = user
         self.openSecretsService = openSecretsService
         self.official = official
-        let openSecretsURLs = getOpenSecretsAPIURLs()
-        getTopContributorInfo(openSecretsURLs: openSecretsURLs)
+        
+        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+            
+            let jm2020 = URL(string: "jerry-moran-2020-contributors")
+            let jm2022 = URL(string: "jerry-moran-2022-contributors")
+            let jm2012 = URL(string: "jerry-moran-2012-contributors")
+
+
+            var testURLs = [URL]()
+            testURLs.append(jm2020!)
+            testURLs.append(jm2022!)
+            testURLs.append(jm2012!)
+
+            
+            getTopContributorInfo(openSecretsURLs: testURLs)
+            
+        } else {
+            let openSecretsURLs = getOpenSecretsAPIURLs()
+            getTopContributorInfo(openSecretsURLs: openSecretsURLs)
+        }
+        
     }
     
     
@@ -86,17 +105,6 @@ class RepContributorsViewModel: ObservableObject {
         return openSecretsURLs
         
     }
-    
-    
-    func attachCycleYearToEachContributor() {
-        
-
-        
-    }
-    
-    
-    
-    
 }
 
 

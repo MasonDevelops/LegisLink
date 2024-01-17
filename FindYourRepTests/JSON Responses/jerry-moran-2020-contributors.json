@@ -1,0 +1,96 @@
+{
+    "response": {
+        "contributors": {
+            "@attributes": {
+                "cand_name": "Jerry Moran (R)",
+                "cid": "N00005282",
+                "cycle": "2020",
+                "origin": "OpenSecrets",
+                "source": "https://www.opensecrets.org/members-of-congress/contributors?cid=N00005282&cycle=2020",
+                "notice": "The organizations themselves did not donate, rather the money came from the organization's PAC, its individual members or employees or owners, and those individuals' immediate families."
+            },
+            "contributor": [
+                {
+                    "@attributes": {
+                        "org_name": "Burns & McDonnell",
+                        "total": "58300",
+                        "pacs": "7500",
+                        "indivs": "50800"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Ciciora Custom Homes",
+                        "total": "54900",
+                        "pacs": "0",
+                        "indivs": "54900"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Bartlett Grain",
+                        "total": "39100",
+                        "pacs": "0",
+                        "indivs": "39100"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Spirit Aerosystems",
+                        "total": "38050",
+                        "pacs": "20000",
+                        "indivs": "18050"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Kansas City Southern",
+                        "total": "35848",
+                        "pacs": "5000",
+                        "indivs": "30848"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "BNSF Railway",
+                        "total": "30800",
+                        "pacs": "10000",
+                        "indivs": "20800"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Koch Industries",
+                        "total": "29400",
+                        "pacs": "10000",
+                        "indivs": "19400"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Van Scoyoc Assoc",
+                        "total": "28069",
+                        "pacs": "1469",
+                        "indivs": "26600"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "Polsinelli PC",
+                        "total": "23725",
+                        "pacs": "3500",
+                        "indivs": "20225"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "org_name": "DISH Network",
+                        "total": "22800",
+                        "pacs": "10000",
+                        "indivs": "12800"
+                    }
+                }
+            ]
+        }
+    }
+}
