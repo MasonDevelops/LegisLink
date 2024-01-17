@@ -23,7 +23,7 @@ struct MyRepsView: View {
     
     init(user: User) {
             self.user = user
-            self.repsvm = MyRepsViewModel(user: user, googleCivicInfoService: googleCivicInfoService, openSecretsService: openSecretsService, openStatesService: openStatesService, congressGovService: congressGovService)
+            self.repsvm = MyRepsViewModel(user: user, googleCivicInfoService: googleCivicInfoService, openStatesService: openStatesService, congressGovService: congressGovService)
         }
 
     

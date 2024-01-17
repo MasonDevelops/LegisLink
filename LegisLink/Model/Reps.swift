@@ -38,25 +38,14 @@ struct Office: Codable {
     }
 }
 
-// MARK: - Official
-struct Official: Codable, Hashable {
-    
-    func hash(into hasher: inout Hasher) {
-            hasher.combine(name)
-        }
-    
-    static func == (lhs: Official, rhs: Official) -> Bool {
-        return lhs.name == rhs.name && lhs.name == rhs.name
-
-    }
-    
+class Official: Codable, Hashable, ObservableObject {
     var name: String
-    let address: [NormalizedInput]
-    let party: String
-    let phones: [String]
-    let urls: [String]
+    var address: [NormalizedInput]
+    var party: String
+    var phones: [String]
+    var urls: [String]
     var photoURL: String?
-    let channels: [Channel]
+    var channels: [Channel]
     var ocdID: String?
     var bioguideID: String?
     var govtrackID: String?
@@ -64,7 +53,6 @@ struct Official: Codable, Hashable {
     var votesmartID: String?
     var fecID: String?
     var opensecretsID: String?
-    var contributors: [Contributor]?
     var committees: [String: String]?
     var sponsoredLegislation: [SponsoredLegislation]?
     var termsServedInCongress: [Term]?
@@ -81,10 +69,12 @@ struct Official: Codable, Hashable {
     var educationLegislation: [SponsoredLegislation]?
     var socialWelfareLegislation: [SponsoredLegislation]?
     var energyLegislation: [SponsoredLegislation]?
-
-
-
-    
+    var twentyTwelveContributors: [Contributor]?
+    var twentyFourTeenContributors: [Contributor]?
+    var twentySixTeenContributors: [Contributor]?
+    var twentyEightTeenContributors: [Contributor]?
+    var twentyTwentyContributors: [Contributor]?
+    var twentyTwentyTwoContributors: [Contributor]?
 
     enum CodingKeys: String, CodingKey {
         case name, address, party, phones, urls
@@ -97,7 +87,6 @@ struct Official: Codable, Hashable {
         case votesmartID
         case fecID
         case opensecretsID
-        case contributors
         case committees
         case sponsoredLegislation
         case termsServedInCongress
@@ -107,22 +96,81 @@ struct Official: Codable, Hashable {
         case armedForcesAndNatlSecurityLegislation
         case congressLegislation
         case intlAffairsLegislation
+        case twentyTwelveContributors
+        case twentyFourTeenContributors
+        case twentySixTeenContributors
+        case twentyEightTeenContributors
+        case twentyTwentyContributors
+        case twentyTwentyTwoContributors
+    }
+
+    init(name: String, address: [NormalizedInput], party: String, phones: [String], urls: [String], photoURL: String?, channels: [Channel], ocdID: String?, bioguideID: String?, govtrackID: String?, wikidataID: String?, votesmartID: String?, fecID: String?, opensecretsID: String?, committees: [String: String]?, sponsoredLegislation: [SponsoredLegislation]?, termsServedInCongress: [Term]?, taxationSponsoredLegislation: [SponsoredLegislation]?, healthSponsoredLegislation: [SponsoredLegislation]?, govtOpsAndPoliticsLegislation: [SponsoredLegislation]?, armedForcesAndNatlSecurityLegislation: [SponsoredLegislation]?, congressLegislation: [SponsoredLegislation]?, intlAffairsLegislation: [SponsoredLegislation]?, publicLandsNatResourcesLegislation: [SponsoredLegislation]?, foreignTradeAndIntlFinanceLegislation: [SponsoredLegislation]?, crimeAndLawEnforcementLegislation: [SponsoredLegislation]?, transportationAndPublicWorksLegislation: [SponsoredLegislation]?, educationLegislation: [SponsoredLegislation]?, socialWelfareLegislation: [SponsoredLegislation]?, energyLegislation: [SponsoredLegislation]?, twentyTwelveContributors: [Contributor]?, twentyFourTeenContributors: [Contributor]?, twentySixTeenContributors: [Contributor]?, twentyEightTeenContributors: [Contributor]?, twentyTwentyContributors: [Contributor]?, twentyTwentyTwoContributors: [Contributor]?) {
+        self.name = name
+        self.address = address
+        self.party = party
+        self.phones = phones
+        self.urls = urls
+        self.photoURL = photoURL
+        self.channels = channels
+        self.ocdID = ocdID
+        self.bioguideID = bioguideID
+        self.govtrackID = govtrackID
+        self.wikidataID = wikidataID
+        self.votesmartID = votesmartID
+        self.fecID = fecID
+        self.opensecretsID = opensecretsID
+        self.committees = committees
+        self.sponsoredLegislation = sponsoredLegislation
+        self.termsServedInCongress = termsServedInCongress
+        self.taxationSponsoredLegislation = taxationSponsoredLegislation
+        self.healthSponsoredLegislation = healthSponsoredLegislation
+        self.govtOpsAndPoliticsLegislation = govtOpsAndPoliticsLegislation
+        self.armedForcesAndNatlSecurityLegislation = armedForcesAndNatlSecurityLegislation
+        self.congressLegislation = congressLegislation
+        self.intlAffairsLegislation = intlAffairsLegislation
+        self.publicLandsNatResourcesLegislation = publicLandsNatResourcesLegislation
+        self.foreignTradeAndIntlFinanceLegislation = foreignTradeAndIntlFinanceLegislation
+        self.crimeAndLawEnforcementLegislation = crimeAndLawEnforcementLegislation
+        self.transportationAndPublicWorksLegislation = transportationAndPublicWorksLegislation
+        self.educationLegislation = educationLegislation
+        self.socialWelfareLegislation = socialWelfareLegislation
+        self.energyLegislation = energyLegislation
+        self.twentyTwelveContributors = twentyTwelveContributors
+        self.twentyFourTeenContributors = twentyFourTeenContributors
+        self.twentySixTeenContributors = twentySixTeenContributors
+        self.twentyEightTeenContributors = twentyEightTeenContributors
+        self.twentyTwentyContributors = twentyTwentyContributors
+        self.twentyTwentyTwoContributors = twentyTwentyTwoContributors
+    }
+
+}
+
+
+
+extension Official {
+    static func == (lhs: Official, rhs: Official) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
     }
 }
-
-// MARK: - Channel
-struct Channel: Codable {
-    let type, id: String
-}
-
-
-// MARK: - FeatureID
-struct FeatureID: Codable {
-    let cellID, fprint: String
-
-    enum CodingKeys: String, CodingKey {
-        case cellID = "cellId"
-        case fprint
+    
+    
+    // MARK: - Channel
+    struct Channel: Codable {
+        let type, id: String
     }
-}
-
+    
+    
+    // MARK: - FeatureID
+    struct FeatureID: Codable {
+        let cellID, fprint: String
+        
+        enum CodingKeys: String, CodingKey {
+            case cellID = "cellId"
+            case fprint
+        }
+    }
+    
