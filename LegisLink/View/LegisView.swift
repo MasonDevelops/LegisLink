@@ -11,16 +11,25 @@ import SwiftUI
 
 struct LegisView: View {
     let user: User
+    @ObservedObject private var lvm: LegisViewModel
+    let congressGovService = CongressGovService()
+    
+    
+    init(user: User) {
+        self.user = user
+        self.lvm = LegisViewModel(user: user, congressGovService: congressGovService)
+    }
+    
+    
+    
+    
     var body: some View {
-        VStack {
-            AsyncImage(url: URL(string: user.picture))
-            Text("Email: \(user.email)")
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("LEGISLATION")
+        ScrollView {
+            VStack(alignment: .leading) {
+                ForEach(Array(self.lvm.dailyBills), id: \.self) { bill in
+                    Text("\(bill.title)")
+                }
+            }
         }
-        .padding()
-        
     }
 }

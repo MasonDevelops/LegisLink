@@ -12,7 +12,7 @@ import Foundation
 
 class MockCongressGovService: CongressGovServiceProtocol {
 
-    
+
     func getMaxPagination(bioGuideID: String, completion: @escaping (Int) -> Void) {
         if (bioGuideID == "M001198") {
             return completion(384)
@@ -104,5 +104,8 @@ class MockCongressGovService: CongressGovServiceProtocol {
         
     }
     
+    func getCurrentDayLegislation(completion: @escaping ([Bill]) -> Void) {
+        //return stuff
+    }
     
 }
