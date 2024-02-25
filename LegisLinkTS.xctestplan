@@ -18,6 +18,13 @@
         "identifier" : "0F14FD562A7A339600F91EF4",
         "name" : "FindYourRepTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:LegisLink.xcodeproj",
+        "identifier" : "0F2EB2D12B8A935A00E226B7",
+        "name" : "DailyBillsTests"
+      }
     }
   ],
   "version" : 1

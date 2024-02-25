@@ -8,16 +8,23 @@
 import Foundation
 
 
-class LegisViewModel: ObservableObject {
+class LegisFeedViewModel: ObservableObject {
     private var user: User
     private let congressGovService: CongressGovServiceProtocol
     @Published var dailyBills: [Bill]
+    let todaysDate: String
 
     
     init(user: User, congressGovService: CongressGovServiceProtocol) {
         self.user = user
         self.congressGovService = congressGovService
         self.dailyBills = [Bill]()
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d.MM.yyyy"
+
+        self.todaysDate = dateFormatter.string(from: Date())
+        
         self.getDailyLegislationFromCongress()
     }
     

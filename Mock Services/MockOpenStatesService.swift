@@ -8,9 +8,7 @@
 import Foundation
 
 
-
 @testable import LegisLink
-
 
 class MockOpenStatesService: OpenStatesServiceProtocol {
     

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 @testable import LegisLink
 
 class MockCongressGovService: CongressGovServiceProtocol {
@@ -32,7 +31,7 @@ class MockCongressGovService: CongressGovServiceProtocol {
         let congressGovKey = ProcessInfo.processInfo.environment["CongressGov_API_Key"]
 
         
-        let sponsoredLegislationURL = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)/sponsored-legislation?api_key=\(congressGovKey)&offset=\(pageOffset)&limit=250&format=json"
+        let sponsoredLegislationURL = URL(string: "https://api.congress.gov/v3/member/\(bioGuideID)/sponsored-legislation?api_key=\(String(describing: congressGovKey))&offset=\(pageOffset)&limit=250&format=json"
         )
         
         return sponsoredLegislationURL!
@@ -105,7 +104,10 @@ class MockCongressGovService: CongressGovServiceProtocol {
     }
     
     func getCurrentDayLegislation(completion: @escaping ([Bill]) -> Void) {
-        //return stuff
+        guard let url = Bundle(for: MockCongressGovService.self).url(forResource: "todays-bills-congress-gov-response", withExtension: "json"),
+          let data = try? Data(contentsOf: url) else { return }
+        let response = try? JSONDecoder().decode(GetDailyBillsResponse.self, from: data)
+        completion((response?.bills)!)
     }
     
 }
