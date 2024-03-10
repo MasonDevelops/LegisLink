@@ -1,0 +1,27 @@
+{
+    "bills": [
+        {
+            "congress": 118,
+            "latestAction": {
+                "actionDate": "2023-06-07",
+                "text": "Referred to the House Committee on the Judiciary."
+            },
+            "number": "3919",
+            "originChamber": "House",
+            "originChamberCode": "H",
+            "title": "Asylum Claims Improvement Act of 2023",
+            "type": "HR",
+            "updateDate": "2024-01-23",
+            "updateDateIncludingText": "2024-01-23T14:29:29Z",
+            "url": "https://api.congress.gov/v3/bill/118/hr/3919?format=json"
+        }
+    ],
+    "pagination": {
+        "count": 1
+    },
+    "request": {
+        "congress": "118",
+        "contentType": "application/json",
+        "format": "json"
+    }
+}

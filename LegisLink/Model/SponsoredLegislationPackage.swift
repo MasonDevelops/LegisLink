@@ -10,16 +10,12 @@ import Foundation
 
 // MARK: - SponsoredLegislationPackage
 struct SponsoredLegislationPackage: Codable {
-    let pagination: SponsoredLegislationPackagePagination
+    let pagination: CongressGovPagination
     let request: CongressGovRequest
     let sponsoredLegislation: [SponsoredLegislation]
 }
 
-// MARK: - SponsoredLegislationPackagePagination
-struct SponsoredLegislationPackagePagination: Codable {
-    let count: Int
-    let next: String?
-}
+// MARK: - SponsoredLegislationPackagePagination -> CongressGovPagination
 
 // MARK: - Request -> CongressGovRequest
 

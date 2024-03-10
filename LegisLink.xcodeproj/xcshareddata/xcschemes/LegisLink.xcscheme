@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:TSTestPlan.xctestplan"
+            reference = "container:LegisLinkTS.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -75,6 +75,17 @@
                BlueprintIdentifier = "0F16DE862A7C8E9A008471E2"
                BuildableName = "FindYourRepUITests.xctest"
                BlueprintName = "FindYourRepUITests"
+               ReferencedContainer = "container:LegisLink.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0F2EB2D12B8A935A00E226B7"
+               BuildableName = "DailyBillsTests.xctest"
+               BlueprintName = "DailyBillsTests"
                ReferencedContainer = "container:LegisLink.xcodeproj">
             </BuildableReference>
          </TestableReference>
