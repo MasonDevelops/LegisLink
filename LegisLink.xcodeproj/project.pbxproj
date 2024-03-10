@@ -40,6 +40,7 @@
 		0F3569752B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */; };
 		0F3AEFD82B81D56D00358E9C /* CongressGovPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */; };
 		0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */; };
+		0F3D9B382B9819C500F81014 /* HubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D9B372B9819C500F81014 /* HubView.swift */; };
 		0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F473A312A5E3951002DA520 /* RepCommitteesView.swift */; };
 		0F4A600C2B0B0698001DD179 /* SponsoredLegisListByTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */; };
 		0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50916D2A1082AD008AE977 /* Auth0 */; };
@@ -133,6 +134,7 @@
 		0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-successfull-congress-gov-response.json"; sourceTree = "<group>"; };
 		0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressGovPagination.swift; sourceTree = "<group>"; };
 		0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyBillsResponse.swift; sourceTree = "<group>"; };
+		0F3D9B372B9819C500F81014 /* HubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubView.swift; sourceTree = "<group>"; };
 		0F473A312A5E3951002DA520 /* RepCommitteesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteesView.swift; sourceTree = "<group>"; };
 		0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegisListByTermView.swift; sourceTree = "<group>"; };
 		0F50916B2A108247008AE977 /* Legis-Link-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Legis-Link-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -335,6 +337,7 @@
 				0FF9FE022A1A933C00189618 /* LegisFeedView.swift */,
 				0F6B8DEB2B0EF7CF0038B162 /* SponsoredLegislationByPolicyAreaView.swift */,
 				0F2841852B13C0BA00C73D4E /* IndivLegislationView.swift */,
+				0F3D9B372B9819C500F81014 /* HubView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */,
 				0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */,
 				0FF9FE032A1A933C00189618 /* LegisFeedView.swift in Sources */,
+				0F3D9B382B9819C500F81014 /* HubView.swift in Sources */,
 				0F5091742A108652008AE977 /* LoginView.swift in Sources */,
 				0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */,
 				0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */,

@@ -11,9 +11,9 @@ struct ContentView: View {
     let user: User
     var body: some View {
         TabView {
-            LegisFeedView(user: user).tabItem {
+            HubView(user: user).tabItem {
                 Image(systemName: "house")
-                Text("Legislation")
+                Text("My Hub")
             }
             MyRepsView(user: user).tabItem {
                 Image(systemName: "person.3")
