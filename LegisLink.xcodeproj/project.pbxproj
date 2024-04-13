@@ -43,12 +43,17 @@
 		0F3D9B382B9819C500F81014 /* HubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D9B372B9819C500F81014 /* HubView.swift */; };
 		0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F473A312A5E3951002DA520 /* RepCommitteesView.swift */; };
 		0F4A600C2B0B0698001DD179 /* SponsoredLegisListByTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */; };
+		0F4DB0BF2B9E9CBF00A242CA /* NewYorkTimes API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DB0BE2B9E9CBF00A242CA /* NewYorkTimes API Service.swift */; };
 		0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50916D2A1082AD008AE977 /* Auth0 */; };
 		0F5091722A1083A9008AE977 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5091712A1083A9008AE977 /* Auth0.plist */; };
 		0F5091742A108652008AE977 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091732A108652008AE977 /* LoginView.swift */; };
 		0F5091762A108692008AE977 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091752A108692008AE977 /* User.swift */; };
 		0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091772A1086C0008AE977 /* ProfileView.swift */; };
 		0F57B0A52A59E49000F906C1 /* CandidateYAML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B0A42A59E48F00F906C1 /* CandidateYAML.swift */; };
+		0F63E3DC2BA61A9C00F15B05 /* NYTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63E3DB2BA61A9C00F15B05 /* NYTRequest.swift */; };
+		0F63E3DE2BA9284D00F15B05 /* NYTFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63E3DD2BA9284D00F15B05 /* NYTFeedViewModel.swift */; };
+		0F63E3E02BB1A9F500F15B05 /* NYTFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63E3DF2BB1A9F500F15B05 /* NYTFeedView.swift */; };
+		0F63E3E32BB1ABA500F15B05 /* NYTArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63E3E22BB1ABA500F15B05 /* NYTArticle.swift */; };
 		0F6811C92A339233009CDF19 /* Contributors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6811C82A339233009CDF19 /* Contributors.swift */; };
 		0F6B8DEC2B0EF7CF0038B162 /* SponsoredLegislationByPolicyAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B8DEB2B0EF7CF0038B162 /* SponsoredLegislationByPolicyAreaView.swift */; };
 		0F723D912A7D64DC001DE7BD /* Google Civic Information API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D902A7D64DC001DE7BD /* Google Civic Information API Service.swift */; };
@@ -137,12 +142,17 @@
 		0F3D9B372B9819C500F81014 /* HubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubView.swift; sourceTree = "<group>"; };
 		0F473A312A5E3951002DA520 /* RepCommitteesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteesView.swift; sourceTree = "<group>"; };
 		0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegisListByTermView.swift; sourceTree = "<group>"; };
+		0F4DB0BE2B9E9CBF00A242CA /* NewYorkTimes API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewYorkTimes API Service.swift"; sourceTree = "<group>"; };
 		0F50916B2A108247008AE977 /* Legis-Link-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Legis-Link-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0F5091712A1083A9008AE977 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		0F5091732A108652008AE977 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0F5091752A108692008AE977 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0F5091772A1086C0008AE977 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0F57B0A42A59E48F00F906C1 /* CandidateYAML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateYAML.swift; sourceTree = "<group>"; };
+		0F63E3DB2BA61A9C00F15B05 /* NYTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTRequest.swift; sourceTree = "<group>"; };
+		0F63E3DD2BA9284D00F15B05 /* NYTFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFeedViewModel.swift; sourceTree = "<group>"; };
+		0F63E3DF2BB1A9F500F15B05 /* NYTFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFeedView.swift; sourceTree = "<group>"; };
+		0F63E3E22BB1ABA500F15B05 /* NYTArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTArticle.swift; sourceTree = "<group>"; };
 		0F6811C82A339233009CDF19 /* Contributors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributors.swift; sourceTree = "<group>"; };
 		0F6B8DEB2B0EF7CF0038B162 /* SponsoredLegislationByPolicyAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegislationByPolicyAreaView.swift; sourceTree = "<group>"; };
 		0F723D902A7D64DC001DE7BD /* Google Civic Information API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google Civic Information API Service.swift"; sourceTree = "<group>"; };
@@ -244,6 +254,7 @@
 		0F0E9A0D2A0B65E200E27010 /* LegisLink */ = {
 			isa = PBXGroup;
 			children = (
+				0F63E3E12BB1AB9700F15B05 /* Components */,
 				0F2A92412B252221001BF80E /* Helpers */,
 				0FA3BFFE2A8A839700A0027A /* US Congress Directory */,
 				0F723D8F2A7D64A4001DE7BD /* Services */,
@@ -317,6 +328,7 @@
 				0FA4A1532B5E3A88008F2C77 /* Bill.swift */,
 				0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */,
 				0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */,
+				0F63E3DB2BA61A9C00F15B05 /* NYTRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +350,7 @@
 				0F6B8DEB2B0EF7CF0038B162 /* SponsoredLegislationByPolicyAreaView.swift */,
 				0F2841852B13C0BA00C73D4E /* IndivLegislationView.swift */,
 				0F3D9B372B9819C500F81014 /* HubView.swift */,
+				0F63E3DF2BB1A9F500F15B05 /* NYTFeedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,8 +361,17 @@
 				0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */,
 				0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */,
 				0FA4A1512B5E32DC008F2C77 /* LegisFeedViewModel.swift */,
+				0F63E3DD2BA9284D00F15B05 /* NYTFeedViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0F63E3E12BB1AB9700F15B05 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F63E3E22BB1ABA500F15B05 /* NYTArticle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		0F723D8F2A7D64A4001DE7BD /* Services */ = {
@@ -359,6 +381,7 @@
 				0F723D922A7D6A37001DE7BD /* OpenSecrets API Service.swift */,
 				0F723D942A7D6DAE001DE7BD /* OpenStates API Service.swift */,
 				0F32CBA22A8E84B90000E46A /* CongressGov API Service.swift */,
+				0F4DB0BE2B9E9CBF00A242CA /* NewYorkTimes API Service.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -615,6 +638,7 @@
 				0FF9FE052A1A948C00189618 /* MyRepsView.swift in Sources */,
 				0F723D932A7D6A37001DE7BD /* OpenSecrets API Service.swift in Sources */,
 				0FF9FE092A1A94DC00189618 /* MyProfileView.swift in Sources */,
+				0F4DB0BF2B9E9CBF00A242CA /* NewYorkTimes API Service.swift in Sources */,
 				0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */,
 				0F5091762A108692008AE977 /* User.swift in Sources */,
 				0F2A92432B252247001BF80E /* SortLegislationByPolicyAreaHelper.swift in Sources */,
@@ -624,12 +648,16 @@
 				0FEF0EB62A2BA4DD009064E7 /* IndividualRepView.swift in Sources */,
 				0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */,
 				0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */,
+				0F63E3DC2BA61A9C00F15B05 /* NYTRequest.swift in Sources */,
 				0FF9FE032A1A933C00189618 /* LegisFeedView.swift in Sources */,
 				0F3D9B382B9819C500F81014 /* HubView.swift in Sources */,
+				0F63E3E02BB1A9F500F15B05 /* NYTFeedView.swift in Sources */,
 				0F5091742A108652008AE977 /* LoginView.swift in Sources */,
+				0F63E3E32BB1ABA500F15B05 /* NYTArticle.swift in Sources */,
 				0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */,
 				0F5091782A1086C0008AE977 /* ProfileView.swift in Sources */,
 				0F79CF8F2AEB617E00E271FC /* SponsoredLegislation.swift in Sources */,
+				0F63E3DE2BA9284D00F15B05 /* NYTFeedViewModel.swift in Sources */,
 				0FA4A1542B5E3A88008F2C77 /* Bill.swift in Sources */,
 				0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */,
 				0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */,
