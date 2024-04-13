@@ -5,9 +5,6 @@
       location = "group:LegisLink.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLinkTS.xctestplan">
-   </FileRef>
-   <FileRef
       location = "group:.gitignore">
    </FileRef>
    <FileRef

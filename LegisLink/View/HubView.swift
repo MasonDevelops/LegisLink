@@ -22,9 +22,9 @@ struct HubView: View {
                 }.padding()
                 
                 NavigationLink {
-                    LegisFeedView(user: user)
+                    NYTFeedView(user: user)
                 } label: {
-                    Label("Congressional Floor Updates", systemImage: "clock")
+                    Label("Congressional News", systemImage: "clock")
                 }.padding()
                 
                 NavigationLink {

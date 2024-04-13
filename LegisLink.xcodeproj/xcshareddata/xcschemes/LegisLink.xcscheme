@@ -132,6 +132,11 @@
             value = "3959d0a9628e0e56f61530a0b074a055"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "NYT_API_Key"
+            value = "v78neBnG5fkaNG5URUOQzKTC2VA1ANJP"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
