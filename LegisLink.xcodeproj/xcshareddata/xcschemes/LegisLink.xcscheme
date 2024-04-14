@@ -89,6 +89,17 @@
                ReferencedContainer = "container:LegisLink.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0FF54A2C2BCC80F60027DD75"
+               BuildableName = "NYTArticlesTests.xctest"
+               BlueprintName = "NYTArticlesTests"
+               ReferencedContainer = "container:LegisLink.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
