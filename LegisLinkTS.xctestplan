@@ -25,6 +25,13 @@
         "identifier" : "0F2EB2D12B8A935A00E226B7",
         "name" : "DailyBillsTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:LegisLink.xcodeproj",
+        "identifier" : "0FF54A2C2BCC80F60027DD75",
+        "name" : "NYTArticlesTests"
+      }
     }
   ],
   "version" : 1
