@@ -226,6 +226,21 @@ class MyRepsViewModel: ObservableObject {
         self.openStatesService = openStatesService
         self.congressGovService = congressGovService
         
+        
+        let group = DispatchGroup()
+        group.enter()
+        Task {
+            do {
+                try await self.getS3Data()
+            } catch {
+                print("Error!!")
+            }
+            group.leave()
+        }
+        group.wait()
+        
+       
+        
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
             let testURL = URL(string: "https://www.example.com")
             var testURLs = [URL]()
@@ -316,21 +331,22 @@ class MyRepsViewModel: ObservableObject {
     
     
     func fetchOpenStatesOfficialData() -> [CandidateYAML] {
-        let fm = FileManager.default
         
-        let folderPath = Bundle.main.resourcePath?.appending("/US Congress Directory/")
+        
+        
+        let fileManager = FileManager.default
         
         
         var membersOfCongress = [CandidateYAML]()
         
-        
+        let documentsDirectory = try! fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         
         do {
-            let items = try fm.contentsOfDirectory(atPath: folderPath!)
+            let items = try fileManager.contentsOfDirectory(atPath: documentsDirectory.path)
             
             for item in items {
-                let filePath = folderPath! + item
-                let contents = try String(contentsOfFile: filePath)
+                let filePath = documentsDirectory.appendingPathComponent(item)
+                let contents = try String(contentsOfFile: filePath.path)
                 let decoder = YAMLDecoder()
                 let decoded = try decoder.decode(CandidateYAML.self, from: contents)
                 membersOfCongress.append(decoded)
@@ -338,6 +354,8 @@ class MyRepsViewModel: ObservableObject {
         } catch {
             print("Error info: \(error)")
         }
+            
+        
         
         return membersOfCongress
     }
@@ -880,8 +898,10 @@ class MyRepsViewModel: ObservableObject {
         
         
     }
-
-
+    
+    func getS3Data() async throws {
+        let handler = try await DownloadUSCongressDirectoryHandler()
+    }
     
 }
     
