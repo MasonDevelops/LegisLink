@@ -886,27 +886,7 @@ class MyRepsViewModel: ObservableObject {
 }
     
     
-    /*
-     Agriculture and Food[8,605]
-     Labor and Employment[8,214]
-     Finance and Financial Sector[8,164]
-     Commerce[7,883]
-     Environmental Protection[7,798]
-     Economics and Public Finance[7,371]
-     Immigration[5,629]
-     Science, Technology, Communications[5,610]
-     Housing and Community Development[4,084]
-     Law[3,961]
-     Water Resources Development[3,469]
-     Native Americans[3,371]
-     Civil Rights and Liberties, Minority Issues[3,336]
-     Emergency Management[2,950]
-     Families[2,014]
-     Animals[1,807]
-     Arts, Culture, Religion[1,768]
-     Sports and Recreation[1,673]
-     Social Sciences and History[500]
-*/
+
     
     
 
