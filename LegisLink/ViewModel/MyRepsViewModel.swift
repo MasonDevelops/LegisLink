@@ -227,18 +227,6 @@ class MyRepsViewModel: ObservableObject {
         self.congressGovService = congressGovService
         
         
-        let group = DispatchGroup()
-        group.enter()
-        Task {
-            do {
-                try await self.getS3Data()
-            } catch {
-                print("Error!!")
-            }
-            group.leave()
-        }
-        group.wait()
-        
        
         
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
@@ -251,18 +239,32 @@ class MyRepsViewModel: ObservableObject {
             bundleOpenStatesData()
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
-            //fetchRepresentativeSponsoredLegislation()
-            //fetchSenatorOneSponsoredLegislation()
-            //fetchSenatorTwoSponsoredLegislation()
+            fetchRepresentativeSponsoredLegislation()
+            fetchSenatorOneSponsoredLegislation()
+            fetchSenatorTwoSponsoredLegislation()
             
-            //bindSponsoredLegislationByPolicy()
-            
-            
+            bindSponsoredLegislationByPolicy()
             
             
             
-            //attachCongressionalTermsInOffice()
+            
+            
+            attachCongressionalTermsInOffice()
         } else {
+            
+            
+            let group = DispatchGroup()
+            group.enter()
+            Task {
+                do {
+                    try await self.getS3Data()
+                } catch {
+                    print("Error!!")
+                }
+                group.leave()
+            }
+            group.wait()
+            
             let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: googleCivicInfoURL)
             bundleOpenStatesData()
@@ -345,11 +347,13 @@ class MyRepsViewModel: ObservableObject {
             let items = try fileManager.contentsOfDirectory(atPath: documentsDirectory.path)
             
             for item in items {
-                let filePath = documentsDirectory.appendingPathComponent(item)
-                let contents = try String(contentsOfFile: filePath.path)
-                let decoder = YAMLDecoder()
-                let decoded = try decoder.decode(CandidateYAML.self, from: contents)
-                membersOfCongress.append(decoded)
+                if (item != ".DS_Store") {
+                    let filePath = documentsDirectory.appendingPathComponent(item)
+                    let contents = try String(contentsOfFile: filePath.path)
+                    let decoder = YAMLDecoder()
+                    let decoded = try decoder.decode(CandidateYAML.self, from: contents)
+                    membersOfCongress.append(decoded)
+                }
             }
         } catch {
             print("Error info: \(error)")
