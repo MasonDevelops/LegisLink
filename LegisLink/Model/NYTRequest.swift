@@ -96,6 +96,7 @@ enum NYTRole: String, Codable {
 
 enum DocumentType: String, Codable {
     case article = "article"
+    case multimedia = "multimedia"
 }
 
 // MARK: - Headline

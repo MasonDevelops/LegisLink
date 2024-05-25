@@ -148,6 +148,21 @@
             value = "v78neBnG5fkaNG5URUOQzKTC2VA1ANJP"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AWS_REGION"
+            value = "us-east-2"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AWS_ACCESS_KEY_ID"
+            value = "AKIA2DM7N2CDABLPAZ65"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AWS_SECRET_ACCESS_KEY"
+            value = "TyYfVyk8T3WwuWZNHbFTQ8AT568lzyzdtC+p1l4V"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction

@@ -30,7 +30,7 @@ final class FindYourRepTests: XCTestCase {
         
         testUser = User(id: "test_user_0", email: "test_user123@email.com", picture: "photoURL", street_address: "1263 Pacific Avenue", city: "Kansas City", state: "KS", zip_code: "66102")
     
-        sutRepsVM = MyRepsViewModel(user: testUser, googleCivicInfoService: mockGoogleService as! GoogleCivicInfoServiceProtocol, openStatesService: mockOpenStatesService as! OpenStatesServiceProtocol, congressGovService: mockCongressGovService as! CongressGovServiceProtocol)
+        sutRepsVM = MyRepsViewModel(user: testUser, googleCivicInfoService: mockGoogleService!, openStatesService: mockOpenStatesService!, congressGovService: mockCongressGovService!)
     }
 
     override func tearDownWithError() throws {

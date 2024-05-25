@@ -226,6 +226,9 @@ class MyRepsViewModel: ObservableObject {
         self.openStatesService = openStatesService
         self.congressGovService = congressGovService
         
+        
+       
+        
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
             let testURL = URL(string: "https://www.example.com")
             var testURLs = [URL]()
@@ -236,18 +239,32 @@ class MyRepsViewModel: ObservableObject {
             bundleOpenStatesData()
             parseSenateCommitteeLists()
             parseHouseCommitteeLists()
-            //fetchRepresentativeSponsoredLegislation()
-            //fetchSenatorOneSponsoredLegislation()
-            //fetchSenatorTwoSponsoredLegislation()
+            fetchRepresentativeSponsoredLegislation()
+            fetchSenatorOneSponsoredLegislation()
+            fetchSenatorTwoSponsoredLegislation()
             
-            //bindSponsoredLegislationByPolicy()
-            
-            
+            bindSponsoredLegislationByPolicy()
             
             
             
-            //attachCongressionalTermsInOffice()
+            
+            
+            attachCongressionalTermsInOffice()
         } else {
+            
+            
+            let group = DispatchGroup()
+            group.enter()
+            Task {
+                do {
+                    try await self.getS3Data()
+                } catch {
+                    print("Error!!")
+                }
+                group.leave()
+            }
+            group.wait()
+            
             let googleCivicInfoURL = getGoogleCivicInformationAPIURL()
             getRepsFromGoogleCivicAPIService(googleCivicInfoURL: googleCivicInfoURL)
             bundleOpenStatesData()
@@ -316,28 +333,33 @@ class MyRepsViewModel: ObservableObject {
     
     
     func fetchOpenStatesOfficialData() -> [CandidateYAML] {
-        let fm = FileManager.default
         
-        let folderPath = Bundle.main.resourcePath?.appending("/US Congress Directory/")
+        
+        
+        let fileManager = FileManager.default
         
         
         var membersOfCongress = [CandidateYAML]()
         
-        
+        let documentsDirectory = try! fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         
         do {
-            let items = try fm.contentsOfDirectory(atPath: folderPath!)
+            let items = try fileManager.contentsOfDirectory(atPath: documentsDirectory.path)
             
             for item in items {
-                let filePath = folderPath! + item
-                let contents = try String(contentsOfFile: filePath)
-                let decoder = YAMLDecoder()
-                let decoded = try decoder.decode(CandidateYAML.self, from: contents)
-                membersOfCongress.append(decoded)
+                if (item != ".DS_Store") {
+                    let filePath = documentsDirectory.appendingPathComponent(item)
+                    let contents = try String(contentsOfFile: filePath.path)
+                    let decoder = YAMLDecoder()
+                    let decoded = try decoder.decode(CandidateYAML.self, from: contents)
+                    membersOfCongress.append(decoded)
+                }
             }
         } catch {
             print("Error info: \(error)")
         }
+            
+        
         
         return membersOfCongress
     }
@@ -746,8 +768,7 @@ class MyRepsViewModel: ObservableObject {
             self.senatorOne.termsServedInCongress = senOneTermInfo
             dispatchGroup.leave()
         }
-        dispatchGroup.wait()
-        dispatchGroup.notify(queue: DispatchQueue.main) {}
+        
         
         dispatchGroup.enter()
         congressGovService.getTermsInCongress(bioGuideID: self.senatorTwo.bioguideID!) { senTwoTermInfo in
@@ -756,8 +777,6 @@ class MyRepsViewModel: ObservableObject {
             
         }
         
-        dispatchGroup.wait()
-        dispatchGroup.notify(queue: DispatchQueue.main) {}
         
         
         dispatchGroup.enter()
@@ -767,11 +786,7 @@ class MyRepsViewModel: ObservableObject {
         }
         
         dispatchGroup.wait()
-        dispatchGroup.notify(queue: DispatchQueue.main) {}
-        
-        
-        convertStartAndEndYearsToStrings()
-        
+        self.convertStartAndEndYearsToStrings()
         
     }
     
@@ -880,33 +895,15 @@ class MyRepsViewModel: ObservableObject {
         
         
     }
-
-
+    
+    func getS3Data() async throws {
+        let handler = try await DownloadUSCongressDirectoryHandler()
+    }
     
 }
     
     
-    /*
-     Agriculture and Food[8,605]
-     Labor and Employment[8,214]
-     Finance and Financial Sector[8,164]
-     Commerce[7,883]
-     Environmental Protection[7,798]
-     Economics and Public Finance[7,371]
-     Immigration[5,629]
-     Science, Technology, Communications[5,610]
-     Housing and Community Development[4,084]
-     Law[3,961]
-     Water Resources Development[3,469]
-     Native Americans[3,371]
-     Civil Rights and Liberties, Minority Issues[3,336]
-     Emergency Management[2,950]
-     Families[2,014]
-     Animals[1,807]
-     Arts, Culture, Religion[1,768]
-     Sports and Recreation[1,673]
-     Social Sciences and History[500]
-*/
+
     
     
 

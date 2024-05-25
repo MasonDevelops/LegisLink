@@ -37,7 +37,7 @@
 		0F35696F2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F35696E2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json */; };
 		0F3569712B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569702B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json */; };
 		0F3569732B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569722B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json */; };
-		0F3569752B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */; };
+		0F3569752B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569742B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json */; };
 		0F3AEFD82B81D56D00358E9C /* CongressGovPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */; };
 		0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */; };
 		0F3D9B382B9819C500F81014 /* HubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D9B372B9819C500F81014 /* HubView.swift */; };
@@ -69,12 +69,13 @@
 		0F79CF8F2AEB617E00E271FC /* SponsoredLegislation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F79CF8E2AEB617E00E271FC /* SponsoredLegislation.swift */; };
 		0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DECE2A1FC80800CDD786 /* Reps.swift */; };
 		0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */; };
-		0FA3BFFF2A8A839700A0027A /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3BFFE2A8A839700A0027A /* US Congress Directory */; };
 		0FA4A1522B5E32DC008F2C77 /* LegisFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4A1512B5E32DC008F2C77 /* LegisFeedViewModel.swift */; };
 		0FA4A1542B5E3A88008F2C77 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4A1532B5E3A88008F2C77 /* Bill.swift */; };
 		0FA5B3202AE4A565009E41CA /* MockCongressGovService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */; };
 		0FC5C2762B48EED000539926 /* OpenSecretsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */; };
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
+		0FCEC7DB2BE5A459008AB70D /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCEC7DA2BE5A459008AB70D /* AWSS3 */; };
+		0FCEC7DD2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */; };
 		0FEC04FA2B410DB400DADFE0 /* RepContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */; };
 		0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */; };
 		0FECB58C2A7C06D400FED68A /* jerry-moran-2022-contributors.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB58A2A7C06D400FED68A /* jerry-moran-2022-contributors.json */; };
@@ -147,7 +148,7 @@
 		0F35696E2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-sponsored-legislation-offset-500.json"; sourceTree = "<group>"; };
 		0F3569702B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "roger-marshall-sponsored-legislation-offset-250.json"; sourceTree = "<group>"; };
 		0F3569722B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "roger-marshall-successful-congress-gov-response.json"; sourceTree = "<group>"; };
-		0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-successfull-congress-gov-response.json"; sourceTree = "<group>"; };
+		0F3569742B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-successful-congress-gov-response.json"; sourceTree = "<group>"; };
 		0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressGovPagination.swift; sourceTree = "<group>"; };
 		0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyBillsResponse.swift; sourceTree = "<group>"; };
 		0F3D9B372B9819C500F81014 /* HubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubView.swift; sourceTree = "<group>"; };
@@ -178,12 +179,12 @@
 		0F79CF8E2AEB617E00E271FC /* SponsoredLegislation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegislation.swift; sourceTree = "<group>"; };
 		0F91DECE2A1FC80800CDD786 /* Reps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reps.swift; sourceTree = "<group>"; };
 		0F91DED02A1FC95500CDD786 /* MyRepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsViewModel.swift; sourceTree = "<group>"; };
-		0FA3BFFE2A8A839700A0027A /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "US Congress Directory"; sourceTree = "<group>"; };
 		0FA4A1512B5E32DC008F2C77 /* LegisFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegisFeedViewModel.swift; sourceTree = "<group>"; };
 		0FA4A1532B5E3A88008F2C77 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCongressGovService.swift; sourceTree = "<group>"; };
 		0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSecretsAPITests.swift; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
+		0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUSCongressDirectoryHandler.swift; sourceTree = "<group>"; };
 		0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsViewModel.swift; sourceTree = "<group>"; };
 		0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitteeList.swift; sourceTree = "<group>"; };
 		0FECB58A2A7C06D400FED68A /* jerry-moran-2022-contributors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-2022-contributors.json"; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCEC7DB2BE5A459008AB70D /* AWSS3 in Frameworks */,
 				0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */,
 				DD9BA5F3B83982416FFB50F2 /* Pods_town_square.framework in Frameworks */,
 			);
@@ -280,7 +282,6 @@
 			children = (
 				0F63E3E12BB1AB9700F15B05 /* Components */,
 				0F2A92412B252221001BF80E /* Helpers */,
-				0FA3BFFE2A8A839700A0027A /* US Congress Directory */,
 				0F723D8F2A7D64A4001DE7BD /* Services */,
 				0F50916A2A10803A008AE977 /* ViewModel */,
 				0F5091692A10802B008AE977 /* View */,
@@ -315,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				0F2A92422B252247001BF80E /* SortLegislationByPolicyAreaHelper.swift */,
+				0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -441,7 +443,7 @@
 				0F35696E2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json */,
 				0F3569702B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json */,
 				0F3569722B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json */,
-				0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */,
+				0F3569742B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json */,
 				0FF54A3B2BCC830B0027DD75 /* successful-nyt-articles-api-request.json */,
 			);
 			path = "JSON Responses";
@@ -484,6 +486,7 @@
 			name = LegisLink;
 			packageProductDependencies = (
 				0F50916D2A1082AD008AE977 /* Auth0 */,
+				0FCEC7DA2BE5A459008AB70D /* AWSS3 */,
 			);
 			productName = "town square";
 			productReference = 0F0E9A0B2A0B65E200E27010 /* LegisLink.app */;
@@ -581,6 +584,7 @@
 			mainGroup = 0F0E9A022A0B65E200E27010;
 			packageReferences = (
 				0F50916C2A1082AC008AE977 /* XCRemoteSwiftPackageReference "Auth0" */,
+				0FCEC7D92BE5A459008AB70D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
 			);
 			productRefGroup = 0F0E9A0C2A0B65E200E27010 /* Products */;
 			projectDirPath = "";
@@ -599,7 +603,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA3BFFF2A8A839700A0027A /* US Congress Directory in Resources */,
 				0F0E9A162A0B65E500E27010 /* Preview Assets.xcassets in Resources */,
 				0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */,
 				0F0E9A132A0B65E500E27010 /* Assets.xcassets in Resources */,
@@ -612,7 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F35696B2B2BA5A500A157AD /* roger-marshall-sponsored-legislation-offset-0.json in Resources */,
-				0F3569752B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json in Resources */,
+				0F3569752B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json in Resources */,
 				0F0096132B5753EC0021EBE9 /* jerry-moran-2020-contributors.json in Resources */,
 				0FF8EFFD2B2577FD00C07EF6 /* jake-laturner-successful-congress-gov-response.json in Resources */,
 				0F3569732B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json in Resources */,
@@ -727,6 +730,7 @@
 				0FA4A1542B5E3A88008F2C77 /* Bill.swift in Sources */,
 				0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */,
 				0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */,
+				0FCEC7DD2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift in Sources */,
 				0F0E9A112A0B65E200E27010 /* ContentView.swift in Sources */,
 				0F79CF8B2AEB608A00E271FC /* CongressGovMemberRequest.swift in Sources */,
 				0F79CF8D2AEB610500E271FC /* CongressGovRequest.swift in Sources */,
@@ -1190,6 +1194,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		0FCEC7D92BE5A459008AB70D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.42.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1197,6 +1209,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0F50916C2A1082AC008AE977 /* XCRemoteSwiftPackageReference "Auth0" */;
 			productName = Auth0;
+		};
+		0FCEC7DA2BE5A459008AB70D /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FCEC7D92BE5A459008AB70D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
