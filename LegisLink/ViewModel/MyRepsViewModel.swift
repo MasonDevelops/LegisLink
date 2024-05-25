@@ -249,7 +249,7 @@ class MyRepsViewModel: ObservableObject {
             
             
             
-            attachCongressionalTermsInOffice()
+            //attachCongressionalTermsInOffice()
         } else {
             
             
