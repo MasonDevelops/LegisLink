@@ -37,7 +37,7 @@
 		0F35696F2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F35696E2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json */; };
 		0F3569712B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569702B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json */; };
 		0F3569732B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569722B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json */; };
-		0F3569752B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */; };
+		0F3569752B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3569742B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json */; };
 		0F3AEFD82B81D56D00358E9C /* CongressGovPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */; };
 		0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */; };
 		0F3D9B382B9819C500F81014 /* HubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D9B372B9819C500F81014 /* HubView.swift */; };
@@ -148,7 +148,7 @@
 		0F35696E2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-sponsored-legislation-offset-500.json"; sourceTree = "<group>"; };
 		0F3569702B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "roger-marshall-sponsored-legislation-offset-250.json"; sourceTree = "<group>"; };
 		0F3569722B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "roger-marshall-successful-congress-gov-response.json"; sourceTree = "<group>"; };
-		0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-successfull-congress-gov-response.json"; sourceTree = "<group>"; };
+		0F3569742B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-successful-congress-gov-response.json"; sourceTree = "<group>"; };
 		0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressGovPagination.swift; sourceTree = "<group>"; };
 		0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyBillsResponse.swift; sourceTree = "<group>"; };
 		0F3D9B372B9819C500F81014 /* HubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubView.swift; sourceTree = "<group>"; };
@@ -443,7 +443,7 @@
 				0F35696E2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json */,
 				0F3569702B2BAA2000A157AD /* roger-marshall-sponsored-legislation-offset-250.json */,
 				0F3569722B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json */,
-				0F3569742B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json */,
+				0F3569742B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json */,
 				0FF54A3B2BCC830B0027DD75 /* successful-nyt-articles-api-request.json */,
 			);
 			path = "JSON Responses";
@@ -615,7 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F35696B2B2BA5A500A157AD /* roger-marshall-sponsored-legislation-offset-0.json in Resources */,
-				0F3569752B2BAEC800A157AD /* jerry-moran-successfull-congress-gov-response.json in Resources */,
+				0F3569752B2BAEC800A157AD /* jerry-moran-successful-congress-gov-response.json in Resources */,
 				0F0096132B5753EC0021EBE9 /* jerry-moran-2020-contributors.json in Resources */,
 				0FF8EFFD2B2577FD00C07EF6 /* jake-laturner-successful-congress-gov-response.json in Resources */,
 				0F3569732B2BAE1E00A157AD /* roger-marshall-successful-congress-gov-response.json in Resources */,

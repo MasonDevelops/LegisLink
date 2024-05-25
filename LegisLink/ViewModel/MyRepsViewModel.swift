@@ -249,7 +249,7 @@ class MyRepsViewModel: ObservableObject {
             
             
             
-            //attachCongressionalTermsInOffice()
+            attachCongressionalTermsInOffice()
         } else {
             
             
@@ -768,8 +768,7 @@ class MyRepsViewModel: ObservableObject {
             self.senatorOne.termsServedInCongress = senOneTermInfo
             dispatchGroup.leave()
         }
-        dispatchGroup.wait()
-        dispatchGroup.notify(queue: DispatchQueue.main) {}
+        
         
         dispatchGroup.enter()
         congressGovService.getTermsInCongress(bioGuideID: self.senatorTwo.bioguideID!) { senTwoTermInfo in
@@ -778,8 +777,6 @@ class MyRepsViewModel: ObservableObject {
             
         }
         
-        dispatchGroup.wait()
-        dispatchGroup.notify(queue: DispatchQueue.main) {}
         
         
         dispatchGroup.enter()
@@ -789,11 +786,7 @@ class MyRepsViewModel: ObservableObject {
         }
         
         dispatchGroup.wait()
-        dispatchGroup.notify(queue: DispatchQueue.main) {}
-        
-        
-        convertStartAndEndYearsToStrings()
-        
+        self.convertStartAndEndYearsToStrings()
         
     }
     
