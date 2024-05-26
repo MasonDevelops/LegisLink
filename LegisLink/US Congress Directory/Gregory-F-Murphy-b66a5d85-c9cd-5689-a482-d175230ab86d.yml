@@ -1,0 +1,69 @@
+id: ocd-person/b66a5d85-c9cd-5689-a482-d175230ab86d
+name: Gregory F. Murphy
+given_name: Gregory
+family_name: Murphy
+middle_name: Francis
+gender: M
+birth_date: 1963-03-05
+image: https://theunitedstates.io/images/congress/450x550/M001210.jpg
+party:
+- start_date: '2019-09-17'
+  end_date: '2025-01-03'
+  name: Republican
+roles:
+- start_date: '2019-09-17'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NC-3
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NC-3
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NC-3
+offices:
+- classification: capitol
+  address: 407 Cannon House Office Building Washington DC 20515-3303
+  voice: 202-225-3415
+- classification: district
+  address: 1105 Corporate Drive Suite C; Greenville, NC 27858
+  voice: 252-931-1003
+  name: 'District Office #1'
+- classification: district
+  address: 234 Northwest Corridor Blvd.; Jacksonville, NC 28540
+  voice: 910-937-6929
+  name: 'District Office #2'
+links:
+- url: https://gregmurphy.house.gov
+  note: website
+ids:
+  twitter: RepGregMurphy
+  facebook: RepGregMurphy
+other_identifiers:
+- scheme: bioguide
+  identifier: M001210
+- scheme: fec
+  identifier: H0NC03172
+- scheme: govtrack
+  identifier: '412845'
+- scheme: opensecrets
+  identifier: N00044027
+- scheme: wikipedia
+  identifier: Greg Murphy (politician)
+- scheme: wikidata
+  identifier: Q23074266
+- scheme: ballotpedia
+  identifier: Gregory Murphy
+- scheme: icpsr
+  identifier: '21987'
+- scheme: google_entity_id
+  identifier: kg:/g/11clyw935r
+- scheme: votesmart
+  identifier: '166135'
+sources:
+- url: https://theunitedstates.io/

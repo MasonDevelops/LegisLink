@@ -1,0 +1,81 @@
+id: ocd-person/08e42c4f-2c5e-5fe0-87cf-0e8de2bdb52d
+name: Tom Emmer
+given_name: Tom
+family_name: Emmer
+gender: M
+birth_date: 1961-03-03
+image: https://theunitedstates.io/images/congress/450x550/E000294.jpg
+party:
+- start_date: '2015-01-06'
+  end_date: '2025-01-03'
+  name: Republican
+roles:
+- start_date: '2015-01-06'
+  end_date: '2017-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MN-6
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MN-6
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MN-6
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MN-6
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MN-6
+offices:
+- classification: capitol
+  address: 464 Cannon House Office Building Washington DC 20515-2306
+  voice: 202-225-2331
+- classification: district
+  address: 9201 Quaday Ave. NE Suite 206; Otsego, MN 55330
+  voice: 763-241-6848
+  fax: 763-241-7955
+  name: 'District Office #1'
+links:
+- url: https://emmer.house.gov
+  note: website
+ids:
+  twitter: RepTomEmmer
+  facebook: reptomemmer
+other_identifiers:
+- scheme: bioguide
+  identifier: E000294
+- scheme: fec
+  identifier: H4MN06087
+- scheme: govtrack
+  identifier: '412639'
+- scheme: opensecrets
+  identifier: N00035440
+- scheme: thomas
+  identifier: '02253'
+- scheme: maplight
+  identifier: '2095'
+- scheme: wikidata
+  identifier: Q7815723
+- scheme: wikipedia
+  identifier: Tom Emmer
+- scheme: google_entity_id
+  identifier: kg:/m/06w2w3l
+- scheme: votesmart
+  identifier: '38894'
+- scheme: cspan
+  identifier: '75567'
+- scheme: icpsr
+  identifier: '21531'
+- scheme: ballotpedia
+  identifier: Tom Emmer
+sources:
+- url: https://theunitedstates.io/

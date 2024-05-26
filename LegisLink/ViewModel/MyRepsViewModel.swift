@@ -230,6 +230,8 @@ class MyRepsViewModel: ObservableObject {
        
         
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+            
+            
             let testURL = URL(string: "https://www.example.com")
             var testURLs = [URL]()
             testURLs.append(testURL!)
@@ -334,7 +336,31 @@ class MyRepsViewModel: ObservableObject {
     
     func fetchOpenStatesOfficialData() -> [CandidateYAML] {
         
-        
+        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+                   
+           let folderPath = Bundle.main.resourcePath?.appending("/US Congress Directory/")
+           
+           
+           var membersOfCongress = [CandidateYAML]()
+           
+           
+           
+           do {
+               let items = try FileManager.default.contentsOfDirectory(atPath: folderPath!)
+               
+               for item in items {
+                   let filePath = folderPath! + item
+                   let contents = try String(contentsOfFile: filePath)
+                   let decoder = YAMLDecoder()
+                   let decoded = try decoder.decode(CandidateYAML.self, from: contents)
+                   membersOfCongress.append(decoded)
+               }
+           } catch {
+               print("Error info: \(error)")
+           }
+           
+           return membersOfCongress
+        }
         
         let fileManager = FileManager.default
         

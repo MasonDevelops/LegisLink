@@ -1,0 +1,104 @@
+id: ocd-person/74a68d2f-f563-50d8-80a7-408346b8ba14
+name: Andy Harris
+given_name: Andy
+family_name: Harris
+gender: M
+birth_date: 1957-01-25
+image: https://theunitedstates.io/images/congress/450x550/H001052.jpg
+party:
+- start_date: '2011-01-05'
+  end_date: '2025-01-03'
+  name: Republican
+roles:
+- start_date: '2011-01-05'
+  end_date: '2013-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+- start_date: '2013-01-03'
+  end_date: '2015-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+- start_date: '2015-01-06'
+  end_date: '2017-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MD-1
+offices:
+- classification: capitol
+  address: 1536 Longworth House Office Building Washington DC 20515-2001
+  voice: 202-225-5311
+- classification: district
+  address: 15 E. Churchville Rd. Suite 102B; Bel Air, MD 21014
+  voice: 410-588-5670
+  fax: 410-588-5673
+  name: 'District Office #1'
+- classification: district
+  address: 100 Olde Point Village Suite 101; Chester, MD 21619
+  voice: 410-643-5425
+  fax: 410-643-5429
+  name: 'District Office #2'
+- classification: district
+  address: 100 E. Main St. Suite 702; Salisbury, MD 21801
+  voice: 443-944-8624
+  fax: 443-944-8625
+  name: 'District Office #3'
+links:
+- url: https://harris.house.gov
+  note: website
+ids:
+  twitter: RepAndyHarrisMD
+  youtube: UCvUuV7FiJfJi1yux4qozgMg
+  facebook: AndyHarrisMD
+other_identifiers:
+- scheme: bioguide
+  identifier: H001052
+- scheme: thomas
+  identifier: '02026'
+- scheme: govtrack
+  identifier: '412434'
+- scheme: opensecrets
+  identifier: N00029147
+- scheme: votesmart
+  identifier: '19157'
+- scheme: fec
+  identifier: H8MD01094
+- scheme: cspan
+  identifier: '1033464'
+- scheme: wikipedia
+  identifier: Andy Harris (politician)
+- scheme: house_history
+  identifier: '15599'
+- scheme: maplight
+  identifier: '1445'
+- scheme: icpsr
+  identifier: '21139'
+- scheme: wikidata
+  identifier: Q506639
+- scheme: google_entity_id
+  identifier: kg:/m/02852wc
+- scheme: ballotpedia
+  identifier: Andrew Harris
+sources:
+- url: https://theunitedstates.io/
