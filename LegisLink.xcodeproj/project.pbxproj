@@ -72,7 +72,10 @@
 		0FA4A1522B5E32DC008F2C77 /* LegisFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4A1512B5E32DC008F2C77 /* LegisFeedViewModel.swift */; };
 		0FA4A1542B5E3A88008F2C77 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4A1532B5E3A88008F2C77 /* Bill.swift */; };
 		0FA5B3202AE4A565009E41CA /* MockCongressGovService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */; };
-		0FC4226C2C02C0A100DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC4226B2C02C0A100DF43EE /* US Congress Directory */; };
+		0FC42D002C02CB5D00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42CFF2C02CB5D00DF43EE /* US Congress Directory */; };
+		0FC42D012C02CB5D00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42CFF2C02CB5D00DF43EE /* US Congress Directory */; };
+		0FC42D022C02CB5D00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42CFF2C02CB5D00DF43EE /* US Congress Directory */; };
+		0FC42D032C02CB5D00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42CFF2C02CB5D00DF43EE /* US Congress Directory */; };
 		0FC5C2762B48EED000539926 /* OpenSecretsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */; };
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
 		0FCEC7DB2BE5A459008AB70D /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCEC7DA2BE5A459008AB70D /* AWSS3 */; };
@@ -183,7 +186,7 @@
 		0FA4A1512B5E32DC008F2C77 /* LegisFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegisFeedViewModel.swift; sourceTree = "<group>"; };
 		0FA4A1532B5E3A88008F2C77 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCongressGovService.swift; sourceTree = "<group>"; };
-		0FC4226B2C02C0A100DF43EE /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "US Congress Directory"; path = "../../../../../Downloads/LegisLink/US Congress Directory"; sourceTree = "<group>"; };
+		0FC42CFF2C02CB5D00DF43EE /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "US Congress Directory"; path = "../../../../US Congress Directory"; sourceTree = "<group>"; };
 		0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSecretsAPITests.swift; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
 		0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUSCongressDirectoryHandler.swift; sourceTree = "<group>"; };
@@ -282,7 +285,7 @@
 		0F0E9A0D2A0B65E200E27010 /* LegisLink */ = {
 			isa = PBXGroup;
 			children = (
-				0FC4226B2C02C0A100DF43EE /* US Congress Directory */,
+				0FC42CFF2C02CB5D00DF43EE /* US Congress Directory */,
 				0F63E3E12BB1AB9700F15B05 /* Components */,
 				0F2A92412B252221001BF80E /* Helpers */,
 				0F723D8F2A7D64A4001DE7BD /* Services */,
@@ -608,7 +611,7 @@
 			files = (
 				0F0E9A162A0B65E500E27010 /* Preview Assets.xcassets in Resources */,
 				0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */,
-				0FC4226C2C02C0A100DF43EE /* US Congress Directory in Resources */,
+				0FC42D002C02CB5D00DF43EE /* US Congress Directory in Resources */,
 				0F0E9A132A0B65E500E27010 /* Assets.xcassets in Resources */,
 				0F5091722A1083A9008AE977 /* Auth0.plist in Resources */,
 			);
@@ -630,6 +633,7 @@
 				0F723DA02A7ECE42001DE7BD /* successful-google-civic-info-api-response.json in Resources */,
 				0F35696D2B2BA97B00A157AD /* jerry-moran-sponsored-legislation-offset-250.json in Resources */,
 				0F35696F2B2BA9A900A157AD /* jerry-moran-sponsored-legislation-offset-500.json in Resources */,
+				0FC42D012C02CB5D00DF43EE /* US Congress Directory in Resources */,
 				0FECB59B2A7C20AA00FED68A /* successful-open-states-lower-house-committee-request-page-1.json in Resources */,
 				0FECB59E2A7C20EC00FED68A /* successful-open-states-lower-house-committee-request-page-2.json in Resources */,
 				0FECB5952A7C1DFA00FED68A /* successful-open-states-upper-house-committee-request-page-1.json in Resources */,
@@ -642,6 +646,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC42D022C02CB5D00DF43EE /* US Congress Directory in Resources */,
 				0F2EB2E52B8A9AAB00E226B7 /* todays-bills-congress-gov-response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +655,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC42D032C02CB5D00DF43EE /* US Congress Directory in Resources */,
 				0FF54A3C2BCC830B0027DD75 /* successful-nyt-articles-api-request.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
