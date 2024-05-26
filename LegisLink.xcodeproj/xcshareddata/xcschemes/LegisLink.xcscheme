@@ -155,12 +155,12 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "AWS_ACCESS_KEY_ID"
-            value = "AKIA2DM7N2CDABLPAZ65"
+            value = "AKIA2DM7N2CDDLRQGHU7"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "AWS_SECRET_ACCESS_KEY"
-            value = "TyYfVyk8T3WwuWZNHbFTQ8AT568lzyzdtC+p1l4V"
+            value = "C5wA/ucRu385E7hnR5oGR2BCzMR/McaiYDqAtskJ"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
