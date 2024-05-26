@@ -1,0 +1,119 @@
+id: ocd-person/e6650822-1063-5485-b062-d169ea173ec2
+name: David Scott
+given_name: David
+family_name: Scott
+gender: M
+birth_date: 1945-06-27
+image: https://theunitedstates.io/images/congress/450x550/S001157.jpg
+party:
+- start_date: '2003-01-07'
+  end_date: '2025-01-03'
+  name: Democratic
+roles:
+- start_date: '2003-01-07'
+  end_date: '2005-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2005-01-04'
+  end_date: '2007-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2007-01-04'
+  end_date: '2009-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2009-01-06'
+  end_date: '2011-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2011-01-05'
+  end_date: '2013-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2013-01-03'
+  end_date: '2015-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2015-01-06'
+  end_date: '2017-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-13
+offices:
+- classification: capitol
+  address: 468 Cannon House Office Building Washington DC 20515-1013
+  voice: 202-225-2939
+- classification: district
+  address: 173 N. Main St.; Jonesboro, GA 30236
+  voice: 770-210-5073
+  fax: 770-210-5673
+  name: 'District Office #1'
+- classification: district
+  address: 888 Concord Rd. Suite 100; Smyrna, GA 30080
+  voice: 770-432-5405
+  fax: 770-432-5813
+  name: 'District Office #2'
+links:
+- url: https://davidscott.house.gov
+  note: website
+ids:
+  twitter: RepDavidScott
+  youtube: UCgf28zRkLSqAUiPuJhGdF0w
+  facebook: '113303673339'
+other_identifiers:
+- scheme: bioguide
+  identifier: S001157
+- scheme: thomas
+  identifier: '01722'
+- scheme: govtrack
+  identifier: '400363'
+- scheme: opensecrets
+  identifier: N00024871
+- scheme: votesmart
+  identifier: '7826'
+- scheme: fec
+  identifier: H2GA13012
+- scheme: cspan
+  identifier: '1003567'
+- scheme: wikipedia
+  identifier: David Scott (Georgia politician)
+- scheme: ballotpedia
+  identifier: David Scott (Georgia)
+- scheme: maplight
+  identifier: '454'
+- scheme: icpsr
+  identifier: '20321'
+- scheme: house_history
+  identifier: '22574'
+- scheme: wikidata
+  identifier: Q132071
+- scheme: google_entity_id
+  identifier: kg:/m/0255r4
+sources:
+- url: https://theunitedstates.io/

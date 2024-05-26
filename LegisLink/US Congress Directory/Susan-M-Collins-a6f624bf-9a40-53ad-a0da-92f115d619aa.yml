@@ -1,0 +1,108 @@
+id: ocd-person/a6f624bf-9a40-53ad-a0da-92f115d619aa
+name: Susan M. Collins
+given_name: Susan
+family_name: Collins
+middle_name: M.
+gender: F
+birth_date: 1952-12-07
+image: https://theunitedstates.io/images/congress/450x550/C001035.jpg
+party:
+- start_date: '1997-01-07'
+  end_date: '2027-01-03'
+  name: Republican
+roles:
+- start_date: '1997-01-07'
+  end_date: '2003-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+- start_date: '2003-01-07'
+  end_date: '2009-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+- start_date: '2009-01-06'
+  end_date: '2015-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+- start_date: '2015-01-06'
+  end_date: '2021-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+- start_date: '2021-01-03'
+  end_date: '2027-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Maine
+offices:
+- classification: capitol
+  address: 413 Dirksen Senate Office Building Washington DC 20510
+  voice: 202-224-2523
+- classification: district
+  address: 68 Sewall St. Room 507; Augusta, ME 04330
+  voice: 207-622-8414
+  name: 'District Office #1'
+- classification: district
+  address: 202 Harlow St. Room 20100; Bangor, ME 04401
+  voice: 207-945-0417
+  name: 'District Office #2'
+- classification: district
+  address: 160 Main St.; Biddeford, ME 04005
+  voice: 207-283-1101
+  name: 'District Office #3'
+- classification: district
+  address: 25 Sweden St. Suite A; Caribou, ME 04736
+  voice: 207-493-7873
+  name: 'District Office #4'
+- classification: district
+  address: 55 Lisbon St.; Lewiston, ME 04240
+  voice: 207-784-6969
+  name: 'District Office #5'
+- classification: district
+  address: One Canal Plaza Suite 802; Portland, ME 04101
+  voice: 207-780-3575
+  name: 'District Office #6'
+links:
+- url: https://www.collins.senate.gov
+  note: website
+- url: https://www.collins.senate.gov/contact
+  note: contact form
+ids:
+  twitter: SenatorCollins
+  youtube: UC6GYaBx5kT2r4PN8KENxC-w
+  facebook: susancollins
+other_identifiers:
+- scheme: bioguide
+  identifier: C001035
+- scheme: thomas
+  identifier: '01541'
+- scheme: lis
+  identifier: S252
+- scheme: govtrack
+  identifier: '300025'
+- scheme: opensecrets
+  identifier: N00000491
+- scheme: votesmart
+  identifier: '379'
+- scheme: fec
+  identifier: S6ME00159
+- scheme: cspan
+  identifier: '45738'
+- scheme: wikipedia
+  identifier: Susan Collins
+- scheme: house_history
+  identifier: '11742'
+- scheme: ballotpedia
+  identifier: Susan Collins
+- scheme: maplight
+  identifier: '551'
+- scheme: icpsr
+  identifier: '49703'
+- scheme: wikidata
+  identifier: Q22279
+- scheme: google_entity_id
+  identifier: kg:/m/020y8m
+sources:
+- url: https://theunitedstates.io/

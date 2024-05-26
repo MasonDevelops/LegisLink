@@ -1,0 +1,101 @@
+id: ocd-person/173a4f3f-e38f-569e-97b2-e0424195f16c
+name: Tom McClintock
+given_name: Tom
+family_name: McClintock
+gender: M
+birth_date: 1956-07-10
+image: https://theunitedstates.io/images/congress/450x550/M001177.jpg
+party:
+- start_date: '2009-01-06'
+  end_date: '2025-01-03'
+  name: Republican
+roles:
+- start_date: '2009-01-06'
+  end_date: '2011-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2011-01-05'
+  end_date: '2013-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2013-01-03'
+  end_date: '2015-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2015-01-06'
+  end_date: '2017-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-4
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-5
+offices:
+- classification: capitol
+  address: 2256 Rayburn House Office Building Washington DC 20515-0505
+  voice: 202-225-2511
+- classification: district
+  address: 2200A Douglas Blvd Suite 240; Roseville, CA 95661
+  voice: 916-786-5560
+  fax: 916-786-6364
+  name: 'District Office #1'
+links:
+- url: https://mcclintock.house.gov
+  note: website
+ids:
+  twitter: RepMcClintock
+  youtube: UCMh04KC4LfIzKoXh2Xws_pw
+  facebook: '81125319109'
+other_identifiers:
+- scheme: bioguide
+  identifier: M001177
+- scheme: thomas
+  identifier: 01908
+- scheme: govtrack
+  identifier: '412295'
+- scheme: opensecrets
+  identifier: N00006863
+- scheme: votesmart
+  identifier: '9715'
+- scheme: fec
+  identifier: H8CA04152
+- scheme: fec
+  identifier: H6CA21135
+- scheme: cspan
+  identifier: '30359'
+- scheme: house_history
+  identifier: '18824'
+- scheme: wikipedia
+  identifier: Tom McClintock
+- scheme: maplight
+  identifier: '777'
+- scheme: icpsr
+  identifier: '20903'
+- scheme: wikidata
+  identifier: Q535887
+- scheme: google_entity_id
+  identifier: kg:/m/01r6jp
+- scheme: ballotpedia
+  identifier: Tom McClintock
+sources:
+- url: https://theunitedstates.io/
