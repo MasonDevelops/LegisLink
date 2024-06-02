@@ -1,10 +1,10 @@
 PODS:
-  - Auth0 (2.3.2):
-    - JWTDecode (~> 3.0)
-    - SimpleKeychain (~> 1.0)
+  - Auth0 (2.7.2):
+    - JWTDecode (~> 3.1)
+    - SimpleKeychain (~> 1.1)
   - Fuse (1.4.0)
-  - JWTDecode (3.0.1)
-  - SimpleKeychain (1.0.1)
+  - JWTDecode (3.1.0)
+  - SimpleKeychain (1.1.0)
   - Yams (5.0.6)
 
 DEPENDENCIES:
@@ -23,12 +23,12 @@ SPEC REPOS:
     - Yams
 
 SPEC CHECKSUMS:
-  Auth0: 64da28fdc5cd499aa516dc4bfd0ace8efae2c1da
+  Auth0: 28cb24cb19ebd51f0b07751f16d83b59f4019532
   Fuse: 48eaf66d0c407c7f8b0ddb168888dc4637e87f14
-  JWTDecode: 2eed97c2fa46ccaf3049a787004eedf0be474a87
-  SimpleKeychain: 130211269f88f038d7dc5254cf0b1b9ce978c398
+  JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
+  SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
   Yams: e10dae147f517ed57ecae37c5e8681bdf8fcab65
 
-PODFILE CHECKSUM: 23aed077c0fabc7064335c7c752eddf8bbd25606
+PODFILE CHECKSUM: 6e4709508ba9db84aba3e8088810261ef4e32b36
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
