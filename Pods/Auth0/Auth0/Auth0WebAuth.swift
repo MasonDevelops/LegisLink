@@ -1,8 +1,6 @@
 #if WEB_AUTH_PLATFORM
 import Foundation
-#if canImport(Combine)
 import Combine
-#endif
 
 final class Auth0WebAuth: WebAuth {
 
@@ -22,6 +20,7 @@ final class Auth0WebAuth: WebAuth {
     private let responseType = "code"
 
     private(set) var parameters: [String: String] = [:]
+    private(set) var https = false
     private(set) var ephemeralSession = false
     private(set) var issuer: String
     private(set) var leeway: Int = 60 * 1000 // Default leeway is 60 seconds
@@ -30,18 +29,33 @@ final class Auth0WebAuth: WebAuth {
     private(set) var organization: String?
     private(set) var invitationURL: URL?
     private(set) var provider: WebAuthProvider?
+    private(set) var onCloseCallback: (() -> Void)?
 
     var state: String {
         return self.parameters["state"] ?? self.generateDefaultState()
     }
 
     lazy var redirectURL: URL? = {
-        guard let bundleIdentifier = Bundle.main.bundleIdentifier else { return nil }
-        var components = URLComponents(url: self.url, resolvingAgainstBaseURL: true)
-        components?.scheme = bundleIdentifier
+        guard let bundleID = Bundle.main.bundleIdentifier, let domain = self.url.host else { return nil }
+        let scheme: String
+
+        #if compiler(>=5.10)
+        if #available(iOS 17.4, macOS 14.4, *) {
+            scheme = https ? "https" : bundleID
+        } else {
+            scheme = bundleID
+        }
+        #else
+        scheme = bundleID
+        #endif
+
+        guard let baseURL = URL(string: "\(scheme)://\(domain)") else { return nil }
+        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
+
         return components?.url?
+            .appendingPathComponent(self.url.path)
             .appendingPathComponent(self.platform)
-            .appendingPathComponent(bundleIdentifier)
+            .appendingPathComponent(bundleID)
             .appendingPathComponent("callback")
     }()
 
@@ -113,6 +127,11 @@ final class Auth0WebAuth: WebAuth {
         return self
     }
 
+    func useHTTPS() -> Self {
+        self.https = true
+        return self
+    }
+
     func useEphemeralSession() -> Self {
         self.ephemeralSession = true
         return self
@@ -133,8 +152,18 @@ final class Auth0WebAuth: WebAuth {
         return self
     }
 
+    func onClose(_ callback: (() -> Void)?) -> Self {
+        self.onCloseCallback = callback
+        return self
+    }
+
     func start(_ callback: @escaping (WebAuthResult<Credentials>) -> Void) {
-        guard let redirectURL = self.redirectURL, let urlScheme = redirectURL.scheme else {
+
+        if self.storage.current != nil {
+            return callback(.failure(WebAuthError(code: .transactionActiveAlready)))
+        }
+
+        guard let redirectURL = self.redirectURL else {
             return callback(.failure(WebAuthError(code: .noBundleIdentifier)))
         }
 
@@ -159,12 +188,15 @@ final class Auth0WebAuth: WebAuth {
                                                   state: state,
                                                   organization: organization,
                                                   invitation: invitation)
-        let provider = self.provider ?? WebAuthentication.asProvider(urlScheme: urlScheme,
+        let provider = self.provider ?? WebAuthentication.asProvider(redirectURL: redirectURL,
                                                                      ephemeralSession: ephemeralSession)
-        let userAgent = provider(authorizeURL) { [storage] result in
+        let userAgent = provider(authorizeURL) { [storage, onCloseCallback] result in
             storage.clear()
 
-            if case let .failure(error) = result {
+            switch result {
+            case .success:
+                onCloseCallback?()
+            case .failure(let error):
                 callback(.failure(error))
             }
         }
@@ -180,6 +212,11 @@ final class Auth0WebAuth: WebAuth {
     }
 
     func clearSession(federated: Bool, callback: @escaping (WebAuthResult<Void>) -> Void) {
+
+        if self.storage.current != nil {
+            return callback(.failure(WebAuthError(code: .transactionActiveAlready)))
+        }
+
         let endpoint = federated ?
             URL(string: "v2/logout?federated", relativeTo: self.url)! :
             URL(string: "v2/logout", relativeTo: self.url)!
@@ -189,13 +226,11 @@ final class Auth0WebAuth: WebAuth {
         let queryItems = components?.queryItems ?? []
         components?.queryItems = queryItems + [returnTo, clientId]
 
-        guard let logoutURL = components?.url,
-              let redirectURL = self.redirectURL,
-              let urlScheme = redirectURL.scheme else {
+        guard let logoutURL = components?.url, let redirectURL = self.redirectURL else {
             return callback(.failure(WebAuthError(code: .noBundleIdentifier)))
         }
 
-        let provider = self.provider ?? WebAuthentication.asProvider(urlScheme: urlScheme)
+        let provider = self.provider ?? WebAuthentication.asProvider(redirectURL: redirectURL)
         let userAgent = provider(logoutURL) { [storage] result in
             storage.clear()
             callback(result)
@@ -270,7 +305,6 @@ final class Auth0WebAuth: WebAuth {
 
 // MARK: - Combine
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
 extension Auth0WebAuth {
 
     public func start() -> AnyPublisher<Credentials, WebAuthError> {
@@ -291,11 +325,9 @@ extension Auth0WebAuth {
 
 // MARK: - Async/Await
 
-#if compiler(>=5.5) && canImport(_Concurrency)
+#if canImport(_Concurrency)
 extension Auth0WebAuth {
 
-    #if compiler(>=5.5.2)
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func start() async throws -> Credentials {
         return try await withCheckedThrowingContinuation { continuation in
             DispatchQueue.main.async {
@@ -303,19 +335,7 @@ extension Auth0WebAuth {
             }
         }
     }
-    #else
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-    func start() async throws -> Credentials {
-        return try await withCheckedThrowingContinuation { continuation in
-            DispatchQueue.main.async {
-                self.start(continuation.resume)
-            }
-        }
-    }
-    #endif
 
-    #if compiler(>=5.5.2)
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func clearSession(federated: Bool) async throws {
         return try await withCheckedThrowingContinuation { continuation in
             DispatchQueue.main.async {
@@ -325,18 +345,6 @@ extension Auth0WebAuth {
             }
         }
     }
-    #else
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-    func clearSession(federated: Bool) async throws {
-        return try await withCheckedThrowingContinuation { continuation in
-            DispatchQueue.main.async {
-                self.clearSession(federated: federated) { result in
-                    continuation.resume(with: result)
-                }
-            }
-        }
-    }
-    #endif
 
 }
 #endif

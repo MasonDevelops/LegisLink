@@ -2,9 +2,10 @@
 
 #if WEB_AUTH_PLATFORM
 import Foundation
-#if canImport(Combine)
 import Combine
-#endif
+
+/// Callback invoked by the ``WebAuthUserAgent`` when the web-based operation concludes.
+public typealias WebAuthProviderCallback = (WebAuthResult<Void>) -> Void
 
 /// Thunk that returns a function that creates and returns a ``WebAuthUserAgent`` to perform a web-based operation.
 /// The ``WebAuthUserAgent`` opens the URL in an external user agent and then invokes the callback when done.
@@ -12,7 +13,7 @@ import Combine
 /// ## See Also
 ///
 /// - [Example](https://github.com/auth0/Auth0.swift/blob/master/Auth0/SafariProvider.swift)
-public typealias WebAuthProvider = (_ url: URL, _ callback: @escaping (WebAuthResult<Void>) -> Void) -> WebAuthUserAgent
+public typealias WebAuthProvider = (_ url: URL, _ callback: @escaping WebAuthProviderCallback) -> WebAuthUserAgent
 
 /// Web-based authentication using Auth0.
 ///
@@ -34,7 +35,7 @@ public protocol WebAuth: Trackable, Loggable {
     // MARK: - Builder
 
     /**
-     Specify an Auth0 connection to directly show that identity provider's login page, skipping the Universal Login
+     Specify an Auth0 connection to directly open that identity provider's login page, skipping the Universal Login
      page itself. By default no connection is specified, so the Universal Login page will be displayed.
 
      - Parameter connection: Name of the connection. For example, `github`.
@@ -131,11 +132,21 @@ public protocol WebAuth: Trackable, Loggable {
     /// - Returns: The same `WebAuth` instance to allow method chaining.
     func maxAge(_ maxAge: Int) -> Self
 
+    /// Use `https` as the scheme for the redirect URL on iOS 17.4+ and macOS 14.4+. On older versions of iOS and
+    /// macOS, the bundle identifier of the app will be used as a custom scheme.
+    ///
+    /// - Returns: The same `WebAuth` instance to allow method chaining.
+    /// - Requires: An Associated Domain configured with the `webcredentials` service type. For example,
+    /// `webcredentials:example.com`. If you're using a custom domain on your Auth0 tenant, use this domain as the
+    /// Associated Domain. Otherwise, use the domain of your Auth0 tenant.
+    /// - Note: Don't use this method along with ``provider(_:)``. Use either one or the other, because this
+    /// method will only work with the default `ASWebAuthenticationSession` implementation.
+    func useHTTPS() -> Self
+
     /// Use a private browser session to avoid storing the session cookie in the shared cookie jar.
     /// Using this method will disable single sign-on (SSO).
     ///
     /// - Returns: The same `WebAuth` instance to allow method chaining.
-    /// - Requires: iOS 13+ or macOS. Has no effect on iOS 12.
     /// - Important: You don't need to call ``WebAuth/clearSession(federated:callback:)-9yv61`` if you are using this
     /// method on login, because there will be no shared cookie to remove.
     /// - Note: Don't use this method along with ``provider(_:)``. Use either one or the other, because this
@@ -143,6 +154,7 @@ public protocol WebAuth: Trackable, Loggable {
     ///
     /// ## See Also
     ///
+    /// - <doc:UserAgents>
     /// - [FAQ](https://github.com/auth0/Auth0.swift/blob/master/FAQ.md)
     /// - [prefersEphemeralWebBrowserSession](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession/3237231-prefersephemeralwebbrowsersessio)
     func useEphemeralSession() -> Self
@@ -168,8 +180,15 @@ public protocol WebAuth: Trackable, Loggable {
     ///
     /// ## See Also
     ///
+    /// - <doc:UserAgents>
     /// - ``WebAuthProvider``
     func provider(_ provider: @escaping WebAuthProvider) -> Self
+
+    /// Specify a callback to be called when the ``WebAuthUserAgent`` closes, while the flow continues with the code exchange.
+    ///
+    /// - Parameter callback: A callback to be executed
+    /// - Returns: The same `WebAuth` instance to allow method chaining.
+    func onClose(_ callback: (() -> Void)?) -> Self
 
     // MARK: - Methods
 
@@ -200,8 +219,7 @@ public protocol WebAuth: Trackable, Loggable {
      */
     func start(_ callback: @escaping (WebAuthResult<Credentials>) -> Void)
 
-    #if compiler(>=5.5) && canImport(_Concurrency)
-    #if compiler(>=5.5.2)
+    #if canImport(_Concurrency)
     /**
      Starts the Web Auth flow.
 
@@ -224,12 +242,7 @@ public protocol WebAuth: Trackable, Loggable {
      - Requires: The **Callback URL** to have been added to the **Allowed Callback URLs** field of your Auth0
      application settings in the [Dashboard](https://manage.auth0.com/#/applications/).
      */
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func start() async throws -> Credentials
-    #else
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-    func start() async throws -> Credentials
-    #endif
     #endif
 
     /**
@@ -258,7 +271,6 @@ public protocol WebAuth: Trackable, Loggable {
      - Requires: The **Callback URL** to have been added to the **Allowed Callback URLs** field of your Auth0
      application settings in the [Dashboard](https://manage.auth0.com/#/applications/).
      */
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func start() -> AnyPublisher<Credentials, WebAuthError>
 
     /**
@@ -342,11 +354,9 @@ public protocol WebAuth: Trackable, Loggable {
 
      - [Logout](https://auth0.com/docs/authenticate/login/logout)
      */
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func clearSession(federated: Bool) -> AnyPublisher<Void, WebAuthError>
 
-    #if compiler(>=5.5) && canImport(_Concurrency)
-    #if compiler(>=5.5.2)
+    #if canImport(_Concurrency)
     /**
      Removes the Auth0 session and optionally removes the identity provider (IdP) session.
 
@@ -377,12 +387,7 @@ public protocol WebAuth: Trackable, Loggable {
 
      - [Logout](https://auth0.com/docs/authenticate/login/logout)
      */
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func clearSession(federated: Bool) async throws
-    #else
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-    func clearSession(federated: Bool) async throws
-    #endif
     #endif
 
 }
@@ -393,23 +398,14 @@ public extension WebAuth {
         self.clearSession(federated: federated, callback: callback)
     }
 
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
     func clearSession(federated: Bool = false) -> AnyPublisher<Void, WebAuthError> {
         return self.clearSession(federated: federated)
     }
 
-    #if compiler(>=5.5) && canImport(_Concurrency)
-    #if compiler(>=5.5.2)
-    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.2, *)
+    #if canImport(_Concurrency)
     func clearSession(federated: Bool = false) async throws {
         return try await self.clearSession(federated: federated)
     }
-    #else
-    @available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-    func clearSession(federated: Bool = false) async throws {
-        return try await self.clearSession(federated: federated)
-    }
-    #endif
     #endif
 
 }
