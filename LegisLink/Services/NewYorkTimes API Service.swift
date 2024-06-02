@@ -15,7 +15,7 @@ protocol NewYorkTimesServiceProtocol {
 class NewYorkTimesService: NewYorkTimesServiceProtocol {
     
     private var NYTAPIKey: String {
-        get {return ProcessInfo.processInfo.environment["NYT_API_Key"]!}
+        get {return Environment.nytAPI}
     }
     
     func buildURL() -> URL {

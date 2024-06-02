@@ -296,10 +296,10 @@ class MyRepsViewModel: ObservableObject {
     
     
     func getGoogleCivicInformationAPIURL() -> URL {
-        let googleCivicInformationAPIKey = ProcessInfo.processInfo.environment["Google_API_Key"]
+        let googleCivicInformationAPIKey = Environment.googleCivicInformationAPI
         let fullAddress = user.returnFullAddress()
         let fullAddressEncoded = fullAddress.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        let urlPath = "https://www.googleapis.com/civicinfo/v2/representatives?key=\(googleCivicInformationAPIKey!)&address=\(fullAddressEncoded!)&includedOffices=true&levels=country&roles=legislatorUpperBody&roles=legislatorLowerBody"
+        let urlPath = "https://www.googleapis.com/civicinfo/v2/representatives?key=\(googleCivicInformationAPIKey)&address=\(fullAddressEncoded!)&includedOffices=true&levels=country&roles=legislatorUpperBody&roles=legislatorLowerBody"
         
         let url = URL(string: urlPath)
         

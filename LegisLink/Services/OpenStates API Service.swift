@@ -21,7 +21,7 @@ protocol OpenStatesServiceProtocol {
 class OpenStatesService: OpenStatesServiceProtocol {
     
     private var openStatesAPIKey: String {
-        get {return ProcessInfo.processInfo.environment["OpenStates_API_Key"]!}
+        get {return Environment.openStatesAPI}
     }
     
     func getMaxCommitteePages(from chamber: String, completion: @escaping (Int) -> Void) {
