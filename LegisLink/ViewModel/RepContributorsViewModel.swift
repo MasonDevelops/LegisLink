@@ -87,7 +87,7 @@ class RepContributorsViewModel: ObservableObject {
     
     func getOpenSecretsAPIURLs() -> [URL] {
         
-        let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
+        let openSecretsAPIKey = Environment.openSecretsAPI
         var openSecretsURLs = [URL]()
 
 
@@ -95,7 +95,7 @@ class RepContributorsViewModel: ObservableObject {
         let contributionYears = ["2012", "2014", "2016", "2018", "2020", "2022"]
         
         for year in contributionYears {
-            let officialContributionURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.official.opensecretsID!)&cycle=\(year)&apikey=\(openSecretsAPIKey!)&output=json")
+            let officialContributionURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.official.opensecretsID!)&cycle=\(year)&apikey=\(openSecretsAPIKey)&output=json")
             
             openSecretsURLs.append(officialContributionURL!)
             
