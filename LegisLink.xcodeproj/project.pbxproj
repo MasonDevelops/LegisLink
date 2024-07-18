@@ -87,7 +87,6 @@
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
 		0FCEC7DB2BE5A459008AB70D /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCEC7DA2BE5A459008AB70D /* AWSS3 */; };
 		0FCEC7DD2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */; };
-		0FDBE6862C498A7D00D96116 /* ci_pre_xcodebuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0FDBE6852C498A7D00D96116 /* ci_pre_xcodebuild.sh */; };
 		0FEC04FA2B410DB400DADFE0 /* RepContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */; };
 		0FEC8DC82A631C9600AF86DC /* CommitteeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */; };
 		0FECB58C2A7C06D400FED68A /* jerry-moran-2022-contributors.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FECB58A2A7C06D400FED68A /* jerry-moran-2022-contributors.json */; };
@@ -674,7 +673,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F0E9A162A0B65E500E27010 /* Preview Assets.xcassets in Resources */,
-				0FDBE6862C498A7D00D96116 /* ci_pre_xcodebuild.sh in Resources */,
 				0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */,
 				0F2F8C212C0AB9C600D0928C /* ProductionBuildConfig.xcconfig in Resources */,
 				0F2DCECA2C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig in Resources */,
