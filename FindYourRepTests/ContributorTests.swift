@@ -30,7 +30,7 @@ final class OpenSecretsAPITests: XCTestCase {
         
         mockUser = User(id: "test_user_0", email: "test_user123@email.com", picture: "photoURL", street_address: "1263 Pacific Avenue", city: "Kansas City", state: "KS", zip_code: "66102")
         
-        mockOfficial = Official(name: "Jerry Moran",
+        mockOfficial = Official(name: "Jerry Moran", chamber: "Senate",
                                 address: [
                                     NormalizedInput(
                                         line1: "521 Dirksen Senate Office Building",
