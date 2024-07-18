@@ -40,6 +40,7 @@ struct Office: Codable {
 
 class Official: Codable, Hashable, ObservableObject {
     var name: String
+    var chamber: String?
     var address: [NormalizedInput]
     var party: String
     var phones: [String]
@@ -77,7 +78,7 @@ class Official: Codable, Hashable, ObservableObject {
     var twentyTwentyTwoContributors: [Contributor]?
 
     enum CodingKeys: String, CodingKey {
-        case name, address, party, phones, urls
+        case name, address, party, phones, urls, chamber
         case photoURL = "photoUrl"
         case channels
         case ocdID
@@ -104,8 +105,9 @@ class Official: Codable, Hashable, ObservableObject {
         case twentyTwentyTwoContributors
     }
 
-    init(name: String, address: [NormalizedInput], party: String, phones: [String], urls: [String], photoURL: String?, channels: [Channel], ocdID: String?, bioguideID: String?, govtrackID: String?, wikidataID: String?, votesmartID: String?, fecID: String?, opensecretsID: String?, committees: [String: String]?, sponsoredLegislation: [SponsoredLegislation]?, termsServedInCongress: [Term]?, taxationSponsoredLegislation: [SponsoredLegislation]?, healthSponsoredLegislation: [SponsoredLegislation]?, govtOpsAndPoliticsLegislation: [SponsoredLegislation]?, armedForcesAndNatlSecurityLegislation: [SponsoredLegislation]?, congressLegislation: [SponsoredLegislation]?, intlAffairsLegislation: [SponsoredLegislation]?, publicLandsNatResourcesLegislation: [SponsoredLegislation]?, foreignTradeAndIntlFinanceLegislation: [SponsoredLegislation]?, crimeAndLawEnforcementLegislation: [SponsoredLegislation]?, transportationAndPublicWorksLegislation: [SponsoredLegislation]?, educationLegislation: [SponsoredLegislation]?, socialWelfareLegislation: [SponsoredLegislation]?, energyLegislation: [SponsoredLegislation]?, twentyTwelveContributors: [Contributor]?, twentyFourTeenContributors: [Contributor]?, twentySixTeenContributors: [Contributor]?, twentyEightTeenContributors: [Contributor]?, twentyTwentyContributors: [Contributor]?, twentyTwentyTwoContributors: [Contributor]?) {
+    init(name: String, chamber: String, address: [NormalizedInput], party: String, phones: [String], urls: [String], photoURL: String?, channels: [Channel], ocdID: String?, bioguideID: String?, govtrackID: String?, wikidataID: String?, votesmartID: String?, fecID: String?, opensecretsID: String?, committees: [String: String]?, sponsoredLegislation: [SponsoredLegislation]?, termsServedInCongress: [Term]?, taxationSponsoredLegislation: [SponsoredLegislation]?, healthSponsoredLegislation: [SponsoredLegislation]?, govtOpsAndPoliticsLegislation: [SponsoredLegislation]?, armedForcesAndNatlSecurityLegislation: [SponsoredLegislation]?, congressLegislation: [SponsoredLegislation]?, intlAffairsLegislation: [SponsoredLegislation]?, publicLandsNatResourcesLegislation: [SponsoredLegislation]?, foreignTradeAndIntlFinanceLegislation: [SponsoredLegislation]?, crimeAndLawEnforcementLegislation: [SponsoredLegislation]?, transportationAndPublicWorksLegislation: [SponsoredLegislation]?, educationLegislation: [SponsoredLegislation]?, socialWelfareLegislation: [SponsoredLegislation]?, energyLegislation: [SponsoredLegislation]?, twentyTwelveContributors: [Contributor]?, twentyFourTeenContributors: [Contributor]?, twentySixTeenContributors: [Contributor]?, twentyEightTeenContributors: [Contributor]?, twentyTwentyContributors: [Contributor]?, twentyTwentyTwoContributors: [Contributor]?) {
         self.name = name
+        self.chamber = chamber
         self.address = address
         self.party = party
         self.phones = phones
