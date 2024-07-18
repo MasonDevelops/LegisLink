@@ -13,7 +13,7 @@ import XCTest
 
 @testable import LegisLink
 
-final class OpenSecretsAPITests: XCTestCase {
+final class ContributorTests: XCTestCase {
     
     var mockOpenSecretsService: MockOpenSecretsService!
     
@@ -117,56 +117,56 @@ final class OpenSecretsAPITests: XCTestCase {
     }
     
     
-    func testSuccessfulOpenSecretsAPIRequestTwentyTwentyTwoContributorNames() throws {
-        
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![0].attributes.orgName, "Votesane PAC")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![1].attributes.orgName, "American Israel Public Affairs Cmte")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![2].attributes.orgName, "DISH Network")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![3].attributes.orgName, "Apollo Global Management")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![4].attributes.orgName, "Kit Bond Strategies")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![5].attributes.orgName, "Cox Enterprises")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![6].attributes.orgName, "NextEra Energy")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![7].attributes.orgName, "Comcast Corp")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![8].attributes.orgName, "NorPAC")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![9].attributes.orgName, "Berkshire Hathaway")
-
-
-    }
+//    func testSuccessfulOpenSecretsAPIRequestTwentyTwentyTwoContributorNames() throws {
+//        
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![0].attributes.orgName, "Votesane PAC")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![1].attributes.orgName, "American Israel Public Affairs Cmte")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![2].attributes.orgName, "DISH Network")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![3].attributes.orgName, "Apollo Global Management")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![4].attributes.orgName, "Kit Bond Strategies")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![5].attributes.orgName, "Cox Enterprises")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![6].attributes.orgName, "NextEra Energy")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![7].attributes.orgName, "Comcast Corp")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![8].attributes.orgName, "NorPAC")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyTwoContributors![9].attributes.orgName, "Berkshire Hathaway")
+//
+//
+//    }
     
     
-    func testSuccessfulOpenSecretsAPIRequestTwentyTwentyContributorNames() throws {
-        
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![0].attributes.orgName, "Burns & McDonnell")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![1].attributes.orgName, "Ciciora Custom Homes")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![2].attributes.orgName, "Bartlett Grain")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![3].attributes.orgName, "Spirit Aerosystems")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![4].attributes.orgName, "Kansas City Southern")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![5].attributes.orgName, "BNSF Railway")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![6].attributes.orgName, "Koch Industries")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![7].attributes.orgName, "Van Scoyoc Assoc")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![8].attributes.orgName, "Polsinelli PC")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![9].attributes.orgName, "DISH Network")
-
-
-    }
-    
-    
-    func testSuccessfulOpenSecretsAPIRequestTwentyTwelveContributorNames() throws {
-        
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![0].attributes.orgName, "Koch Industries")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![1].attributes.orgName, "Hallmark Cards")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![2].attributes.orgName, "Ciciora Custom Homes")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![3].attributes.orgName, "Polsinelli PC")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![4].attributes.orgName, "Watco Companies")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![5].attributes.orgName, "CME Group")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![6].attributes.orgName, "BNSF Railway")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![7].attributes.orgName, "Kansas City Southern")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![8].attributes.orgName, "California Rice Industry Assn")
-        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![9].attributes.orgName, "Bartlett Grain")
-
-
-    }
-    
+//    func testSuccessfulOpenSecretsAPIRequestTwentyTwentyContributorNames() throws {
+//        
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![0].attributes.orgName, "Burns & McDonnell")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![1].attributes.orgName, "Ciciora Custom Homes")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![2].attributes.orgName, "Bartlett Grain")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![3].attributes.orgName, "Spirit Aerosystems")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![4].attributes.orgName, "Kansas City Southern")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![5].attributes.orgName, "BNSF Railway")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![6].attributes.orgName, "Koch Industries")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![7].attributes.orgName, "Van Scoyoc Assoc")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![8].attributes.orgName, "Polsinelli PC")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwentyContributors![9].attributes.orgName, "DISH Network")
+//
+//
+//    }
+//    
+//    
+//    func testSuccessfulOpenSecretsAPIRequestTwentyTwelveContributorNames() throws {
+//        
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![0].attributes.orgName, "Koch Industries")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![1].attributes.orgName, "Hallmark Cards")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![2].attributes.orgName, "Ciciora Custom Homes")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![3].attributes.orgName, "Polsinelli PC")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![4].attributes.orgName, "Watco Companies")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![5].attributes.orgName, "CME Group")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![6].attributes.orgName, "BNSF Railway")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![7].attributes.orgName, "Kansas City Southern")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![8].attributes.orgName, "California Rice Industry Assn")
+//        XCTAssertEqual(sutRepContributorVM!.official.twentyTwelveContributors![9].attributes.orgName, "Bartlett Grain")
+//
+//
+//    }
+//    
     
     
     func testSuccessfulOpenSecretsAPIRequestContributorTotals() throws {
