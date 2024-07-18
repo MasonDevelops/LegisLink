@@ -10,14 +10,10 @@ import Foundation
 
 class SortLegislationByPolicyAreaHelper {
     
-    private var senatorOne: Official
-    private var senatorTwo: Official
-    private var representative: Official
+    private var official: Official
     
-    init(senatorOne: Official, senatorTwo: Official, representative: Official) {
-        self.senatorOne = senatorOne
-        self.senatorTwo = senatorTwo
-        self.representative = representative
+    init(official: Official) {
+        self.official = official
     }
     
     
@@ -25,9 +21,7 @@ class SortLegislationByPolicyAreaHelper {
         
        var tempLegislation = [[SponsoredLegislation]]()
                 
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Transportation and Public Works"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Transportation and Public Works"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Transportation and Public Works"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Transportation and Public Works"))
         
         return tempLegislation
     }
@@ -36,9 +30,7 @@ class SortLegislationByPolicyAreaHelper {
         
         var tempLegislation = [[SponsoredLegislation]]()
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Taxation"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Taxation"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Taxation"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Taxation"))
         
         return tempLegislation
     }
@@ -49,9 +41,7 @@ class SortLegislationByPolicyAreaHelper {
         
         var tempLegislation = [[SponsoredLegislation]]()
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Health"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Health"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Health"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Health"))
         
         return tempLegislation
     }
@@ -61,9 +51,7 @@ class SortLegislationByPolicyAreaHelper {
         
         var tempLegislation = [[SponsoredLegislation]]()
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Government Operations and Politics"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Government Operations and Politics"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Government Operations and Politics"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Government Operations and Politics"))
         
         return tempLegislation
     }
@@ -74,9 +62,7 @@ class SortLegislationByPolicyAreaHelper {
         
         var tempLegislation = [[SponsoredLegislation]]()
 
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Armed Forces and National Security"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Armed Forces and National Security"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Armed Forces and National Security"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Armed Forces and National Security"))
         
         return tempLegislation
     }
@@ -87,9 +73,7 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Congress"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Congress"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Congress"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Congress"))
         
         return tempLegislation
     }
@@ -100,9 +84,8 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "International Affairs"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "International Affairs"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "International Affairs"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "International Affairs"))
+        
         
         return tempLegislation
     }
@@ -112,9 +95,7 @@ class SortLegislationByPolicyAreaHelper {
         
         var tempLegislation = [[SponsoredLegislation]]()
 
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Public Lands and Natural Resources"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Public Lands and Natural Resources"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Public Lands and Natural Resources"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Public Lands and Natural Resources"))
         
         return tempLegislation
     }
@@ -124,9 +105,7 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Foreign Trade and International Finance"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Foreign Trade and International Finance"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Foreign Trade and International Finance"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Foreign Trade and International Finance"))
         
         return tempLegislation
     }
@@ -136,9 +115,7 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Crime and Law Enforcement"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Crime and Law Enforcement"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Crime and Law Enforcement"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Crime and Law Enforcement"))
         
         return tempLegislation
     }
@@ -148,9 +125,7 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Education"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Education"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Education"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Education"))
         
         return tempLegislation
     }
@@ -160,9 +135,7 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Social Welfare"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Social Welfare"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Social Welfare"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Social Welfare"))
         
         return tempLegislation
     }
@@ -172,9 +145,7 @@ class SortLegislationByPolicyAreaHelper {
         var tempLegislation = [[SponsoredLegislation]]()
 
         
-        tempLegislation.append(filterSponsoredLegislation(senatorOne.sponsoredLegislation, policyArea: "Energy"))
-        tempLegislation.append(filterSponsoredLegislation(senatorTwo.sponsoredLegislation, policyArea: "Energy"))
-        tempLegislation.append(filterSponsoredLegislation(representative.sponsoredLegislation, policyArea: "Energy"))
+        tempLegislation.append(filterSponsoredLegislation(official.sponsoredLegislation, policyArea: "Energy"))
         
         return tempLegislation
     }
