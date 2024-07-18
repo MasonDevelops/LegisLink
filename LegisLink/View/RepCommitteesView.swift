@@ -13,6 +13,16 @@ import SwiftUI
 struct RepCommitteesView: View {
     let user: User
     let official: Official
+    let openStatesService = OpenStatesService()
+    
+    @ObservedObject private var repcvm: RepCommitteesViewModel
+    
+    init(user: User, official: Official) {
+        self.user = user
+        self.official = official
+        self.repcvm = RepCommitteesViewModel(user: user, openStatesService: openStatesService, official: official)
+    }
+    
     var body: some View {
         VStack {
             Section("\(official.name)'s Committee Memberships") {
