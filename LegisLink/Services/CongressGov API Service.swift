@@ -22,7 +22,7 @@ class CongressGovService: CongressGovServiceProtocol {
     
     
     private var congressGovAPIKey: String {
-        get {return ProcessInfo.processInfo.environment["CongressGov_API_Key"]!}
+        get {return Environment.congressGovAPI}
     }
     
     func getMaxPagination(bioGuideID: String, completion: @escaping (Int) -> Void) {

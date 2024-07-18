@@ -17,7 +17,7 @@ public extension WebAuthentication {
     /// }
     /// ```
     ///
-    /// If you need specify a custom `UIModalPresentationStyle`:
+    /// If you need to specify a custom `UIModalPresentationStyle`:
     ///
     /// ```swift
     /// Auth0
@@ -30,6 +30,10 @@ public extension WebAuthentication {
     ///
     /// - Parameter style: `UIModalPresentationStyle` to be used. Defaults to `.fullScreen`.
     /// - Returns: A ``WebAuthProvider`` instance.
+    ///
+    /// ## See Also
+    ///
+    /// - <doc:UserAgents>
     static func safariProvider(style: UIModalPresentationStyle = .fullScreen) -> WebAuthProvider {
         return { url, callback in
             let safari = SFSafariViewController(url: url)
@@ -44,7 +48,9 @@ public extension WebAuthentication {
 extension SFSafariViewController {
 
     var topViewController: UIViewController? {
-        guard let root = UIApplication.shared()?.keyWindow?.rootViewController else { return nil }
+        guard let root = UIApplication.shared()?.windows.last(where: \.isKeyWindow)?.rootViewController else {
+            return nil
+        }
         return self.findTopViewController(from: root)
     }
 
@@ -75,13 +81,14 @@ extension SFSafariViewController {
 class SafariUserAgent: NSObject, WebAuthUserAgent {
 
     let controller: SFSafariViewController
-    let callback: ((WebAuthResult<Void>) -> Void)
+    let callback: WebAuthProviderCallback
 
-    init(controller: SFSafariViewController, callback: @escaping (WebAuthResult<Void>) -> Void) {
+    init(controller: SFSafariViewController, callback: @escaping WebAuthProviderCallback) {
         self.controller = controller
         self.callback = callback
         super.init()
         self.controller.delegate = self
+        self.controller.presentationController?.delegate = self
     }
 
     func start() {
@@ -115,6 +122,17 @@ class SafariUserAgent: NSObject, WebAuthUserAgent {
 extension SafariUserAgent: SFSafariViewControllerDelegate {
 
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        // If you are developing a custom Web Auth provider, call WebAuthentication.cancel() instead
+        // TransactionStore is internal
+        TransactionStore.shared.cancel()
+
+    }
+
+}
+
+extension SafariUserAgent: UIAdaptivePresentationControllerDelegate {
+
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         // If you are developing a custom Web Auth provider, call WebAuthentication.cancel() instead
         // TransactionStore is internal
         TransactionStore.shared.cancel()

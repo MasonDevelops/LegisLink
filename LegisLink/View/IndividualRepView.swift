@@ -13,7 +13,6 @@ import SwiftUI
 struct IndividualRepView: View {
     let user: User
     let official: Official
-    var partyAbbrev: String
     var body: some View {
         
         
@@ -31,7 +30,7 @@ struct IndividualRepView: View {
                 AsyncImage(url: URL(string: official.photoURL!))
             }
             
-            Text("\(official.name) \(partyAbbrev)").font(.headline)
+            Text("\(official.name) (\(official.party))").font(.headline)
             Spacer()
                     
         }

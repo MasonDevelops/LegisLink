@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_town_squareVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_town_squareVersionString[];
+FOUNDATION_EXPORT double Pods_LegisLinkVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LegisLinkVersionString[];
 

@@ -9,7 +9,7 @@ import Foundation
 
 
 
-class RepContributorsViewModel: ObservableObject {
+class RepContributorsViewModel: ObservableObject {		
     
     private var user: User
     private let openSecretsService: OpenSecretsServiceProtocol
@@ -22,89 +22,59 @@ class RepContributorsViewModel: ObservableObject {
         
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
             
-            let jm2020 = URL(string: "jerry-moran-2020-contributors")
-            let jm2022 = URL(string: "jerry-moran-2022-contributors")
-            let jm2012 = URL(string: "jerry-moran-2012-contributors")
-
-
-            var testURLs = [URL]()
-            testURLs.append(jm2020!)
-            testURLs.append(jm2022!)
-            testURLs.append(jm2012!)
-
+            let testURLs = openSecretsService.getOpenSecretsAPIURLs(official: official)
             
-            getTopContributorInfo(openSecretsURLs: testURLs)
+            getTopContributorInfo(openSecretsURLs: testURLs, openSecretsID: official.opensecretsID!)
             
         } else {
-            let openSecretsURLs = getOpenSecretsAPIURLs()
-            getTopContributorInfo(openSecretsURLs: openSecretsURLs)
+            let openSecretsURLs = openSecretsService.getOpenSecretsAPIURLs(official: official)
+            getTopContributorInfo(openSecretsURLs: openSecretsURLs, openSecretsID: official.opensecretsID!)
         }
         
     }
     
     
-    func getTopContributorInfo(openSecretsURLs: [URL]) {
-        
+    func getTopContributorInfo(openSecretsURLs: [URL], openSecretsID: String) {
+            
         let group = DispatchGroup()
-        
+        let queue = DispatchQueue(label: "com.legislink.network", qos: .userInitiated)
+            
         for currentURL in openSecretsURLs {
-            
-            group.enter()
-            
-            openSecretsService.getTopContributors(from: currentURL) { [weak self] result in
-                
-                switch result {
-                case .success(let contributors):
-                    if (self!.official.opensecretsID == contributors.response.contributors.attributes.cid) {
-                        switch contributors.response.contributors.attributes.cycle {
-                        case "2012":
-                            self!.official.twentyTwelveContributors = contributors.response.contributors.contributor
-                        case "2016":
-                            self!.official.twentySixTeenContributors = contributors.response.contributors.contributor
-                        case "2018":
-                            self!.official.twentyEightTeenContributors = contributors.response.contributors.contributor
-                        case "2020":
-                            self!.official.twentyTwentyContributors = contributors.response.contributors.contributor
-                        case "2022":
-                            self!.official.twentyTwentyTwoContributors = contributors.response.contributors.contributor
-                        default:
-                            break
+            queue.async(group: group) {
+                self.openSecretsService.getTopContributors(from: openSecretsID, url: currentURL) { [weak self] result in
+                    guard let self = self else { return }
+                    switch result {
+                    case .success(let contributors):
+                        if self.official.opensecretsID == contributors.response.contributors.attributes.cid {
+                            switch contributors.response.contributors.attributes.cycle {
+                            case "2012":
+                                self.official.twentyTwelveContributors = contributors.response.contributors.contributor
+                            case "2014":
+                                self.official.twentyFourTeenContributors = contributors.response.contributors.contributor
+                            case "2016":
+                                self.official.twentySixTeenContributors = contributors.response.contributors.contributor
+                            case "2018":
+                                self.official.twentyEightTeenContributors = contributors.response.contributors.contributor
+                            case "2020":
+                                self.official.twentyTwentyContributors = contributors.response.contributors.contributor
+                            case "2022":
+                                self.official.twentyTwentyTwoContributors = contributors.response.contributors.contributor
+                            default:
+                                break
+                            }
                         }
+                    case .failure(let error):
+                        print("Unexpected error: \(error).")
                     }
-                case .failure(let error):
-                    print("Unexpected error: \(error).")
                 }
-                group.leave()
             }
-            group.wait()
-            
         }
+            
         group.notify(queue: DispatchQueue.main) {
             print("All calls have completed.")
         }
     }
-    
-    
-    func getOpenSecretsAPIURLs() -> [URL] {
-        
-        let openSecretsAPIKey = ProcessInfo.processInfo.environment["OpenSecrets_API_Key"]
-        var openSecretsURLs = [URL]()
 
-
-        
-        let contributionYears = ["2012", "2014", "2016", "2018", "2020", "2022"]
-        
-        for year in contributionYears {
-            let officialContributionURL = URL(string: "https://www.opensecrets.org/api/?method=candContrib&cid=\(self.official.opensecretsID!)&cycle=\(year)&apikey=\(openSecretsAPIKey!)&output=json")
-            
-            openSecretsURLs.append(officialContributionURL!)
-            
-        }
-        
-        
-        return openSecretsURLs
-        
-    }
 }
 
 

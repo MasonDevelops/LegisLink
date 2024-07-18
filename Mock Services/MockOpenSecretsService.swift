@@ -11,7 +11,7 @@ import Foundation
 
 
 class MockOpenSecretsService: OpenSecretsServiceProtocol {
-    func getTopContributors(from url: URL, completion: @escaping (Swift.Result<Contributors, Error>) -> Void) {
+    func getTopContributors(from openSecretsID: String, url: URL, completion: @escaping (Swift.Result<Contributors, Error>) -> Void) {
         let mockFileName = url.absoluteString
         guard let newUrl = Bundle(for: MockOpenSecretsService.self).url(forResource: mockFileName, withExtension: "json"),
               let data = try? Data(contentsOf: newUrl) else { return }
@@ -40,4 +40,20 @@ class MockOpenSecretsService: OpenSecretsServiceProtocol {
         }
         return contributors
     }
+    
+    func getOpenSecretsAPIURLs(official: Official) -> [URL] {
+        
+        let jm2020 = URL(string: "jerry-moran-2020-contributors")
+        let jm2022 = URL(string: "jerry-moran-2022-contributors")
+        let jm2012 = URL(string: "jerry-moran-2012-contributors")
+
+
+        var testURLs = [URL]()
+        testURLs.append(jm2020!)
+        testURLs.append(jm2022!)
+        testURLs.append(jm2012!)
+
+        return testURLs
+    }
+    
 }

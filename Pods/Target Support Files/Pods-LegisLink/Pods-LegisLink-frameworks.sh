@@ -18,7 +18,7 @@ echo "mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
 COCOAPODS_PARALLEL_CODE_SIGN="${COCOAPODS_PARALLEL_CODE_SIGN:-false}"
-SWIFT_STDLIB_PATH="${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
+SWIFT_STDLIB_PATH="${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
 BCSYMBOLMAP_DIR="BCSymbolMaps"
 
 
@@ -175,14 +175,35 @@ code_sign_if_enabled() {
   fi
 }
 
-if [[ "$CONFIGURATION" == "Debug" ]]; then
+if [[ "$CONFIGURATION" == "Debug (Dev)" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Fuse/Fuse.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams/Yams.framework"
 fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
+if [[ "$CONFIGURATION" == "Debug (Production)" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Fuse/Fuse.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Yams/Yams.framework"
+fi
+if [[ "$CONFIGURATION" == "DevBuildSettings" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Fuse/Fuse.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Yams/Yams.framework"
+fi
+if [[ "$CONFIGURATION" == "Release (Dev)" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Fuse/Fuse.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Yams/Yams.framework"
+fi
+if [[ "$CONFIGURATION" == "Release (Production)" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Fuse/Fuse.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework"

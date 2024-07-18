@@ -14,8 +14,11 @@
 		0F0E9A132A0B65E500E27010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0E9A122A0B65E500E27010 /* Assets.xcassets */; };
 		0F0E9A162A0B65E500E27010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0E9A152A0B65E500E27010 /* Preview Assets.xcassets */; };
 		0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F0E9A1C2A0B698500E27010 /* .gitignore */; };
+		0F25A3202C31FF9900C9686C /* CommitteeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25A31F2C31FF9900C9686C /* CommitteeTests.swift */; };
 		0F2841862B13C0BA00C73D4E /* IndivLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2841852B13C0BA00C73D4E /* IndivLegislationView.swift */; };
 		0F2A92432B252247001BF80E /* SortLegislationByPolicyAreaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A92422B252247001BF80E /* SortLegislationByPolicyAreaHelper.swift */; };
+		0F2DCECA2C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DCEC92C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig */; };
+		0F2DCED12C0820C6004F86DF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DCED02C0820C6004F86DF /* Environment.swift */; };
 		0F2EB2D52B8A935A00E226B7 /* DailyBillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2EB2D42B8A935A00E226B7 /* DailyBillsTests.swift */; };
 		0F2EB2DB2B8A946E00E226B7 /* MockOpenStatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D9A2A7ECB6E001DE7BD /* MockOpenStatesService.swift */; };
 		0F2EB2DC2B8A946E00E226B7 /* MockGoogleCivicInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D962A7EC58C001DE7BD /* MockGoogleCivicInfoService.swift */; };
@@ -26,6 +29,7 @@
 		0F2EB2E12B8A948A00E226B7 /* MockOpenSecretsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F723D9D2A7ECCDD001DE7BD /* MockOpenSecretsService.swift */; };
 		0F2EB2E22B8A948A00E226B7 /* MockCongressGovService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */; };
 		0F2EB2E52B8A9AAB00E226B7 /* todays-bills-congress-gov-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F2EB2E42B8A9AAB00E226B7 /* todays-bills-congress-gov-response.json */; };
+		0F2F8C212C0AB9C600D0928C /* ProductionBuildConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F8C202C0AB9C600D0928C /* ProductionBuildConfig.xcconfig */; };
 		0F32CB9D2A8D3A6E0000E46A /* RepContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */; };
 		0F32CB9F2A8E810B0000E46A /* RepSponsoredLegislationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */; };
 		0F32CBA12A8E84540000E46A /* SponsoredLegislationPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */; };
@@ -41,9 +45,12 @@
 		0F3AEFD82B81D56D00358E9C /* CongressGovPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */; };
 		0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */; };
 		0F3D9B382B9819C500F81014 /* HubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D9B372B9819C500F81014 /* HubView.swift */; };
+		0F4477CB2C2345A1005CE4C3 /* RepCommitteesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4477CA2C2345A1005CE4C3 /* RepCommitteesViewModel.swift */; };
+		0F4477CD2C238673005CE4C3 /* RepSponsoredLegislationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4477CC2C238673005CE4C3 /* RepSponsoredLegislationViewModel.swift */; };
 		0F473A322A5E3952002DA520 /* RepCommitteesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F473A312A5E3951002DA520 /* RepCommitteesView.swift */; };
 		0F4A600C2B0B0698001DD179 /* SponsoredLegisListByTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */; };
 		0F4DB0BF2B9E9CBF00A242CA /* NewYorkTimes API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DB0BE2B9E9CBF00A242CA /* NewYorkTimes API Service.swift */; };
+		0F4F2E702C0AA510000E9061 /* DEVELOPMENT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F2E6F2C0AA510000E9061 /* DEVELOPMENT.plist */; };
 		0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50916D2A1082AD008AE977 /* Auth0 */; };
 		0F5091722A1083A9008AE977 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5091712A1083A9008AE977 /* Auth0.plist */; };
 		0F5091742A108652008AE977 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5091732A108652008AE977 /* LoginView.swift */; };
@@ -76,7 +83,7 @@
 		0FC42D062C03F6FB00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42D042C03F6FB00DF43EE /* US Congress Directory */; };
 		0FC42D072C03F6FB00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42D042C03F6FB00DF43EE /* US Congress Directory */; };
 		0FC42D082C03F6FB00DF43EE /* US Congress Directory in Resources */ = {isa = PBXBuildFile; fileRef = 0FC42D042C03F6FB00DF43EE /* US Congress Directory */; };
-		0FC5C2762B48EED000539926 /* OpenSecretsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */; };
+		0FC5C2762B48EED000539926 /* ContributorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5C2752B48EED000539926 /* ContributorTests.swift */; };
 		0FCEBAE42A30FD3F0014D2D2 /* CRPCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */; };
 		0FCEC7DB2BE5A459008AB70D /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCEC7DA2BE5A459008AB70D /* AWSS3 */; };
 		0FCEC7DD2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */; };
@@ -97,7 +104,7 @@
 		0FF9FE052A1A948C00189618 /* MyRepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE042A1A948C00189618 /* MyRepsView.swift */; };
 		0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE062A1A949A00189618 /* SettingsView.swift */; };
 		0FF9FE092A1A94DC00189618 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9FE082A1A94DC00189618 /* MyProfileView.swift */; };
-		DD9BA5F3B83982416FFB50F2 /* Pods_town_square.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14464E6D7279D0E8188BBEA /* Pods_town_square.framework */; };
+		A5DE15F0850ECE8B81B7B695 /* Pods_LegisLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845DE32944717B9BE4A31396 /* Pods_LegisLink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,11 +143,16 @@
 		0F0E9A1C2A0B698500E27010 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0F14FD572A7A339600F91EF4 /* FindYourRepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindYourRepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F14FD592A7A339600F91EF4 /* FindYourRepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourRepTests.swift; sourceTree = "<group>"; };
+		0F2407812C0E88D80063AD39 /* LegisLink-DEV.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "LegisLink-DEV.xctestplan"; path = "/Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/LegisLink-DEV.xctestplan"; sourceTree = "<absolute>"; };
+		0F25A31F2C31FF9900C9686C /* CommitteeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitteeTests.swift; sourceTree = "<group>"; };
 		0F2841852B13C0BA00C73D4E /* IndivLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndivLegislationView.swift; sourceTree = "<group>"; };
 		0F2A92422B252247001BF80E /* SortLegislationByPolicyAreaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortLegislationByPolicyAreaHelper.swift; sourceTree = "<group>"; };
+		0F2DCEC92C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevelopmentBuildConfig.xcconfig; sourceTree = "<group>"; };
+		0F2DCED02C0820C6004F86DF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		0F2EB2D22B8A935A00E226B7 /* DailyBillsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyBillsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2EB2D42B8A935A00E226B7 /* DailyBillsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBillsTests.swift; sourceTree = "<group>"; };
 		0F2EB2E42B8A9AAB00E226B7 /* todays-bills-congress-gov-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "todays-bills-congress-gov-response.json"; sourceTree = "<group>"; };
+		0F2F8C202C0AB9C600D0928C /* ProductionBuildConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ProductionBuildConfig.xcconfig; sourceTree = "<group>"; };
 		0F32CB9C2A8D3A6E0000E46A /* RepContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsView.swift; sourceTree = "<group>"; };
 		0F32CB9E2A8E810B0000E46A /* RepSponsoredLegislationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepSponsoredLegislationView.swift; sourceTree = "<group>"; };
 		0F32CBA02A8E84540000E46A /* SponsoredLegislationPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegislationPackage.swift; sourceTree = "<group>"; };
@@ -156,10 +168,13 @@
 		0F3AEFD72B81D56D00358E9C /* CongressGovPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressGovPagination.swift; sourceTree = "<group>"; };
 		0F3AEFD92B81D60C00358E9C /* GetDailyBillsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyBillsResponse.swift; sourceTree = "<group>"; };
 		0F3D9B372B9819C500F81014 /* HubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubView.swift; sourceTree = "<group>"; };
+		0F4477CA2C2345A1005CE4C3 /* RepCommitteesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteesViewModel.swift; sourceTree = "<group>"; };
+		0F4477CC2C238673005CE4C3 /* RepSponsoredLegislationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepSponsoredLegislationViewModel.swift; sourceTree = "<group>"; };
 		0F473A312A5E3951002DA520 /* RepCommitteesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCommitteesView.swift; sourceTree = "<group>"; };
 		0F4A600B2B0B0698001DD179 /* SponsoredLegisListByTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsoredLegisListByTermView.swift; sourceTree = "<group>"; };
 		0F4DB0BE2B9E9CBF00A242CA /* NewYorkTimes API Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewYorkTimes API Service.swift"; sourceTree = "<group>"; };
-		0F50916B2A108247008AE977 /* Legis-Link-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Legis-Link-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0F4F2E6F2C0AA510000E9061 /* DEVELOPMENT.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DEVELOPMENT.plist; sourceTree = "<group>"; };
+		0F50916B2A108247008AE977 /* PRODUCTION.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PRODUCTION.plist; path = "Production Environment/PRODUCTION.plist"; sourceTree = SOURCE_ROOT; };
 		0F5091712A1083A9008AE977 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		0F5091732A108652008AE977 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0F5091752A108692008AE977 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -187,7 +202,7 @@
 		0FA4A1532B5E3A88008F2C77 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		0FA5B31F2AE4A565009E41CA /* MockCongressGovService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCongressGovService.swift; sourceTree = "<group>"; };
 		0FC42D042C03F6FB00DF43EE /* US Congress Directory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "US Congress Directory"; sourceTree = "<group>"; };
-		0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSecretsAPITests.swift; sourceTree = "<group>"; };
+		0FC5C2752B48EED000539926 /* ContributorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorTests.swift; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
 		0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUSCongressDirectoryHandler.swift; sourceTree = "<group>"; };
 		0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsViewModel.swift; sourceTree = "<group>"; };
@@ -207,8 +222,15 @@
 		0FF9FE042A1A948C00189618 /* MyRepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepsView.swift; sourceTree = "<group>"; };
 		0FF9FE062A1A949A00189618 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0FF9FE082A1A94DC00189618 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		298BE7FD9E647014D735EC23 /* Pods-LegisLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.debug.xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.debug.xcconfig"; sourceTree = "<group>"; };
+		2EE1DD7ABD3E2990E710C921 /* Pods-LegisLink.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.release (dev).xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.release (dev).xcconfig"; sourceTree = "<group>"; };
+		5179F69E5ADDA73ADB9E3990 /* Pods-LegisLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.release.xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.release.xcconfig"; sourceTree = "<group>"; };
+		5DEC1C41279348DE394AE28D /* Pods-LegisLink.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.development.xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.development.xcconfig"; sourceTree = "<group>"; };
 		780A89078F405D6F9E7B2EA9 /* Pods-town square.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-town square.release.xcconfig"; path = "Target Support Files/Pods-town square/Pods-town square.release.xcconfig"; sourceTree = "<group>"; };
-		F14464E6D7279D0E8188BBEA /* Pods_town_square.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_town_square.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADD44DF22ABA387E3D4BF51 /* Pods-LegisLink.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.debug (dev).xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.debug (dev).xcconfig"; sourceTree = "<group>"; };
+		7F3B992FF10547D5F8D9BD61 /* Pods-LegisLink.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.debug (production).xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.debug (production).xcconfig"; sourceTree = "<group>"; };
+		845DE32944717B9BE4A31396 /* Pods_LegisLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegisLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAAD84885CB783A54A8FD9D /* Pods-LegisLink.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegisLink.release (production).xcconfig"; path = "Target Support Files/Pods-LegisLink/Pods-LegisLink.release (production).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +240,7 @@
 			files = (
 				0FCEC7DB2BE5A459008AB70D /* AWSS3 in Frameworks */,
 				0F50916E2A1082AD008AE977 /* Auth0 in Frameworks */,
-				DD9BA5F3B83982416FFB50F2 /* Pods_town_square.framework in Frameworks */,
+				A5DE15F0850ECE8B81B7B695 /* Pods_LegisLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +273,13 @@
 			children = (
 				0BD9BEEEDF802AE05E9252F1 /* Pods-town square.debug.xcconfig */,
 				780A89078F405D6F9E7B2EA9 /* Pods-town square.release.xcconfig */,
+				298BE7FD9E647014D735EC23 /* Pods-LegisLink.debug.xcconfig */,
+				5DEC1C41279348DE394AE28D /* Pods-LegisLink.development.xcconfig */,
+				5179F69E5ADDA73ADB9E3990 /* Pods-LegisLink.release.xcconfig */,
+				7F3B992FF10547D5F8D9BD61 /* Pods-LegisLink.debug (production).xcconfig */,
+				7ADD44DF22ABA387E3D4BF51 /* Pods-LegisLink.debug (dev).xcconfig */,
+				8EAAD84885CB783A54A8FD9D /* Pods-LegisLink.release (production).xcconfig */,
+				2EE1DD7ABD3E2990E710C921 /* Pods-LegisLink.release (dev).xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -258,8 +287,10 @@
 		0F0E9A022A0B65E200E27010 = {
 			isa = PBXGroup;
 			children = (
+				0F2407832C0E89040063AD39 /* Production Environment */,
+				0F2407822C0E88DE0063AD39 /* Development Environment */,
 				0F5091712A1083A9008AE977 /* Auth0.plist */,
-				0F50916B2A108247008AE977 /* Legis-Link-Info.plist */,
+				0F2DCED02C0820C6004F86DF /* Environment.swift */,
 				0F0E9A0D2A0B65E200E27010 /* LegisLink */,
 				0F14FD582A7A339600F91EF4 /* FindYourRepTests */,
 				0F2EB2D32B8A935A00E226B7 /* DailyBillsTests */,
@@ -312,10 +343,30 @@
 			isa = PBXGroup;
 			children = (
 				0F14FD592A7A339600F91EF4 /* FindYourRepTests.swift */,
-				0FC5C2752B48EED000539926 /* OpenSecretsAPITests.swift */,
+				0F25A31F2C31FF9900C9686C /* CommitteeTests.swift */,
+				0FC5C2752B48EED000539926 /* ContributorTests.swift */,
 				0F723D992A7EC5F0001DE7BD /* JSON Responses */,
 			);
 			path = FindYourRepTests;
+			sourceTree = "<group>";
+		};
+		0F2407822C0E88DE0063AD39 /* Development Environment */ = {
+			isa = PBXGroup;
+			children = (
+				0F4F2E6F2C0AA510000E9061 /* DEVELOPMENT.plist */,
+				0F2DCEC92C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig */,
+				0F2407812C0E88D80063AD39 /* LegisLink-DEV.xctestplan */,
+			);
+			path = "Development Environment";
+			sourceTree = "<group>";
+		};
+		0F2407832C0E89040063AD39 /* Production Environment */ = {
+			isa = PBXGroup;
+			children = (
+				0F2F8C202C0AB9C600D0928C /* ProductionBuildConfig.xcconfig */,
+				0F50916B2A108247008AE977 /* PRODUCTION.plist */,
+			);
+			path = "Production Environment";
 			sourceTree = "<group>";
 		};
 		0F2A92412B252221001BF80E /* Helpers */ = {
@@ -394,6 +445,8 @@
 				0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */,
 				0FA4A1512B5E32DC008F2C77 /* LegisFeedViewModel.swift */,
 				0F63E3DD2BA9284D00F15B05 /* NYTFeedViewModel.swift */,
+				0F4477CA2C2345A1005CE4C3 /* RepCommitteesViewModel.swift */,
+				0F4477CC2C238673005CE4C3 /* RepSponsoredLegislationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -467,7 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				0F0E9A1C2A0B698500E27010 /* .gitignore */,
-				F14464E6D7279D0E8188BBEA /* Pods_town_square.framework */,
+				845DE32944717B9BE4A31396 /* Pods_LegisLink.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -611,6 +664,9 @@
 			files = (
 				0F0E9A162A0B65E500E27010 /* Preview Assets.xcassets in Resources */,
 				0F0E9A1D2A0B698500E27010 /* .gitignore in Resources */,
+				0F2F8C212C0AB9C600D0928C /* ProductionBuildConfig.xcconfig in Resources */,
+				0F2DCECA2C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig in Resources */,
+				0F4F2E702C0AA510000E9061 /* DEVELOPMENT.plist in Resources */,
 				0FC42D052C03F6FB00DF43EE /* US Congress Directory in Resources */,
 				0F0E9A132A0B65E500E27010 /* Assets.xcassets in Resources */,
 				0F5091722A1083A9008AE977 /* Auth0.plist in Resources */,
@@ -669,15 +725,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-town square/Pods-town square-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LegisLink/Pods-LegisLink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-town square/Pods-town square-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LegisLink/Pods-LegisLink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-town square/Pods-town square-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LegisLink/Pods-LegisLink-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2AF6E219566174E5A54D2CBA /* [CP] Check Pods Manifest.lock */ = {
@@ -695,7 +751,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-town square-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LegisLink-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -716,6 +772,7 @@
 				0FF54A372BCC81A70027DD75 /* MockNewYorkTimesService.swift in Sources */,
 				0FF9FE052A1A948C00189618 /* MyRepsView.swift in Sources */,
 				0F723D932A7D6A37001DE7BD /* OpenSecrets API Service.swift in Sources */,
+				0F4477CD2C238673005CE4C3 /* RepSponsoredLegislationViewModel.swift in Sources */,
 				0FF9FE092A1A94DC00189618 /* MyProfileView.swift in Sources */,
 				0F4DB0BF2B9E9CBF00A242CA /* NewYorkTimes API Service.swift in Sources */,
 				0FF9FE072A1A949A00189618 /* SettingsView.swift in Sources */,
@@ -723,11 +780,13 @@
 				0F2A92432B252247001BF80E /* SortLegislationByPolicyAreaHelper.swift in Sources */,
 				0F32CBA12A8E84540000E46A /* SponsoredLegislationPackage.swift in Sources */,
 				0F91DECF2A1FC80800CDD786 /* Reps.swift in Sources */,
+				0F4477CB2C2345A1005CE4C3 /* RepCommitteesViewModel.swift in Sources */,
 				0F57B0A52A59E49000F906C1 /* CandidateYAML.swift in Sources */,
 				0FEF0EB62A2BA4DD009064E7 /* IndividualRepView.swift in Sources */,
 				0F3AEFDA2B81D60C00358E9C /* GetDailyBillsResponse.swift in Sources */,
 				0F91DED12A1FC95500CDD786 /* MyRepsViewModel.swift in Sources */,
 				0F63E3DC2BA61A9C00F15B05 /* NYTRequest.swift in Sources */,
+				0F2DCED12C0820C6004F86DF /* Environment.swift in Sources */,
 				0FF9FE032A1A933C00189618 /* LegisFeedView.swift in Sources */,
 				0F3D9B382B9819C500F81014 /* HubView.swift in Sources */,
 				0F63E3E02BB1A9F500F15B05 /* NYTFeedView.swift in Sources */,
@@ -764,7 +823,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC5C2762B48EED000539926 /* OpenSecretsAPITests.swift in Sources */,
+				0FC5C2762B48EED000539926 /* ContributorTests.swift in Sources */,
+				0F25A3202C31FF9900C9686C /* CommitteeTests.swift in Sources */,
 				0F723D9E2A7ECCDD001DE7BD /* MockOpenSecretsService.swift in Sources */,
 				0F723D972A7EC58C001DE7BD /* MockGoogleCivicInfoService.swift in Sources */,
 				0FA5B3202AE4A565009E41CA /* MockCongressGovService.swift in Sources */,
@@ -815,8 +875,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F0E9A172A0B65E500E27010 /* Debug */ = {
+		0F0E9A172A0B65E500E27010 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2F8C202C0AB9C600D0928C /* ProductionBuildConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -866,6 +927,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Production Environment/PRODUCTION.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -874,10 +936,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug (Production)";
 		};
-		0F0E9A182A0B65E500E27010 /* Release */ = {
+		0F0E9A182A0B65E500E27010 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2F8C202C0AB9C600D0928C /* ProductionBuildConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -921,6 +984,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Production Environment/PRODUCTION.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -929,11 +993,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
-		0F0E9A1A2A0B65E500E27010 /* Debug */ = {
+		0F0E9A1A2A0B65E500E27010 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BD9BEEEDF802AE05E9252F1 /* Pods-town square.debug.xcconfig */;
+			baseConfigurationReference = 7F3B992FF10547D5F8D9BD61 /* Pods-LegisLink.debug (production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -943,7 +1007,7 @@
 				DEVELOPMENT_TEAM = JRRP3YJWJ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Legis-Link-Info.plist";
+				INFOPLIST_FILE = "Production Environment/PRODUCTION.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LegisLink;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -963,11 +1027,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug (Production)";
 		};
-		0F0E9A1B2A0B65E500E27010 /* Release */ = {
+		0F0E9A1B2A0B65E500E27010 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 780A89078F405D6F9E7B2EA9 /* Pods-town square.release.xcconfig */;
+			baseConfigurationReference = 8EAAD84885CB783A54A8FD9D /* Pods-LegisLink.release (production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -977,7 +1041,7 @@
 				DEVELOPMENT_TEAM = JRRP3YJWJ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Legis-Link-Info.plist";
+				INFOPLIST_FILE = "Production Environment/PRODUCTION.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LegisLink;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -997,9 +1061,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
-		0F14FD5E2A7A339600F91EF4 /* Debug */ = {
+		0F14FD5E2A7A339600F91EF4 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1020,9 +1084,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
 			};
-			name = Debug;
+			name = "Debug (Production)";
 		};
-		0F14FD5F2A7A339600F91EF4 /* Release */ = {
+		0F14FD5F2A7A339600F91EF4 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1043,9 +1107,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
-		0F2EB2D92B8A935A00E226B7 /* Debug */ = {
+		0F2EB2D92B8A935A00E226B7 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1070,9 +1134,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
 			};
-			name = Debug;
+			name = "Debug (Production)";
 		};
-		0F2EB2DA2B8A935A00E226B7 /* Release */ = {
+		0F2EB2DA2B8A935A00E226B7 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1096,9 +1160,156 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
-		0FF54A342BCC80F60027DD75 /* Debug */ = {
+		0FEA97FF2C0AA2B1002BB249 /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2DCEC92C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Development Environment/DEVELOPMENT.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Dev)";
+		};
+		0FEA98002C0AA2B1002BB249 /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADD44DF22ABA387E3D4BF51 /* Pods-LegisLink.debug (dev).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LegisLink/Preview Content\"";
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Development Environment/DEVELOPMENT.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LegisLink;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = legis.link;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (Dev)";
+		};
+		0FEA98012C0AA2B1002BB249 /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = brodybrosius.FindYourRepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
+			};
+			name = "Debug (Dev)";
+		};
+		0FEA98022C0AA2B1002BB249 /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = brodybrosius.DailyBillsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
+			};
+			name = "Debug (Dev)";
+		};
+		0FEA98032C0AA2B1002BB249 /* Debug (Dev) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1120,9 +1331,149 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
 			};
-			name = Debug;
+			name = "Debug (Dev)";
 		};
-		0FF54A352BCC80F60027DD75 /* Release */ = {
+		0FEA98042C0AA2BC002BB249 /* Release (Dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2DCEC92C07D2E3004F86DF /* DevelopmentBuildConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Development Environment/DEVELOPMENT.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Dev)";
+		};
+		0FEA98052C0AA2BC002BB249 /* Release (Dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE1DD7ABD3E2990E710C921 /* Pods-LegisLink.release (dev).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LegisLink/Preview Content\"";
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Development Environment/DEVELOPMENT.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LegisLink;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = legis.link;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release (Dev)";
+		};
+		0FEA98062C0AA2BC002BB249 /* Release (Dev) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = brodybrosius.FindYourRepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
+			};
+			name = "Release (Dev)";
+		};
+		0FEA98072C0AA2BC002BB249 /* Release (Dev) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = brodybrosius.DailyBillsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
+			};
+			name = "Release (Dev)";
+		};
+		0FEA98082C0AA2BC002BB249 /* Release (Dev) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1143,7 +1494,54 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
 			};
-			name = Release;
+			name = "Release (Dev)";
+		};
+		0FF54A342BCC80F60027DD75 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = brodybrosius.NYTArticlesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
+			};
+			name = "Debug (Production)";
+		};
+		0FF54A352BCC80F60027DD75 /* Release (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JRRP3YJWJ4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = brodybrosius.NYTArticlesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegisLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegisLink";
+			};
+			name = "Release (Production)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1151,47 +1549,57 @@
 		0F0E9A062A0B65E200E27010 /* Build configuration list for PBXProject "LegisLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F0E9A172A0B65E500E27010 /* Debug */,
-				0F0E9A182A0B65E500E27010 /* Release */,
+				0F0E9A172A0B65E500E27010 /* Debug (Production) */,
+				0FEA97FF2C0AA2B1002BB249 /* Debug (Dev) */,
+				0F0E9A182A0B65E500E27010 /* Release (Production) */,
+				0FEA98042C0AA2BC002BB249 /* Release (Dev) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Production)";
 		};
 		0F0E9A192A0B65E500E27010 /* Build configuration list for PBXNativeTarget "LegisLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F0E9A1A2A0B65E500E27010 /* Debug */,
-				0F0E9A1B2A0B65E500E27010 /* Release */,
+				0F0E9A1A2A0B65E500E27010 /* Debug (Production) */,
+				0FEA98002C0AA2B1002BB249 /* Debug (Dev) */,
+				0F0E9A1B2A0B65E500E27010 /* Release (Production) */,
+				0FEA98052C0AA2BC002BB249 /* Release (Dev) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Production)";
 		};
 		0F14FD5D2A7A339600F91EF4 /* Build configuration list for PBXNativeTarget "FindYourRepTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F14FD5E2A7A339600F91EF4 /* Debug */,
-				0F14FD5F2A7A339600F91EF4 /* Release */,
+				0F14FD5E2A7A339600F91EF4 /* Debug (Production) */,
+				0FEA98012C0AA2B1002BB249 /* Debug (Dev) */,
+				0F14FD5F2A7A339600F91EF4 /* Release (Production) */,
+				0FEA98062C0AA2BC002BB249 /* Release (Dev) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Production)";
 		};
 		0F2EB2D82B8A935A00E226B7 /* Build configuration list for PBXNativeTarget "DailyBillsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F2EB2D92B8A935A00E226B7 /* Debug */,
-				0F2EB2DA2B8A935A00E226B7 /* Release */,
+				0F2EB2D92B8A935A00E226B7 /* Debug (Production) */,
+				0FEA98022C0AA2B1002BB249 /* Debug (Dev) */,
+				0F2EB2DA2B8A935A00E226B7 /* Release (Production) */,
+				0FEA98072C0AA2BC002BB249 /* Release (Dev) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Production)";
 		};
 		0FF54A332BCC80F60027DD75 /* Build configuration list for PBXNativeTarget "NYTArticlesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0FF54A342BCC80F60027DD75 /* Debug */,
-				0FF54A352BCC80F60027DD75 /* Release */,
+				0FF54A342BCC80F60027DD75 /* Debug (Production) */,
+				0FEA98032C0AA2B1002BB249 /* Debug (Dev) */,
+				0FF54A352BCC80F60027DD75 /* Release (Production) */,
+				0FEA98082C0AA2BC002BB249 /* Release (Dev) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Production)";
 		};
 /* End XCConfigurationList section */
 

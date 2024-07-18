@@ -17,6 +17,7 @@ struct RepContributorsView: View {
 
     @ObservedObject private var repcvm: RepContributorsViewModel
     @State private var selection = "2012"
+    @State private var OFFICIAL_DATA_MISSING = "This official does not appear to have contributor data for the selected year."
 
 
     init(user: User, official: Official) {
@@ -39,56 +40,56 @@ struct RepContributorsView: View {
                     }.pickerStyle(.menu)
                 }
                 if selection == "2022" {
-                    if official.twentyTwentyTwoContributors != nil {
+                    if official.twentyTwentyTwoContributors != nil && official.twentyTwentyTwoContributors![0].attributes.orgName != "0" {
                         ForEach(official.twentyTwentyTwoContributors!, id:\.self) { contributor in
                             Text("\(contributor.attributes.orgName): \(contributor.attributes.total)")
                         }
                     } else {
-                        Text("Nothin!")
+                        Text(OFFICIAL_DATA_MISSING)
                     }
 
                 } else if selection == "2020" {
-                    if official.twentyTwentyTwoContributors != nil {
+                    if official.twentyTwentyTwoContributors != nil && official.twentyTwentyContributors![0].attributes.orgName != "0" {
                         ForEach(official.twentyTwentyContributors!, id:\.self) { contributor in
                             Text("\(contributor.attributes.orgName): \(contributor.attributes.total)")
                         }
                     } else {
-                        Text("Nothin!")
+                        Text(OFFICIAL_DATA_MISSING)
                     }
 
                 } else if selection == "2018" {
-                    if official.twentyEightTeenContributors != nil {
+                    if official.twentyEightTeenContributors != nil && official.twentyEightTeenContributors![0].attributes.orgName != "0" {
                         ForEach(official.twentyEightTeenContributors!, id:\.self) { contributor in
                             Text("\(contributor.attributes.orgName): \(contributor.attributes.total)")
                         }
                     } else {
-                        Text("Nothin!")
+                        Text(OFFICIAL_DATA_MISSING)
                     }
 
                 } else if selection == "2016" {
-                    if official.twentySixTeenContributors != nil {
+                    if official.twentySixTeenContributors != nil && official.twentySixTeenContributors![0].attributes.orgName != "0" {
                         ForEach(official.twentySixTeenContributors!, id:\.self) { contributor in
                             Text("\(contributor.attributes.orgName): \(contributor.attributes.total)")
                         }
                     } else {
-                        Text("Nothin!")
+                        Text(OFFICIAL_DATA_MISSING)
                     }
 
                 } else if selection == "2014" {
-                    if official.twentyFourTeenContributors != nil {
+                    if official.twentyFourTeenContributors != nil && official.twentyFourTeenContributors![0].attributes.orgName != "0" {
                         ForEach(official.twentyFourTeenContributors!, id:\.self) { contributor in
                             Text("\(contributor.attributes.orgName): \(contributor.attributes.total)")
                         }
                     } else {
-                        Text("Nothin!")
+                        Text(OFFICIAL_DATA_MISSING)
                     }
                 } else {
-                    if official.twentyTwelveContributors != nil {
+                    if official.twentyTwelveContributors != nil && official.twentyTwelveContributors![0].attributes.orgName != "0" {
                         ForEach(official.twentyTwelveContributors!, id:\.self) { contributor in
                             Text("\(contributor.attributes.orgName): \(contributor.attributes.total)")
                         }
                     } else {
-                        Text("Nothin!")
+                        Text(OFFICIAL_DATA_MISSING)
                     }
                 }
             }

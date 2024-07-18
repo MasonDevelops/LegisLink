@@ -1,4 +1,4 @@
-${PODS_ROOT}/Target Support Files/Pods-town square/Pods-town square-frameworks.sh
+${PODS_ROOT}/Target Support Files/Pods-LegisLink/Pods-LegisLink-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework
 ${BUILT_PRODUCTS_DIR}/Fuse/Fuse.framework
 ${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework

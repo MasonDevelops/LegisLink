@@ -1,10 +1,22 @@
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = LegisLink_DEV
+GOOGLE_API_KEY = AIzaSyCMeH0f3zroVER0JNvoZ4sPlTWWiTxryy0
+OPEN_SECRETS_API_KEY = 3959d0a9628e0e56f61530a0b074a055
+CONGRESS_GOV_API_KEY = t77D8C5BAvnvo0OFcMs30Pk0bEddRNaRIubPaO6m
+OPEN_STATES_API_KEY = b2fcc267-65bd-48c5-9d1b-ed7f28e2bacd
+NYT_API_KEY = v78neBnG5fkaNG5URUOQzKTC2VA1ANJP
+AWS_REGION = us-east-2
+AWS_ACCESS_KEY_ID = AKIA2DM7N2CDDLRQGHU7
+AWS_SECRET_ACCESS_KEY = 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
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Auth0" "${PODS_CONFIGURATION_BUILD_DIR}/Fuse" "${PODS_CONFIGURATION_BUILD_DIR}/JWTDecode" "${PODS_CONFIGURATION_BUILD_DIR}/SimpleKeychain" "${PODS_CONFIGURATION_BUILD_DIR}/Yams"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Auth0/Auth0.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Fuse/Fuse.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JWTDecode/JWTDecode.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SimpleKeychain/SimpleKeychain.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Yams/Yams.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
-LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
 OTHER_LDFLAGS = $(inherited) -framework "Auth0" -framework "Fuse" -framework "JWTDecode" -framework "SimpleKeychain" -framework "Yams"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}

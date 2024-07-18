@@ -35,7 +35,7 @@ struct Response: Codable {
 
 // MARK: - ContributorsClass
 struct ContributorsClass: Codable {
-    let attributes: ContributorsAttributes
+    var attributes: ContributorsAttributes
     var contributor: [Contributor]
 
     enum CodingKeys: String, CodingKey {
@@ -48,7 +48,7 @@ struct ContributorsClass: Codable {
 struct ContributorsAttributes: Codable {
     let candName: String
     let cid: String
-    let cycle: String
+    var cycle: String
     let origin: String
     let source: String
     let notice: String

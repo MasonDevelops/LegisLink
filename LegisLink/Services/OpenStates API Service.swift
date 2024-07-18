@@ -12,8 +12,10 @@ import Foundation
 
 protocol OpenStatesServiceProtocol {
     func getMaxCommitteePages(from chamber: String, completion: @escaping (Int) -> Void)
-    func getSenateCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void)
-    func getHouseCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void)
+//    func getSenateCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void)
+//    func getHouseCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void)
+    func getCommitteeData(from chamber: String, currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void)
+
 }
 
 
@@ -21,7 +23,7 @@ protocol OpenStatesServiceProtocol {
 class OpenStatesService: OpenStatesServiceProtocol {
     
     private var openStatesAPIKey: String {
-        get {return ProcessInfo.processInfo.environment["OpenStates_API_Key"]!}
+        get {return Environment.openStatesAPI}
     }
     
     func getMaxCommitteePages(from chamber: String, completion: @escaping (Int) -> Void) {
@@ -40,38 +42,66 @@ class OpenStatesService: OpenStatesServiceProtocol {
         }.resume()
     }
     
-    func getSenateCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void) {
-        
-        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey)&page=\(currentPage)&per_page=20")
-        else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-
-            guard let data = data else {
-                completion(.failure(error!))
-                return
-            }
-
-            do {
-                let committee = try JSONDecoder().decode(CommitteeList.self, from: data)
-                completion(.success(committee))
-            } catch {
-                completion(.failure(error))
-            }
-        }
-        .resume()
-        
-    }
+//    func getSenateCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void) {
+//        
+//        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=upper&include=memberships&apikey=\(openStatesAPIKey)&page=\(currentPage)&per_page=20")
+//        else { return }
+//        
+//        URLSession.shared.dataTask(with: url) { (data, _, error) in
+//            if let error = error {
+//                completion(.failure(error))
+//                return
+//            }
+//
+//            guard let data = data else {
+//                completion(.failure(error!))
+//                return
+//            }
+//
+//            do {
+//                let committee = try JSONDecoder().decode(CommitteeList.self, from: data)
+//                completion(.success(committee))
+//            } catch {
+//                completion(.failure(error))
+//            }
+//        }
+//        .resume()
+//        
+//    }
     
     
     
-    func getHouseCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void) {
+//    func getHouseCommitteeData(from currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void) {
+//        
+//        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=lower&include=memberships&apikey=\(openStatesAPIKey)&page=\(currentPage)&per_page=20")
+//        else { return }
+//        
+//        URLSession.shared.dataTask(with: url) { (data, _, error) in
+//            if let error = error {
+//                completion(.failure(error))
+//                return
+//            }
+//
+//            guard let data = data else {
+//                completion(.failure(error!))
+//                return
+//            }
+//
+//            do {
+//                let committee = try JSONDecoder().decode(CommitteeList.self, from: data)
+//                completion(.success(committee))
+//            } catch {
+//                completion(.failure(error))
+//            }
+//        }
+//        .resume()
+//        
+//    }
+    
+    
+    func getCommitteeData(from chamber: String, currentPage: Int, completion: @escaping (Swift.Result<CommitteeList, Error>) -> Void) {
         
-        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=lower&include=memberships&apikey=\(openStatesAPIKey)&page=\(currentPage)&per_page=20")
+        guard let url = URL(string: "https://v3.openstates.org/committees?jurisdiction=ocd-jurisdiction%2Fcountry%3Aus%2Fgovernment&classification=committee&chamber=\(chamber)&include=memberships&apikey=\(openStatesAPIKey)&page=\(currentPage)&per_page=20")
         else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, error) in
