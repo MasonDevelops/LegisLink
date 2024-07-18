@@ -205,6 +205,7 @@
 		0FC5C2752B48EED000539926 /* ContributorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorTests.swift; sourceTree = "<group>"; };
 		0FCEBAE32A30FD3F0014D2D2 /* CRPCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRPCandidate.swift; sourceTree = "<group>"; };
 		0FCEC7DC2BE6ADE5008AB70D /* DownloadUSCongressDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUSCongressDirectoryHandler.swift; sourceTree = "<group>"; };
+		0FDBE6872C49994700D96116 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; name = ci_pre_xcodebuild.sh; path = ci_scripts/../ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
 		0FEC04F92B410DB400DADFE0 /* RepContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepContributorsViewModel.swift; sourceTree = "<group>"; };
 		0FEC8DC72A631C9600AF86DC /* CommitteeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitteeList.swift; sourceTree = "<group>"; };
 		0FECB58A2A7C06D400FED68A /* jerry-moran-2022-contributors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "jerry-moran-2022-contributors.json"; sourceTree = "<group>"; };
@@ -287,6 +288,7 @@
 		0F0E9A022A0B65E200E27010 = {
 			isa = PBXGroup;
 			children = (
+				0FDBE6882C49994700D96116 /* ci_scripts */,
 				0F2407832C0E89040063AD39 /* Production Environment */,
 				0F2407822C0E88DE0063AD39 /* Development Environment */,
 				0F5091712A1083A9008AE977 /* Auth0.plist */,
@@ -507,6 +509,15 @@
 			);
 			path = "JSON Responses";
 			sourceTree = "<group>";
+		};
+		0FDBE6882C49994700D96116 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				0FDBE6872C49994700D96116 /* ci_pre_xcodebuild.sh */,
+			);
+			name = ci_scripts;
+			path = /Users/mcmacbookair/Desktop/Personal_Projects/LegisLinkParentFolder/LegisLink/ci_scripts;
+			sourceTree = "<absolute>";
 		};
 		0FF54A3D2BCC84180027DD75 /* NYTArticlesTests */ = {
 			isa = PBXGroup;

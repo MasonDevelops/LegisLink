@@ -7,13 +7,6 @@
    <FileRef
       location = "group:.gitignore">
    </FileRef>
-   <Group
-      location = "group:ci_scripts"
-      name = "ci_scripts">
-      <FileRef
-         location = "group:../ci_pre_xcodebuild.sh">
-      </FileRef>
-   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
