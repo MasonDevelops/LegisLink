@@ -15,7 +15,7 @@ protocol GoogleCivicInfoServiceProtocol {
 class GoogleCivicInfoService: GoogleCivicInfoServiceProtocol {
     
     private var googleAPIKey: String {
-        get {return ProcessInfo.processInfo.environment["Google_API_Key"]!}
+        get {return Environment.googleCivicInformationAPI}
     }
     
     func getReps(from url: URL, completion: @escaping (Swift.Result<Reps, Error>) -> Void) {
