@@ -1,12 +1,12 @@
 #!/bin/sh
 
-#  ci_pre_xcodebuild.sh
+#  ci_post_clone.sh
 #  LegisLink
 #
 #  Created by Mason Cochran on 7/18/24.
 #  
 
-echo "Stage: PRE-Xcode Build is activated .... "
+echo "Stage: POST CLONE is activated .... "
 
 # Move to the place where the scripts are located.
 # This is important because the position of the subsequently mentioned files depend of this origin.

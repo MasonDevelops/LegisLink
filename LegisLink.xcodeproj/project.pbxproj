@@ -213,7 +213,7 @@
 		0FECB5992A7C20AA00FED68A /* successful-open-states-lower-house-committee-request-page-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-states-lower-house-committee-request-page-1.json"; sourceTree = "<group>"; };
 		0FECB59C2A7C20EC00FED68A /* successful-open-states-lower-house-committee-request-page-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-open-states-lower-house-committee-request-page-2.json"; sourceTree = "<group>"; };
 		0FEF0EB52A2BA4DD009064E7 /* IndividualRepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualRepView.swift; sourceTree = "<group>"; };
-		0FF103132C499E13002F600F /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		0FF103132C499E13002F600F /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		0FF54A2D2BCC80F60027DD75 /* NYTArticlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTArticlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF54A362BCC81A70027DD75 /* MockNewYorkTimesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewYorkTimesService.swift; sourceTree = "<group>"; };
 		0FF54A3B2BCC830B0027DD75 /* successful-nyt-articles-api-request.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "successful-nyt-articles-api-request.json"; sourceTree = "<group>"; };
@@ -513,7 +513,7 @@
 		0FF103122C499DCE002F600F /* ci_scripts */ = {
 			isa = PBXGroup;
 			children = (
-				0FF103132C499E13002F600F /* ci_pre_xcodebuild.sh */,
+				0FF103132C499E13002F600F /* ci_post_clone.sh */,
 			);
 			path = ci_scripts;
 			sourceTree = "<group>";
