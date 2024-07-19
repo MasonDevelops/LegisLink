@@ -16,7 +16,7 @@ echo "Stage: POST CLONE is activated .... "
 
 cd ..
 
-cd /Development\ Environment
+ls
 
 printf "APP_NAME = \"%s\"\n" "$APP_NAME" >> DevelopmentBuildConfig.xcconfig
 printf "GOOGLE_API_KEY = \"%s\"\n" "$GOOGLE_API_KEY" >> DevelopmentBuildConfig.xcconfig
