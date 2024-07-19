@@ -28,5 +28,11 @@ echo "Wrote to xcconfig file."
 
 echo "Stage: PRE-Xcode Build is DONE .... "
 
+if [ -f "../Development Environment/DevelopmentBuildConfig.xcconfig" ]; then
+    echo "File created successfully!"
+else
+    echo "Error: File creation failed."
+fi
+
 exit 0
 
