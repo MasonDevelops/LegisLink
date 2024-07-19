@@ -18,6 +18,10 @@ cd ..
 
 ls
 
+cd "Development Environment"
+
+ls
+
 printf "APP_NAME = \"%s\"\n" "$APP_NAME" >> DevelopmentBuildConfig.xcconfig
 printf "GOOGLE_API_KEY = \"%s\"\n" "$GOOGLE_API_KEY" >> DevelopmentBuildConfig.xcconfig
 printf "OPEN_SECRETS_API_KEY = \"%s\"\n" "$OPEN_SECRETS_API_KEY" >> DevelopmentBuildConfig.xcconfig
