@@ -16,15 +16,7 @@ echo "Stage: POST CLONE is activated .... "
 
 cd ..
 
-ls
-
-echo "ls 1"
-
 cd "Development Environment"
-
-ls
-
-echo "ls 2"
 
 
 printf "APP_NAME = \"%s\"\n" "$APP_NAME" >> DevelopmentBuildConfig.xcconfig
@@ -37,12 +29,24 @@ printf "AWS_REGION = \"%s\"\n" "$AWS_REGION" >> DevelopmentBuildConfig.xcconfig
 printf "AWS_ACCESS_KEY_ID = \"%s\"\n" "$AWS_ACCESS_KEY_ID" >> DevelopmentBuildConfig.xcconfig
 printf "AWS_SECRET_ACCESS_KEY = \"%s\"\n" "$AWS_SECRET_ACCESS_KEY" >> DevelopmentBuildConfig.xcconfig
 
+cd ..
 
-echo "Wrote to xcconfig file."
+cd "Production Environment"
 
-ls
 
-echo "ls 2"
+printf "APP_NAME = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "GOOGLE_API_KEY = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "OPEN_SECRETS_API_KEY = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "CONGRESS_GOV_API_KEY = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "OPEN_STATES_API_KEY = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "NYT_API_KEY = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "AWS_REGION = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "AWS_ACCESS_KEY_ID = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+printf "AWS_SECRET_ACCESS_KEY = \"%s\"\n" "PLACEHOLDER" >> ProductionBuildConfig.xcconfig
+
+
+
+echo "Wrote to xcconfig files."
 
 
 echo "Stage: PRE-Xcode Build is DONE .... "
