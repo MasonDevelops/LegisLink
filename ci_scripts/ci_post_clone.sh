@@ -18,9 +18,14 @@ cd ..
 
 ls
 
+echo "ls 1"
+
 cd "Development Environment"
 
 ls
+
+echo "ls 2"
+
 
 printf "APP_NAME = \"%s\"\n" "$APP_NAME" >> DevelopmentBuildConfig.xcconfig
 printf "GOOGLE_API_KEY = \"%s\"\n" "$GOOGLE_API_KEY" >> DevelopmentBuildConfig.xcconfig
@@ -34,6 +39,11 @@ printf "AWS_SECRET_ACCESS_KEY = \"%s\"\n" "$AWS_SECRET_ACCESS_KEY" >> Developmen
 
 
 echo "Wrote to xcconfig file."
+
+ls
+
+echo "ls 2"
+
 
 echo "Stage: PRE-Xcode Build is DONE .... "
 
